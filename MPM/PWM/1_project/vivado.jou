@@ -1,0 +1,257 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb 26 20:26:54 2020
+# Process ID: 13720
+# Current directory: C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/1_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14840 C:\Users\Pietro\Desktop\Miceli_Pietro\PWM\1_project\pwm_project.xpr
+# Log file: C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/1_project/vivado.log
+# Journal file: C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/1_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/1_project/pwm_project.xpr
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/2_IP -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/Users/Pietro/Desktop/Miceli_Pietro/PWM/2_IP/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/2_IP c:/Users/Pietro/Desktop/Miceli_Pietro/PWM/2_IP/component.xml
+current_project pwm_project
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {c:\Users\Pietro\Desktop\Miceli_Pietro\PWM\2_IP\xilinx.com_user_pwm_at_1.0.zip} [ipx::current_core]
+current_project tmp_edit_project
+current_project pwm_project
+ipx::move_temp_component_back -component [ipx::current_core]
+current_project tmp_edit_project
+close_project
+set_property  ip_repo_paths  c:/Users/Pietro/Desktop/Miceli_Pietro/PWM/2_IP [current_project]
+update_ip_catalog
+close_project
+create_project pwm_bd C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram -part xc7z020clg484-1
+set_property board_part xilinx.com:zc702:part0:1.4 [current_project]
+set_property target_language VHDL [current_project]
+create_bd_design "pwm_bd"
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/2_IP [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:pwm_at:1.0 pwm_at_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:T_conf:1.0 T_conf_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {200}] [get_bd_cells processing_system7_0]
+endgroup
+file mkdir C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram/pwm_bd.srcs/constrs_1
+file mkdir C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram/pwm_bd.srcs/constrs_1/new
+close [ open C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram/pwm_bd.srcs/constrs_1/new/constraints.xdc w ]
+add_files -fileset constrs_1 C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram/pwm_bd.srcs/constrs_1/new/constraints.xdc
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (200 MHz)" }  [get_bd_pins pwm_at_0/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (200 MHz)" }  [get_bd_pins T_conf_0/clk]
+endgroup
+connect_bd_net [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0]
+regenerate_bd_layout
+startgroup
+make_bd_pins_external  [get_bd_pins T_conf_0/rst_n]
+endgroup
+undo
+startgroup
+create_bd_port -dir I -type rst rst_n
+connect_bd_net [get_bd_pins /T_conf_0/rst_n] [get_bd_ports rst_n]
+endgroup
+startgroup
+create_bd_port -dir I T
+connect_bd_net [get_bd_pins /T_conf_0/T_in] [get_bd_ports T]
+endgroup
+connect_bd_net [get_bd_ports rst_n] [get_bd_pins pwm_at_0/rst_n]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins T_conf_0/T_out] [get_bd_pins pwm_at_0/T]
+regenerate_bd_layout
+startgroup
+create_bd_port -dir O clk_8k
+connect_bd_net [get_bd_pins /pwm_at_0/clk_8k] [get_bd_ports clk_8k]
+endgroup
+startgroup
+create_bd_port -dir O -from 35 -to 0 sw
+connect_bd_net [get_bd_pins /pwm_at_0/sw] [get_bd_ports sw]
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_port -dir I -from 1 -to 0 sel_mp
+connect_bd_net [get_bd_pins /pwm_at_0/sel_mp] [get_bd_ports sel_mp]
+endgroup
+create_bd_port -dir O -from 1 -to 0 configuration_led
+connect_bd_net [get_bd_ports configuration_led] [get_bd_ports sel_mp]
+create_bd_port -dir O T_out
+connect_bd_net [get_bd_ports T_out] [get_bd_ports T]
+create_bd_port -dir O led2
+connect_bd_net [get_bd_ports led2] [get_bd_ports T]
+create_bd_port -dir O led1
+connect_bd_net [get_bd_ports led1] [get_bd_ports rst_n]
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+make_wrapper -files [get_files C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram/pwm_bd.srcs/sources_1/bd/pwm_bd/pwm_bd.bd] -top
+add_files -norecurse C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram/pwm_bd.srcs/sources_1/bd/pwm_bd/hdl/pwm_bd_wrapper.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+create_project ADC C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/1_project -part xc7z020clg484-1
+set_property board_part xilinx.com:zc702:part0:1.4 [current_project]
+set_property target_language VHDL [current_project]
+current_project pwm_bd
+file mkdir C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram/pwm_bd.sdk
+file copy -force C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram/pwm_bd.runs/impl_1/pwm_bd_wrapper.sysdef C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram/pwm_bd.sdk/pwm_bd_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram/pwm_bd.sdk -hwspec C:/Users/Pietro/Desktop/Miceli_Pietro/PWM/3_block_diagram/pwm_bd.sdk/pwm_bd_wrapper.hdf
+close_project
+add_files -norecurse {C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/Multi_Phase_3ch_TB.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/enable_generator.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/MP/sampler.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/RF_TB.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/clk/counter_4bit_clk.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/clk/clock_generator.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/MP/FF_DDR.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/MP/comparator_nbit.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/MP/counter_4bit.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/RF_30sample.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/ADC_TB.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/cnt_nbit.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/FF_integer.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/MP/reg_nbit.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/clk/counter_14bit.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/Multi_Phase_3ch.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/clk/comparator_4bit.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/MP/flip_flop.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/clk/clk_8k.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/MP/RX_12ch.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/mux_14bit_30to1.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/clk/comparator_14bit.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/MP/rx_section.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/MP/sh_reg_nbit.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/clk/clk_10M.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+move_files -fileset sim_1 [get_files  C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/Multi_Phase_3ch_TB.vhd]
+move_files -fileset sim_1 [get_files  C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/ADC_TB.vhd]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+move_files -fileset sim_1 [get_files  C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/RF_TB.vhd]
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/FF_integer.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/MP/comparator_nbit.vhd] -no_script -reset -force -quiet
+remove_files  {C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/FF_integer.vhd C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/0_VHDL_source/MP/comparator_nbit.vhd}
+ipx::package_project -root_dir C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/2_IP -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/2_IP/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/2_IP c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/2_IP/component.xml
+update_compile_order -fileset sources_1
+current_project ADC
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::check_integrity -quiet [ipx::current_core]
+ipx::archive_core {c:\Users\Pietro\Desktop\Miceli_Pietro\sampling\2_IP\xilinx.com_user_ADC_Handler_16ch_1.0.zip} [ipx::current_core]
+current_project tmp_edit_project
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project
+set_property  ip_repo_paths  c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/2_IP [current_project]
+update_ip_catalog
+create_project sampling_block_diagram C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram -part xc7z020clg484-1
+set_property board_part xilinx.com:zc702:part0:1.4 [current_project]
+set_property target_language VHDL [current_project]
+current_project ADC
+close_project
+create_bd_design "sampling_bd"
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/2_IP [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:ADC_Handler_16ch:1.0 ADC_Handler_16ch_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {200}] [get_bd_cells processing_system7_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (200 MHz)" }  [get_bd_pins ADC_Handler_16ch_0/CLK]
+regenerate_bd_layout
+startgroup
+make_bd_pins_external  [get_bd_pins ADC_Handler_16ch_0/I14] [get_bd_pins ADC_Handler_16ch_0/I1] [get_bd_pins ADC_Handler_16ch_0/I13] [get_bd_pins ADC_Handler_16ch_0/I12] [get_bd_pins ADC_Handler_16ch_0/I11] [get_bd_pins ADC_Handler_16ch_0/I10] [get_bd_pins ADC_Handler_16ch_0/I9] [get_bd_pins ADC_Handler_16ch_0/I8] [get_bd_pins ADC_Handler_16ch_0/I7] [get_bd_pins ADC_Handler_16ch_0/I6] [get_bd_pins ADC_Handler_16ch_0/I5] [get_bd_pins ADC_Handler_16ch_0/I4] [get_bd_pins ADC_Handler_16ch_0/I3] [get_bd_pins ADC_Handler_16ch_0/I2] [get_bd_pins ADC_Handler_16ch_0/I15]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins ADC_Handler_16ch_0/FCO1Bbuff] [get_bd_pins ADC_Handler_16ch_0/IB4] [get_bd_pins ADC_Handler_16ch_0/IB3] [get_bd_pins ADC_Handler_16ch_0/DCO2Bbuff] [get_bd_pins ADC_Handler_16ch_0/DCO1Bbuff] [get_bd_pins ADC_Handler_16ch_0/IB2] [get_bd_pins ADC_Handler_16ch_0/IB1] [get_bd_pins ADC_Handler_16ch_0/IB14] [get_bd_pins ADC_Handler_16ch_0/FCO2buff] [get_bd_pins ADC_Handler_16ch_0/FCO1buff] [get_bd_pins ADC_Handler_16ch_0/IB13] [get_bd_pins ADC_Handler_16ch_0/I16] [get_bd_pins ADC_Handler_16ch_0/IB12] [get_bd_pins ADC_Handler_16ch_0/DCO2buff] [get_bd_pins ADC_Handler_16ch_0/DCO1buff] [get_bd_pins ADC_Handler_16ch_0/IB11] [get_bd_pins ADC_Handler_16ch_0/IB10] [get_bd_pins ADC_Handler_16ch_0/IB16] [get_bd_pins ADC_Handler_16ch_0/IB15] [get_bd_pins ADC_Handler_16ch_0/IB9] [get_bd_pins ADC_Handler_16ch_0/IB8] [get_bd_pins ADC_Handler_16ch_0/IB7] [get_bd_pins ADC_Handler_16ch_0/IB6] [get_bd_pins ADC_Handler_16ch_0/IB5] [get_bd_pins ADC_Handler_16ch_0/FCO2Bbuff]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_2
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_3
+endgroup
+delete_bd_objs [get_bd_cells axi_gpio_2]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {gpio_sw ( DIP switches ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_1/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {gpio_sw ( DIP switches ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_3/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_3/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {gpio_sw ( DIP switches ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_3/GPIO]
+endgroup
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports gpio_sw]
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_intf_ports gpio_sw_0]
+delete_bd_objs [get_bd_intf_nets processing_system7_0_FIXED_IO] [get_bd_intf_ports FIXED_IO]
+undo
+undo
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_intf_ports gpio_sw_0]
+delete_bd_objs [get_bd_intf_nets axi_gpio_3_GPIO] [get_bd_intf_ports gpio_sw_1]
+startgroup
+make_bd_pins_external  [get_bd_pins ADC_Handler_16ch_0/RST_N]
+endgroup
+undo
+startgroup
+create_bd_port -dir I -type rst SW_1
+connect_bd_net [get_bd_pins /ADC_Handler_16ch_0/RST_N] [get_bd_ports SW_1]
+endgroup
+create_bd_port -dir I SW_2
+create_bd_port -dir I -from 0 -to 0 PB_R
+create_bd_port -dir I -from 0 -to 0 PB_L
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {32} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_INPUTS {0} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.GPIO_BOARD_INTERFACE {Custom} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_0/gpio2_io_i] [get_bd_pins ADC_Handler_16ch_0/sign]
+connect_bd_net [get_bd_ports FCO1Bbuff_0] [get_bd_pins ADC_Handler_16ch_0/index]
+undo
+connect_bd_net [get_bd_pins ADC_Handler_16ch_0/index] [get_bd_pins axi_gpio_0/gpio_io_o]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {32} CONFIG.C_GPIO2_WIDTH {1} CONFIG.C_IS_DUAL {1} CONFIG.GPIO_BOARD_INTERFACE {Custom} CONFIG.C_ALL_OUTPUTS_2 {1}] [get_bd_cells axi_gpio_1]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_1/gpio2_io_o] [get_bd_pins ADC_Handler_16ch_0/sw]
+startgroup
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_i] [get_bd_pins ADC_Handler_16ch_0/sample]
+endgroup
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_GPIO2_WIDTH {1} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.GPIO_BOARD_INTERFACE {Custom}] [get_bd_cells axi_gpio_3]
+endgroup
+connect_bd_net [get_bd_ports PB_L] [get_bd_pins axi_gpio_3/gpio_io_i]
+set_property location {-34 40} [get_bd_ports PB_R]
+connect_bd_net [get_bd_ports PB_R] [get_bd_pins axi_gpio_3/gpio2_io_i]
+startgroup
+set_property -dict [list CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_ALL_OUTPUTS_2 {0}] [get_bd_cells axi_gpio_1]
+delete_bd_objs [get_bd_nets axi_gpio_1_gpio2_io_o]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_1/gpio2_io_i] [get_bd_pins ADC_Handler_16ch_0/sw]
+connect_bd_net [get_bd_pins axi_gpio_1/gpio2_io_i] [get_bd_pins rst_ps7_0_200M/peripheral_aresetn]
+undo
+connect_bd_net [get_bd_ports SW_2] [get_bd_pins axi_gpio_1/gpio2_io_i]
+regenerate_bd_layout
+file mkdir C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/constrs_1
+file mkdir C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/constrs_1/new
+close [ open C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/constrs_1/new/constraints.xdc w ]
+add_files -fileset constrs_1 C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/constrs_1/new/constraints.xdc
+regenerate_bd_layout
+validate_bd_design
+make_wrapper -files [get_files C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/sampling_bd.bd] -top
+add_files -norecurse C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/hdl/sampling_bd_wrapper.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file mkdir C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.sdk
+file copy -force C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.runs/impl_1/sampling_bd_wrapper.sysdef C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.sdk/sampling_bd_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.sdk -hwspec C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.sdk/sampling_bd_wrapper.hdf

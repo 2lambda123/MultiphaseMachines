@@ -1,0 +1,122 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port SW_2 -pg 1 -y 1640 -defaultsOSRD
+preplace port IB10_0 -pg 1 -y 600 -defaultsOSRD
+preplace port DCO2buff_0 -pg 1 -y 760 -defaultsOSRD
+preplace port IB1_0 -pg 1 -y 420 -defaultsOSRD
+preplace port DCO1Bbuff_0 -pg 1 -y 820 -defaultsOSRD
+preplace port I10_0 -pg 1 -y 280 -defaultsOSRD
+preplace port I1_0 -pg 1 -y 100 -defaultsOSRD
+preplace port DDR -pg 1 -y 980 -defaultsOSRD
+preplace port I2_0 -pg 1 -y 120 -defaultsOSRD
+preplace port IB5_0 -pg 1 -y 500 -defaultsOSRD
+preplace port IB15_0 -pg 1 -y 700 -defaultsOSRD
+preplace port FCO1buff_0 -pg 1 -y 780 -defaultsOSRD
+preplace port IB14_0 -pg 1 -y 680 -defaultsOSRD
+preplace port IB2_0 -pg 1 -y 440 -defaultsOSRD
+preplace port IB9_0 -pg 1 -y 580 -defaultsOSRD
+preplace port IB16_0 -pg 1 -y 720 -defaultsOSRD
+preplace port I15_0 -pg 1 -y 1410 -defaultsOSRD
+preplace port DCO1buff_0 -pg 1 -y 740 -defaultsOSRD
+preplace port FCO1Bbuff_0 -pg 1 -y 860 -defaultsOSRD
+preplace port I16_0 -pg 1 -y 1580 -defaultsOSRD
+preplace port DCO2Bbuff_0 -pg 1 -y 840 -defaultsOSRD
+preplace port I5_0 -pg 1 -y 180 -defaultsOSRD
+preplace port I7_0 -pg 1 -y 220 -defaultsOSRD
+preplace port I14_0 -pg 1 -y 360 -defaultsOSRD
+preplace port IB3_0 -pg 1 -y 460 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 1230 -defaultsOSRD
+preplace port IB6_0 -pg 1 -y 520 -defaultsOSRD
+preplace port IB12_0 -pg 1 -y 640 -defaultsOSRD
+preplace port I8_0 -pg 1 -y 240 -defaultsOSRD
+preplace port IB8_0 -pg 1 -y 560 -defaultsOSRD
+preplace port FCO2buff_0 -pg 1 -y 800 -defaultsOSRD
+preplace port I3_0 -pg 1 -y 140 -defaultsOSRD
+preplace port I6_0 -pg 1 -y 200 -defaultsOSRD
+preplace port FCO2Bbuff_0 -pg 1 -y 880 -defaultsOSRD
+preplace port IB7_0 -pg 1 -y 540 -defaultsOSRD
+preplace port IB4_0 -pg 1 -y 480 -defaultsOSRD
+preplace port I9_0 -pg 1 -y 260 -defaultsOSRD
+preplace port I11_0 -pg 1 -y 300 -defaultsOSRD
+preplace port I13_0 -pg 1 -y 340 -defaultsOSRD
+preplace port SW_1 -pg 1 -y 1620 -defaultsOSRD
+preplace port IB11_0 -pg 1 -y 620 -defaultsOSRD
+preplace port IB13_0 -pg 1 -y 660 -defaultsOSRD
+preplace port I4_0 -pg 1 -y 160 -defaultsOSRD
+preplace port I12_0 -pg 1 -y 320 -defaultsOSRD
+preplace portBus PB_L -pg 1 -y 1600 -defaultsOSRD
+preplace portBus PB_R -pg 1 -y 1660 -defaultsOSRD
+preplace inst ADC_Handler_16ch_0 -pg 1 -lvl 4 -y 490 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -y 1140 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -y 1320 -defaultsOSRD
+preplace inst rst_ps7_0_200M -pg 1 -lvl 1 -y 1310 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 3 -y 1500 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 1140 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 1060 -defaultsOSRD
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 780
+preplace netloc processing_system7_0_DDR 1 1 4 450J 970 830J 980 NJ 980 NJ
+preplace netloc I7_0_1 1 0 4 NJ 220 NJ 220 NJ 220 NJ
+preplace netloc ADC_Handler_16ch_0_sample 1 3 2 NJ 1310 1390
+preplace netloc IB13_0_1 1 0 4 NJ 660 NJ 660 NJ 660 NJ
+preplace netloc I11_0_1 1 0 4 NJ 300 NJ 300 NJ 300 NJ
+preplace netloc I1_0_1 1 0 4 NJ 100 NJ 100 NJ 100 NJ
+preplace netloc PB_L_1 1 0 4 NJ 1600 NJ 1600 NJ 1600 1120
+preplace netloc I16_0_1 1 0 4 10J 400 NJ 400 NJ 400 NJ
+preplace netloc FCO1Bbuff_0_1 1 0 4 NJ 860 NJ 860 NJ 860 NJ
+preplace netloc I2_0_1 1 0 4 NJ 120 NJ 120 NJ 120 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 N
+preplace netloc IB14_0_1 1 0 4 NJ 680 NJ 680 NJ 680 NJ
+preplace netloc IB2_0_1 1 0 4 NJ 440 NJ 440 NJ 440 NJ
+preplace netloc rst_ps7_0_200M_peripheral_aresetn 1 1 2 470 960 800
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 1210 450
+preplace netloc IB6_0_1 1 0 4 NJ 520 NJ 520 NJ 520 NJ
+preplace netloc I15_0_1 1 0 4 -10J 380 NJ 380 NJ 380 NJ
+preplace netloc IB5_0_1 1 0 4 NJ 500 NJ 500 NJ 500 NJ
+preplace netloc IB9_0_1 1 0 4 NJ 580 NJ 580 NJ 580 NJ
+preplace netloc IB15_0_1 1 0 4 NJ 700 NJ 700 NJ 700 NJ
+preplace netloc FCO1buff_0_1 1 0 4 NJ 780 NJ 780 NJ 780 NJ
+preplace netloc IB3_0_1 1 0 4 NJ 460 NJ 460 NJ 460 NJ
+preplace netloc I9_0_1 1 0 4 NJ 260 NJ 260 NJ 260 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 790
+preplace netloc IB16_0_1 1 0 4 NJ 720 NJ 720 NJ 720 NJ
+preplace netloc DCO2buff_0_1 1 0 4 NJ 760 NJ 760 NJ 760 NJ
+preplace netloc IB1_0_1 1 0 4 NJ 420 NJ 420 NJ 420 NJ
+preplace netloc DCO1Bbuff_0_1 1 0 4 NJ 820 NJ 820 NJ 820 NJ
+preplace netloc I3_0_1 1 0 4 NJ 140 NJ 140 NJ 140 NJ
+preplace netloc axi_gpio_0_gpio_io_o 1 3 1 1110
+preplace netloc FCO2Bbuff_0_1 1 0 4 NJ 880 NJ 880 NJ 880 NJ
+preplace netloc IB8_0_1 1 0 4 NJ 560 NJ 560 NJ 560 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 480J 980 810J 990 NJ 990 1410J
+preplace netloc PB_R_1 1 0 4 NJ 1660 NJ 1660 NJ 1660 1110
+preplace netloc I10_0_1 1 0 4 NJ 280 NJ 280 NJ 280 NJ
+preplace netloc I13_0_1 1 0 4 NJ 340 NJ 340 NJ 340 NJ
+preplace netloc IB11_0_1 1 0 4 NJ 620 NJ 620 NJ 620 NJ
+preplace netloc I5_0_1 1 0 4 NJ 180 NJ 180 NJ 180 NJ
+preplace netloc Net 1 0 4 30J 1410 NJ 1410 NJ 1410 1120
+preplace netloc ADC_Handler_16ch_0_sign 1 3 2 NJ 1170 1400
+preplace netloc SW_1_1 1 0 4 0J 80 NJ 80 NJ 80 NJ
+preplace netloc IB10_0_1 1 0 4 NJ 600 NJ 600 NJ 600 NJ
+preplace netloc IB12_0_1 1 0 4 NJ 640 NJ 640 NJ 640 NJ
+preplace netloc FCO2buff_0_1 1 0 4 NJ 800 NJ 800 NJ 800 NJ
+preplace netloc DCO2Bbuff_0_1 1 0 4 NJ 840 NJ 840 NJ 840 NJ
+preplace netloc I6_0_1 1 0 4 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 1200 460 950 820 60 N
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N
+preplace netloc I12_0_1 1 0 4 NJ 320 NJ 320 NJ 320 NJ
+preplace netloc I14_0_1 1 0 4 NJ 360 NJ 360 NJ 360 NJ
+preplace netloc IB7_0_1 1 0 4 NJ 540 NJ 540 NJ 540 NJ
+preplace netloc DCO1buff_0_1 1 0 4 NJ 740 NJ 740 NJ 740 NJ
+preplace netloc IB4_0_1 1 0 4 NJ 480 NJ 480 NJ 480 NJ
+preplace netloc I4_0_1 1 0 4 NJ 160 NJ 160 NJ 160 NJ
+preplace netloc I8_0_1 1 0 4 NJ 240 NJ 240 NJ 240 NJ
+levelinfo -pg 1 -30 240 630 970 1270 1430 -top 0 -bot 1680
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_board_cnt":"3",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}

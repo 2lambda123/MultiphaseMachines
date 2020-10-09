@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Wed Feb 26 21:51:20 2020
+# Process ID: 17376
+# Current directory: C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

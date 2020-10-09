@@ -1,0 +1,91 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Feb 26 21:48:16 2020
+| Host         : Pietro running 64-bit major release  (build 9200)
+| Command      : report_methodology -file sampling_bd_wrapper_methodology_drc_routed.rpt -pb sampling_bd_wrapper_methodology_drc_routed.pb -rpx sampling_bd_wrapper_methodology_drc_routed.rpx
+| Design       : sampling_bd_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 11
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
+| TIMING-18 | Warning  | Missing input or output delay | 10         |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell sampling_bd_i/ADC_Handler_16ch_0/U0/Sampling_section/FSM1/cnt[0]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) sampling_bd_i/ADC_Handler_16ch_0/U0/Sampling_section/counter_RX1/cnt_reg[0]/CLR, sampling_bd_i/ADC_Handler_16ch_0/U0/Sampling_section/counter_RX1/cnt_reg[1]/CLR, sampling_bd_i/ADC_Handler_16ch_0/U0/Sampling_section/counter_RX1/cnt_reg[2]/CLR, sampling_bd_i/ADC_Handler_16ch_0/U0/Sampling_section/counter_RX1/cnt_reg[3]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on DCO1Bbuff_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on DCO1buff_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on FCO1Bbuff_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on FCO1buff_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on I1_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on IB1_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on PB_L[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on PB_R[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on SW_1 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on SW_2 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+

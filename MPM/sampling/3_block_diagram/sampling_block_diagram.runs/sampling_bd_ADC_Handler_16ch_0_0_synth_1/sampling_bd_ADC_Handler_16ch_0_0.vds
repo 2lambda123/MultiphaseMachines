@@ -1,0 +1,804 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb 26 21:38:41 2020
+# Process ID: 16184
+# Current directory: C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.runs/sampling_bd_ADC_Handler_16ch_0_0_synth_1
+# Command line: vivado.exe -log sampling_bd_ADC_Handler_16ch_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sampling_bd_ADC_Handler_16ch_0_0.tcl
+# Log file: C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.runs/sampling_bd_ADC_Handler_16ch_0_0_synth_1/sampling_bd_ADC_Handler_16ch_0_0.vds
+# Journal file: C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.runs/sampling_bd_ADC_Handler_16ch_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sampling_bd_ADC_Handler_16ch_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/2_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 350.605 ; gain = 31.344
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.cache/ip 
+Command: synth_design -top sampling_bd_ADC_Handler_16ch_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12564 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 467.855 ; gain = 95.473
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sampling_bd_ADC_Handler_16ch_0_0' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ip/sampling_bd_ADC_Handler_16ch_0_0/synth/sampling_bd_ADC_Handler_16ch_0_0.vhd:107]
+INFO: [Synth 8-3491] module 'ADC_Handler_16ch' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:13' bound to instance 'U0' of component 'ADC_Handler_16ch' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ip/sampling_bd_ADC_Handler_16ch_0_0/synth/sampling_bd_ADC_Handler_16ch_0_0.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'ADC_Handler_16ch' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:36]
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 0 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D1' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:102]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 0 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D2' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:105]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS__parameterized1' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS__parameterized1' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D3' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:108]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D4' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:111]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D5' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:114]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D6' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:117]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D7' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:120]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D8' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:123]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D9' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:126]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D10' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:129]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D11' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:132]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D12' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:135]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D13' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:138]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D14' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:141]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D15' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:144]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_D16' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:147]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_DCO1' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:150]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_DCO2' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:153]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_FCO1' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:156]
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20423' bound to instance 'IBUFDS_FCO2' of component 'IBUFDS' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:159]
+INFO: [Synth 8-3491] module 'sampler' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:32' bound to instance 'Sampling_section' of component 'sampler' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'sampler' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:47]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_1' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:43]
+INFO: [Synth 8-3491] module 'FF_DDR' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/FF_DDR.vhd:34' bound to instance 'ff1' of component 'FF_DDR' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'FF_DDR' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/FF_DDR.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'FF_DDR' (2#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/FF_DDR.vhd:43]
+INFO: [Synth 8-3491] module 'FF_DDR' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/FF_DDR.vhd:34' bound to instance 'ff2' of component 'FF_DDR' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:79]
+INFO: [Synth 8-3491] module 'FF_DDR' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/FF_DDR.vhd:34' bound to instance 'ff3' of component 'FF_DDR' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:80]
+INFO: [Synth 8-3491] module 'FF_DDR' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/FF_DDR.vhd:34' bound to instance 'ff4' of component 'FF_DDR' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:81]
+INFO: [Synth 8-3491] module 'FF_DDR' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/FF_DDR.vhd:34' bound to instance 'ff5' of component 'FF_DDR' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:82]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'sh_reg_14bit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:34' bound to instance 'shif_register' of component 'sh_reg_14bit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'sh_reg_14bit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:44]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'LSB' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'flip_flop' (3#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:43]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff1' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:63]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff2' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:64]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff3' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:65]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff4' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:66]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff5' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:67]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff6' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:68]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff7' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:69]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff8' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:70]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff9' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:71]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff10' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:72]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff11' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:73]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'ff12' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:74]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'MSB' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'sh_reg_14bit' (4#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sh_reg_nbit.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'rx_section' (5#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:43]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_2' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:149]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_3' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:150]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_4' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:151]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_5' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:152]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_6' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:153]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_7' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:154]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_8' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:155]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_9' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:156]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_10' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:157]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_11' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:158]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_12' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:159]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_13' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:160]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_14' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:161]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_15' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:162]
+INFO: [Synth 8-3491] module 'rx_section' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/rx_section.vhd:34' bound to instance 'channel_16' of component 'rx_section' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:163]
+INFO: [Synth 8-3491] module 'RF_30sample' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:32' bound to instance 'RF1' of component 'RF_30sample' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'RF_30sample' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:41]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg1' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:14]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_nbit' (6#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:14]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg2' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:65]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg3' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:66]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg4' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:67]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg5' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:68]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg6' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:69]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg7' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:70]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg8' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:71]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg9' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:72]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg10' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:73]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg11' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:74]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg12' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:75]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg13' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:76]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg14' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:77]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg15' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:78]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg16' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:79]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg17' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:80]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg18' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:81]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg19' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:82]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg20' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:83]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg21' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:84]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg22' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:85]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg23' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:86]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg24' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:87]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg25' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:88]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg26' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:89]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg27' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:90]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg28' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:91]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg29' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:92]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'reg_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/reg_nbit.vhd:4' bound to instance 'reg30' of component 'reg_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'RF_30sample' (7#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RF_30sample.vhd:41]
+INFO: [Synth 8-3491] module 'enable_generator' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/enable_generator.vhd:5' bound to instance 'en_gen1' of component 'enable_generator' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'enable_generator' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/enable_generator.vhd:15]
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'cnt_nbit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/cnt_nbit.vhd:33' bound to instance 'cnt' of component 'cnt_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/enable_generator.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'cnt_nbit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/cnt_nbit.vhd:42]
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cnt_nbit' (8#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/cnt_nbit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'enable_generator' (9#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/enable_generator.vhd:15]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'DC1current' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:169]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'DC1prev' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:170]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'FC1current' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:172]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'FC1prev' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:173]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'CLK8current' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:175]
+INFO: [Synth 8-3491] module 'flip_flop' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/flip_flop.vhd:34' bound to instance 'CLK8prev' of component 'flip_flop' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:176]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'counter_4bit' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/counter_4bit.vhd:33' bound to instance 'counter_RX1' of component 'counter_4bit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'counter_4bit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/counter_4bit.vhd:42]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_4bit' (10#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/counter_4bit.vhd:42]
+INFO: [Synth 8-3491] module 'RX_12ch' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RX_12ch.vhd:32' bound to instance 'FSM1' of component 'RX_12ch' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'RX_12ch' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RX_12ch.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'RX_12ch' (11#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/RX_12ch.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'sampler' (12#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/sampler.vhd:47]
+INFO: [Synth 8-3491] module 'mux_14bit_30to1' declared at 'c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/mux_14bit_30to1.vhd:13' bound to instance 'mux' of component 'mux_14bit_30to1' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:173]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'mux_14bit_30to1' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/mux_14bit_30to1.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'mux_14bit_30to1' (13#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/mux_14bit_30to1.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'clock_generator' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/clock_generator.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'clk_8k' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/clk_8k.vhd:38]
+	Parameter N bound to: 14 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'counter_14bit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/counter_14bit.vhd:39]
+	Parameter N bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_14bit' (14#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/counter_14bit.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'comparator_14bit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/comparator_14bit.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'comparator_14bit' (15#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/comparator_14bit.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'clk_8k' (16#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/clk_8k.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'clk_10M' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/clk_10M.vhd:41]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'counter_4bit_clk' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/counter_4bit_clk.vhd:39]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_4bit_clk' (17#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/counter_4bit_clk.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'comparator_4bit' [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/comparator_4bit.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'comparator_4bit' (18#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/comparator_4bit.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'clk_10M' (19#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/clk_10M.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'clock_generator' (20#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/clock_generator.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'ADC_Handler_16ch' (21#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ipshared/a64b/src/Multi_Phase_3ch.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'sampling_bd_ADC_Handler_16ch_0_0' (22#1) [c:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.srcs/sources_1/bd/sampling_bd/ip/sampling_bd_ADC_Handler_16ch_0_0/synth/sampling_bd_ADC_Handler_16ch_0_0.vhd:107]
+WARNING: [Synth 8-3331] design comparator_4bit has unconnected port RST_N
+WARNING: [Synth 8-3331] design comparator_14bit has unconnected port RST_N
+WARNING: [Synth 8-3331] design enable_generator has unconnected port CLK_8k
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 525.340 ; gain = 152.957
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 525.340 ; gain = 152.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 525.340 ; gain = 152.957
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 871.383 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 871.383 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.219 . Memory (MB): peak = 874.031 ; gain = 2.648
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 874.031 ; gain = 501.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 874.031 ; gain = 501.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 874.031 ; gain = 501.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "conta" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'enable_generator'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'RX_12ch'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "CONTA" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'clk_8k'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "CONTA" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'clk_10M'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                               00 |                               00
+              wait_start |                               01 |                               01
+                wait_end |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'enable_generator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                           000001 |                              000
+                 wait_8k |                           000010 |                              001
+                wait_fco |                           000100 |                              010
+                wait_dco |                           001000 |                              011
+              sample_bit |                           010000 |                              100
+                    done |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'RX_12ch'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                               00 |                               00
+                  wait_0 |                               01 |                               01
+                  wait_1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'clk_8k'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                               00 |                               00
+                  wait_0 |                               01 |                               01
+                  wait_1 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'clk_10M'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 874.031 ; gain = 501.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               14 Bit    Registers := 30    
+	                1 Bit    Registers := 390   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	  30 Input     14 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	  31 Input      5 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 160   
+	   3 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FF_DDR 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module flip_flop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module reg_nbit 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+Module cnt_nbit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module enable_generator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module RX_12ch 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 1     
+Module mux_14bit_30to1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  30 Input     14 Bit        Muxes := 1     
+	  31 Input      5 Bit        Muxes := 1     
+Module counter_14bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module clk_8k 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module counter_4bit_clk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module clk_10M 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "U0/Sampling_section/en_gen1/cnt/conta" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "U0/Clock_gen/CLOCK5M/counter/CONTA" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "U0/Clock_gen/CLOCK10M/counter/CONTA" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[31] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[30] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[29] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[28] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[27] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[26] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[25] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[24] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[23] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[22] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[21] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[20] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[19] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[18] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[17] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[16] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[15] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[14] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[13] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[12] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[11] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[10] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[9] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[8] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[7] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[6] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[5] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[4] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[3] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[2] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sign[1] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[31] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[30] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[29] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[28] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[27] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[26] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[25] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[24] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[23] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[22] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[21] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[20] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[19] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[18] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[17] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[16] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[15] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[14] driven by constant 0
+INFO: [Synth 8-3917] design sampling_bd_ADC_Handler_16ch_0_0 has port sample[13] driven by constant 0
+INFO: [Synth 8-3332] Sequential element (U0/Clock_gen/CLOCK10M/FSM_sequential_state_reg[1]) is unused and will be removed from module sampling_bd_ADC_Handler_16ch_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Clock_gen/CLOCK10M/FSM_sequential_state_reg[0]) is unused and will be removed from module sampling_bd_ADC_Handler_16ch_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 874.031 ; gain = 501.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 876.020 ; gain = 503.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 876.613 ; gain = 504.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 889.828 ; gain = 517.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 889.828 ; gain = 517.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 889.828 ; gain = 517.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 889.828 ; gain = 517.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 889.828 ; gain = 517.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 889.828 ; gain = 517.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 889.828 ; gain = 517.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    17|
+|2     |LUT1   |     4|
+|3     |LUT2   |    64|
+|4     |LUT3   |     6|
+|5     |LUT4   |    13|
+|6     |LUT5   |    38|
+|7     |LUT6   |   112|
+|8     |MUXF7  |    56|
+|9     |FDCE   |   490|
+|10    |FDPE   |     1|
+|11    |FDRE   |    32|
+|12    |IBUFDS |    20|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+-----------------+------+
+|      |Instance              |Module           |Cells |
++------+----------------------+-----------------+------+
+|1     |top                   |                 |   853|
+|2     |  U0                  |ADC_Handler_16ch |   838|
+|3     |    Clock_gen         |clock_generator  |    84|
+|4     |      CLOCK5M         |clk_8k           |    84|
+|5     |        counter       |counter_14bit    |    81|
+|6     |    Sampling_section  |sampler          |   734|
+|7     |      CLK8current     |flip_flop        |     1|
+|8     |      CLK8prev        |flip_flop_0      |     2|
+|9     |      DC1current      |flip_flop_1      |     1|
+|10    |      DC1prev         |flip_flop_2      |     1|
+|11    |      FC1current      |flip_flop_3      |     1|
+|12    |      FC1prev         |flip_flop_4      |     2|
+|13    |      FSM1            |RX_12ch          |     9|
+|14    |      RF1             |RF_30sample      |   603|
+|15    |        reg1          |reg_nbit         |    14|
+|16    |        reg10         |reg_nbit_23      |    14|
+|17    |        reg11         |reg_nbit_24      |    42|
+|18    |        reg12         |reg_nbit_25      |    14|
+|19    |        reg13         |reg_nbit_26      |    14|
+|20    |        reg14         |reg_nbit_27      |    14|
+|21    |        reg15         |reg_nbit_28      |    28|
+|22    |        reg16         |reg_nbit_29      |    14|
+|23    |        reg17         |reg_nbit_30      |    14|
+|24    |        reg18         |reg_nbit_31      |    14|
+|25    |        reg19         |reg_nbit_32      |    42|
+|26    |        reg2          |reg_nbit_33      |    14|
+|27    |        reg20         |reg_nbit_34      |    14|
+|28    |        reg21         |reg_nbit_35      |    14|
+|29    |        reg22         |reg_nbit_36      |    14|
+|30    |        reg23         |reg_nbit_37      |    28|
+|31    |        reg24         |reg_nbit_38      |    14|
+|32    |        reg25         |reg_nbit_39      |    14|
+|33    |        reg26         |reg_nbit_40      |    14|
+|34    |        reg27         |reg_nbit_41      |    56|
+|35    |        reg28         |reg_nbit_42      |    14|
+|36    |        reg29         |reg_nbit_43      |    15|
+|37    |        reg3          |reg_nbit_44      |    42|
+|38    |        reg30         |reg_nbit_45      |    28|
+|39    |        reg4          |reg_nbit_46      |    14|
+|40    |        reg5          |reg_nbit_47      |    14|
+|41    |        reg6          |reg_nbit_48      |    14|
+|42    |        reg7          |reg_nbit_49      |    28|
+|43    |        reg8          |reg_nbit_50      |    14|
+|44    |        reg9          |reg_nbit_51      |    14|
+|45    |      channel_1       |rx_section       |    19|
+|46    |        ff1           |FF_DDR           |     1|
+|47    |        ff2           |FF_DDR_5         |     1|
+|48    |        ff3           |FF_DDR_6         |     1|
+|49    |        ff4           |FF_DDR_7         |     1|
+|50    |        ff5           |FF_DDR_8         |     1|
+|51    |        shif_register |sh_reg_14bit     |    14|
+|52    |          LSB         |flip_flop_9      |     1|
+|53    |          MSB         |flip_flop_10     |     1|
+|54    |          ff1         |flip_flop_11     |     1|
+|55    |          ff10        |flip_flop_12     |     1|
+|56    |          ff11        |flip_flop_13     |     1|
+|57    |          ff12        |flip_flop_14     |     1|
+|58    |          ff2         |flip_flop_15     |     1|
+|59    |          ff3         |flip_flop_16     |     1|
+|60    |          ff4         |flip_flop_17     |     1|
+|61    |          ff5         |flip_flop_18     |     1|
+|62    |          ff6         |flip_flop_19     |     1|
+|63    |          ff7         |flip_flop_20     |     1|
+|64    |          ff8         |flip_flop_21     |     1|
+|65    |          ff9         |flip_flop_22     |     1|
+|66    |      counter_RX1     |counter_4bit     |     9|
+|67    |      en_gen1         |enable_generator |    86|
+|68    |        cnt           |cnt_nbit         |    83|
++------+----------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 889.828 ; gain = 517.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:49 . Memory (MB): peak = 889.828 ; gain = 168.754
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 889.828 ; gain = 517.445
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 904.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+240 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:06 . Memory (MB): peak = 904.570 ; gain = 543.656
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 904.570 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.runs/sampling_bd_ADC_Handler_16ch_0_0_synth_1/sampling_bd_ADC_Handler_16ch_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP sampling_bd_ADC_Handler_16ch_0_0, cache-ID = bef27b71d610c8ba
+INFO: [Coretcl 2-1174] Renamed 67 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 904.570 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Pietro/Desktop/Miceli_Pietro/sampling/3_block_diagram/sampling_block_diagram.runs/sampling_bd_ADC_Handler_16ch_0_0_synth_1/sampling_bd_ADC_Handler_16ch_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sampling_bd_ADC_Handler_16ch_0_0_utilization_synth.rpt -pb sampling_bd_ADC_Handler_16ch_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 26 21:40:09 2020...
