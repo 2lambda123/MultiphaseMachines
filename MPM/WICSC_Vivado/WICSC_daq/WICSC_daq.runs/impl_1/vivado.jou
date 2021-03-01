@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Mar  1 16:31:16 2021
+# Process ID: 412
+# Current directory: C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.runs/impl_1
+# Command line: vivado.exe -log WICSC_daq_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source WICSC_daq_wrapper.tcl -notrace
+# Log file: C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.runs/impl_1/WICSC_daq_wrapper.vdi
+# Journal file: C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source WICSC_daq_wrapper.tcl -notrace

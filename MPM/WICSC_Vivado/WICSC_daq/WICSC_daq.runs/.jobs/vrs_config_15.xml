@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="WICSC_daq_AD9249_DAQ_custom_0_0_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_AD9249_DAQ_custom_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="WICSC_daq_processing_system7_0_0_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="WICSC_daq_axi_gpio_0_0_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="WICSC_daq_axi_gpio_0_1_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_axi_gpio_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="WICSC_daq_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Run Id="WICSC_daq_axi_gpio_0_2_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_axi_gpio_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="WICSC_daq_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Run Id="WICSC_daq_axi_gpio_0_3_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_axi_gpio_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="WICSC_daq_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Run Id="WICSC_daq_axi_gpio_0_4_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_axi_gpio_0_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="WICSC_daq_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Run Id="WICSC_daq_axi_gpio_0_5_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_axi_gpio_0_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="WICSC_daq_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Run Id="WICSC_daq_axi_gpio_0_6_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_axi_gpio_0_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="WICSC_daq_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Run Id="WICSC_daq_axi_gpio_0_7_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_axi_gpio_0_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="WICSC_daq_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Run Id="WICSC_daq_xbar_0_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="WICSC_daq_rst_ps7_0_100M_0_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="WICSC_daq_auto_pc_0_synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/WICSC_daq_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/MPM_Zynq/WICSC_daq/WICSC_daq.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="WICSC_daq_AD9249_DAQ_custom_0_0_synth_1"/>
+		<Parent Id="WICSC_daq_processing_system7_0_0_synth_1"/>
+		<Parent Id="WICSC_daq_axi_gpio_0_0_synth_1"/>
+		<Parent Id="WICSC_daq_axi_gpio_0_1_synth_1"/>
+		<Parent Id="WICSC_daq_axi_gpio_0_2_synth_1"/>
+		<Parent Id="WICSC_daq_axi_gpio_0_3_synth_1"/>
+		<Parent Id="WICSC_daq_axi_gpio_0_4_synth_1"/>
+		<Parent Id="WICSC_daq_axi_gpio_0_5_synth_1"/>
+		<Parent Id="WICSC_daq_axi_gpio_0_6_synth_1"/>
+		<Parent Id="WICSC_daq_axi_gpio_0_7_synth_1"/>
+		<Parent Id="WICSC_daq_xbar_0_synth_1"/>
+		<Parent Id="WICSC_daq_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="WICSC_daq_auto_pc_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

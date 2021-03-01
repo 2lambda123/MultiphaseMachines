@@ -1,0 +1,748 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Addressing View_Layers":"/axi_gpio_8_ip2intc_irpt:false|/processing_system7_0_FCLK_RESET0_N:false|/processing_system7_0_FCLK_CLK0:false|/rst_ps7_0_100M_peripheral_aresetn:false|/master_rst_n_0_1:false|",
+   "Addressing View_ScaleFactor":"0.70098",
+   "Addressing View_TopLeft":"-488,0",
+   "Color Coded_Layers":"/axi_gpio_8_ip2intc_irpt:true|/processing_system7_0_FCLK_RESET0_N:true|/processing_system7_0_FCLK_CLK0:true|/rst_ps7_0_100M_peripheral_aresetn:true|/master_rst_n_0_1:true|",
+   "Color Coded_ScaleFactor":"0.327982",
+   "Color Coded_TopLeft":"-1342,0",
+   "Default View_Layers":"/axi_gpio_8_ip2intc_irpt:true|/processing_system7_0_FCLK_RESET0_N:true|/processing_system7_0_FCLK_CLK0:true|/rst_ps7_0_100M_peripheral_aresetn:true|/master_rst_n_0_1:true|",
+   "Default View_ScaleFactor":"0.42046",
+   "Default View_TopLeft":"433,395",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeInterrupt":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ScaleFactor":"0.335714",
+   "Grouping and No Loops_TopLeft":"-909,0",
+   "Interfaces View_Layers":"/axi_gpio_8_ip2intc_irpt:false|/processing_system7_0_FCLK_RESET0_N:false|/processing_system7_0_FCLK_CLK0:false|/rst_ps7_0_100M_peripheral_aresetn:false|/master_rst_n_0_1:false|",
+   "Interfaces View_ScaleFactor":"0.831395",
+   "Interfaces View_TopLeft":"-322,0",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 10 -x 4500 -y 1240 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 10 -x 4500 -y 1210 -defaultsOSRD
+preplace port lvds_data_a1_n_0 -pg 1 -lvl 0 -x -820 -y 1630 -defaultsOSRD
+preplace port lvds_data_a1_p_0 -pg 1 -lvl 0 -x -820 -y 1600 -defaultsOSRD
+preplace port lvds_data_a2_n_0 -pg 1 -lvl 0 -x -820 -y 1690 -defaultsOSRD
+preplace port lvds_data_a2_p_0 -pg 1 -lvl 0 -x -820 -y 1660 -defaultsOSRD
+preplace port lvds_data_b1_n_0 -pg 1 -lvl 0 -x -820 -y 1750 -defaultsOSRD
+preplace port lvds_data_b1_p_0 -pg 1 -lvl 0 -x -820 -y 1720 -defaultsOSRD
+preplace port lvds_data_b2_n_0 -pg 1 -lvl 0 -x -820 -y 1810 -defaultsOSRD
+preplace port lvds_data_b2_p_0 -pg 1 -lvl 0 -x -820 -y 1780 -defaultsOSRD
+preplace port lvds_data_c1_n_0 -pg 1 -lvl 0 -x -820 -y 1870 -defaultsOSRD
+preplace port lvds_data_c1_p_0 -pg 1 -lvl 0 -x -820 -y 1840 -defaultsOSRD
+preplace port lvds_data_c2_n_0 -pg 1 -lvl 0 -x -820 -y 1930 -defaultsOSRD
+preplace port lvds_data_c2_p_0 -pg 1 -lvl 0 -x -820 -y 1900 -defaultsOSRD
+preplace port lvds_data_d1_n_0 -pg 1 -lvl 0 -x -820 -y 1990 -defaultsOSRD
+preplace port lvds_data_d1_p_0 -pg 1 -lvl 0 -x -820 -y 1960 -defaultsOSRD
+preplace port lvds_data_d2_n_0 -pg 1 -lvl 0 -x -820 -y 2050 -defaultsOSRD
+preplace port lvds_data_d2_p_0 -pg 1 -lvl 0 -x -820 -y 2020 -defaultsOSRD
+preplace port lvds_data_e1_n_0 -pg 1 -lvl 0 -x -820 -y 2110 -defaultsOSRD
+preplace port lvds_data_e1_p_0 -pg 1 -lvl 0 -x -820 -y 2080 -defaultsOSRD
+preplace port lvds_data_e2_n_0 -pg 1 -lvl 0 -x -820 -y 2170 -defaultsOSRD
+preplace port lvds_data_e2_p_0 -pg 1 -lvl 0 -x -820 -y 2140 -defaultsOSRD
+preplace port lvds_data_f1_n_0 -pg 1 -lvl 0 -x -820 -y 2230 -defaultsOSRD
+preplace port lvds_data_f1_p_0 -pg 1 -lvl 0 -x -820 -y 2200 -defaultsOSRD
+preplace port lvds_data_f2_n_0 -pg 1 -lvl 0 -x -820 -y 2290 -defaultsOSRD
+preplace port lvds_data_f2_p_0 -pg 1 -lvl 0 -x -820 -y 2260 -defaultsOSRD
+preplace port lvds_data_g1_n_0 -pg 1 -lvl 0 -x -820 -y 2350 -defaultsOSRD
+preplace port lvds_data_g1_p_0 -pg 1 -lvl 0 -x -820 -y 2320 -defaultsOSRD
+preplace port lvds_data_g2_n_0 -pg 1 -lvl 0 -x -820 -y 2410 -defaultsOSRD
+preplace port lvds_data_g2_p_0 -pg 1 -lvl 0 -x -820 -y 2380 -defaultsOSRD
+preplace port lvds_data_h1_n_0 -pg 1 -lvl 0 -x -820 -y 2470 -defaultsOSRD
+preplace port lvds_data_h1_p_0 -pg 1 -lvl 0 -x -820 -y 2440 -defaultsOSRD
+preplace port lvds_data_h2_n_0 -pg 1 -lvl 0 -x -820 -y 2530 -defaultsOSRD
+preplace port lvds_data_h2_p_0 -pg 1 -lvl 0 -x -820 -y 2500 -defaultsOSRD
+preplace port lvds_dco1_n_0 -pg 1 -lvl 0 -x -820 -y 1390 -defaultsOSRD
+preplace port lvds_dco1_p_0 -pg 1 -lvl 0 -x -820 -y 1360 -defaultsOSRD
+preplace port lvds_dco2_n_0 -pg 1 -lvl 0 -x -820 -y 1450 -defaultsOSRD
+preplace port lvds_dco2_p_0 -pg 1 -lvl 0 -x -820 -y 1420 -defaultsOSRD
+preplace port lvds_fco1_n_0 -pg 1 -lvl 0 -x -820 -y 1510 -defaultsOSRD
+preplace port lvds_fco1_p_0 -pg 1 -lvl 0 -x -820 -y 1480 -defaultsOSRD
+preplace port lvds_fco2_n_0 -pg 1 -lvl 0 -x -820 -y 1570 -defaultsOSRD
+preplace port lvds_fco2_p_0 -pg 1 -lvl 0 -x -820 -y 1540 -defaultsOSRD
+preplace port master_rst_n_0 -pg 1 -lvl 0 -x -820 -y 2560 -defaultsOSRD
+preplace port sysclk_ready_0 -pg 1 -lvl 10 -x 4500 -y 1600 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 320 -y 1000 -swap {16 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 0 17 18 19 20 21 22 27 24 25 26 23 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 70 71 69 67 72 68 66} -defaultsOSRD -pinDir DDR right -pinY DDR 20R -pinDir FIXED_IO right -pinY FIXED_IO 0R -pinDir USBIND_0 right -pinY USBIND_0 60R -pinDir M_AXI_GP0 right -pinY M_AXI_GP0 40R -pinDir TTC0_WAVE0_OUT right -pinY TTC0_WAVE0_OUT 160R -pinDir TTC0_WAVE1_OUT right -pinY TTC0_WAVE1_OUT 180R -pinDir TTC0_WAVE2_OUT right -pinY TTC0_WAVE2_OUT 140R -pinDir M_AXI_GP0_ACLK right -pinY M_AXI_GP0_ACLK 100R -pinBusDir IRQ_F2P right -pinBusY IRQ_F2P 200R -pinDir FCLK_CLK0 right -pinY FCLK_CLK0 120R -pinDir FCLK_RESET0_N right -pinY FCLK_RESET0_N 80R
+preplace inst axi_gpio_0 -pg 1 -lvl 7 -x 3790 -y 600 -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir GPIO left -pinY GPIO 20L -pinDir GPIO.gpio_io_i left -pinY GPIO.gpio_io_i 40L -pinDir GPIO2 left -pinY GPIO2 60L -pinDir GPIO2.gpio2_io_i left -pinY GPIO2.gpio2_io_i 80L -pinDir s_axi_aclk left -pinY s_axi_aclk 100L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 120L
+preplace inst axi_gpio_1 -pg 1 -lvl 7 -x 3790 -y 820 -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir GPIO left -pinY GPIO 20L -pinDir GPIO.gpio_io_i left -pinY GPIO.gpio_io_i 40L -pinDir GPIO2 left -pinY GPIO2 60L -pinDir GPIO2.gpio2_io_i left -pinY GPIO2.gpio2_io_i 80L -pinDir s_axi_aclk left -pinY s_axi_aclk 100L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 120L
+preplace inst axi_gpio_2 -pg 1 -lvl 7 -x 3790 -y 1060 -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir GPIO left -pinY GPIO 20L -pinDir GPIO.gpio_io_i left -pinY GPIO.gpio_io_i 40L -pinDir GPIO2 left -pinY GPIO2 60L -pinDir GPIO2.gpio2_io_i left -pinY GPIO2.gpio2_io_i 80L -pinDir s_axi_aclk left -pinY s_axi_aclk 100L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 120L
+preplace inst axi_gpio_3 -pg 1 -lvl 3 -x 1610 -y -760 -defaultsOSRD -pinDir S_AXI right -pinY S_AXI 0R -pinDir GPIO right -pinY GPIO 20R -pinDir GPIO.gpio_io_i right -pinY GPIO.gpio_io_i 40R -pinDir GPIO2 right -pinY GPIO2 60R -pinDir GPIO2.gpio2_io_i right -pinY GPIO2.gpio2_io_i 80R -pinDir s_axi_aclk left -pinY s_axi_aclk 100L -pinDir s_axi_aresetn right -pinY s_axi_aresetn 100R
+preplace inst axi_gpio_4 -pg 1 -lvl 3 -x 1610 -y 40 -defaultsOSRD -pinDir S_AXI right -pinY S_AXI 0R -pinDir GPIO right -pinY GPIO 20R -pinDir GPIO.gpio_io_i right -pinY GPIO.gpio_io_i 40R -pinDir GPIO2 right -pinY GPIO2 60R -pinDir GPIO2.gpio2_io_i right -pinY GPIO2.gpio2_io_i 80R -pinDir s_axi_aclk left -pinY s_axi_aclk 0L -pinDir s_axi_aresetn right -pinY s_axi_aresetn 100R
+preplace inst axi_gpio_5 -pg 1 -lvl 3 -x 1610 -y -560 -defaultsOSRD -pinDir S_AXI right -pinY S_AXI 0R -pinDir GPIO right -pinY GPIO 20R -pinDir GPIO.gpio_io_i right -pinY GPIO.gpio_io_i 40R -pinDir GPIO2 right -pinY GPIO2 60R -pinDir GPIO2.gpio2_io_i right -pinY GPIO2.gpio2_io_i 80R -pinDir s_axi_aclk left -pinY s_axi_aclk 0L -pinDir s_axi_aresetn right -pinY s_axi_aresetn 100R
+preplace inst axi_gpio_6 -pg 1 -lvl 3 -x 1610 -y -360 -defaultsOSRD -pinDir S_AXI right -pinY S_AXI 0R -pinDir GPIO right -pinY GPIO 20R -pinDir GPIO.gpio_io_i right -pinY GPIO.gpio_io_i 40R -pinDir GPIO2 right -pinY GPIO2 60R -pinDir GPIO2.gpio2_io_i right -pinY GPIO2.gpio2_io_i 80R -pinDir s_axi_aclk left -pinY s_axi_aclk 0L -pinDir s_axi_aresetn right -pinY s_axi_aresetn 100R
+preplace inst axi_gpio_7 -pg 1 -lvl 3 -x 1610 -y -160 -defaultsOSRD -pinDir S_AXI right -pinY S_AXI 0R -pinDir GPIO right -pinY GPIO 20R -pinDir GPIO.gpio_io_i right -pinY GPIO.gpio_io_i 40R -pinDir GPIO2 right -pinY GPIO2 60R -pinDir GPIO2.gpio2_io_i right -pinY GPIO2.gpio2_io_i 80R -pinDir s_axi_aclk left -pinY s_axi_aclk 0L -pinDir s_axi_aresetn right -pinY s_axi_aresetn 100R
+preplace inst ps7_0_axi_periph -pg 1 -lvl 6 -x 3300 -y 820 -swap {99 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 239 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 0 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 259 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 79 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 199 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 219 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 293 280 294 281 295 282 296 283 297 284 298 285 299 286 300 287 301 288 302 289 303 290 304 291 305 292 306} -defaultsOSRD -pinDir S00_AXI left -pinY S00_AXI 20L -pinDir M00_AXI right -pinY M00_AXI 0R -pinDir M01_AXI right -pinY M01_AXI 20R -pinDir M02_AXI right -pinY M02_AXI 100R -pinDir M03_AXI left -pinY M03_AXI 0L -pinDir M04_AXI left -pinY M04_AXI 40L -pinDir M05_AXI left -pinY M05_AXI 60L -pinDir M06_AXI left -pinY M06_AXI 80L -pinDir M07_AXI left -pinY M07_AXI 100L -pinDir M08_AXI right -pinY M08_AXI 120R -pinDir M09_AXI right -pinY M09_AXI 40R -pinDir M10_AXI right -pinY M10_AXI 60R -pinDir M11_AXI right -pinY M11_AXI 80R -pinDir ACLK left -pinY ACLK 120L -pinDir ARESETN left -pinY ARESETN 400L -pinDir S00_ACLK left -pinY S00_ACLK 140L -pinDir S00_ARESETN left -pinY S00_ARESETN 420L -pinDir M00_ACLK left -pinY M00_ACLK 160L -pinDir M00_ARESETN left -pinY M00_ARESETN 440L -pinDir M01_ACLK left -pinY M01_ACLK 180L -pinDir M01_ARESETN left -pinY M01_ARESETN 460L -pinDir M02_ACLK left -pinY M02_ACLK 200L -pinDir M02_ARESETN left -pinY M02_ARESETN 480L -pinDir M03_ACLK left -pinY M03_ACLK 220L -pinDir M03_ARESETN left -pinY M03_ARESETN 500L -pinDir M04_ACLK left -pinY M04_ACLK 240L -pinDir M04_ARESETN left -pinY M04_ARESETN 520L -pinDir M05_ACLK left -pinY M05_ACLK 260L -pinDir M05_ARESETN left -pinY M05_ARESETN 540L -pinDir M06_ACLK left -pinY M06_ACLK 280L -pinDir M06_ARESETN left -pinY M06_ARESETN 560L -pinDir M07_ACLK left -pinY M07_ACLK 300L -pinDir M07_ARESETN left -pinY M07_ARESETN 580L -pinDir M08_ACLK left -pinY M08_ACLK 320L -pinDir M08_ARESETN left -pinY M08_ARESETN 600L -pinDir M09_ACLK left -pinY M09_ACLK 340L -pinDir M09_ARESETN left -pinY M09_ARESETN 620L -pinDir M10_ACLK left -pinY M10_ACLK 360L -pinDir M10_ARESETN left -pinY M10_ARESETN 640L -pinDir M11_ACLK left -pinY M11_ACLK 380L -pinDir M11_ARESETN left -pinY M11_ARESETN 660L
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -x 1610 -y 360 -swap {0 4 1 2 3 5 6 7 8 9} -defaultsOSRD -pinDir slowest_sync_clk left -pinY slowest_sync_clk 0L -pinDir ext_reset_in left -pinY ext_reset_in 80L -pinDir aux_reset_in left -pinY aux_reset_in 20L -pinDir mb_debug_sys_rst left -pinY mb_debug_sys_rst 40L -pinDir dcm_locked left -pinY dcm_locked 60L -pinDir mb_reset right -pinY mb_reset 0R -pinBusDir bus_struct_reset right -pinBusY bus_struct_reset 20R -pinBusDir peripheral_reset right -pinBusY peripheral_reset 40R -pinBusDir interconnect_aresetn right -pinBusY interconnect_aresetn 60R -pinBusDir peripheral_aresetn right -pinBusY peripheral_aresetn 80R
+preplace inst Counter_YW_top_0 -pg 1 -lvl 9 -x 4340 -y 1320 -defaultsOSRD -pinDir system_clkin left -pinY system_clkin 0L -pinBusDir counter_half_load left -pinBusY counter_half_load 40L -pinDir clkout left -pinY clkout 80L
+preplace inst axi_gpio_8 -pg 1 -lvl 8 -x 4070 -y 1340 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 23} -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir GPIO right -pinY GPIO 0R -pinDir GPIO.gpio_io_o right -pinY GPIO.gpio_io_o 20R -pinDir GPIO2 right -pinY GPIO2 40R -pinDir GPIO2.gpio2_io_i right -pinY GPIO2.gpio2_io_i 60R -pinDir s_axi_aclk left -pinY s_axi_aclk 20L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 60L -pinDir ip2intc_irpt left -pinY ip2intc_irpt 40L
+preplace inst AD9249_DAQ_custom_0 -pg 1 -lvl 3 -x 1610 -y 540 -swap {1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 0 41 55 56 57 58 54 52 53 51 50 43 42 49 48 47 46 45 44} -defaultsOSRD -pinDir lvds_dco1_p left -pinY lvds_dco1_p 20L -pinDir lvds_dco1_n left -pinY lvds_dco1_n 50L -pinDir lvds_dco2_p left -pinY lvds_dco2_p 80L -pinDir lvds_dco2_n left -pinY lvds_dco2_n 110L -pinDir lvds_fco1_p left -pinY lvds_fco1_p 140L -pinDir lvds_fco1_n left -pinY lvds_fco1_n 170L -pinDir lvds_fco2_p left -pinY lvds_fco2_p 200L -pinDir lvds_fco2_n left -pinY lvds_fco2_n 230L -pinDir lvds_data_a1_p left -pinY lvds_data_a1_p 260L -pinDir lvds_data_a1_n left -pinY lvds_data_a1_n 290L -pinDir lvds_data_a2_p left -pinY lvds_data_a2_p 320L -pinDir lvds_data_a2_n left -pinY lvds_data_a2_n 350L -pinDir lvds_data_b1_p left -pinY lvds_data_b1_p 380L -pinDir lvds_data_b1_n left -pinY lvds_data_b1_n 410L -pinDir lvds_data_b2_p left -pinY lvds_data_b2_p 440L -pinDir lvds_data_b2_n left -pinY lvds_data_b2_n 470L -pinDir lvds_data_c1_p left -pinY lvds_data_c1_p 500L -pinDir lvds_data_c1_n left -pinY lvds_data_c1_n 530L -pinDir lvds_data_c2_p left -pinY lvds_data_c2_p 560L -pinDir lvds_data_c2_n left -pinY lvds_data_c2_n 590L -pinDir lvds_data_d1_p left -pinY lvds_data_d1_p 620L -pinDir lvds_data_d1_n left -pinY lvds_data_d1_n 650L -pinDir lvds_data_d2_p left -pinY lvds_data_d2_p 680L -pinDir lvds_data_d2_n left -pinY lvds_data_d2_n 710L -pinDir lvds_data_e1_p left -pinY lvds_data_e1_p 740L -pinDir lvds_data_e1_n left -pinY lvds_data_e1_n 770L -pinDir lvds_data_e2_p left -pinY lvds_data_e2_p 800L -pinDir lvds_data_e2_n left -pinY lvds_data_e2_n 830L -pinDir lvds_data_f1_p left -pinY lvds_data_f1_p 860L -pinDir lvds_data_f1_n left -pinY lvds_data_f1_n 890L -pinDir lvds_data_f2_p left -pinY lvds_data_f2_p 920L -pinDir lvds_data_f2_n left -pinY lvds_data_f2_n 950L -pinDir lvds_data_g1_p left -pinY lvds_data_g1_p 980L -pinDir lvds_data_g1_n left -pinY lvds_data_g1_n 1010L -pinDir lvds_data_g2_p left -pinY lvds_data_g2_p 1040L -pinDir lvds_data_g2_n left -pinY lvds_data_g2_n 1070L -pinDir lvds_data_h1_p left -pinY lvds_data_h1_p 1100L -pinDir lvds_data_h1_n left -pinY lvds_data_h1_n 1130L -pinDir lvds_data_h2_p left -pinY lvds_data_h2_p 1160L -pinDir lvds_data_h2_n left -pinY lvds_data_h2_n 1190L -pinDir zynq_sys_clkin left -pinY zynq_sys_clkin 0L -pinDir master_rst_n left -pinY master_rst_n 1210L -pinDir sysclk_ready right -pinY sysclk_ready 260R -pinBusDir captured_data_a1 right -pinBusY captured_data_a1 280R -pinBusDir captured_data_a2 right -pinBusY captured_data_a2 300R -pinBusDir captured_data_b1 right -pinBusY captured_data_b1 320R -pinBusDir captured_data_b2 right -pinBusY captured_data_b2 240R -pinBusDir captured_data_c1 right -pinBusY captured_data_c1 200R -pinBusDir captured_data_c2 right -pinBusY captured_data_c2 220R -pinBusDir captured_data_d1 right -pinBusY captured_data_d1 180R -pinBusDir captured_data_d2 right -pinBusY captured_data_d2 160R -pinBusDir captured_data_e1 right -pinBusY captured_data_e1 20R -pinBusDir captured_data_e2 right -pinBusY captured_data_e2 0R -pinBusDir captured_data_f1 right -pinBusY captured_data_f1 140R -pinBusDir captured_data_f2 right -pinBusY captured_data_f2 120R -pinBusDir captured_data_g1 right -pinBusY captured_data_g1 100R -pinBusDir captured_data_g2 right -pinBusY captured_data_g2 80R -pinBusDir captured_data_h1 right -pinBusY captured_data_h1 60R -pinBusDir captured_data_h2 right -pinBusY captured_data_h2 40R
+preplace netloc processing_system7_0_FCLK_CLK0 1 2 7 510 300 2120 740 2430 680 3030 680 3520 1360 3920 1280 4220J
+preplace netloc AD9249_DAQ_custom_0_captured_data_a1 1 3 4 1820J 1100 2510J 1640 NJ 1640 3480J
+preplace netloc AD9249_DAQ_custom_0_captured_data_a2 1 3 4 1800J 1120 2450J 1660 NJ 1660 3540J
+preplace netloc AD9249_DAQ_custom_0_captured_data_b1 1 3 4 1780J 1140 2430J 1680 NJ 1680 3620J
+preplace netloc AD9249_DAQ_custom_0_captured_data_b2 1 3 4 1860J 1060 2490J 1700 NJ 1700 3640J
+preplace netloc AD9249_DAQ_custom_0_captured_data_c1 1 3 4 1960J 1020 2530J 1720 NJ 1720 3660J
+preplace netloc AD9249_DAQ_custom_0_captured_data_c2 1 3 4 1900J 1040 2470J 1740 NJ 1740 3680J
+preplace netloc AD9249_DAQ_custom_0_captured_data_d1 1 3 1 1960J -720n
+preplace netloc AD9249_DAQ_custom_0_captured_data_d2 1 3 1 1940J -680n
+preplace netloc AD9249_DAQ_custom_0_captured_data_e1 1 3 1 1800 80n
+preplace netloc AD9249_DAQ_custom_0_captured_data_e2 1 3 1 1780 120n
+preplace netloc AD9249_DAQ_custom_0_captured_data_f1 1 3 1 1920J -520n
+preplace netloc AD9249_DAQ_custom_0_captured_data_f2 1 3 1 1900J -480n
+preplace netloc AD9249_DAQ_custom_0_captured_data_g1 1 3 1 1880 -320n
+preplace netloc AD9249_DAQ_custom_0_captured_data_g2 1 3 1 1860J -280n
+preplace netloc AD9249_DAQ_custom_0_captured_data_h1 1 3 1 1840 -120n
+preplace netloc AD9249_DAQ_custom_0_captured_data_h2 1 3 1 1820 -80n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 550 440n
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 3 5 2160 760 2510J 720 2990 720 3580 1400 NJ
+preplace netloc lvds_data_a1_n_0_1 1 0 3 NJ 1630 NJ 1630 750J
+preplace netloc lvds_data_a1_p_0_1 1 0 3 NJ 1600 NJ 1600 730J
+preplace netloc lvds_data_a2_n_0_1 1 0 3 NJ 1690 NJ 1690 790J
+preplace netloc lvds_data_a2_p_0_1 1 0 3 NJ 1660 NJ 1660 770J
+preplace netloc lvds_data_b1_n_0_1 1 0 3 NJ 1750 NJ 1750 830J
+preplace netloc lvds_data_b1_p_0_1 1 0 3 NJ 1720 NJ 1720 810J
+preplace netloc lvds_data_b2_n_0_1 1 0 3 NJ 1810 NJ 1810 870J
+preplace netloc lvds_data_b2_p_0_1 1 0 3 NJ 1780 NJ 1780 850J
+preplace netloc lvds_data_c1_n_0_1 1 0 3 NJ 1870 NJ 1870 910J
+preplace netloc lvds_data_c1_p_0_1 1 0 3 NJ 1840 NJ 1840 890J
+preplace netloc lvds_data_c2_n_0_1 1 0 3 NJ 1930 NJ 1930 970J
+preplace netloc lvds_data_c2_p_0_1 1 0 3 NJ 1900 NJ 1900 950J
+preplace netloc lvds_data_d1_n_0_1 1 0 3 NJ 1990 NJ 1990 1010J
+preplace netloc lvds_data_d1_p_0_1 1 0 3 NJ 1960 NJ 1960 990J
+preplace netloc lvds_data_d2_n_0_1 1 0 3 NJ 2050 NJ 2050 1050J
+preplace netloc lvds_data_d2_p_0_1 1 0 3 NJ 2020 NJ 2020 1030J
+preplace netloc lvds_data_e1_n_0_1 1 0 3 NJ 2110 NJ 2110 1090J
+preplace netloc lvds_data_e1_p_0_1 1 0 3 NJ 2080 NJ 2080 1070J
+preplace netloc lvds_data_e2_n_0_1 1 0 3 NJ 2170 NJ 2170 1130J
+preplace netloc lvds_data_e2_p_0_1 1 0 3 NJ 2140 NJ 2140 1110J
+preplace netloc lvds_data_f1_n_0_1 1 0 3 NJ 2230 NJ 2230 1170J
+preplace netloc lvds_data_f1_p_0_1 1 0 3 NJ 2200 NJ 2200 1150J
+preplace netloc lvds_data_f2_n_0_1 1 0 3 NJ 2290 NJ 2290 1210J
+preplace netloc lvds_data_f2_p_0_1 1 0 3 NJ 2260 NJ 2260 1190J
+preplace netloc lvds_data_g1_n_0_1 1 0 3 NJ 2350 NJ 2350 1250J
+preplace netloc lvds_data_g1_p_0_1 1 0 3 NJ 2320 NJ 2320 1230J
+preplace netloc lvds_data_g2_n_0_1 1 0 3 NJ 2410 NJ 2410 1290J
+preplace netloc lvds_data_g2_p_0_1 1 0 3 NJ 2380 NJ 2380 1270J
+preplace netloc lvds_data_h1_n_0_1 1 0 3 NJ 2470 NJ 2470 1330J
+preplace netloc lvds_data_h1_p_0_1 1 0 3 NJ 2440 NJ 2440 1310J
+preplace netloc lvds_data_h2_n_0_1 1 0 3 NJ 2530 NJ 2530 1370J
+preplace netloc lvds_data_h2_p_0_1 1 0 3 NJ 2500 NJ 2500 1350J
+preplace netloc lvds_dco1_n_0_1 1 0 3 NJ 1390 NJ 1390 590J
+preplace netloc lvds_dco1_p_0_1 1 0 3 NJ 1360 NJ 1360 570J
+preplace netloc lvds_dco2_n_0_1 1 0 3 NJ 1450 NJ 1450 630J
+preplace netloc lvds_dco2_p_0_1 1 0 3 NJ 1420 NJ 1420 610J
+preplace netloc lvds_fco1_n_0_1 1 0 3 NJ 1510 NJ 1510 670J
+preplace netloc lvds_fco1_p_0_1 1 0 3 NJ 1480 NJ 1480 650J
+preplace netloc lvds_fco2_n_0_1 1 0 3 NJ 1570 NJ 1570 710J
+preplace netloc lvds_fco2_p_0_1 1 0 3 NJ 1540 NJ 1540 690J
+preplace netloc master_rst_n_0_1 1 0 3 NJ 2560 NJ 2560 1390J
+preplace netloc AD9249_DAQ_custom_0_sysclk_ready 1 3 7 1840J 1080 2550J 1600 NJ 1600 NJ 1600 NJ 1600 NJ 1600 NJ
+preplace netloc axi_gpio_8_gpio_io_o 1 8 1 N 1360
+preplace netloc Counter_YW_top_0_clkout 1 8 1 NJ 1400
+preplace netloc axi_gpio_8_ip2intc_irpt 1 2 6 930J 1810 1980J 720 2450J 700 NJ 700 3460J 1000 3900J
+preplace netloc ps7_0_axi_periph_M02_AXI 1 6 1 3500 920n
+preplace netloc processing_system7_0_DDR 1 2 8 490J 220 2080J 800 2530J 740 NJ 740 3600J 1240 NJ 1240 NJ 1240 N
+preplace netloc ps7_0_axi_periph_M04_AXI 1 3 3 2040J 860 NJ 860 NJ
+preplace netloc ps7_0_axi_periph_M07_AXI 1 3 3 2020J 920 NJ 920 NJ
+preplace netloc ps7_0_axi_periph_M00_AXI 1 6 1 3440 600n
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 4 530J 240 2000J 840 NJ 840 NJ
+preplace netloc ps7_0_axi_periph_M05_AXI 1 3 3 2140J 880 NJ 880 NJ
+preplace netloc ps7_0_axi_periph_M06_AXI 1 3 3 2060J 900 NJ 900 NJ
+preplace netloc ps7_0_axi_periph_M08_AXI 1 6 2 3440 1340 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 6 1 3500 820n
+preplace netloc processing_system7_0_FIXED_IO 1 2 8 470J 200 2100J 820 2550J 760 NJ 760 3560J 1260 NJ 1260 NJ 1260 4460
+preplace netloc ps7_0_axi_periph_M03_AXI 1 3 3 2180J 780 NJ 780 3010J
+levelinfo -pg 1 -820 40 320 1610 2410 2970 3300 3790 4070 4340 4500
+pagesize -pg 1 -db -bbox -sgen -990 -820 4650 2910
+",
+   "No Loops_ScaleFactor":"0.207353",
+   "No Loops_TopLeft":"-1654,-449",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layers":"/master_rst_n_0_1:true|/axi_gpio_8_ip2intc_irpt:true|/processing_system7_0_FCLK_RESET0_N:true|/processing_system7_0_FCLK_CLK0:true|/rst_ps7_0_100M_peripheral_aresetn:true|",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 9 -x 3750 -y 1430 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 9 -x 3750 -y 1400 -defaultsOSRD
+preplace port lvds_data_a1_n_0 -pg 1 -lvl 0 -x -1890 -y 1550 -defaultsOSRD
+preplace port lvds_data_a1_p_0 -pg 1 -lvl 0 -x -1890 -y 1520 -defaultsOSRD
+preplace port lvds_data_a2_n_0 -pg 1 -lvl 0 -x -1890 -y 1610 -defaultsOSRD
+preplace port lvds_data_a2_p_0 -pg 1 -lvl 0 -x -1890 -y 1580 -defaultsOSRD
+preplace port lvds_data_b1_n_0 -pg 1 -lvl 0 -x -1890 -y 1670 -defaultsOSRD
+preplace port lvds_data_b1_p_0 -pg 1 -lvl 0 -x -1890 -y 1640 -defaultsOSRD
+preplace port lvds_data_b2_n_0 -pg 1 -lvl 0 -x -1890 -y 1730 -defaultsOSRD
+preplace port lvds_data_b2_p_0 -pg 1 -lvl 0 -x -1890 -y 1700 -defaultsOSRD
+preplace port lvds_data_c1_n_0 -pg 1 -lvl 0 -x -1890 -y 1790 -defaultsOSRD
+preplace port lvds_data_c1_p_0 -pg 1 -lvl 0 -x -1890 -y 1760 -defaultsOSRD
+preplace port lvds_data_c2_n_0 -pg 1 -lvl 0 -x -1890 -y 1850 -defaultsOSRD
+preplace port lvds_data_c2_p_0 -pg 1 -lvl 0 -x -1890 -y 1820 -defaultsOSRD
+preplace port lvds_data_d1_n_0 -pg 1 -lvl 0 -x -1890 -y 1910 -defaultsOSRD
+preplace port lvds_data_d1_p_0 -pg 1 -lvl 0 -x -1890 -y 1880 -defaultsOSRD
+preplace port lvds_data_d2_n_0 -pg 1 -lvl 0 -x -1890 -y 1970 -defaultsOSRD
+preplace port lvds_data_d2_p_0 -pg 1 -lvl 0 -x -1890 -y 1940 -defaultsOSRD
+preplace port lvds_data_e1_n_0 -pg 1 -lvl 0 -x -1890 -y 2030 -defaultsOSRD
+preplace port lvds_data_e1_p_0 -pg 1 -lvl 0 -x -1890 -y 2000 -defaultsOSRD
+preplace port lvds_data_e2_n_0 -pg 1 -lvl 0 -x -1890 -y 2090 -defaultsOSRD
+preplace port lvds_data_e2_p_0 -pg 1 -lvl 0 -x -1890 -y 2060 -defaultsOSRD
+preplace port lvds_data_f1_n_0 -pg 1 -lvl 0 -x -1890 -y 2150 -defaultsOSRD
+preplace port lvds_data_f1_p_0 -pg 1 -lvl 0 -x -1890 -y 2120 -defaultsOSRD
+preplace port lvds_data_f2_n_0 -pg 1 -lvl 0 -x -1890 -y 2210 -defaultsOSRD
+preplace port lvds_data_f2_p_0 -pg 1 -lvl 0 -x -1890 -y 2180 -defaultsOSRD
+preplace port lvds_data_g1_n_0 -pg 1 -lvl 0 -x -1890 -y 2270 -defaultsOSRD
+preplace port lvds_data_g1_p_0 -pg 1 -lvl 0 -x -1890 -y 2240 -defaultsOSRD
+preplace port lvds_data_g2_n_0 -pg 1 -lvl 0 -x -1890 -y 2330 -defaultsOSRD
+preplace port lvds_data_g2_p_0 -pg 1 -lvl 0 -x -1890 -y 2300 -defaultsOSRD
+preplace port lvds_data_h1_n_0 -pg 1 -lvl 0 -x -1890 -y 2390 -defaultsOSRD
+preplace port lvds_data_h1_p_0 -pg 1 -lvl 0 -x -1890 -y 2360 -defaultsOSRD
+preplace port lvds_data_h2_n_0 -pg 1 -lvl 0 -x -1890 -y 2450 -defaultsOSRD
+preplace port lvds_data_h2_p_0 -pg 1 -lvl 0 -x -1890 -y 2420 -defaultsOSRD
+preplace port lvds_dco1_n_0 -pg 1 -lvl 0 -x -1890 -y 1310 -defaultsOSRD
+preplace port lvds_dco1_p_0 -pg 1 -lvl 0 -x -1890 -y 1280 -defaultsOSRD
+preplace port lvds_dco2_n_0 -pg 1 -lvl 0 -x -1890 -y 1370 -defaultsOSRD
+preplace port lvds_dco2_p_0 -pg 1 -lvl 0 -x -1890 -y 1340 -defaultsOSRD
+preplace port lvds_fco1_n_0 -pg 1 -lvl 0 -x -1890 -y 1430 -defaultsOSRD
+preplace port lvds_fco1_p_0 -pg 1 -lvl 0 -x -1890 -y 1400 -defaultsOSRD
+preplace port lvds_fco2_n_0 -pg 1 -lvl 0 -x -1890 -y 1490 -defaultsOSRD
+preplace port lvds_fco2_p_0 -pg 1 -lvl 0 -x -1890 -y 1460 -defaultsOSRD
+preplace port master_rst_n_0 -pg 1 -lvl 0 -x -1890 -y 2480 -defaultsOSRD
+preplace port sysclk_ready_0 -pg 1 -lvl 9 -x 3750 -y 1620 -defaultsOSRD
+preplace port sclk_0 -pg 1 -lvl 9 -x 3750 -y 1720 -defaultsOSRD
+preplace port sdio_0 -pg 1 -lvl 9 -x 3750 -y 1780 -defaultsOSRD
+preplace portBus csb_0 -pg 1 -lvl 9 -x 3750 -y 1750 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x -870 -y 820 -swap {23 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 0 17 18 19 20 21 22 16 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72} -defaultsOSRD -pinY DDR 40R -pinY FIXED_IO 0R -pinY USBIND_0 20R -pinY M_AXI_GP0 100R -pinY TTC0_WAVE0_OUT 120R -pinY TTC0_WAVE1_OUT 140R -pinY TTC0_WAVE2_OUT 160R -pinY M_AXI_GP0_ACLK 0L -pinBusY IRQ_F2P 200L -pinY FCLK_CLK0 180R -pinY FCLK_RESET0_N 200R
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -x 2870 -y 940 -defaultsOSRD -pinY S_AXI 20L -pinY GPIO 0R -pinY GPIO.gpio_io_i 20R -pinY GPIO2 40R -pinY GPIO2.gpio2_io_i 60R -pinY s_axi_aclk 40L -pinY s_axi_aresetn 60L
+preplace inst axi_gpio_1 -pg 1 -lvl 6 -x 2870 -y 1100 -defaultsOSRD -pinY S_AXI 20L -pinY GPIO 0R -pinY GPIO.gpio_io_i 20R -pinY GPIO2 40R -pinY GPIO2.gpio2_io_i 60R -pinY s_axi_aclk 40L -pinY s_axi_aresetn 60L
+preplace inst axi_gpio_2 -pg 1 -lvl 6 -x 2870 -y 1260 -defaultsOSRD -pinY S_AXI 0L -pinY GPIO 0R -pinY GPIO.gpio_io_i 20R -pinY GPIO2 40R -pinY GPIO2.gpio2_io_i 60R -pinY s_axi_aclk 20L -pinY s_axi_aresetn 40L
+preplace inst axi_gpio_3 -pg 1 -lvl 2 -x 440 -y 60 -defaultsOSRD -pinY S_AXI 20L -pinY GPIO 0R -pinY GPIO.gpio_io_i 20R -pinY GPIO2 40R -pinY GPIO2.gpio2_io_i 60R -pinY s_axi_aclk 40L -pinY s_axi_aresetn 60L
+preplace inst axi_gpio_4 -pg 1 -lvl 2 -x 440 -y 700 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 22} -defaultsOSRD -pinY S_AXI 20L -pinY GPIO 0R -pinY GPIO.gpio_io_i 20R -pinY GPIO2 40R -pinY GPIO2.gpio2_io_i 60R -pinY s_axi_aclk 60L -pinY s_axi_aresetn 40L
+preplace inst axi_gpio_5 -pg 1 -lvl 2 -x 440 -y 220 -defaultsOSRD -pinY S_AXI 20L -pinY GPIO 0R -pinY GPIO.gpio_io_i 20R -pinY GPIO2 40R -pinY GPIO2.gpio2_io_i 60R -pinY s_axi_aclk 40L -pinY s_axi_aresetn 60L
+preplace inst axi_gpio_6 -pg 1 -lvl 2 -x 440 -y 380 -defaultsOSRD -pinY S_AXI 20L -pinY GPIO 0R -pinY GPIO.gpio_io_i 20R -pinY GPIO2 40R -pinY GPIO2.gpio2_io_i 60R -pinY s_axi_aclk 40L -pinY s_axi_aresetn 60L
+preplace inst axi_gpio_7 -pg 1 -lvl 2 -x 440 -y 540 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 22} -defaultsOSRD -pinY S_AXI 20L -pinY GPIO 0R -pinY GPIO.gpio_io_i 20R -pinY GPIO2 40R -pinY GPIO2.gpio2_io_i 60R -pinY s_axi_aclk 60L -pinY s_axi_aresetn 40L
+preplace inst ps7_0_axi_periph -pg 1 -lvl 5 -x 2390 -y 1040 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 139 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 159 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 179 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 119 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 99 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 79 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 59 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 39 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 230 220 231 221 232 222 233 223 234 224 235 225 236 226 237 227 238 228 239 229 240} -defaultsOSRD -pinY S00_AXI 0L -pinY M00_AXI 100R -pinY M01_AXI 120R -pinY M02_AXI 220R -pinY M03_AXI 80R -pinY M04_AXI 60R -pinY M05_AXI 40R -pinY M06_AXI 20R -pinY M07_AXI 0R -pinY M08_AXI 440R -pinY ACLK 20L -pinY ARESETN 240L -pinY S00_ACLK 40L -pinY S00_ARESETN 260L -pinY M00_ACLK 60L -pinY M00_ARESETN 280L -pinY M01_ACLK 80L -pinY M01_ARESETN 300L -pinY M02_ACLK 100L -pinY M02_ARESETN 320L -pinY M03_ACLK 120L -pinY M03_ARESETN 340L -pinY M04_ACLK 140L -pinY M04_ARESETN 360L -pinY M05_ACLK 160L -pinY M05_ARESETN 380L -pinY M06_ACLK 180L -pinY M06_ARESETN 400L -pinY M07_ACLK 200L -pinY M07_ARESETN 420L -pinY M08_ACLK 220L -pinY M08_ARESETN 440L
+preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 440 -y 1080 -swap {1 0 2 3 4 6 7 8 9 5} -defaultsOSRD -pinY slowest_sync_clk 20L -pinY ext_reset_in 0L -pinY aux_reset_in 40L -pinY mb_debug_sys_rst 60L -pinY dcm_locked 80L -pinY mb_reset 20R -pinBusY bus_struct_reset 40R -pinBusY peripheral_reset 60R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 0R
+preplace inst Counter_YW_top_0 -pg 1 -lvl 8 -x 3580 -y 1480 -defaultsOSRD -pinY system_clkin 0L -pinBusY counter_half_load 20L -pinY clkout 0R
+preplace inst axi_gpio_8 -pg 1 -lvl 7 -x 3270 -y 1480 -defaultsOSRD -pinY S_AXI 0L -pinY GPIO 0R -pinY GPIO.gpio_io_o 20R -pinY GPIO2 40R -pinY GPIO2.gpio2_io_i 60R -pinY s_axi_aclk 20L -pinY s_axi_aresetn 40L -pinY ip2intc_irpt 80R
+preplace inst AD9249_DAQ_custom_0 -pg 1 -lvl 2 -x 440 -y 1260 -swap {1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 0 41 52 53 54 55 58 56 57 51 50 43 42 49 48 47 46 45 44} -defaultsOSRD -pinY lvds_dco1_p 20L -pinY lvds_dco1_n 50L -pinY lvds_dco2_p 80L -pinY lvds_dco2_n 110L -pinY lvds_fco1_p 140L -pinY lvds_fco1_n 170L -pinY lvds_fco2_p 200L -pinY lvds_fco2_n 230L -pinY lvds_data_a1_p 260L -pinY lvds_data_a1_n 290L -pinY lvds_data_a2_p 320L -pinY lvds_data_a2_n 350L -pinY lvds_data_b1_p 380L -pinY lvds_data_b1_n 410L -pinY lvds_data_b2_p 440L -pinY lvds_data_b2_n 470L -pinY lvds_data_c1_p 500L -pinY lvds_data_c1_n 530L -pinY lvds_data_c2_p 560L -pinY lvds_data_c2_n 590L -pinY lvds_data_d1_p 620L -pinY lvds_data_d1_n 650L -pinY lvds_data_d2_p 680L -pinY lvds_data_d2_n 710L -pinY lvds_data_e1_p 740L -pinY lvds_data_e1_n 770L -pinY lvds_data_e2_p 800L -pinY lvds_data_e2_n 830L -pinY lvds_data_f1_p 860L -pinY lvds_data_f1_n 890L -pinY lvds_data_f2_p 920L -pinY lvds_data_f2_n 950L -pinY lvds_data_g1_p 980L -pinY lvds_data_g1_n 1010L -pinY lvds_data_g2_p 1040L -pinY lvds_data_g2_n 1070L -pinY lvds_data_h1_p 1100L -pinY lvds_data_h1_n 1130L -pinY lvds_data_h2_p 1160L -pinY lvds_data_h2_n 1190L -pinY zynq_sys_clkin 0L -pinY master_rst_n 1220L -pinY sysclk_ready 280R -pinBusY captured_data_a1 300R -pinBusY captured_data_a2 320R -pinBusY captured_data_b1 340R -pinBusY captured_data_b2 400R -pinBusY captured_data_c1 360R -pinBusY captured_data_c2 380R -pinBusY captured_data_d1 180R -pinBusY captured_data_d2 160R -pinBusY captured_data_e1 20R -pinBusY captured_data_e2 0R -pinBusY captured_data_f1 140R -pinBusY captured_data_f2 120R -pinBusY captured_data_g1 100R -pinBusY captured_data_g2 80R -pinBusY captured_data_h1 60R -pinBusY captured_data_h2 40R
+preplace inst spi_3_wire_master_top_0 -pg 1 -lvl 4 -x 1760 -y 1730 -swap {0 5 1 4 2 3 6 7 8 9 10} -defaultsOSRD -pinY clock 0L -pinY reset_n 100L -pinBusY en_cpol_cpha 20L -pinBusY clk_div 80L -pinBusY tx_cmd 40L -pinBusY tx_data 60L -pinY sclk 0R -pinBusY csb 20R -pinY sdio 40R -pinY busy 60R -pinBusY rx_data 80R
+preplace inst axi_gpio_9 -pg 1 -lvl 3 -x 1450 -y 1730 -defaultsOSRD -pinY S_AXI 0L -pinY GPIO 0R -pinY GPIO.gpio_io_o 20R -pinY GPIO2 60R -pinY GPIO2.gpio2_io_o 80R -pinY s_axi_aclk 20L -pinY s_axi_aresetn 40L
+preplace inst axi_gpio_10 -pg 1 -lvl 3 -x 1450 -y 1910 -defaultsOSRD -pinY S_AXI 0L -pinY GPIO 0R -pinY GPIO.gpio_io_o 20R -pinY GPIO2 40R -pinY GPIO2.gpio2_io_o 60R -pinY s_axi_aclk 20L -pinY s_axi_aresetn 40L
+preplace inst axi_gpio_11 -pg 1 -lvl 3 -x 1450 -y 2070 -defaultsOSRD -pinY S_AXI 0L -pinY GPIO 0R -pinY s_axi_aclk 20L -pinY s_axi_aresetn 40L
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 8 -1870 760 150 1020 910 820 1590 820 2010 820 2730 1500 3130 1420 3430
+preplace netloc AD9249_DAQ_custom_0_captured_data_a1 1 2 5 NJ 1560 NJ 1560 NJ 1560 NJ 1560 3110
+preplace netloc AD9249_DAQ_custom_0_captured_data_a2 1 2 5 NJ 1580 NJ 1580 NJ 1580 NJ 1580 3090
+preplace netloc AD9249_DAQ_custom_0_captured_data_b1 1 2 5 NJ 1600 NJ 1600 NJ 1600 NJ 1600 3070
+preplace netloc AD9249_DAQ_custom_0_captured_data_b2 1 2 5 950 1520 NJ 1520 1910J 1620 NJ 1620 3050
+preplace netloc AD9249_DAQ_custom_0_captured_data_c1 1 2 5 690 1480 NJ 1480 1930J 1640 NJ 1640 3030
+preplace netloc AD9249_DAQ_custom_0_captured_data_c2 1 2 5 850 1500 NJ 1500 1890J 1660 NJ 1660 3010
+preplace netloc AD9249_DAQ_custom_0_captured_data_d1 1 2 1 790J 80n
+preplace netloc AD9249_DAQ_custom_0_captured_data_d2 1 2 1 770J 120n
+preplace netloc AD9249_DAQ_custom_0_captured_data_e1 1 2 1 630 720n
+preplace netloc AD9249_DAQ_custom_0_captured_data_e2 1 2 1 610 760n
+preplace netloc AD9249_DAQ_custom_0_captured_data_f1 1 2 1 750J 240n
+preplace netloc AD9249_DAQ_custom_0_captured_data_f2 1 2 1 730J 280n
+preplace netloc AD9249_DAQ_custom_0_captured_data_g1 1 2 1 710 400n
+preplace netloc AD9249_DAQ_custom_0_captured_data_g2 1 2 1 690J 440n
+preplace netloc AD9249_DAQ_custom_0_captured_data_h1 1 2 1 670 560n
+preplace netloc AD9249_DAQ_custom_0_captured_data_h2 1 2 1 650 600n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 130 1020n
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 6 170 1000 970 840 NJ 840 1970 840 2670 1520 NJ
+preplace netloc lvds_data_a1_n_0_1 1 0 2 -1690J 1310 -50J
+preplace netloc lvds_data_a1_p_0_1 1 0 2 -1710J 1280 -30J
+preplace netloc lvds_data_a2_n_0_1 1 0 2 -1650J 1370 -90J
+preplace netloc lvds_data_a2_p_0_1 1 0 2 -1670J 1340 -70J
+preplace netloc lvds_data_b1_n_0_1 1 0 2 -1610J 1430 -130J
+preplace netloc lvds_data_b1_p_0_1 1 0 2 -1630J 1400 -110J
+preplace netloc lvds_data_b2_n_0_1 1 0 2 -1570J 1490 -170J
+preplace netloc lvds_data_b2_p_0_1 1 0 2 -1590J 1460 -150J
+preplace netloc lvds_data_c1_n_0_1 1 0 2 -1530J 1550 -210J
+preplace netloc lvds_data_c1_p_0_1 1 0 2 -1550J 1520 -190J
+preplace netloc lvds_data_c2_n_0_1 1 0 2 -1490J 1610 -250J
+preplace netloc lvds_data_c2_p_0_1 1 0 2 -1510J 1580 -230J
+preplace netloc lvds_data_d1_n_0_1 1 0 2 -1450J 1670 -290J
+preplace netloc lvds_data_d1_p_0_1 1 0 2 -1470J 1640 -270J
+preplace netloc lvds_data_d2_n_0_1 1 0 2 -1410J 1730 -330J
+preplace netloc lvds_data_d2_p_0_1 1 0 2 -1430J 1700 -310J
+preplace netloc lvds_data_e1_n_0_1 1 0 2 -1370J 1790 -370J
+preplace netloc lvds_data_e1_p_0_1 1 0 2 -1390J 1760 -350J
+preplace netloc lvds_data_e2_n_0_1 1 0 2 -1330J 1850 -410J
+preplace netloc lvds_data_e2_p_0_1 1 0 2 -1350J 1820 -390J
+preplace netloc lvds_data_f1_n_0_1 1 0 2 -1290J 1910 -450J
+preplace netloc lvds_data_f1_p_0_1 1 0 2 -1310J 1880 -430J
+preplace netloc lvds_data_f2_n_0_1 1 0 2 -1250J 1970 -490J
+preplace netloc lvds_data_f2_p_0_1 1 0 2 -1270J 1940 -470J
+preplace netloc lvds_data_g1_n_0_1 1 0 2 -1210J 2030 -530J
+preplace netloc lvds_data_g1_p_0_1 1 0 2 -1230J 2000 -510J
+preplace netloc lvds_data_g2_n_0_1 1 0 2 -1170J 2090 -570J
+preplace netloc lvds_data_g2_p_0_1 1 0 2 -1190J 2060 -550J
+preplace netloc lvds_data_h1_n_0_1 1 0 2 -1130J 2150 -610J
+preplace netloc lvds_data_h1_p_0_1 1 0 2 -1150J 2120 -590J
+preplace netloc lvds_data_h2_n_0_1 1 0 2 -1090J 2210 -650J
+preplace netloc lvds_data_h2_p_0_1 1 0 2 -1110J 2180 -630J
+preplace netloc lvds_dco1_n_0_1 1 0 2 -1850J 1120 110J
+preplace netloc lvds_dco1_p_0_1 1 0 2 -1870J 1100 130J
+preplace netloc lvds_dco2_n_0_1 1 0 2 -1810J 1160 70J
+preplace netloc lvds_dco2_p_0_1 1 0 2 -1830J 1140 90J
+preplace netloc lvds_fco1_n_0_1 1 0 2 -1770J 1200 30J
+preplace netloc lvds_fco1_p_0_1 1 0 2 -1790J 1180 50J
+preplace netloc lvds_fco2_n_0_1 1 0 2 -1730J 1250 -10J
+preplace netloc lvds_fco2_p_0_1 1 0 2 -1750J 1220 10J
+preplace netloc master_rst_n_0_1 1 0 4 -1070J 2240 -670J 2540 770J 2500 1630
+preplace netloc AD9249_DAQ_custom_0_sysclk_ready 1 2 7 N 1540 NJ 1540 NJ 1540 NJ 1540 3130J 1620 NJ 1620 NJ
+preplace netloc axi_gpio_8_gpio_io_o 1 7 1 N 1500
+preplace netloc Counter_YW_top_0_clkout 1 7 2 3450J 1420 3710
+preplace netloc axi_gpio_8_ip2intc_irpt 1 0 8 -1870 1080 110J 980 830J 800 NJ 800 NJ 800 NJ 800 NJ 800 3410
+preplace netloc axi_gpio_9_gpio_io_o 1 3 1 N 1750
+preplace netloc axi_gpio_9_gpio2_io_o 1 3 1 N 1810
+preplace netloc axi_gpio_10_gpio_io_o 1 3 1 1590 1770n
+preplace netloc axi_gpio_10_gpio2_io_o 1 3 1 1610 1790n
+preplace netloc spi_3_wire_master_top_0_sclk 1 4 5 NJ 1730 NJ 1730 NJ 1730 NJ 1730 3730J
+preplace netloc spi_3_wire_master_top_0_csb 1 4 5 NJ 1750 NJ 1750 NJ 1750 NJ 1750 NJ
+preplace netloc Net 1 4 5 NJ 1770 NJ 1770 NJ 1770 NJ 1770 3710J
+preplace netloc processing_system7_0_DDR 1 1 8 NJ 860 850J 880 NJ 880 NJ 880 2710 1380 NJ 1380 NJ 1380 3730
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 4 NJ 920 NJ 920 NJ 920 1890
+preplace netloc ps7_0_axi_periph_M04_AXI 1 1 5 250 960 950J 940 NJ 940 1910 920 2590
+preplace netloc ps7_0_axi_periph_M08_AXI 1 5 2 N 1480 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 5 1 2650 1120n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 1 5 210 940 930J 960 NJ 960 1930 940 2570
+preplace netloc ps7_0_axi_periph_M06_AXI 1 1 5 230 900 850J 980 NJ 980 1950 960 2550
+preplace netloc ps7_0_axi_periph_M03_AXI 1 1 5 190 880 870J 860 NJ 860 NJ 860 2610
+preplace netloc ps7_0_axi_periph_M07_AXI 1 1 5 270 840 810J 1000 NJ 1000 1990 980 2530
+preplace netloc ps7_0_axi_periph_M00_AXI 1 5 1 2690 960n
+preplace netloc processing_system7_0_FIXED_IO 1 1 8 NJ 820 890J 900 NJ 900 NJ 900 2630J 1400 NJ 1400 NJ 1400 N
+preplace netloc ps7_0_axi_periph_M02_AXI 1 5 1 N 1260
+levelinfo -pg 1 -1890 -870 440 1450 1760 2390 2870 3270 3580 3750
+pagesize -pg 1 -db -bbox -sgen -2050 0 3890 2570
+",
+   "Reduced Jogs_ScaleFactor":"0.213084",
+   "Reduced Jogs_TopLeft":"-483,131",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 3420 -y 2590 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 3420 -y 2610 -defaultsOSRD
+preplace port lvds_data_a1_n_0 -pg 1 -lvl 0 -x -10 -y 2100 -defaultsOSRD
+preplace port lvds_data_a1_p_0 -pg 1 -lvl 0 -x -10 -y 2080 -defaultsOSRD
+preplace port lvds_data_a2_n_0 -pg 1 -lvl 0 -x -10 -y 2140 -defaultsOSRD
+preplace port lvds_data_a2_p_0 -pg 1 -lvl 0 -x -10 -y 2120 -defaultsOSRD
+preplace port lvds_data_b1_n_0 -pg 1 -lvl 0 -x -10 -y 2180 -defaultsOSRD
+preplace port lvds_data_b1_p_0 -pg 1 -lvl 0 -x -10 -y 2160 -defaultsOSRD
+preplace port lvds_data_b2_n_0 -pg 1 -lvl 0 -x -10 -y 2220 -defaultsOSRD
+preplace port lvds_data_b2_p_0 -pg 1 -lvl 0 -x -10 -y 2200 -defaultsOSRD
+preplace port lvds_data_c1_n_0 -pg 1 -lvl 0 -x -10 -y 2260 -defaultsOSRD
+preplace port lvds_data_c1_p_0 -pg 1 -lvl 0 -x -10 -y 2240 -defaultsOSRD
+preplace port lvds_data_c2_n_0 -pg 1 -lvl 0 -x -10 -y 2300 -defaultsOSRD
+preplace port lvds_data_c2_p_0 -pg 1 -lvl 0 -x -10 -y 2280 -defaultsOSRD
+preplace port lvds_data_d1_n_0 -pg 1 -lvl 0 -x -10 -y 2340 -defaultsOSRD
+preplace port lvds_data_d1_p_0 -pg 1 -lvl 0 -x -10 -y 2320 -defaultsOSRD
+preplace port lvds_data_d2_n_0 -pg 1 -lvl 0 -x -10 -y 2380 -defaultsOSRD
+preplace port lvds_data_d2_p_0 -pg 1 -lvl 0 -x -10 -y 2360 -defaultsOSRD
+preplace port lvds_data_e1_n_0 -pg 1 -lvl 0 -x -10 -y 2420 -defaultsOSRD
+preplace port lvds_data_e1_p_0 -pg 1 -lvl 0 -x -10 -y 2400 -defaultsOSRD
+preplace port lvds_data_e2_n_0 -pg 1 -lvl 0 -x -10 -y 2460 -defaultsOSRD
+preplace port lvds_data_e2_p_0 -pg 1 -lvl 0 -x -10 -y 2440 -defaultsOSRD
+preplace port lvds_data_f1_n_0 -pg 1 -lvl 0 -x -10 -y 2500 -defaultsOSRD
+preplace port lvds_data_f1_p_0 -pg 1 -lvl 0 -x -10 -y 2480 -defaultsOSRD
+preplace port lvds_data_f2_n_0 -pg 1 -lvl 0 -x -10 -y 2540 -defaultsOSRD
+preplace port lvds_data_f2_p_0 -pg 1 -lvl 0 -x -10 -y 2520 -defaultsOSRD
+preplace port lvds_data_g1_n_0 -pg 1 -lvl 0 -x -10 -y 2580 -defaultsOSRD
+preplace port lvds_data_g1_p_0 -pg 1 -lvl 0 -x -10 -y 2560 -defaultsOSRD
+preplace port lvds_data_g2_n_0 -pg 1 -lvl 0 -x -10 -y 2620 -defaultsOSRD
+preplace port lvds_data_g2_p_0 -pg 1 -lvl 0 -x -10 -y 2600 -defaultsOSRD
+preplace port lvds_data_h1_n_0 -pg 1 -lvl 0 -x -10 -y 2660 -defaultsOSRD
+preplace port lvds_data_h1_p_0 -pg 1 -lvl 0 -x -10 -y 2640 -defaultsOSRD
+preplace port lvds_data_h2_n_0 -pg 1 -lvl 0 -x -10 -y 2700 -defaultsOSRD
+preplace port lvds_data_h2_p_0 -pg 1 -lvl 0 -x -10 -y 2680 -defaultsOSRD
+preplace port lvds_dco1_n_0 -pg 1 -lvl 0 -x -10 -y 1940 -defaultsOSRD
+preplace port lvds_dco1_p_0 -pg 1 -lvl 0 -x -10 -y 1920 -defaultsOSRD
+preplace port lvds_dco2_n_0 -pg 1 -lvl 0 -x -10 -y 1980 -defaultsOSRD
+preplace port lvds_dco2_p_0 -pg 1 -lvl 0 -x -10 -y 1960 -defaultsOSRD
+preplace port lvds_fco1_n_0 -pg 1 -lvl 0 -x -10 -y 2020 -defaultsOSRD
+preplace port lvds_fco1_p_0 -pg 1 -lvl 0 -x -10 -y 2000 -defaultsOSRD
+preplace port lvds_fco2_n_0 -pg 1 -lvl 0 -x -10 -y 2060 -defaultsOSRD
+preplace port lvds_fco2_p_0 -pg 1 -lvl 0 -x -10 -y 2040 -defaultsOSRD
+preplace port master_rst_n_0 -pg 1 -lvl 0 -x -10 -y 880 -defaultsOSRD
+preplace port sysclk_ready_0 -pg 1 -lvl 7 -x 3420 -y 1510 -defaultsOSRD
+preplace port busy_0 -pg 1 -lvl 7 -x 3420 -y 2510 -defaultsOSRD
+preplace port csb_0 -pg 1 -lvl 7 -x 3420 -y 2470 -defaultsOSRD
+preplace port sclk_0 -pg 1 -lvl 7 -x 3420 -y 2450 -defaultsOSRD
+preplace port sdio_0 -pg 1 -lvl 7 -x 3420 -y 2430 -defaultsOSRD
+preplace port tsc_0 -pg 1 -lvl 7 -x 3420 -y 2530 -defaultsOSRD
+preplace port csb_1 -pg 1 -lvl 7 -x 3420 -y 2490 -defaultsOSRD
+preplace port AO_in -pg 1 -lvl 0 -x -10 -y 3130 -defaultsOSRD
+preplace port BO_in -pg 1 -lvl 0 -x -10 -y 3150 -defaultsOSRD
+preplace port ZO_in -pg 1 -lvl 0 -x -10 -y 3170 -defaultsOSRD
+preplace port lvds_data_a1_n_1 -pg 1 -lvl 0 -x -10 -y 240 -defaultsOSRD
+preplace port lvds_data_a1_p_1 -pg 1 -lvl 0 -x -10 -y 220 -defaultsOSRD
+preplace port lvds_data_a2_n_1 -pg 1 -lvl 0 -x -10 -y 280 -defaultsOSRD
+preplace port lvds_data_a2_p_1 -pg 1 -lvl 0 -x -10 -y 260 -defaultsOSRD
+preplace port lvds_data_b1_n_1 -pg 1 -lvl 0 -x -10 -y 320 -defaultsOSRD
+preplace port lvds_data_b1_p_1 -pg 1 -lvl 0 -x -10 -y 300 -defaultsOSRD
+preplace port lvds_data_b2_n_1 -pg 1 -lvl 0 -x -10 -y 360 -defaultsOSRD
+preplace port lvds_data_b2_p_1 -pg 1 -lvl 0 -x -10 -y 340 -defaultsOSRD
+preplace port lvds_data_c1_n_1 -pg 1 -lvl 0 -x -10 -y 400 -defaultsOSRD
+preplace port lvds_data_c1_p_1 -pg 1 -lvl 0 -x -10 -y 380 -defaultsOSRD
+preplace port lvds_data_c2_n_1 -pg 1 -lvl 0 -x -10 -y 440 -defaultsOSRD
+preplace port lvds_data_c2_p_1 -pg 1 -lvl 0 -x -10 -y 420 -defaultsOSRD
+preplace port lvds_data_d1_n_1 -pg 1 -lvl 0 -x -10 -y 480 -defaultsOSRD
+preplace port lvds_data_d1_p_1 -pg 1 -lvl 0 -x -10 -y 460 -defaultsOSRD
+preplace port lvds_data_d2_n_1 -pg 1 -lvl 0 -x -10 -y 520 -defaultsOSRD
+preplace port lvds_data_d2_p_1 -pg 1 -lvl 0 -x -10 -y 500 -defaultsOSRD
+preplace port lvds_data_e1_n_1 -pg 1 -lvl 0 -x -10 -y 560 -defaultsOSRD
+preplace port lvds_data_e1_p_1 -pg 1 -lvl 0 -x -10 -y 540 -defaultsOSRD
+preplace port lvds_data_e2_n_1 -pg 1 -lvl 0 -x -10 -y 600 -defaultsOSRD
+preplace port lvds_data_e2_p_1 -pg 1 -lvl 0 -x -10 -y 580 -defaultsOSRD
+preplace port lvds_data_f1_n_1 -pg 1 -lvl 0 -x -10 -y 640 -defaultsOSRD
+preplace port lvds_data_f1_p_1 -pg 1 -lvl 0 -x -10 -y 620 -defaultsOSRD
+preplace port lvds_data_f2_n_1 -pg 1 -lvl 0 -x -10 -y 680 -defaultsOSRD
+preplace port lvds_data_f2_p_1 -pg 1 -lvl 0 -x -10 -y 660 -defaultsOSRD
+preplace port lvds_data_g1_n_1 -pg 1 -lvl 0 -x -10 -y 720 -defaultsOSRD
+preplace port lvds_data_g1_p_1 -pg 1 -lvl 0 -x -10 -y 700 -defaultsOSRD
+preplace port lvds_data_g2_n_1 -pg 1 -lvl 0 -x -10 -y 760 -defaultsOSRD
+preplace port lvds_data_g2_p_1 -pg 1 -lvl 0 -x -10 -y 740 -defaultsOSRD
+preplace port lvds_data_h1_n_1 -pg 1 -lvl 0 -x -10 -y 800 -defaultsOSRD
+preplace port lvds_data_h1_p_1 -pg 1 -lvl 0 -x -10 -y 780 -defaultsOSRD
+preplace port lvds_data_h2_n_1 -pg 1 -lvl 0 -x -10 -y 840 -defaultsOSRD
+preplace port lvds_data_h2_p_1 -pg 1 -lvl 0 -x -10 -y 820 -defaultsOSRD
+preplace port lvds_dco1_n_1 -pg 1 -lvl 0 -x -10 -y 80 -defaultsOSRD
+preplace port lvds_dco1_p_1 -pg 1 -lvl 0 -x -10 -y 60 -defaultsOSRD
+preplace port lvds_dco2_n_1 -pg 1 -lvl 0 -x -10 -y 120 -defaultsOSRD
+preplace port lvds_dco2_p_1 -pg 1 -lvl 0 -x -10 -y 100 -defaultsOSRD
+preplace port lvds_fco1_n_1 -pg 1 -lvl 0 -x -10 -y 160 -defaultsOSRD
+preplace port lvds_fco1_p_1 -pg 1 -lvl 0 -x -10 -y 140 -defaultsOSRD
+preplace port lvds_fco2_n_1 -pg 1 -lvl 0 -x -10 -y 200 -defaultsOSRD
+preplace port lvds_fco2_p_1 -pg 1 -lvl 0 -x -10 -y 180 -defaultsOSRD
+preplace port lvds_data_a1_n_2 -pg 1 -lvl 0 -x -10 -y 1160 -defaultsOSRD
+preplace port lvds_data_a1_p_2 -pg 1 -lvl 0 -x -10 -y 1140 -defaultsOSRD
+preplace port lvds_data_a2_n_2 -pg 1 -lvl 0 -x -10 -y 1200 -defaultsOSRD
+preplace port lvds_data_a2_p_2 -pg 1 -lvl 0 -x -10 -y 1180 -defaultsOSRD
+preplace port lvds_data_b1_n_2 -pg 1 -lvl 0 -x -10 -y 1240 -defaultsOSRD
+preplace port lvds_data_b1_p_2 -pg 1 -lvl 0 -x -10 -y 1220 -defaultsOSRD
+preplace port lvds_data_b2_n_2 -pg 1 -lvl 0 -x -10 -y 1280 -defaultsOSRD
+preplace port lvds_data_b2_p_2 -pg 1 -lvl 0 -x -10 -y 1260 -defaultsOSRD
+preplace port lvds_data_c1_n_2 -pg 1 -lvl 0 -x -10 -y 1320 -defaultsOSRD
+preplace port lvds_data_c1_p_2 -pg 1 -lvl 0 -x -10 -y 1300 -defaultsOSRD
+preplace port lvds_data_c2_n_2 -pg 1 -lvl 0 -x -10 -y 1360 -defaultsOSRD
+preplace port lvds_data_c2_p_2 -pg 1 -lvl 0 -x -10 -y 1340 -defaultsOSRD
+preplace port lvds_data_d1_n_2 -pg 1 -lvl 0 -x -10 -y 1400 -defaultsOSRD
+preplace port lvds_data_d1_p_2 -pg 1 -lvl 0 -x -10 -y 1380 -defaultsOSRD
+preplace port lvds_data_d2_n_2 -pg 1 -lvl 0 -x -10 -y 1440 -defaultsOSRD
+preplace port lvds_data_d2_p_2 -pg 1 -lvl 0 -x -10 -y 1420 -defaultsOSRD
+preplace port lvds_data_e1_n_2 -pg 1 -lvl 0 -x -10 -y 1480 -defaultsOSRD
+preplace port lvds_data_e1_p_2 -pg 1 -lvl 0 -x -10 -y 1460 -defaultsOSRD
+preplace port lvds_data_e2_n_2 -pg 1 -lvl 0 -x -10 -y 1520 -defaultsOSRD
+preplace port lvds_data_e2_p_2 -pg 1 -lvl 0 -x -10 -y 1500 -defaultsOSRD
+preplace port lvds_data_f1_n_2 -pg 1 -lvl 0 -x -10 -y 1560 -defaultsOSRD
+preplace port lvds_data_f1_p_2 -pg 1 -lvl 0 -x -10 -y 1540 -defaultsOSRD
+preplace port lvds_data_f2_n_2 -pg 1 -lvl 0 -x -10 -y 1600 -defaultsOSRD
+preplace port lvds_data_f2_p_2 -pg 1 -lvl 0 -x -10 -y 1580 -defaultsOSRD
+preplace port lvds_data_g1_n_2 -pg 1 -lvl 0 -x -10 -y 1640 -defaultsOSRD
+preplace port lvds_data_g1_p_2 -pg 1 -lvl 0 -x -10 -y 1620 -defaultsOSRD
+preplace port lvds_data_g2_n_2 -pg 1 -lvl 0 -x -10 -y 1680 -defaultsOSRD
+preplace port lvds_data_g2_p_2 -pg 1 -lvl 0 -x -10 -y 1660 -defaultsOSRD
+preplace port lvds_data_h1_n_2 -pg 1 -lvl 0 -x -10 -y 1720 -defaultsOSRD
+preplace port lvds_data_h1_p_2 -pg 1 -lvl 0 -x -10 -y 1700 -defaultsOSRD
+preplace port lvds_data_h2_n_2 -pg 1 -lvl 0 -x -10 -y 1760 -defaultsOSRD
+preplace port lvds_data_h2_p_2 -pg 1 -lvl 0 -x -10 -y 1740 -defaultsOSRD
+preplace port lvds_dco1_n_2 -pg 1 -lvl 0 -x -10 -y 1000 -defaultsOSRD
+preplace port lvds_dco1_p_2 -pg 1 -lvl 0 -x -10 -y 980 -defaultsOSRD
+preplace port lvds_dco2_n_2 -pg 1 -lvl 0 -x -10 -y 1040 -defaultsOSRD
+preplace port lvds_dco2_p_2 -pg 1 -lvl 0 -x -10 -y 1020 -defaultsOSRD
+preplace port lvds_fco1_n_2 -pg 1 -lvl 0 -x -10 -y 1080 -defaultsOSRD
+preplace port lvds_fco1_p_2 -pg 1 -lvl 0 -x -10 -y 1060 -defaultsOSRD
+preplace port lvds_fco2_n_2 -pg 1 -lvl 0 -x -10 -y 1120 -defaultsOSRD
+preplace port lvds_fco2_p_2 -pg 1 -lvl 0 -x -10 -y 1100 -defaultsOSRD
+preplace port sysclk_ready_1 -pg 1 -lvl 7 -x 3420 -y 1460 -defaultsOSRD
+preplace port sysclk_ready_2 -pg 1 -lvl 7 -x 3420 -y 1410 -defaultsOSRD
+preplace portBus modulator_out -pg 1 -lvl 7 -x 3420 -y 1590 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 1780 -y 2630 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -x 2460 -y 2050 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -x 1780 -y 2910 -swap {0 4 1 2 3 5 6 7 8 9} -defaultsOSRD
+preplace inst Counter_YW_top_0 -pg 1 -lvl 6 -x 3240 -y 2060 -defaultsOSRD
+preplace inst axi_gpio_8 -pg 1 -lvl 5 -x 2870 -y 2110 -defaultsOSRD
+preplace inst AD9249_DAQ_custom_0 -pg 1 -lvl 1 -x 240 -y 2310 -swap {1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 0 41 52 53 54 55 56 57 58 51 50 43 42 49 48 47 46 45 44} -defaultsOSRD
+preplace inst spi3_WICSC_top_0 -pg 1 -lvl 6 -x 3240 -y 2480 -defaultsOSRD
+preplace inst axi_gpio_9 -pg 1 -lvl 5 -x 2870 -y 2470 -defaultsOSRD
+preplace inst axi_gpio_10 -pg 1 -lvl 5 -x 2870 -y 2700 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 22} -defaultsOSRD
+preplace inst axi_gpio_11 -pg 1 -lvl 5 -x 2870 -y 2300 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 20 22} -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -x 240 -y 2970 -defaultsOSRD
+preplace inst data_select_top_0 -pg 1 -lvl 3 -x 1780 -y 1020 -defaultsOSRD
+preplace inst quadrature_decoder_0 -pg 1 -lvl 1 -x 240 -y 3140 -defaultsOSRD
+preplace inst axi_gpio_12 -pg 1 -lvl 5 -x 2870 -y 1930 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 3 -x 1780 -y 3140 -defaultsOSRD
+preplace inst AD9249_DAQ_custom_1 -pg 1 -lvl 1 -x 240 -y 470 -defaultsOSRD
+preplace inst data_select_top_1 -pg 1 -lvl 3 -x 1780 -y 620 -defaultsOSRD
+preplace inst AD9249_DAQ_custom_2 -pg 1 -lvl 1 -x 240 -y 1390 -defaultsOSRD
+preplace inst data_select_top_2 -pg 1 -lvl 3 -x 1780 -y 1420 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 4 -x 2460 -y 2460 -defaultsOSRD
+preplace inst modulater_14bit_0 -pg 1 -lvl 5 -x 2870 -y 1600 -defaultsOSRD
+preplace inst PS_Interface_TOP_0 -pg 1 -lvl 4 -x 2460 -y 1120 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 2820 N 2820 1000 2440 2140 1680 2680 2010 3110
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 2 1060 2460 1990
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 3 2 2280 1690 2640
+preplace netloc lvds_data_a1_n_0_1 1 0 1 NJ 2100
+preplace netloc lvds_data_a1_p_0_1 1 0 1 NJ 2080
+preplace netloc lvds_data_a2_n_0_1 1 0 1 NJ 2140
+preplace netloc lvds_data_a2_p_0_1 1 0 1 NJ 2120
+preplace netloc lvds_data_b1_n_0_1 1 0 1 NJ 2180
+preplace netloc lvds_data_b1_p_0_1 1 0 1 NJ 2160
+preplace netloc lvds_data_b2_n_0_1 1 0 1 NJ 2220
+preplace netloc lvds_data_b2_p_0_1 1 0 1 NJ 2200
+preplace netloc lvds_data_c1_n_0_1 1 0 1 NJ 2260
+preplace netloc lvds_data_c1_p_0_1 1 0 1 NJ 2240
+preplace netloc lvds_data_c2_n_0_1 1 0 1 NJ 2300
+preplace netloc lvds_data_c2_p_0_1 1 0 1 NJ 2280
+preplace netloc lvds_data_d1_n_0_1 1 0 1 NJ 2340
+preplace netloc lvds_data_d1_p_0_1 1 0 1 NJ 2320
+preplace netloc lvds_data_d2_n_0_1 1 0 1 NJ 2380
+preplace netloc lvds_data_d2_p_0_1 1 0 1 NJ 2360
+preplace netloc lvds_data_e1_n_0_1 1 0 1 NJ 2420
+preplace netloc lvds_data_e1_p_0_1 1 0 1 NJ 2400
+preplace netloc lvds_data_e2_n_0_1 1 0 1 NJ 2460
+preplace netloc lvds_data_e2_p_0_1 1 0 1 NJ 2440
+preplace netloc lvds_data_f1_n_0_1 1 0 1 NJ 2500
+preplace netloc lvds_data_f1_p_0_1 1 0 1 NJ 2480
+preplace netloc lvds_data_f2_n_0_1 1 0 1 NJ 2540
+preplace netloc lvds_data_f2_p_0_1 1 0 1 NJ 2520
+preplace netloc lvds_data_g1_n_0_1 1 0 1 NJ 2580
+preplace netloc lvds_data_g1_p_0_1 1 0 1 NJ 2560
+preplace netloc lvds_data_g2_n_0_1 1 0 1 NJ 2620
+preplace netloc lvds_data_g2_p_0_1 1 0 1 NJ 2600
+preplace netloc lvds_data_h1_n_0_1 1 0 1 NJ 2660
+preplace netloc lvds_data_h1_p_0_1 1 0 1 NJ 2640
+preplace netloc lvds_data_h2_n_0_1 1 0 1 NJ 2700
+preplace netloc lvds_data_h2_p_0_1 1 0 1 NJ 2680
+preplace netloc lvds_dco1_n_0_1 1 0 1 NJ 1940
+preplace netloc lvds_dco1_p_0_1 1 0 1 NJ 1920
+preplace netloc lvds_dco2_n_0_1 1 0 1 NJ 1980
+preplace netloc lvds_dco2_p_0_1 1 0 1 NJ 1960
+preplace netloc lvds_fco1_n_0_1 1 0 1 NJ 2020
+preplace netloc lvds_fco1_p_0_1 1 0 1 NJ 2000
+preplace netloc lvds_fco2_n_0_1 1 0 1 NJ 2060
+preplace netloc lvds_fco2_p_0_1 1 0 1 NJ 2040
+preplace netloc master_rst_n_0_1 1 0 6 10 2810 NJ 2810 N 2810 NJ 2810 NJ 2810 3090J
+preplace netloc AD9249_DAQ_custom_0_sysclk_ready 1 1 6 420J 500 980 410 NJ 410 NJ 410 NJ 410 3370J
+preplace netloc axi_gpio_8_gpio_io_o 1 5 1 3090 2070n
+preplace netloc Counter_YW_top_0_clkout 1 5 2 NJ 2130 3400
+preplace netloc axi_gpio_9_gpio_io_o 1 5 1 3080 2460n
+preplace netloc axi_gpio_9_gpio2_io_o 1 5 1 3080 2490n
+preplace netloc axi_gpio_10_gpio_io_o 1 5 1 3100 2510n
+preplace netloc axi_gpio_10_gpio2_io_o 1 5 1 3110 2530n
+preplace netloc spi3_WICSC_top_0_rx_data 1 5 2 NJ 2300 3370
+preplace netloc axi_gpio_11_ip2intc_irpt 1 0 6 40 2900 NJ 2900 1000 3010 NJ 3010 NJ 3010 3040
+preplace netloc xlconcat_0_dout 1 1 2 520 2630 N
+preplace netloc axi_gpio_8_ip2intc_irpt 1 0 6 30 2800 NJ 2800 N 2800 NJ 2800 NJ 2800 3050
+preplace netloc spi3_WICSC_top_0_busy 1 6 1 3390J 2490n
+preplace netloc spi3_WICSC_top_0_csb 1 6 1 3400 2470n
+preplace netloc spi3_WICSC_top_0_sclk 1 6 1 NJ 2450
+preplace netloc Net 1 6 1 NJ 2430
+preplace netloc spi3_WICSC_top_0_tsc 1 6 1 3380J 2510n
+preplace netloc AD9249_DAQ_custom_0_captured_data_a1 1 1 2 450 870 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_a2 1 1 2 600 1030 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_b1 1 1 2 510 890 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_b2 1 1 2 620 1050 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_c1 1 1 2 540 910 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_d1 1 1 2 470 930 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_c2 1 1 2 630 1070 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_d2 1 1 2 580 1090 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_f1 1 1 2 480 970 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_f2 1 1 2 590 1130 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_g1 1 1 2 460 990 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_g2 1 1 2 560 1150 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_h1 1 1 2 430 1010 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_h2 1 1 2 550 1170 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_e1 1 1 2 410 950 N
+preplace netloc AD9249_DAQ_custom_0_captured_data_e2 1 1 2 490 1110 N
+preplace netloc a_0_1 1 0 1 NJ 3130
+preplace netloc b_0_1 1 0 1 NJ 3150
+preplace netloc set_origin_n_0_1 1 0 1 NJ 3170
+preplace netloc quadrature_decoder_0_direction 1 1 2 N 3130 N
+preplace netloc quadrature_decoder_0_position 1 1 2 N 3150 N
+preplace netloc xlconcat_1_dout 1 3 3 N 3140 NJ 3140 3070
+preplace netloc AD9249_DAQ_custom_1_captured_data_a1 1 1 2 620 420 1070
+preplace netloc AD9249_DAQ_custom_1_captured_data_a2 1 1 2 600 440 1060
+preplace netloc AD9249_DAQ_custom_1_captured_data_b1 1 1 2 590 460 1050
+preplace netloc AD9249_DAQ_custom_1_captured_data_b2 1 1 2 580 480 1040
+preplace netloc AD9249_DAQ_custom_1_captured_data_c1 1 1 2 560 510 N
+preplace netloc AD9249_DAQ_custom_1_captured_data_c2 1 1 2 550 520 1030
+preplace netloc AD9249_DAQ_custom_1_captured_data_d1 1 1 2 480 530 N
+preplace netloc AD9249_DAQ_custom_1_captured_data_d2 1 1 2 470 540 1020
+preplace netloc AD9249_DAQ_custom_1_captured_data_e1 1 1 2 460 550 N
+preplace netloc AD9249_DAQ_custom_1_captured_data_e2 1 1 2 450 560 1010
+preplace netloc AD9249_DAQ_custom_1_captured_data_f1 1 1 2 440 570 N
+preplace netloc AD9249_DAQ_custom_1_captured_data_f2 1 1 2 430 580 1000
+preplace netloc AD9249_DAQ_custom_1_captured_data_g1 1 1 2 410 590 N
+preplace netloc AD9249_DAQ_custom_1_captured_data_g2 1 1 2 400 600 990
+preplace netloc AD9249_DAQ_custom_1_captured_data_h1 1 1 2 N 610 N
+preplace netloc AD9249_DAQ_custom_1_captured_data_h2 1 1 2 N 630 980
+preplace netloc lvds_dco1_p_1_1 1 0 1 NJ 60
+preplace netloc lvds_dco1_n_1_1 1 0 1 NJ 80
+preplace netloc lvds_dco2_p_1_1 1 0 1 NJ 100
+preplace netloc lvds_dco2_n_1_1 1 0 1 NJ 120
+preplace netloc lvds_fco1_n_1_1 1 0 1 NJ 160
+preplace netloc lvds_fco1_p_1_1 1 0 1 NJ 140
+preplace netloc lvds_fco2_n_1_1 1 0 1 NJ 200
+preplace netloc lvds_fco2_p_1_1 1 0 1 NJ 180
+preplace netloc lvds_data_a1_p_1_1 1 0 1 NJ 220
+preplace netloc lvds_data_a1_n_1_1 1 0 1 NJ 240
+preplace netloc lvds_data_a2_p_1_1 1 0 1 NJ 260
+preplace netloc lvds_data_a2_n_1_1 1 0 1 NJ 280
+preplace netloc lvds_data_b1_n_1_1 1 0 1 NJ 320
+preplace netloc lvds_data_b1_p_1_1 1 0 1 NJ 300
+preplace netloc lvds_data_b2_n_1_1 1 0 1 NJ 360
+preplace netloc lvds_data_b2_p_1_1 1 0 1 NJ 340
+preplace netloc lvds_data_c1_p_1_1 1 0 1 NJ 380
+preplace netloc lvds_data_c1_n_1_1 1 0 1 NJ 400
+preplace netloc lvds_data_c2_n_1_1 1 0 1 NJ 440
+preplace netloc lvds_data_c2_p_1_1 1 0 1 NJ 420
+preplace netloc lvds_data_d1_n_1_1 1 0 1 NJ 480
+preplace netloc lvds_data_d1_p_1_1 1 0 1 NJ 460
+preplace netloc lvds_data_d2_n_1_1 1 0 1 NJ 520
+preplace netloc lvds_data_d2_p_1_1 1 0 1 NJ 500
+preplace netloc lvds_data_e1_n_1_1 1 0 1 NJ 560
+preplace netloc lvds_data_e1_p_1_1 1 0 1 NJ 540
+preplace netloc lvds_data_e2_n_1_1 1 0 1 NJ 600
+preplace netloc lvds_data_e2_p_1_1 1 0 1 NJ 580
+preplace netloc lvds_data_f1_n_1_1 1 0 1 NJ 640
+preplace netloc lvds_data_f1_p_1_1 1 0 1 NJ 620
+preplace netloc lvds_data_f2_n_1_1 1 0 1 NJ 680
+preplace netloc lvds_data_f2_p_1_1 1 0 1 NJ 660
+preplace netloc lvds_data_g1_n_1_1 1 0 1 NJ 720
+preplace netloc lvds_data_g1_p_1_1 1 0 1 NJ 700
+preplace netloc lvds_data_g2_n_1_1 1 0 1 NJ 760
+preplace netloc lvds_data_g2_p_1_1 1 0 1 NJ 740
+preplace netloc lvds_data_h1_n_1_1 1 0 1 NJ 800
+preplace netloc lvds_data_h1_p_1_1 1 0 1 NJ 780
+preplace netloc lvds_data_h2_n_1_1 1 0 1 NJ 840
+preplace netloc lvds_data_h2_p_1_1 1 0 1 NJ 820
+preplace netloc AD9249_DAQ_custom_1_captured_data_a3 1 1 2 N 1250 1070
+preplace netloc AD9249_DAQ_custom_1_captured_data_a4 1 1 2 N 1270 1060
+preplace netloc AD9249_DAQ_custom_1_captured_data_b3 1 1 2 N 1290 N
+preplace netloc AD9249_DAQ_custom_1_captured_data_b4 1 1 2 N 1310 1050
+preplace netloc AD9249_DAQ_custom_1_captured_data_c3 1 1 2 440 1320 1070
+preplace netloc AD9249_DAQ_custom_1_captured_data_c4 1 1 2 N 1350 1040
+preplace netloc AD9249_DAQ_custom_1_captured_data_d3 1 1 2 500 1330 N
+preplace netloc AD9249_DAQ_custom_1_captured_data_d4 1 1 2 N 1390 1020
+preplace netloc AD9249_DAQ_custom_1_captured_data_e3 1 1 2 520 1360 1070
+preplace netloc AD9249_DAQ_custom_1_captured_data_e4 1 1 2 400 1440 1000
+preplace netloc AD9249_DAQ_custom_1_captured_data_f3 1 1 2 530 1370 N
+preplace netloc AD9249_DAQ_custom_1_captured_data_f4 1 1 2 400 1480 990
+preplace netloc AD9249_DAQ_custom_1_captured_data_g3 1 1 2 570 1400 1070
+preplace netloc AD9249_DAQ_custom_1_captured_data_g4 1 1 2 400 1520 980
+preplace netloc AD9249_DAQ_custom_1_captured_data_h3 1 1 2 610 1420 1070
+preplace netloc AD9249_DAQ_custom_1_captured_data_h4 1 1 2 400 1560 990
+preplace netloc lvds_data_a1_n_1_2 1 0 1 NJ 1160
+preplace netloc lvds_data_a1_p_1_2 1 0 1 NJ 1140
+preplace netloc lvds_data_a2_n_1_2 1 0 1 NJ 1200
+preplace netloc lvds_data_a2_p_1_2 1 0 1 NJ 1180
+preplace netloc lvds_data_b1_n_1_2 1 0 1 NJ 1240
+preplace netloc lvds_data_b1_p_1_2 1 0 1 NJ 1220
+preplace netloc lvds_data_b2_n_1_2 1 0 1 NJ 1280
+preplace netloc lvds_data_b2_p_1_2 1 0 1 NJ 1260
+preplace netloc lvds_data_c1_n_1_2 1 0 1 NJ 1320
+preplace netloc lvds_data_c1_p_1_2 1 0 1 NJ 1300
+preplace netloc lvds_data_c2_n_1_2 1 0 1 NJ 1360
+preplace netloc lvds_data_c2_p_1_2 1 0 1 NJ 1340
+preplace netloc lvds_data_d1_n_1_2 1 0 1 NJ 1400
+preplace netloc lvds_data_d1_p_1_2 1 0 1 NJ 1380
+preplace netloc lvds_data_d2_n_1_2 1 0 1 NJ 1440
+preplace netloc lvds_data_d2_p_1_2 1 0 1 NJ 1420
+preplace netloc lvds_data_e1_n_1_2 1 0 1 NJ 1480
+preplace netloc lvds_data_e1_p_1_2 1 0 1 NJ 1460
+preplace netloc lvds_data_e2_n_1_2 1 0 1 NJ 1520
+preplace netloc lvds_data_e2_p_1_2 1 0 1 NJ 1500
+preplace netloc lvds_data_f1_n_1_2 1 0 1 NJ 1560
+preplace netloc lvds_data_f1_p_1_2 1 0 1 NJ 1540
+preplace netloc lvds_data_f2_n_1_2 1 0 1 NJ 1600
+preplace netloc lvds_data_f2_p_1_2 1 0 1 NJ 1580
+preplace netloc lvds_data_g1_n_1_2 1 0 1 NJ 1640
+preplace netloc lvds_data_g1_p_1_2 1 0 1 NJ 1620
+preplace netloc lvds_data_g2_n_1_2 1 0 1 NJ 1680
+preplace netloc lvds_data_g2_p_1_2 1 0 1 NJ 1660
+preplace netloc lvds_data_h1_n_1_2 1 0 1 NJ 1720
+preplace netloc lvds_data_h1_p_1_2 1 0 1 NJ 1700
+preplace netloc lvds_data_h2_n_1_2 1 0 1 NJ 1760
+preplace netloc lvds_data_h2_p_1_2 1 0 1 NJ 1740
+preplace netloc lvds_dco1_n_1_2 1 0 1 NJ 1000
+preplace netloc lvds_dco1_p_1_2 1 0 1 NJ 980
+preplace netloc lvds_dco2_n_1_2 1 0 1 NJ 1040
+preplace netloc lvds_dco2_p_1_2 1 0 1 NJ 1020
+preplace netloc lvds_fco1_n_1_2 1 0 1 NJ 1080
+preplace netloc lvds_fco1_p_1_2 1 0 1 NJ 1060
+preplace netloc lvds_fco2_n_1_2 1 0 1 NJ 1120
+preplace netloc lvds_fco2_p_1_2 1 0 1 NJ 1100
+preplace netloc data_select_top_0_out_data_16b_a1 1 3 1 2040 630n
+preplace netloc data_select_top_0_out_data_16b_b1 1 3 1 2090 670n
+preplace netloc data_select_top_0_out_data_16b_c1 1 3 1 2100 710n
+preplace netloc data_select_top_0_out_data_16b_d1 1 3 1 2150 750n
+preplace netloc data_select_top_0_out_data_16b_e1 1 3 1 2160 790n
+preplace netloc data_select_top_0_out_data_16b_f1 1 3 1 2000 830n
+preplace netloc data_select_top_0_out_data_16b_a2 1 3 1 2140 650n
+preplace netloc data_select_top_0_out_data_16b_b2 1 3 1 2060 690n
+preplace netloc data_select_top_0_out_data_16b_c2 1 3 1 2190 730n
+preplace netloc data_select_top_0_out_data_16b_d2 1 3 1 2030 770n
+preplace netloc data_select_top_0_out_data_16b_e2 1 3 1 2210 810n
+preplace netloc data_select_top_0_out_data_16b_f2 1 3 1 1990 850n
+preplace netloc data_select_top_0_out_data_16b_g1 1 3 1 2200 870n
+preplace netloc data_select_top_0_out_data_16b_h1 1 3 1 2110 910n
+preplace netloc data_select_top_0_out_data_16b_g2 1 3 1 2220 890n
+preplace netloc data_select_top_0_out_data_16b_h2 1 3 1 2170 930n
+preplace netloc data_select_top_1_out_data_16b_a1 1 3 1 2300 470n
+preplace netloc data_select_top_1_out_data_16b_b1 1 3 1 2290 490n
+preplace netloc data_select_top_1_out_data_16b_c1 1 3 1 2280 510n
+preplace netloc data_select_top_1_out_data_16b_d1 1 3 1 2270 530n
+preplace netloc data_select_top_1_out_data_16b_e1 1 3 1 2260 550n
+preplace netloc data_select_top_1_out_data_16b_f1 1 3 1 2250 570n
+preplace netloc data_select_top_1_out_data_16b_g1 1 3 1 2240 590n
+preplace netloc data_select_top_1_out_data_16b_h1 1 3 1 2230 610n
+preplace netloc data_select_top_1_out_data_16b_a2 1 3 1 2020 630n
+preplace netloc data_select_top_1_out_data_16b_b2 1 3 1 2130 650n
+preplace netloc data_select_top_1_out_data_16b_c2 1 3 1 2070 670n
+preplace netloc data_select_top_1_out_data_16b_d2 1 3 1 2050 690n
+preplace netloc data_select_top_1_out_data_16b_e2 1 3 1 2080 710n
+preplace netloc data_select_top_1_out_data_16b_f2 1 3 1 2180 730n
+preplace netloc data_select_top_1_out_data_16b_g2 1 3 1 2120 750n
+preplace netloc data_select_top_1_out_data_16b_h2 1 3 1 2010 770n
+preplace netloc data_select_top_2_out_data_16b_a1 1 3 1 N 1270
+preplace netloc data_select_top_2_out_data_16b_b1 1 3 1 2170 1290n
+preplace netloc data_select_top_2_out_data_16b_c1 1 3 1 2100 1310n
+preplace netloc data_select_top_2_out_data_16b_d1 1 3 1 2080 1330n
+preplace netloc data_select_top_2_out_data_16b_e1 1 3 1 2060 1350n
+preplace netloc data_select_top_2_out_data_16b_f1 1 3 1 2050 1370n
+preplace netloc data_select_top_2_out_data_16b_g1 1 3 1 2030 1390n
+preplace netloc data_select_top_2_out_data_16b_h1 1 3 1 2000 1410n
+preplace netloc data_select_top_2_out_data_16b_a2 1 3 1 2220 1290n
+preplace netloc data_select_top_2_out_data_16b_b2 1 3 1 2240 1330n
+preplace netloc data_select_top_2_out_data_16b_c2 1 3 1 2260 1370n
+preplace netloc data_select_top_2_out_data_16b_d2 1 3 1 2270 1410n
+preplace netloc data_select_top_2_out_data_16b_e2 1 3 1 2280 1450n
+preplace netloc data_select_top_2_out_data_16b_f2 1 3 1 2290 1490n
+preplace netloc data_select_top_2_out_data_16b_g2 1 3 1 2300 1530n
+preplace netloc data_select_top_2_out_data_16b_h2 1 3 1 N 1570
+preplace netloc PS_Interface_TOP_0_toMod1 1 4 1 2700 1120n
+preplace netloc PS_Interface_TOP_0_toMod2 1 4 1 2690 1140n
+preplace netloc clk_wiz_0_clk_out_130 1 4 1 2650 1570n
+preplace netloc modulater_14bit_0_mod_out 1 5 2 NJ 1590 NJ
+preplace netloc modulater_14bit_0_carrier_zero 1 2 4 1030 2450 2090J 2560 NJ 2560 3060
+preplace netloc PS_Interface_TOP_0_PS_IN 1 3 2 NJ 2540 2610
+preplace netloc processing_system7_0_GPIO_O 1 3 1 2060 1610n
+preplace netloc AD9249_DAQ_custom_1_sysclk_ready 1 1 6 630 400 N 400 NJ 400 NJ 400 NJ 400 3400J
+preplace netloc AD9249_DAQ_custom_2_sysclk_ready 1 1 6 N 1230 1030 1670 NJ 1670 2640J 1410 NJ 1410 NJ
+preplace netloc ps7_0_axi_periph_M09_AXI 1 4 1 2660 2110n
+preplace netloc ps7_0_axi_periph_M12_AXI 1 4 1 2670 1910n
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 2220 1750n
+preplace netloc ps7_0_axi_periph_M10_AXI 1 4 1 2620 2130n
+preplace netloc processing_system7_0_FIXED_IO 1 3 4 NJ 2600 NJ 2600 NJ 2600 3390J
+preplace netloc ps7_0_axi_periph_M11_AXI 1 4 1 2630 2150n
+preplace netloc processing_system7_0_DDR 1 3 4 NJ 2580 NJ 2580 3080J 2590 NJ
+preplace netloc ps7_0_axi_periph_M08_AXI 1 4 1 N 2090
+levelinfo -pg 1 -10 240 960 1780 2460 2870 3240 3420
+pagesize -pg 1 -db -bbox -sgen -180 -20 3600 4040
+"
+}
+{
+   "da_axi4_cnt":"16",
+   "da_clkrst_cnt":"3",
+   "da_ps7_cnt":"1"
+}

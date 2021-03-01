@@ -1,0 +1,276 @@
+
+*** Running vivado
+    with args -log WICSC_daq_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source WICSC_daq_wrapper.tcl -notrace
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source WICSC_daq_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/CounterFreq'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/quadrature _decoder'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/Data_select'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/DAQ_YG'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/spi_master_WICSC'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'X:/Xilink/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'kth.se:user:Counter_YW_top:1.0'. The one found in IP location 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/CounterFreq/Counter_YW' will take precedence over the same IP in location c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/CounterFreq/Counter_YW/Counter_YW.srcs
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.cache/ip 
+Command: link_design -top WICSC_daq_wrapper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_AD9249_DAQ_custom_0_0/WICSC_daq_AD9249_DAQ_custom_0_0.dcp' for cell 'WICSC_daq_i/AD9249_DAQ_custom_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_AD9249_DAQ_custom_1_0/WICSC_daq_AD9249_DAQ_custom_1_0.dcp' for cell 'WICSC_daq_i/AD9249_DAQ_custom_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_AD9249_DAQ_custom_1_1/WICSC_daq_AD9249_DAQ_custom_1_1.dcp' for cell 'WICSC_daq_i/AD9249_DAQ_custom_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_Counter_YW_top_0_0/WICSC_daq_Counter_YW_top_0_0.dcp' for cell 'WICSC_daq_i/Counter_YW_top_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_PS_Interface_TOP_0_0/WICSC_daq_PS_Interface_TOP_0_0.dcp' for cell 'WICSC_daq_i/PS_Interface_TOP_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_10_0/WICSC_daq_axi_gpio_10_0.dcp' for cell 'WICSC_daq_i/axi_gpio_10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_11_0/WICSC_daq_axi_gpio_11_0.dcp' for cell 'WICSC_daq_i/axi_gpio_11'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_12_0/WICSC_daq_axi_gpio_12_0.dcp' for cell 'WICSC_daq_i/axi_gpio_12'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_8_0/WICSC_daq_axi_gpio_8_0.dcp' for cell 'WICSC_daq_i/axi_gpio_8'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_9_0/WICSC_daq_axi_gpio_9_0.dcp' for cell 'WICSC_daq_i/axi_gpio_9'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_clk_wiz_0_0/WICSC_daq_clk_wiz_0_0.dcp' for cell 'WICSC_daq_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_data_select_top_0_0/WICSC_daq_data_select_top_0_0.dcp' for cell 'WICSC_daq_i/data_select_top_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_data_select_top_1_0/WICSC_daq_data_select_top_1_0.dcp' for cell 'WICSC_daq_i/data_select_top_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_data_select_top_1_1/WICSC_daq_data_select_top_1_1.dcp' for cell 'WICSC_daq_i/data_select_top_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_modulater_14bit_0_0/WICSC_daq_modulater_14bit_0_0.dcp' for cell 'WICSC_daq_i/modulater_14bit_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_processing_system7_0_0/WICSC_daq_processing_system7_0_0.dcp' for cell 'WICSC_daq_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_quadrature_decoder_0_0/WICSC_daq_quadrature_decoder_0_0.dcp' for cell 'WICSC_daq_i/quadrature_decoder_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_rst_ps7_0_100M_0/WICSC_daq_rst_ps7_0_100M_0.dcp' for cell 'WICSC_daq_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_spi3_WICSC_top_0_0/WICSC_daq_spi3_WICSC_top_0_0.dcp' for cell 'WICSC_daq_i/spi3_WICSC_top_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_xbar_0/WICSC_daq_xbar_0.dcp' for cell 'WICSC_daq_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_auto_pc_0/WICSC_daq_auto_pc_0.dcp' for cell 'WICSC_daq_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.315 . Memory (MB): peak = 1069.922 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 509 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. WICSC_daq_i/AD9249_DAQ_custom_0/inst/ibufg1 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. WICSC_daq_i/AD9249_DAQ_custom_1/inst/ibufg1 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. WICSC_daq_i/AD9249_DAQ_custom_2/inst/ibufg1 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. WICSC_daq_i/clk_wiz_0/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'WICSC_daq_i/AD9249_DAQ_custom_0/zynq_sys_clkin' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'WICSC_daq_i/AD9249_DAQ_custom_1/zynq_sys_clkin' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'WICSC_daq_i/AD9249_DAQ_custom_2/zynq_sys_clkin' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'WICSC_daq_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'WICSC_daq_i/spi3_WICSC_top_0/tsc' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'WICSC_daq_i/spi3_WICSC_top_0/tsc' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'WICSC_daq_i/spi3_WICSC_top_0/tsc' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_processing_system7_0_0/WICSC_daq_processing_system7_0_0.xdc] for cell 'WICSC_daq_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_processing_system7_0_0/WICSC_daq_processing_system7_0_0.xdc] for cell 'WICSC_daq_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_rst_ps7_0_100M_0/WICSC_daq_rst_ps7_0_100M_0_board.xdc] for cell 'WICSC_daq_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_rst_ps7_0_100M_0/WICSC_daq_rst_ps7_0_100M_0_board.xdc] for cell 'WICSC_daq_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_rst_ps7_0_100M_0/WICSC_daq_rst_ps7_0_100M_0.xdc] for cell 'WICSC_daq_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_rst_ps7_0_100M_0/WICSC_daq_rst_ps7_0_100M_0.xdc] for cell 'WICSC_daq_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_8_0/WICSC_daq_axi_gpio_8_0_board.xdc] for cell 'WICSC_daq_i/axi_gpio_8/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_8_0/WICSC_daq_axi_gpio_8_0_board.xdc] for cell 'WICSC_daq_i/axi_gpio_8/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_8_0/WICSC_daq_axi_gpio_8_0.xdc] for cell 'WICSC_daq_i/axi_gpio_8/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_8_0/WICSC_daq_axi_gpio_8_0.xdc] for cell 'WICSC_daq_i/axi_gpio_8/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_9_0/WICSC_daq_axi_gpio_9_0_board.xdc] for cell 'WICSC_daq_i/axi_gpio_9/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_9_0/WICSC_daq_axi_gpio_9_0_board.xdc] for cell 'WICSC_daq_i/axi_gpio_9/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_9_0/WICSC_daq_axi_gpio_9_0.xdc] for cell 'WICSC_daq_i/axi_gpio_9/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_9_0/WICSC_daq_axi_gpio_9_0.xdc] for cell 'WICSC_daq_i/axi_gpio_9/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_10_0/WICSC_daq_axi_gpio_10_0_board.xdc] for cell 'WICSC_daq_i/axi_gpio_10/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_10_0/WICSC_daq_axi_gpio_10_0_board.xdc] for cell 'WICSC_daq_i/axi_gpio_10/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_10_0/WICSC_daq_axi_gpio_10_0.xdc] for cell 'WICSC_daq_i/axi_gpio_10/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_10_0/WICSC_daq_axi_gpio_10_0.xdc] for cell 'WICSC_daq_i/axi_gpio_10/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_11_0/WICSC_daq_axi_gpio_11_0_board.xdc] for cell 'WICSC_daq_i/axi_gpio_11/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_11_0/WICSC_daq_axi_gpio_11_0_board.xdc] for cell 'WICSC_daq_i/axi_gpio_11/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_11_0/WICSC_daq_axi_gpio_11_0.xdc] for cell 'WICSC_daq_i/axi_gpio_11/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_11_0/WICSC_daq_axi_gpio_11_0.xdc] for cell 'WICSC_daq_i/axi_gpio_11/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_12_0/WICSC_daq_axi_gpio_12_0_board.xdc] for cell 'WICSC_daq_i/axi_gpio_12/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_12_0/WICSC_daq_axi_gpio_12_0_board.xdc] for cell 'WICSC_daq_i/axi_gpio_12/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_12_0/WICSC_daq_axi_gpio_12_0.xdc] for cell 'WICSC_daq_i/axi_gpio_12/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_axi_gpio_12_0/WICSC_daq_axi_gpio_12_0.xdc] for cell 'WICSC_daq_i/axi_gpio_12/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_clk_wiz_0_0/WICSC_daq_clk_wiz_0_0_board.xdc] for cell 'WICSC_daq_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_clk_wiz_0_0/WICSC_daq_clk_wiz_0_0_board.xdc] for cell 'WICSC_daq_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_clk_wiz_0_0/WICSC_daq_clk_wiz_0_0.xdc] for cell 'WICSC_daq_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_clk_wiz_0_0/WICSC_daq_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_clk_wiz_0_0/WICSC_daq_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1566.539 ; gain = 496.617
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.srcs/sources_1/bd/WICSC_daq/ip/WICSC_daq_clk_wiz_0_0/WICSC_daq_clk_wiz_0_0.xdc] for cell 'WICSC_daq_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:47]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:47]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:47]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:48]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:48]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:48]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:50]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:50]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:50]
+WARNING: [Constraints 18-619] A clock with name 'lvds_dco1_p' already exists, overwriting the previous clock with the same name. [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:50]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:51]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:51]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:51]
+WARNING: [Constraints 18-619] A clock with name 'lvds_dco2_p' already exists, overwriting the previous clock with the same name. [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:51]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:53]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:53]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:53]
+WARNING: [Constraints 18-619] A clock with name 'lvds_dco1_p' already exists, overwriting the previous clock with the same name. [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:53]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:54]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:54]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:54]
+WARNING: [Constraints 18-619] A clock with name 'lvds_dco2_p' already exists, overwriting the previous clock with the same name. [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:54]
+WARNING: [Constraints 18-619] A clock with name 'lvds_fco1_p' already exists, overwriting the previous clock with the same name. [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:60]
+WARNING: [Constraints 18-619] A clock with name 'lvds_fco2_p' already exists, overwriting the previous clock with the same name. [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:61]
+WARNING: [Constraints 18-619] A clock with name 'lvds_fco1_p' already exists, overwriting the previous clock with the same name. [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:63]
+WARNING: [Constraints 18-619] A clock with name 'lvds_fco2_p' already exists, overwriting the previous clock with the same name. [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:64]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc:97]
+Finished Parsing XDC File [C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/top_level_daq/Zynq700zc702_ad9249_daq_custom_wrapper.srcs/constrs_1/new/wrapper_cons.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1566.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+39 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1566.539 ; gain = 496.617
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1566.539 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 106e26487
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.558 . Memory (MB): peak = 1585.480 ; gain = 18.941
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: f5008bd0
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.793 . Memory (MB): peak = 1783.711 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 127 cells and removed 194 cells
+INFO: [Opt 31-1021] In phase Retarget, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 19be5070e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1783.711 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 40 cells and removed 731 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1828e5507
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1783.711 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 693 cells
+INFO: [Opt 31-1021] In phase Sweep, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1828e5507
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1783.711 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1828e5507
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1783.711 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1828e5507
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1783.711 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             127  |             194  |                                              2  |
+|  Constant propagation         |              40  |             731  |                                              0  |
+|  Sweep                        |               0  |             693  |                                              1  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1783.711 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: f683f44f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1783.711 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: f683f44f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1783.711 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: f683f44f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1783.711 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1783.711 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: f683f44f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1783.711 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+58 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1783.711 ; gain = 217.172
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1783.711 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.runs/impl_1/WICSC_daq_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file WICSC_daq_wrapper_drc_opted.rpt -pb WICSC_daq_wrapper_drc_opted.pb -rpx WICSC_daq_wrapper_drc_opted.rpx
+Command: report_drc -file WICSC_daq_wrapper_drc_opted.rpt -pb WICSC_daq_wrapper_drc_opted.pb -rpx WICSC_daq_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.runs/impl_1/WICSC_daq_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC UTLZ-1] Resource utilization: MMCME2_ADV over-utilized in Top Level Design (This design requires more MMCME2_ADV cells than are available in the target device. This design requires 7 of such cell types but only 4 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.)
+INFO: [Vivado_Tcl 4-198] DRC finished with 1 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+INFO: [Common 17-83] Releasing license: Implementation
+73 Infos, 39 Warnings, 0 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  1 16:32:09 2021...

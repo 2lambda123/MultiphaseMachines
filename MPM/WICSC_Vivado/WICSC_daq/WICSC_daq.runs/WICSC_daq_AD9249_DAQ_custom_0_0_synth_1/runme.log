@@ -1,0 +1,25 @@
+
+*** Running vivado
+    with args -log WICSC_daq_AD9249_DAQ_custom_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source WICSC_daq_AD9249_DAQ_custom_0_0.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source WICSC_daq_AD9249_DAQ_custom_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1190.332 ; gain = 498.777
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/CounterFreq'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/quadrature _decoder'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/Data_select'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/DAQ_YG'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/spi_master_WICSC'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'X:/Xilink/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'kth.se:user:Counter_YW_top:1.0'. The one found in IP location 'c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/CounterFreq/Counter_YW' will take precedence over the same IP in location c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/ad9249_daq_custom/CounterFreq/Counter_YW/Counter_YW.srcs
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Meklarn/Desktop/EXJOBB/JonasHansson_2021VT/Vivado/WICSC_daq/WICSC_daq.cache/ip 
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP WICSC_daq_AD9249_DAQ_custom_0_0, cache-ID = 6da16bbc69565230.
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  1 14:39:37 2021...
