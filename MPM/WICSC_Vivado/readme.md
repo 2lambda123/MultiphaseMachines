@@ -1,0 +1,8 @@
+## WICSC Vivado
+
+
+#### Needs to be adressed:
+
+* Overutilization of MMCM in deserializer
+* Specify pin constraint for deserializer one and two. 
+* Specify pin constraint for modulator 
