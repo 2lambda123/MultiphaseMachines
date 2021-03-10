@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../Users/yixuanw/Downloads/quadrature_decoder.vhd" \
+
+# Do not sort compile order
+nosort

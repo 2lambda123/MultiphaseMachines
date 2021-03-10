@@ -1,0 +1,1 @@
+-wto "4c41b01d1cb144639670dcd078028587" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "OBUFT_tb_behav" "xil_defaultlib.OBUFT_tb" -log "elaborate.log" 

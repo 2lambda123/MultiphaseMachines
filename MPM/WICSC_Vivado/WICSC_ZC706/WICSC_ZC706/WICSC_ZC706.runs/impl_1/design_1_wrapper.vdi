@@ -1,0 +1,370 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Mar 10 10:58:25 2021
+# Process ID: 26712
+# Current directory: C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/spi_master_WICSC'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/quadrature _decoder'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'X:/Xilink/Vivado/2020.1/data/ip'.
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1071.215 ; gain = 0.000
+Command: link_design -top design_1_wrapper -part xc7z045ffg900-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_MSBs_selector_0_2/design_1_MSBs_selector_0_2.dcp' for cell 'design_1_i/MSBs_selector_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_MSBs_selector_1_0/design_1_MSBs_selector_1_0.dcp' for cell 'design_1_i/MSBs_selector_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_MSBs_selector_2_0/design_1_MSBs_selector_2_0.dcp' for cell 'design_1_i/MSBs_selector_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_PS_Interface_TOP_0_0/design_1_PS_Interface_TOP_0_0.dcp' for cell 'design_1_i/PS_Interface_TOP_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.dcp' for cell 'design_1_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0.dcp' for cell 'design_1_i/axi_gpio_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0.dcp' for cell 'design_1_i/axi_gpio_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_fpga_dig_top_0_0/design_1_fpga_dig_top_0_0.dcp' for cell 'design_1_i/fpga_dig_top_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_fpga_dig_top_1_0/design_1_fpga_dig_top_1_0.dcp' for cell 'design_1_i/fpga_dig_top_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_fpga_dig_top_2_0/design_1_fpga_dig_top_2_0.dcp' for cell 'design_1_i/fpga_dig_top_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_modulater_14bit_0_0/design_1_modulater_14bit_0_0.dcp' for cell 'design_1_i/modulater_14bit_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_quadrature_decoder_0_0/design_1_quadrature_decoder_0_0.dcp' for cell 'design_1_i/quadrature_decoder_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_spi3_WICSC_top_0_0/design_1_spi3_WICSC_top_0_0.dcp' for cell 'design_1_i/spi3_WICSC_top_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.299 . Memory (MB): peak = 1071.215 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 503 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/clk_wiz_0/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/fpga_dig_top_0/U0/ibufg1 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/fpga_dig_top_1/U0/ibufg1 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/fpga_dig_top_2/U0/ibufg1 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/fpga_dig_top_0/zynq_sys_clkin' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/fpga_dig_top_1/zynq_sys_clkin' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/fpga_dig_top_2/zynq_sys_clkin' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/spi3_WICSC_top_0/tsc' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/spi3_WICSC_top_0/tsc' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/spi3_WICSC_top_0/tsc' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0_board.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0_board.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1670.645 ; gain = 599.430
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0_board.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0_board.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Finished Parsing XDC File [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Parsing XDC File [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:47]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:47]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:47]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:48]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:48]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:48]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:55]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:55]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:55]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:56]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:56]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:56]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:63]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:63]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:63]
+WARNING: [Vivado 12-2489] -period contains time 11.904762 which will be rounded to 11.905 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:64]
+WARNING: [Vivado 12-2489] -waveform contains time 2.976190 which will be rounded to 2.976 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:64]
+WARNING: [Vivado 12-2489] -waveform contains time 8.928571 which will be rounded to 8.929 to ensure it is an integer multiple of 1 picosecond [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:64]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:100]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N19' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:127]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N20' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:131]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y118 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:136]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y111 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:140]
+CRITICAL WARNING: [Common 17-69] Command failed: 'L21' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:145]
+CRITICAL WARNING: [Common 17-69] Command failed: 'L22' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:149]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y96 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:154]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y94 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:158]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance design_1_i/fpga_dig_top_0/U0/iser_top1/IB4 at M21 (IOPAD_X1Y3) since it belongs to a shape containing instance design_1_i/fpga_dig_top_0/U0/iser_top1/iser_ddr_i2/iddr. The shape requires relative placement between design_1_i/fpga_dig_top_0/U0/iser_top1/IB4 and design_1_i/fpga_dig_top_0/U0/iser_top1/iser_ddr_i2/iddr that can not be honoured because it would result in an invalid location for design_1_i/fpga_dig_top_0/U0/iser_top1/iser_ddr_i2/iddr. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:163]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y23 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:167]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the positive port (P-side) 'lvds_data_c2_p_0' of a differential pair cannot be placed on a negative package pin 'J15' (IOBS). [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:172]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the negative port (N-side) 'lvds_data_c2_n_0' of a differential pair cannot be placed on a positive package pin 'K15' (IOBM). [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:176]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y27 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:181]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P22' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:185]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R20' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:190]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P16' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:199]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R16' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:203]
+CRITICAL WARNING: [Common 17-69] Command failed: 'E19' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:208]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y121 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:212]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J17' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:221]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y119 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:226]
+CRITICAL WARNING: [Common 17-69] Command failed: 'C20' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:230]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y100 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:235]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J22' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:239]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y105 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:244]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y103 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:248]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M15' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:253]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOB_X1Y300 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:257]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P20' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:262]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, the negative port (N-side) 'lvds_data_h2_n_0' of a differential pair cannot be placed on a positive package pin 'P21' (IOBM). [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:266]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y134 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:271]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y117 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:276]
+CRITICAL WARNING: [Common 17-69] Command failed: 'K19' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:282]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site IOPAD_X1Y95 is not part of a diff pair [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:287]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N15' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:293]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P15' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:298]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N17' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:304]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N18' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:309]
+WARNING: [Vivado 12-584] No ports matched 'master_rst_n_0'. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:317]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:317]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'master_rst_n_0'. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:318]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:318]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk_ready_0'. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:320]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:320]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk_ready_0'. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:321]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:321]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location is not valid [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:327]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location is not valid [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:330]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location is not valid [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:333]
+CRITICAL WARNING: [Common 17-69] Command failed: 'F21' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:336]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W17' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:344]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V7' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:351]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W10' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:354]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P18' is not a valid site or package pin name. [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc:357]
+Finished Parsing XDC File [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1670.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+34 Infos, 33 Warnings, 50 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 1670.645 ; gain = 599.430
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1670.645 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1f053b6de
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.567 . Memory (MB): peak = 1694.590 ; gain = 23.945
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: e1d65cbe
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.632 . Memory (MB): peak = 1888.402 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 12 cells and removed 53 cells
+INFO: [Opt 31-1021] In phase Retarget, 6 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1313fb0b9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.918 . Memory (MB): peak = 1888.402 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 4 cells and removed 584 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1bec6c338
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1888.402 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 653 cells
+INFO: [Opt 31-1021] In phase Sweep, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1bec6c338
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1888.402 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1bec6c338
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1888.402 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1bec6c338
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1888.402 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              12  |              53  |                                              6  |
+|  Constant propagation         |               4  |             584  |                                              0  |
+|  Sweep                        |               0  |             653  |                                              1  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1888.402 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: da0a43de
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1888.402 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: da0a43de
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1888.402 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: da0a43de
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1888.402 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1888.402 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: da0a43de
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1888.402 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+53 Infos, 33 Warnings, 50 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1888.402 ; gain = 217.758
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1888.402 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+CRITICAL WARNING: [DRC IOSTDTYPE-1] IOStandard Type: I/O port busy_0 is Single-Ended but has an IOStandard of LVDS which can only support Differential
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Critical Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1888.402 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 789273a7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1888.402 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1888.402 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-575] Sub-optimal placement for a clock-capable IO pin and MMCM pair. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets design_1_i/fpga_dig_top_2/U0/data_clock_ctrl1/dco_buf] >
+
+	design_1_i/fpga_dig_top_2/U0/data_clock_ctrl1/bufds (IBUFDS.O) is provisionally placed by clockplacer on IOB_X0Y24
+	design_1_i/fpga_dig_top_2/U0/data_clock_ctrl1/mmcm_top/mmcm_inst (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X0Y1
+
+	The above error could possibly be related to other connected instances. Following is a list of 
+	all the related clock rules and their respective instances.
+
+	Clock Rule: rule_mmcm_bufg
+	Status: PASS 
+	Rule Description: An MMCM driving a BUFG must be placed on the same half side (top/bottom) of the device
+	design_1_i/fpga_dig_top_2/U0/data_clock_ctrl1/mmcm_top/mmcm_inst (MMCME2_ADV.CLKFBOUT) is provisionally placed by clockplacer on MMCME2_ADV_X0Y1
+	design_1_i/fpga_dig_top_2/U0/data_clock_ctrl1/mmcm_top/BUFG_CLKFB (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y4
+
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The MMCM is placed in the same clock region as the CCIO pin. If the IOB is driving multiple MMCMs, all MMCMs must be placed in the same clock region, one clock region above or one clock region below the IOB. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+ERROR: [Place 30-575] Sub-optimal placement for a clock-capable IO pin and MMCM pair. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets design_1_i/fpga_dig_top_2/U0/data_clock_ctrl2/dco_buf] >
+
+	design_1_i/fpga_dig_top_2/U0/data_clock_ctrl2/bufds (IBUFDS.O) is provisionally placed by clockplacer on IOB_X0Y124
+	design_1_i/fpga_dig_top_2/U0/data_clock_ctrl2/mmcm_top/mmcm_inst (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X1Y4
+
+	The above error could possibly be related to other connected instances. Following is a list of 
+	all the related clock rules and their respective instances.
+
+	Clock Rule: rule_mmcm_bufg
+	Status: PASS 
+	Rule Description: An MMCM driving a BUFG must be placed on the same half side (top/bottom) of the device
+	design_1_i/fpga_dig_top_2/U0/data_clock_ctrl2/mmcm_top/mmcm_inst (MMCME2_ADV.CLKFBOUT) is provisionally placed by clockplacer on MMCME2_ADV_X1Y4
+	design_1_i/fpga_dig_top_2/U0/data_clock_ctrl2/mmcm_top/BUFG_CLKFB (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y26
+
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The MMCM is placed in the same clock region as the CCIO pin. If the IOB is driving multiple MMCMs, all MMCMs must be placed in the same clock region, one clock region above or one clock region below the IOB. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1017b51ee
+
+Time (s): cpu = 00:06:51 ; elapsed = 00:06:55 . Memory (MB): peak = 1924.391 ; gain = 35.988
+Phase 1 Placer Initialization | Checksum: 1017b51ee
+
+Time (s): cpu = 00:06:51 ; elapsed = 00:06:55 . Memory (MB): peak = 1924.391 ; gain = 35.988
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 1017b51ee
+
+Time (s): cpu = 00:06:51 ; elapsed = 00:06:55 . Memory (MB): peak = 1924.391 ; gain = 35.988
+INFO: [Common 17-83] Releasing license: Implementation
+69 Infos, 33 Warnings, 51 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 10 11:06:28 2021...

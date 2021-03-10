@@ -1,0 +1,419 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.399418",
+   "Default View_TopLeft":"-756,1397",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 9 -x 3140 -y 2090 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 9 -x 3140 -y 2110 -defaultsOSRD
+preplace port AO_in -pg 1 -lvl 0 -x -10 -y 2860 -defaultsOSRD
+preplace port BO_in -pg 1 -lvl 0 -x -10 -y 2880 -defaultsOSRD
+preplace port ZO_in -pg 1 -lvl 0 -x -10 -y 2900 -defaultsOSRD
+preplace port lvds_dco1_p_0 -pg 1 -lvl 0 -x -10 -y 60 -defaultsOSRD
+preplace port lvds_dco1_n_0 -pg 1 -lvl 0 -x -10 -y 80 -defaultsOSRD
+preplace port lvds_dco2_p_0 -pg 1 -lvl 0 -x -10 -y 100 -defaultsOSRD
+preplace port lvds_dco2_n_0 -pg 1 -lvl 0 -x -10 -y 120 -defaultsOSRD
+preplace port lvds_fco1_p_0 -pg 1 -lvl 0 -x -10 -y 140 -defaultsOSRD
+preplace port lvds_fco1_n_0 -pg 1 -lvl 0 -x -10 -y 160 -defaultsOSRD
+preplace port lvds_fco2_p_0 -pg 1 -lvl 0 -x -10 -y 180 -defaultsOSRD
+preplace port lvds_fco2_n_0 -pg 1 -lvl 0 -x -10 -y 200 -defaultsOSRD
+preplace port lvds_data_a1_p_0 -pg 1 -lvl 0 -x -10 -y 220 -defaultsOSRD
+preplace port lvds_data_a1_n_0 -pg 1 -lvl 0 -x -10 -y 240 -defaultsOSRD
+preplace port lvds_data_a2_p_0 -pg 1 -lvl 0 -x -10 -y 260 -defaultsOSRD
+preplace port lvds_data_a2_n_0 -pg 1 -lvl 0 -x -10 -y 280 -defaultsOSRD
+preplace port lvds_data_b1_p_0 -pg 1 -lvl 0 -x -10 -y 300 -defaultsOSRD
+preplace port lvds_data_b1_n_0 -pg 1 -lvl 0 -x -10 -y 320 -defaultsOSRD
+preplace port lvds_data_b2_p_0 -pg 1 -lvl 0 -x -10 -y 340 -defaultsOSRD
+preplace port lvds_data_b2_n_0 -pg 1 -lvl 0 -x -10 -y 360 -defaultsOSRD
+preplace port lvds_data_c1_p_0 -pg 1 -lvl 0 -x -10 -y 380 -defaultsOSRD
+preplace port lvds_data_c1_n_0 -pg 1 -lvl 0 -x -10 -y 400 -defaultsOSRD
+preplace port lvds_data_c2_p_0 -pg 1 -lvl 0 -x -10 -y 420 -defaultsOSRD
+preplace port lvds_data_c2_n_0 -pg 1 -lvl 0 -x -10 -y 440 -defaultsOSRD
+preplace port lvds_data_d1_p_0 -pg 1 -lvl 0 -x -10 -y 460 -defaultsOSRD
+preplace port lvds_data_d1_n_0 -pg 1 -lvl 0 -x -10 -y 480 -defaultsOSRD
+preplace port lvds_data_d2_p_0 -pg 1 -lvl 0 -x -10 -y 500 -defaultsOSRD
+preplace port lvds_data_d2_n_0 -pg 1 -lvl 0 -x -10 -y 520 -defaultsOSRD
+preplace port lvds_data_e1_p_0 -pg 1 -lvl 0 -x -10 -y 540 -defaultsOSRD
+preplace port lvds_data_e1_n_0 -pg 1 -lvl 0 -x -10 -y 560 -defaultsOSRD
+preplace port lvds_data_e2_p_0 -pg 1 -lvl 0 -x -10 -y 580 -defaultsOSRD
+preplace port lvds_data_e2_n_0 -pg 1 -lvl 0 -x -10 -y 600 -defaultsOSRD
+preplace port lvds_data_f1_p_0 -pg 1 -lvl 0 -x -10 -y 620 -defaultsOSRD
+preplace port lvds_data_f1_n_0 -pg 1 -lvl 0 -x -10 -y 640 -defaultsOSRD
+preplace port lvds_data_f2_p_0 -pg 1 -lvl 0 -x -10 -y 660 -defaultsOSRD
+preplace port lvds_data_f2_n_0 -pg 1 -lvl 0 -x -10 -y 680 -defaultsOSRD
+preplace port lvds_data_g1_p_0 -pg 1 -lvl 0 -x -10 -y 700 -defaultsOSRD
+preplace port lvds_data_g1_n_0 -pg 1 -lvl 0 -x -10 -y 720 -defaultsOSRD
+preplace port lvds_data_g2_p_0 -pg 1 -lvl 0 -x -10 -y 740 -defaultsOSRD
+preplace port lvds_data_g2_n_0 -pg 1 -lvl 0 -x -10 -y 760 -defaultsOSRD
+preplace port lvds_data_h1_p_0 -pg 1 -lvl 0 -x -10 -y 780 -defaultsOSRD
+preplace port lvds_data_h1_n_0 -pg 1 -lvl 0 -x -10 -y 800 -defaultsOSRD
+preplace port lvds_data_h2_p_0 -pg 1 -lvl 0 -x -10 -y 820 -defaultsOSRD
+preplace port lvds_data_h2_n_0 -pg 1 -lvl 0 -x -10 -y 840 -defaultsOSRD
+preplace port lvds_data_a1_n_1 -pg 1 -lvl 0 -x -10 -y 1160 -defaultsOSRD
+preplace port lvds_data_a1_p_1 -pg 1 -lvl 0 -x -10 -y 1140 -defaultsOSRD
+preplace port lvds_data_a2_n_1 -pg 1 -lvl 0 -x -10 -y 1200 -defaultsOSRD
+preplace port lvds_data_a2_p_1 -pg 1 -lvl 0 -x -10 -y 1180 -defaultsOSRD
+preplace port lvds_data_b1_n_1 -pg 1 -lvl 0 -x -10 -y 1240 -defaultsOSRD
+preplace port lvds_data_b1_p_1 -pg 1 -lvl 0 -x -10 -y 1220 -defaultsOSRD
+preplace port lvds_data_b2_n_1 -pg 1 -lvl 0 -x -10 -y 1280 -defaultsOSRD
+preplace port lvds_data_b2_p_1 -pg 1 -lvl 0 -x -10 -y 1260 -defaultsOSRD
+preplace port lvds_data_c1_n_1 -pg 1 -lvl 0 -x -10 -y 1320 -defaultsOSRD
+preplace port lvds_data_c1_p_1 -pg 1 -lvl 0 -x -10 -y 1300 -defaultsOSRD
+preplace port lvds_data_c2_n_1 -pg 1 -lvl 0 -x -10 -y 1360 -defaultsOSRD
+preplace port lvds_data_c2_p_1 -pg 1 -lvl 0 -x -10 -y 1340 -defaultsOSRD
+preplace port lvds_data_d1_n_1 -pg 1 -lvl 0 -x -10 -y 1400 -defaultsOSRD
+preplace port lvds_data_d1_p_1 -pg 1 -lvl 0 -x -10 -y 1380 -defaultsOSRD
+preplace port lvds_data_d2_n_1 -pg 1 -lvl 0 -x -10 -y 1440 -defaultsOSRD
+preplace port lvds_data_d2_p_1 -pg 1 -lvl 0 -x -10 -y 1420 -defaultsOSRD
+preplace port lvds_data_e1_n_1 -pg 1 -lvl 0 -x -10 -y 1480 -defaultsOSRD
+preplace port lvds_data_e1_p_1 -pg 1 -lvl 0 -x -10 -y 1460 -defaultsOSRD
+preplace port lvds_data_e2_n_1 -pg 1 -lvl 0 -x -10 -y 1520 -defaultsOSRD
+preplace port lvds_data_e2_p_1 -pg 1 -lvl 0 -x -10 -y 1500 -defaultsOSRD
+preplace port lvds_data_f1_n_1 -pg 1 -lvl 0 -x -10 -y 1560 -defaultsOSRD
+preplace port lvds_data_f1_p_1 -pg 1 -lvl 0 -x -10 -y 1540 -defaultsOSRD
+preplace port lvds_data_f2_n_1 -pg 1 -lvl 0 -x -10 -y 1600 -defaultsOSRD
+preplace port lvds_data_f2_p_1 -pg 1 -lvl 0 -x -10 -y 1580 -defaultsOSRD
+preplace port lvds_data_g1_n_1 -pg 1 -lvl 0 -x -10 -y 1640 -defaultsOSRD
+preplace port lvds_data_g1_p_1 -pg 1 -lvl 0 -x -10 -y 1620 -defaultsOSRD
+preplace port lvds_data_g2_n_1 -pg 1 -lvl 0 -x -10 -y 1680 -defaultsOSRD
+preplace port lvds_data_g2_p_1 -pg 1 -lvl 0 -x -10 -y 1660 -defaultsOSRD
+preplace port lvds_data_h1_n_1 -pg 1 -lvl 0 -x -10 -y 1720 -defaultsOSRD
+preplace port lvds_data_h1_p_1 -pg 1 -lvl 0 -x -10 -y 1700 -defaultsOSRD
+preplace port lvds_data_h2_n_1 -pg 1 -lvl 0 -x -10 -y 1760 -defaultsOSRD
+preplace port lvds_data_h2_p_1 -pg 1 -lvl 0 -x -10 -y 1740 -defaultsOSRD
+preplace port lvds_dco1_n_1 -pg 1 -lvl 0 -x -10 -y 1000 -defaultsOSRD
+preplace port lvds_dco1_p_1 -pg 1 -lvl 0 -x -10 -y 980 -defaultsOSRD
+preplace port lvds_dco2_n_1 -pg 1 -lvl 0 -x -10 -y 1040 -defaultsOSRD
+preplace port lvds_dco2_p_1 -pg 1 -lvl 0 -x -10 -y 1020 -defaultsOSRD
+preplace port lvds_fco1_n_1 -pg 1 -lvl 0 -x -10 -y 1080 -defaultsOSRD
+preplace port lvds_fco1_p_1 -pg 1 -lvl 0 -x -10 -y 1060 -defaultsOSRD
+preplace port lvds_fco2_n_1 -pg 1 -lvl 0 -x -10 -y 1120 -defaultsOSRD
+preplace port lvds_fco2_p_1 -pg 1 -lvl 0 -x -10 -y 1100 -defaultsOSRD
+preplace port lvds_data_a1_n_2 -pg 1 -lvl 0 -x -10 -y 2080 -defaultsOSRD
+preplace port lvds_data_a1_p_2 -pg 1 -lvl 0 -x -10 -y 2060 -defaultsOSRD
+preplace port lvds_data_a2_n_2 -pg 1 -lvl 0 -x -10 -y 2120 -defaultsOSRD
+preplace port lvds_data_a2_p_2 -pg 1 -lvl 0 -x -10 -y 2100 -defaultsOSRD
+preplace port lvds_data_b1_n_2 -pg 1 -lvl 0 -x -10 -y 2160 -defaultsOSRD
+preplace port lvds_data_b1_p_2 -pg 1 -lvl 0 -x -10 -y 2140 -defaultsOSRD
+preplace port lvds_data_b2_n_2 -pg 1 -lvl 0 -x -10 -y 2200 -defaultsOSRD
+preplace port lvds_data_b2_p_2 -pg 1 -lvl 0 -x -10 -y 2180 -defaultsOSRD
+preplace port lvds_data_c1_n_2 -pg 1 -lvl 0 -x -10 -y 2240 -defaultsOSRD
+preplace port lvds_data_c1_p_2 -pg 1 -lvl 0 -x -10 -y 2220 -defaultsOSRD
+preplace port lvds_data_c2_n_2 -pg 1 -lvl 0 -x -10 -y 2280 -defaultsOSRD
+preplace port lvds_data_c2_p_2 -pg 1 -lvl 0 -x -10 -y 2260 -defaultsOSRD
+preplace port lvds_data_d1_n_2 -pg 1 -lvl 0 -x -10 -y 2320 -defaultsOSRD
+preplace port lvds_data_d1_p_2 -pg 1 -lvl 0 -x -10 -y 2300 -defaultsOSRD
+preplace port lvds_data_d2_n_2 -pg 1 -lvl 0 -x -10 -y 2360 -defaultsOSRD
+preplace port lvds_data_d2_p_2 -pg 1 -lvl 0 -x -10 -y 2340 -defaultsOSRD
+preplace port lvds_data_e1_n_2 -pg 1 -lvl 0 -x -10 -y 2400 -defaultsOSRD
+preplace port lvds_data_e1_p_2 -pg 1 -lvl 0 -x -10 -y 2380 -defaultsOSRD
+preplace port lvds_data_e2_n_2 -pg 1 -lvl 0 -x -10 -y 2440 -defaultsOSRD
+preplace port lvds_data_e2_p_2 -pg 1 -lvl 0 -x -10 -y 2420 -defaultsOSRD
+preplace port lvds_data_f1_n_2 -pg 1 -lvl 0 -x -10 -y 2480 -defaultsOSRD
+preplace port lvds_data_f1_p_2 -pg 1 -lvl 0 -x -10 -y 2460 -defaultsOSRD
+preplace port lvds_data_f2_n_2 -pg 1 -lvl 0 -x -10 -y 2520 -defaultsOSRD
+preplace port lvds_data_f2_p_2 -pg 1 -lvl 0 -x -10 -y 2500 -defaultsOSRD
+preplace port lvds_data_g1_n_2 -pg 1 -lvl 0 -x -10 -y 2560 -defaultsOSRD
+preplace port lvds_data_g1_p_2 -pg 1 -lvl 0 -x -10 -y 2540 -defaultsOSRD
+preplace port lvds_data_g2_n_2 -pg 1 -lvl 0 -x -10 -y 2600 -defaultsOSRD
+preplace port lvds_data_g2_p_2 -pg 1 -lvl 0 -x -10 -y 2580 -defaultsOSRD
+preplace port lvds_data_h1_n_2 -pg 1 -lvl 0 -x -10 -y 2640 -defaultsOSRD
+preplace port lvds_data_h1_p_2 -pg 1 -lvl 0 -x -10 -y 2620 -defaultsOSRD
+preplace port lvds_data_h2_n_2 -pg 1 -lvl 0 -x -10 -y 2680 -defaultsOSRD
+preplace port lvds_data_h2_p_2 -pg 1 -lvl 0 -x -10 -y 2660 -defaultsOSRD
+preplace port lvds_dco1_n_2 -pg 1 -lvl 0 -x -10 -y 1920 -defaultsOSRD
+preplace port lvds_dco1_p_2 -pg 1 -lvl 0 -x -10 -y 1900 -defaultsOSRD
+preplace port lvds_dco2_n_2 -pg 1 -lvl 0 -x -10 -y 1960 -defaultsOSRD
+preplace port lvds_dco2_p_2 -pg 1 -lvl 0 -x -10 -y 1940 -defaultsOSRD
+preplace port lvds_fco1_n_2 -pg 1 -lvl 0 -x -10 -y 2000 -defaultsOSRD
+preplace port lvds_fco1_p_2 -pg 1 -lvl 0 -x -10 -y 1980 -defaultsOSRD
+preplace port lvds_fco2_n_2 -pg 1 -lvl 0 -x -10 -y 2040 -defaultsOSRD
+preplace port lvds_fco2_p_2 -pg 1 -lvl 0 -x -10 -y 2020 -defaultsOSRD
+preplace port sdio_0 -pg 1 -lvl 9 -x 3140 -y 2280 -defaultsOSRD
+preplace port sclk_0 -pg 1 -lvl 9 -x 3140 -y 2300 -defaultsOSRD
+preplace port csb_0 -pg 1 -lvl 9 -x 3140 -y 2320 -defaultsOSRD
+preplace port csb_1 -pg 1 -lvl 9 -x 3140 -y 2340 -defaultsOSRD
+preplace port busy_0 -pg 1 -lvl 9 -x 3140 -y 2360 -defaultsOSRD
+preplace port tsc_0 -pg 1 -lvl 9 -x 3140 -y 2380 -defaultsOSRD
+preplace port master_rst_n -pg 1 -lvl 0 -x -10 -y 880 -defaultsOSRD
+preplace portBus modulator_out -pg 1 -lvl 9 -x 3140 -y 1720 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1920 -y 2140 -defaultsOSRD
+preplace inst fpga_dig_top_0 -pg 1 -lvl 1 -x 200 -y 470 -defaultsOSRD
+preplace inst spi3_WICSC_top_0 -pg 1 -lvl 8 -x 2960 -y 2350 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 7 -x 2660 -y 2210 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 7 -x 2660 -y 2390 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 7 -x 2660 -y 1930 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 6 -x 2330 -y 1900 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 5 -x 1920 -y 2420 -defaultsOSRD
+preplace inst PS_Interface_TOP_0 -pg 1 -lvl 3 -x 1180 -y 1420 -defaultsOSRD
+preplace inst modulater_14bit_0 -pg 1 -lvl 4 -x 1520 -y 2060 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 1180 -y 2040 -defaultsOSRD
+preplace inst quadrature_decoder_0 -pg 1 -lvl 1 -x 200 -y 2870 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 7 -x 2660 -y 2540 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 700 -y 2850 -defaultsOSRD
+preplace inst fpga_dig_top_1 -pg 1 -lvl 1 -x 200 -y 1390 -defaultsOSRD
+preplace inst fpga_dig_top_2 -pg 1 -lvl 1 -x 200 -y 2310 -defaultsOSRD
+preplace inst MSBs_selector_0 -pg 1 -lvl 2 -x 700 -y 1000 -defaultsOSRD
+preplace inst MSBs_selector_1 -pg 1 -lvl 2 -x 700 -y 1400 -defaultsOSRD
+preplace inst MSBs_selector_2 -pg 1 -lvl 2 -x 700 -y 2320 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 8 20 2780 450J 2110 1020 2110 1330 2150 1700 1950 2170 2100 2500 2300 N
+preplace netloc axi_gpio_0_gpio_io_o 1 7 1 2820 2200n
+preplace netloc axi_gpio_0_gpio2_io_o 1 7 1 2800 2240n
+preplace netloc axi_gpio_1_gpio_io_o 1 7 1 N 2380
+preplace netloc axi_gpio_1_gpio2_io_o 1 7 1 2820 2400n
+preplace netloc spi3_WICSC_top_0_rx_data 1 7 2 N 1930 3090
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 4 2 1710 2310 2130
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 5 2 2180 2120 2510
+preplace netloc PS_Interface_TOP_0_PS_IN 1 3 3 NJ 1400 NJ 1400 2140
+preplace netloc processing_system7_0_GPIO_O 1 2 4 1030 1970 NJ 1970 NJ 1970 2130
+preplace netloc clk_wiz_0_clk_130 1 3 1 NJ 2030
+preplace netloc PS_Interface_TOP_0_toMod1 1 3 1 1340 1420n
+preplace netloc PS_Interface_TOP_0_toMod2 1 3 1 1320 1440n
+preplace netloc modulater_14bit_0_carrier_zero 1 4 1 1690 2070n
+preplace netloc axi_gpio_2_ip2intc_irpt 1 4 4 1710 1960 2160J 2080 NJ 2080 2820
+preplace netloc fpga_dig_top_0_captured_data_a1 1 1 1 520 330n
+preplace netloc fpga_dig_top_0_captured_data_a2 1 1 1 510 350n
+preplace netloc fpga_dig_top_0_captured_data_b1 1 1 1 500 370n
+preplace netloc fpga_dig_top_0_captured_data_b2 1 1 1 490 390n
+preplace netloc fpga_dig_top_0_captured_data_c1 1 1 1 480 410n
+preplace netloc fpga_dig_top_0_captured_data_c2 1 1 1 470 430n
+preplace netloc fpga_dig_top_0_captured_data_d1 1 1 1 460 450n
+preplace netloc fpga_dig_top_0_captured_data_d2 1 1 1 450 470n
+preplace netloc fpga_dig_top_0_captured_data_e1 1 1 1 440 490n
+preplace netloc fpga_dig_top_0_captured_data_e2 1 1 1 430 510n
+preplace netloc fpga_dig_top_0_captured_data_f1 1 1 1 420 530n
+preplace netloc fpga_dig_top_0_captured_data_f2 1 1 1 410 550n
+preplace netloc fpga_dig_top_0_captured_data_g1 1 1 1 400 570n
+preplace netloc fpga_dig_top_0_captured_data_g2 1 1 1 390 590n
+preplace netloc fpga_dig_top_0_captured_data_h1 1 1 1 380 610n
+preplace netloc fpga_dig_top_0_captured_data_h2 1 1 1 370 630n
+preplace netloc MSBs_selector_0_data_out_a1 1 2 1 1030 850n
+preplace netloc MSBs_selector_0_data_out_a2 1 2 1 1020 870n
+preplace netloc MSBs_selector_0_data_out_b1 1 2 1 1010 890n
+preplace netloc MSBs_selector_0_data_out_b2 1 2 1 1000 910n
+preplace netloc MSBs_selector_0_data_out_c1 1 2 1 990 930n
+preplace netloc MSBs_selector_0_data_out_c2 1 2 1 980 950n
+preplace netloc MSBs_selector_0_data_out_d1 1 2 1 970 970n
+preplace netloc MSBs_selector_0_data_out_d2 1 2 1 960 990n
+preplace netloc MSBs_selector_0_data_out_e1 1 2 1 930 1010n
+preplace netloc MSBs_selector_0_data_out_e2 1 2 1 920 1030n
+preplace netloc MSBs_selector_0_data_out_f1 1 2 1 910 1050n
+preplace netloc MSBs_selector_0_data_out_f2 1 2 1 900 1070n
+preplace netloc MSBs_selector_0_data_out_g1 1 2 1 890 1090n
+preplace netloc MSBs_selector_0_data_out_g2 1 2 1 880 1110n
+preplace netloc MSBs_selector_0_data_out_h1 1 2 1 870 1130n
+preplace netloc MSBs_selector_0_data_out_h2 1 2 1 860 1150n
+preplace netloc quadrature_decoder_0_position 1 1 1 440 2840n
+preplace netloc quadrature_decoder_0_direction 1 1 1 N 2860
+preplace netloc xlconcat_0_dout 1 2 6 N 2850 NJ 2850 NJ 2850 NJ 2850 NJ 2850 2800
+preplace netloc AO_in_1 1 0 1 NJ 2860
+preplace netloc BO_in_1 1 0 1 NJ 2880
+preplace netloc ZO_in_1 1 0 1 NJ 2900
+preplace netloc lvds_dco1_p_1_1 1 0 1 NJ 60
+preplace netloc lvds_dco1_n_1_1 1 0 1 NJ 80
+preplace netloc lvds_dco2_p_0_1 1 0 1 NJ 100
+preplace netloc lvds_dco2_n_0_1 1 0 1 NJ 120
+preplace netloc lvds_fco1_p_0_1 1 0 1 NJ 140
+preplace netloc lvds_fco1_n_0_1 1 0 1 NJ 160
+preplace netloc lvds_fco2_p_0_1 1 0 1 NJ 180
+preplace netloc lvds_fco2_n_0_1 1 0 1 NJ 200
+preplace netloc lvds_data_a1_p_0_1 1 0 1 NJ 220
+preplace netloc lvds_data_a1_n_0_1 1 0 1 NJ 240
+preplace netloc lvds_data_a2_p_0_1 1 0 1 NJ 260
+preplace netloc lvds_data_a2_n_0_1 1 0 1 NJ 280
+preplace netloc lvds_data_b1_p_0_1 1 0 1 NJ 300
+preplace netloc lvds_data_b1_n_0_1 1 0 1 NJ 320
+preplace netloc lvds_data_b2_p_0_1 1 0 1 NJ 340
+preplace netloc lvds_data_b2_n_0_1 1 0 1 NJ 360
+preplace netloc lvds_data_c1_p_0_1 1 0 1 NJ 380
+preplace netloc lvds_data_c1_n_0_1 1 0 1 NJ 400
+preplace netloc lvds_data_c2_p_0_1 1 0 1 NJ 420
+preplace netloc lvds_data_c2_n_0_1 1 0 1 NJ 440
+preplace netloc lvds_data_d1_p_0_1 1 0 1 NJ 460
+preplace netloc lvds_data_d1_n_0_1 1 0 1 NJ 480
+preplace netloc lvds_data_d2_p_0_1 1 0 1 NJ 500
+preplace netloc lvds_data_d2_n_0_1 1 0 1 NJ 520
+preplace netloc lvds_data_e1_p_0_1 1 0 1 NJ 540
+preplace netloc lvds_data_e1_n_0_1 1 0 1 NJ 560
+preplace netloc lvds_data_e2_p_0_1 1 0 1 NJ 580
+preplace netloc lvds_data_e2_n_0_1 1 0 1 NJ 600
+preplace netloc lvds_data_f1_p_0_1 1 0 1 NJ 620
+preplace netloc lvds_data_f1_n_0_1 1 0 1 NJ 640
+preplace netloc lvds_data_f2_p_0_1 1 0 1 NJ 660
+preplace netloc lvds_data_f2_n_0_1 1 0 1 NJ 680
+preplace netloc lvds_data_g1_p_0_1 1 0 1 NJ 700
+preplace netloc lvds_data_g1_n_0_1 1 0 1 NJ 720
+preplace netloc lvds_data_g2_p_0_1 1 0 1 NJ 740
+preplace netloc lvds_data_g2_n_0_1 1 0 1 NJ 760
+preplace netloc lvds_data_h1_p_0_1 1 0 1 NJ 780
+preplace netloc lvds_data_h1_n_0_1 1 0 1 NJ 800
+preplace netloc lvds_data_h2_p_0_1 1 0 1 NJ 820
+preplace netloc lvds_data_h2_n_0_1 1 0 1 NJ 840
+preplace netloc lvds_dco1_p_1_2 1 0 1 NJ 980
+preplace netloc lvds_dco1_n_1_2 1 0 1 NJ 1000
+preplace netloc lvds_dco2_n_1_1 1 0 1 NJ 1040
+preplace netloc lvds_dco2_p_1_1 1 0 1 NJ 1020
+preplace netloc lvds_fco1_n_1_1 1 0 1 NJ 1080
+preplace netloc lvds_fco1_p_1_1 1 0 1 NJ 1060
+preplace netloc lvds_fco2_n_1_1 1 0 1 NJ 1120
+preplace netloc lvds_fco2_p_1_1 1 0 1 NJ 1100
+preplace netloc lvds_data_a1_p_1_1 1 0 1 NJ 1140
+preplace netloc lvds_data_a1_n_1_1 1 0 1 NJ 1160
+preplace netloc lvds_data_a2_p_1_1 1 0 1 NJ 1180
+preplace netloc lvds_data_a2_n_1_1 1 0 1 NJ 1200
+preplace netloc lvds_data_b1_n_1_1 1 0 1 NJ 1240
+preplace netloc lvds_data_b1_p_1_1 1 0 1 NJ 1220
+preplace netloc lvds_data_b2_n_1_1 1 0 1 NJ 1280
+preplace netloc lvds_data_b2_p_1_1 1 0 1 NJ 1260
+preplace netloc lvds_data_c1_n_1_1 1 0 1 NJ 1320
+preplace netloc lvds_data_c1_p_1_1 1 0 1 NJ 1300
+preplace netloc lvds_data_c2_n_1_1 1 0 1 NJ 1360
+preplace netloc lvds_data_c2_p_1_1 1 0 1 NJ 1340
+preplace netloc lvds_data_d1_p_1_1 1 0 1 NJ 1380
+preplace netloc lvds_data_d1_n_1_1 1 0 1 NJ 1400
+preplace netloc lvds_data_d2_n_1_1 1 0 1 NJ 1440
+preplace netloc lvds_data_d2_p_1_1 1 0 1 NJ 1420
+preplace netloc lvds_data_e1_n_1_1 1 0 1 NJ 1480
+preplace netloc lvds_data_e1_p_1_1 1 0 1 NJ 1460
+preplace netloc lvds_data_e2_n_1_1 1 0 1 NJ 1520
+preplace netloc lvds_data_e2_p_1_1 1 0 1 NJ 1500
+preplace netloc lvds_data_f1_p_1_1 1 0 1 NJ 1540
+preplace netloc lvds_data_f1_n_1_1 1 0 1 NJ 1560
+preplace netloc lvds_data_f2_p_1_1 1 0 1 NJ 1580
+preplace netloc lvds_data_f2_n_1_1 1 0 1 NJ 1600
+preplace netloc lvds_data_g1_p_1_1 1 0 1 NJ 1620
+preplace netloc lvds_data_g1_n_1_1 1 0 1 NJ 1640
+preplace netloc lvds_data_g2_p_1_1 1 0 1 NJ 1660
+preplace netloc lvds_data_g2_n_1_1 1 0 1 NJ 1680
+preplace netloc lvds_data_h1_p_1_1 1 0 1 NJ 1700
+preplace netloc lvds_data_h1_n_1_1 1 0 1 NJ 1720
+preplace netloc lvds_data_h2_p_1_1 1 0 1 NJ 1740
+preplace netloc lvds_data_h2_n_1_1 1 0 1 NJ 1760
+preplace netloc lvds_data_a1_p_2_1 1 0 1 NJ 2060
+preplace netloc lvds_data_a1_n_2_1 1 0 1 NJ 2080
+preplace netloc lvds_data_a2_p_2_1 1 0 1 NJ 2100
+preplace netloc lvds_data_a2_n_2_1 1 0 1 NJ 2120
+preplace netloc lvds_data_b1_p_2_1 1 0 1 NJ 2140
+preplace netloc lvds_data_b1_n_2_1 1 0 1 NJ 2160
+preplace netloc lvds_data_b2_p_2_1 1 0 1 NJ 2180
+preplace netloc lvds_data_b2_n_2_1 1 0 1 NJ 2200
+preplace netloc lvds_data_c1_n_2_1 1 0 1 NJ 2240
+preplace netloc lvds_dco1_p_2_1 1 0 1 NJ 1900
+preplace netloc lvds_dco1_n_2_1 1 0 1 NJ 1920
+preplace netloc lvds_dco2_p_2_1 1 0 1 NJ 1940
+preplace netloc lvds_dco2_n_2_1 1 0 1 NJ 1960
+preplace netloc lvds_fco1_p_2_1 1 0 1 NJ 1980
+preplace netloc lvds_fco1_n_2_1 1 0 1 NJ 2000
+preplace netloc lvds_fco2_n_2_1 1 0 1 NJ 2040
+preplace netloc lvds_fco2_p_2_1 1 0 1 NJ 2020
+preplace netloc lvds_data_h2_n_2_1 1 0 1 NJ 2680
+preplace netloc lvds_data_h2_p_2_1 1 0 1 NJ 2660
+preplace netloc lvds_data_h1_n_2_1 1 0 1 NJ 2640
+preplace netloc lvds_data_h1_p_2_1 1 0 1 NJ 2620
+preplace netloc lvds_data_g2_n_2_1 1 0 1 NJ 2600
+preplace netloc lvds_data_g2_p_2_1 1 0 1 NJ 2580
+preplace netloc lvds_data_g1_n_2_1 1 0 1 NJ 2560
+preplace netloc lvds_data_g1_p_2_1 1 0 1 NJ 2540
+preplace netloc lvds_data_f2_n_2_1 1 0 1 NJ 2520
+preplace netloc lvds_data_f2_p_2_1 1 0 1 NJ 2500
+preplace netloc lvds_data_f1_n_2_1 1 0 1 NJ 2480
+preplace netloc lvds_data_f1_p_2_1 1 0 1 NJ 2460
+preplace netloc lvds_data_e2_n_2_1 1 0 1 NJ 2440
+preplace netloc lvds_data_e2_p_2_1 1 0 1 NJ 2420
+preplace netloc lvds_data_e1_n_2_1 1 0 1 NJ 2400
+preplace netloc lvds_data_e1_p_2_1 1 0 1 NJ 2380
+preplace netloc lvds_data_d2_n_2_1 1 0 1 NJ 2360
+preplace netloc lvds_data_d2_p_2_1 1 0 1 NJ 2340
+preplace netloc lvds_data_d1_n_2_1 1 0 1 NJ 2320
+preplace netloc lvds_data_d1_p_2_1 1 0 1 NJ 2300
+preplace netloc lvds_data_c2_n_2_1 1 0 1 NJ 2280
+preplace netloc lvds_data_c2_p_2_1 1 0 1 NJ 2260
+preplace netloc lvds_data_c1_p_2_1 1 0 1 NJ 2220
+preplace netloc fpga_dig_top_1_captured_data_a1 1 1 1 N 1250
+preplace netloc fpga_dig_top_1_captured_data_a2 1 1 1 N 1270
+preplace netloc fpga_dig_top_1_captured_data_b1 1 1 1 N 1290
+preplace netloc fpga_dig_top_1_captured_data_b2 1 1 1 N 1310
+preplace netloc fpga_dig_top_1_captured_data_c1 1 1 1 N 1330
+preplace netloc fpga_dig_top_1_captured_data_c2 1 1 1 N 1350
+preplace netloc fpga_dig_top_1_captured_data_d1 1 1 1 N 1370
+preplace netloc fpga_dig_top_1_captured_data_d2 1 1 1 N 1390
+preplace netloc fpga_dig_top_1_captured_data_e1 1 1 1 N 1410
+preplace netloc fpga_dig_top_1_captured_data_e2 1 1 1 N 1430
+preplace netloc fpga_dig_top_1_captured_data_f1 1 1 1 N 1450
+preplace netloc fpga_dig_top_1_captured_data_f2 1 1 1 N 1470
+preplace netloc fpga_dig_top_1_captured_data_g1 1 1 1 N 1490
+preplace netloc fpga_dig_top_1_captured_data_g2 1 1 1 N 1510
+preplace netloc fpga_dig_top_1_captured_data_h1 1 1 1 N 1530
+preplace netloc fpga_dig_top_1_captured_data_h2 1 1 1 N 1550
+preplace netloc MSBs_selector_1_data_out_a1 1 2 1 N 1250
+preplace netloc MSBs_selector_1_data_out_a2 1 2 1 N 1270
+preplace netloc MSBs_selector_1_data_out_b1 1 2 1 N 1290
+preplace netloc MSBs_selector_1_data_out_b2 1 2 1 N 1310
+preplace netloc MSBs_selector_1_data_out_c1 1 2 1 N 1330
+preplace netloc MSBs_selector_1_data_out_c2 1 2 1 N 1350
+preplace netloc MSBs_selector_1_data_out_d1 1 2 1 N 1370
+preplace netloc MSBs_selector_1_data_out_d2 1 2 1 N 1390
+preplace netloc MSBs_selector_1_data_out_e1 1 2 1 N 1410
+preplace netloc MSBs_selector_1_data_out_e2 1 2 1 N 1430
+preplace netloc MSBs_selector_1_data_out_f1 1 2 1 N 1450
+preplace netloc MSBs_selector_1_data_out_f2 1 2 1 N 1470
+preplace netloc MSBs_selector_1_data_out_g1 1 2 1 N 1490
+preplace netloc MSBs_selector_1_data_out_g2 1 2 1 N 1510
+preplace netloc MSBs_selector_1_data_out_h1 1 2 1 N 1530
+preplace netloc MSBs_selector_1_data_out_h2 1 2 1 N 1550
+preplace netloc fpga_dig_top_2_captured_data_a1 1 1 1 N 2170
+preplace netloc fpga_dig_top_2_captured_data_a2 1 1 1 N 2190
+preplace netloc fpga_dig_top_2_captured_data_b1 1 1 1 N 2210
+preplace netloc fpga_dig_top_2_captured_data_b2 1 1 1 N 2230
+preplace netloc fpga_dig_top_2_captured_data_c1 1 1 1 N 2250
+preplace netloc fpga_dig_top_2_captured_data_c2 1 1 1 N 2270
+preplace netloc fpga_dig_top_2_captured_data_d1 1 1 1 N 2290
+preplace netloc fpga_dig_top_2_captured_data_d2 1 1 1 N 2310
+preplace netloc fpga_dig_top_2_captured_data_e1 1 1 1 N 2330
+preplace netloc fpga_dig_top_2_captured_data_e2 1 1 1 N 2350
+preplace netloc fpga_dig_top_2_captured_data_f1 1 1 1 N 2370
+preplace netloc fpga_dig_top_2_captured_data_f2 1 1 1 N 2390
+preplace netloc fpga_dig_top_2_captured_data_g1 1 1 1 N 2410
+preplace netloc fpga_dig_top_2_captured_data_g2 1 1 1 N 2430
+preplace netloc fpga_dig_top_2_captured_data_h1 1 1 1 N 2450
+preplace netloc fpga_dig_top_2_captured_data_h2 1 1 1 N 2470
+preplace netloc MSBs_selector_2_data_out_a1 1 2 1 860 1570n
+preplace netloc MSBs_selector_2_data_out_a2 1 2 1 870 1590n
+preplace netloc MSBs_selector_2_data_out_b1 1 2 1 880 1610n
+preplace netloc MSBs_selector_2_data_out_b2 1 2 1 890 1630n
+preplace netloc MSBs_selector_2_data_out_c1 1 2 1 900 1650n
+preplace netloc MSBs_selector_2_data_out_c2 1 2 1 910 1670n
+preplace netloc MSBs_selector_2_data_out_d1 1 2 1 920 1690n
+preplace netloc MSBs_selector_2_data_out_d2 1 2 1 930 1710n
+preplace netloc MSBs_selector_2_data_out_e1 1 2 1 940 1730n
+preplace netloc MSBs_selector_2_data_out_e2 1 2 1 950 1750n
+preplace netloc MSBs_selector_2_data_out_f1 1 2 1 960 1770n
+preplace netloc MSBs_selector_2_data_out_f2 1 2 1 970 1790n
+preplace netloc MSBs_selector_2_data_out_g1 1 2 1 980 1810n
+preplace netloc MSBs_selector_2_data_out_g2 1 2 1 990 1830n
+preplace netloc MSBs_selector_2_data_out_h1 1 2 1 1000 1850n
+preplace netloc MSBs_selector_2_data_out_h2 1 2 1 1010 1870n
+preplace netloc Net 1 8 1 3100J 2280n
+preplace netloc spi3_WICSC_top_0_sclk 1 8 1 3110J 2300n
+preplace netloc spi3_WICSC_top_0_csb 1 8 1 3120 2320n
+preplace netloc spi3_WICSC_top_0_busy 1 8 1 NJ 2360
+preplace netloc spi3_WICSC_top_0_tsc 1 8 1 NJ 2380
+preplace netloc master_rst_n_1 1 0 8 10 2960 N 2960 N 2960 N 2960 N 2960 N 2960 N 2960 2810
+preplace netloc modulater_14bit_0_mod_out 1 4 5 1690 1720 NJ 1720 NJ 1720 NJ 1720 NJ
+preplace netloc ps7_0_axi_periph_M02_AXI 1 6 1 N 1910
+preplace netloc ps7_0_axi_periph_M00_AXI 1 6 1 2520 1870n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 6 1 2490 1890n
+preplace netloc processing_system7_0_M_AXI_GP0 1 5 1 2150 1780n
+preplace netloc processing_system7_0_FIXED_IO 1 5 4 NJ 2110 NJ 2110 NJ 2110 NJ
+preplace netloc processing_system7_0_DDR 1 5 4 NJ 2090 NJ 2090 NJ 2090 NJ
+preplace netloc ps7_0_axi_periph_M03_AXI 1 6 1 2480 1930n
+levelinfo -pg 1 -10 200 700 1180 1520 1920 2330 2660 2960 3140
+pagesize -pg 1 -db -bbox -sgen -180 -10 3320 2970
+"
+}
+{
+   "da_axi4_cnt":"4",
+   "da_clkrst_cnt":"2",
+   "da_ps7_cnt":"1"
+}

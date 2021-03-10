@@ -1,0 +1,7 @@
+Running: xsim.dir/spi3_WICSC_top_behav/xsimk.exe -simmode gui -wdb spi3_WICSC_top_behav.wdb -simrunnum 0 -socket 62297
+Design successfully loaded
+Design Loading Memory Usage: 5864 KB (Peak: 5864 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 6420 KB (Peak: 6420 KB)
+Simulation CPU Usage: 30 ms
