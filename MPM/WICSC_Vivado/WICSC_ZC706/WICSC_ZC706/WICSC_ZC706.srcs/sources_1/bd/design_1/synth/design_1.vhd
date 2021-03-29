@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Wed Mar 10 10:55:43 2021
+--Date        : Mon Mar 29 16:10:28 2021
 --Host        : 350D running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1558,9 +1558,6 @@ entity design_1 is
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     ZO_in : in STD_LOGIC;
-    busy_0 : out STD_LOGIC;
-    csb_0 : out STD_LOGIC;
-    csb_1 : out STD_LOGIC;
     lvds_data_a1_n_0 : in STD_LOGIC;
     lvds_data_a1_n_1 : in STD_LOGIC;
     lvds_data_a1_n_2 : in STD_LOGIC;
@@ -1593,70 +1590,48 @@ entity design_1 is
     lvds_data_c1_p_2 : in STD_LOGIC;
     lvds_data_c2_n_0 : in STD_LOGIC;
     lvds_data_c2_n_1 : in STD_LOGIC;
-    lvds_data_c2_n_2 : in STD_LOGIC;
     lvds_data_c2_p_0 : in STD_LOGIC;
     lvds_data_c2_p_1 : in STD_LOGIC;
-    lvds_data_c2_p_2 : in STD_LOGIC;
     lvds_data_d1_n_0 : in STD_LOGIC;
     lvds_data_d1_n_1 : in STD_LOGIC;
-    lvds_data_d1_n_2 : in STD_LOGIC;
     lvds_data_d1_p_0 : in STD_LOGIC;
     lvds_data_d1_p_1 : in STD_LOGIC;
-    lvds_data_d1_p_2 : in STD_LOGIC;
     lvds_data_d2_n_0 : in STD_LOGIC;
     lvds_data_d2_n_1 : in STD_LOGIC;
-    lvds_data_d2_n_2 : in STD_LOGIC;
     lvds_data_d2_p_0 : in STD_LOGIC;
     lvds_data_d2_p_1 : in STD_LOGIC;
-    lvds_data_d2_p_2 : in STD_LOGIC;
     lvds_data_e1_n_0 : in STD_LOGIC;
     lvds_data_e1_n_1 : in STD_LOGIC;
-    lvds_data_e1_n_2 : in STD_LOGIC;
     lvds_data_e1_p_0 : in STD_LOGIC;
     lvds_data_e1_p_1 : in STD_LOGIC;
-    lvds_data_e1_p_2 : in STD_LOGIC;
     lvds_data_e2_n_0 : in STD_LOGIC;
     lvds_data_e2_n_1 : in STD_LOGIC;
-    lvds_data_e2_n_2 : in STD_LOGIC;
     lvds_data_e2_p_0 : in STD_LOGIC;
     lvds_data_e2_p_1 : in STD_LOGIC;
-    lvds_data_e2_p_2 : in STD_LOGIC;
     lvds_data_f1_n_0 : in STD_LOGIC;
     lvds_data_f1_n_1 : in STD_LOGIC;
-    lvds_data_f1_n_2 : in STD_LOGIC;
     lvds_data_f1_p_0 : in STD_LOGIC;
     lvds_data_f1_p_1 : in STD_LOGIC;
-    lvds_data_f1_p_2 : in STD_LOGIC;
     lvds_data_f2_n_0 : in STD_LOGIC;
     lvds_data_f2_n_1 : in STD_LOGIC;
-    lvds_data_f2_n_2 : in STD_LOGIC;
     lvds_data_f2_p_0 : in STD_LOGIC;
     lvds_data_f2_p_1 : in STD_LOGIC;
-    lvds_data_f2_p_2 : in STD_LOGIC;
     lvds_data_g1_n_0 : in STD_LOGIC;
     lvds_data_g1_n_1 : in STD_LOGIC;
-    lvds_data_g1_n_2 : in STD_LOGIC;
     lvds_data_g1_p_0 : in STD_LOGIC;
     lvds_data_g1_p_1 : in STD_LOGIC;
-    lvds_data_g1_p_2 : in STD_LOGIC;
     lvds_data_g2_n_0 : in STD_LOGIC;
     lvds_data_g2_n_1 : in STD_LOGIC;
-    lvds_data_g2_n_2 : in STD_LOGIC;
     lvds_data_g2_p_0 : in STD_LOGIC;
     lvds_data_g2_p_1 : in STD_LOGIC;
-    lvds_data_g2_p_2 : in STD_LOGIC;
     lvds_data_h1_n_0 : in STD_LOGIC;
     lvds_data_h1_n_1 : in STD_LOGIC;
-    lvds_data_h1_n_2 : in STD_LOGIC;
     lvds_data_h1_p_0 : in STD_LOGIC;
     lvds_data_h1_p_1 : in STD_LOGIC;
-    lvds_data_h1_p_2 : in STD_LOGIC;
     lvds_data_h2_n_0 : in STD_LOGIC;
     lvds_data_h2_n_1 : in STD_LOGIC;
-    lvds_data_h2_n_2 : in STD_LOGIC;
     lvds_data_h2_p_0 : in STD_LOGIC;
     lvds_data_h2_p_1 : in STD_LOGIC;
-    lvds_data_h2_p_2 : in STD_LOGIC;
     lvds_dco1_n_0 : in STD_LOGIC;
     lvds_dco1_n_1 : in STD_LOGIC;
     lvds_dco1_n_2 : in STD_LOGIC;
@@ -1684,8 +1659,7 @@ entity design_1 is
     master_rst_n : in STD_LOGIC;
     modulator_out : out STD_LOGIC_VECTOR ( 35 downto 0 );
     sclk_0 : out STD_LOGIC;
-    sdio_0 : inout STD_LOGIC;
-    tsc_0 : out STD_LOGIC
+    sdio_0 : inout STD_LOGIC
   );
   attribute core_generation_info : string;
   attribute core_generation_info of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=26,numReposBlks=20,numNonXlnxBlks=2,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=8,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
@@ -2430,70 +2404,48 @@ architecture STRUCTURE of design_1 is
   signal lvds_data_c1_p_2_1 : STD_LOGIC;
   signal lvds_data_c2_n_0_1 : STD_LOGIC;
   signal lvds_data_c2_n_1_1 : STD_LOGIC;
-  signal lvds_data_c2_n_2_1 : STD_LOGIC;
   signal lvds_data_c2_p_0_1 : STD_LOGIC;
   signal lvds_data_c2_p_1_1 : STD_LOGIC;
-  signal lvds_data_c2_p_2_1 : STD_LOGIC;
   signal lvds_data_d1_n_0_1 : STD_LOGIC;
   signal lvds_data_d1_n_1_1 : STD_LOGIC;
-  signal lvds_data_d1_n_2_1 : STD_LOGIC;
   signal lvds_data_d1_p_0_1 : STD_LOGIC;
   signal lvds_data_d1_p_1_1 : STD_LOGIC;
-  signal lvds_data_d1_p_2_1 : STD_LOGIC;
   signal lvds_data_d2_n_0_1 : STD_LOGIC;
   signal lvds_data_d2_n_1_1 : STD_LOGIC;
-  signal lvds_data_d2_n_2_1 : STD_LOGIC;
   signal lvds_data_d2_p_0_1 : STD_LOGIC;
   signal lvds_data_d2_p_1_1 : STD_LOGIC;
-  signal lvds_data_d2_p_2_1 : STD_LOGIC;
   signal lvds_data_e1_n_0_1 : STD_LOGIC;
   signal lvds_data_e1_n_1_1 : STD_LOGIC;
-  signal lvds_data_e1_n_2_1 : STD_LOGIC;
   signal lvds_data_e1_p_0_1 : STD_LOGIC;
   signal lvds_data_e1_p_1_1 : STD_LOGIC;
-  signal lvds_data_e1_p_2_1 : STD_LOGIC;
   signal lvds_data_e2_n_0_1 : STD_LOGIC;
   signal lvds_data_e2_n_1_1 : STD_LOGIC;
-  signal lvds_data_e2_n_2_1 : STD_LOGIC;
   signal lvds_data_e2_p_0_1 : STD_LOGIC;
   signal lvds_data_e2_p_1_1 : STD_LOGIC;
-  signal lvds_data_e2_p_2_1 : STD_LOGIC;
   signal lvds_data_f1_n_0_1 : STD_LOGIC;
   signal lvds_data_f1_n_1_1 : STD_LOGIC;
-  signal lvds_data_f1_n_2_1 : STD_LOGIC;
   signal lvds_data_f1_p_0_1 : STD_LOGIC;
   signal lvds_data_f1_p_1_1 : STD_LOGIC;
-  signal lvds_data_f1_p_2_1 : STD_LOGIC;
   signal lvds_data_f2_n_0_1 : STD_LOGIC;
   signal lvds_data_f2_n_1_1 : STD_LOGIC;
-  signal lvds_data_f2_n_2_1 : STD_LOGIC;
   signal lvds_data_f2_p_0_1 : STD_LOGIC;
   signal lvds_data_f2_p_1_1 : STD_LOGIC;
-  signal lvds_data_f2_p_2_1 : STD_LOGIC;
   signal lvds_data_g1_n_0_1 : STD_LOGIC;
   signal lvds_data_g1_n_1_1 : STD_LOGIC;
-  signal lvds_data_g1_n_2_1 : STD_LOGIC;
   signal lvds_data_g1_p_0_1 : STD_LOGIC;
   signal lvds_data_g1_p_1_1 : STD_LOGIC;
-  signal lvds_data_g1_p_2_1 : STD_LOGIC;
   signal lvds_data_g2_n_0_1 : STD_LOGIC;
   signal lvds_data_g2_n_1_1 : STD_LOGIC;
-  signal lvds_data_g2_n_2_1 : STD_LOGIC;
   signal lvds_data_g2_p_0_1 : STD_LOGIC;
   signal lvds_data_g2_p_1_1 : STD_LOGIC;
-  signal lvds_data_g2_p_2_1 : STD_LOGIC;
   signal lvds_data_h1_n_0_1 : STD_LOGIC;
   signal lvds_data_h1_n_1_1 : STD_LOGIC;
-  signal lvds_data_h1_n_2_1 : STD_LOGIC;
   signal lvds_data_h1_p_0_1 : STD_LOGIC;
   signal lvds_data_h1_p_1_1 : STD_LOGIC;
-  signal lvds_data_h1_p_2_1 : STD_LOGIC;
   signal lvds_data_h2_n_0_1 : STD_LOGIC;
   signal lvds_data_h2_n_1_1 : STD_LOGIC;
-  signal lvds_data_h2_n_2_1 : STD_LOGIC;
   signal lvds_data_h2_p_0_1 : STD_LOGIC;
   signal lvds_data_h2_p_1_1 : STD_LOGIC;
-  signal lvds_data_h2_p_2_1 : STD_LOGIC;
   signal lvds_dco1_n_1_1 : STD_LOGIC;
   signal lvds_dco1_n_1_2 : STD_LOGIC;
   signal lvds_dco1_n_2_1 : STD_LOGIC;
@@ -2654,11 +2606,8 @@ architecture STRUCTURE of design_1 is
   signal quadrature_decoder_0_direction : STD_LOGIC;
   signal quadrature_decoder_0_position : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal spi3_WICSC_top_0_busy : STD_LOGIC;
-  signal spi3_WICSC_top_0_csb : STD_LOGIC;
   signal spi3_WICSC_top_0_rx_data : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal spi3_WICSC_top_0_sclk : STD_LOGIC;
-  signal spi3_WICSC_top_0_tsc : STD_LOGIC;
   signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal NLW_clk_wiz_0_locked_UNCONNECTED : STD_LOGIC;
   signal NLW_fpga_dig_top_0_sysclk_ready_UNCONNECTED : STD_LOGIC;
@@ -2674,6 +2623,9 @@ architecture STRUCTURE of design_1 is
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_spi3_WICSC_top_0_busy_UNCONNECTED : STD_LOGIC;
+  signal NLW_spi3_WICSC_top_0_csb_UNCONNECTED : STD_LOGIC;
+  signal NLW_spi3_WICSC_top_0_tsc_UNCONNECTED : STD_LOGIC;
   attribute x_interface_info : string;
   attribute x_interface_info of DDR_cas_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CAS_N";
   attribute x_interface_info of DDR_ck_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_N";
@@ -2703,9 +2655,6 @@ begin
   AO_in_1 <= AO_in;
   BO_in_1 <= BO_in;
   ZO_in_1 <= ZO_in;
-  busy_0 <= spi3_WICSC_top_0_busy;
-  csb_0 <= spi3_WICSC_top_0_csb;
-  csb_1 <= spi3_WICSC_top_0_csb;
   lvds_data_a1_n_0_1 <= lvds_data_a1_n_0;
   lvds_data_a1_n_1_1 <= lvds_data_a1_n_1;
   lvds_data_a1_n_2_1 <= lvds_data_a1_n_2;
@@ -2738,70 +2687,48 @@ begin
   lvds_data_c1_p_2_1 <= lvds_data_c1_p_2;
   lvds_data_c2_n_0_1 <= lvds_data_c2_n_0;
   lvds_data_c2_n_1_1 <= lvds_data_c2_n_1;
-  lvds_data_c2_n_2_1 <= lvds_data_c2_n_2;
   lvds_data_c2_p_0_1 <= lvds_data_c2_p_0;
   lvds_data_c2_p_1_1 <= lvds_data_c2_p_1;
-  lvds_data_c2_p_2_1 <= lvds_data_c2_p_2;
   lvds_data_d1_n_0_1 <= lvds_data_d1_n_0;
   lvds_data_d1_n_1_1 <= lvds_data_d1_n_1;
-  lvds_data_d1_n_2_1 <= lvds_data_d1_n_2;
   lvds_data_d1_p_0_1 <= lvds_data_d1_p_0;
   lvds_data_d1_p_1_1 <= lvds_data_d1_p_1;
-  lvds_data_d1_p_2_1 <= lvds_data_d1_p_2;
   lvds_data_d2_n_0_1 <= lvds_data_d2_n_0;
   lvds_data_d2_n_1_1 <= lvds_data_d2_n_1;
-  lvds_data_d2_n_2_1 <= lvds_data_d2_n_2;
   lvds_data_d2_p_0_1 <= lvds_data_d2_p_0;
   lvds_data_d2_p_1_1 <= lvds_data_d2_p_1;
-  lvds_data_d2_p_2_1 <= lvds_data_d2_p_2;
   lvds_data_e1_n_0_1 <= lvds_data_e1_n_0;
   lvds_data_e1_n_1_1 <= lvds_data_e1_n_1;
-  lvds_data_e1_n_2_1 <= lvds_data_e1_n_2;
   lvds_data_e1_p_0_1 <= lvds_data_e1_p_0;
   lvds_data_e1_p_1_1 <= lvds_data_e1_p_1;
-  lvds_data_e1_p_2_1 <= lvds_data_e1_p_2;
   lvds_data_e2_n_0_1 <= lvds_data_e2_n_0;
   lvds_data_e2_n_1_1 <= lvds_data_e2_n_1;
-  lvds_data_e2_n_2_1 <= lvds_data_e2_n_2;
   lvds_data_e2_p_0_1 <= lvds_data_e2_p_0;
   lvds_data_e2_p_1_1 <= lvds_data_e2_p_1;
-  lvds_data_e2_p_2_1 <= lvds_data_e2_p_2;
   lvds_data_f1_n_0_1 <= lvds_data_f1_n_0;
   lvds_data_f1_n_1_1 <= lvds_data_f1_n_1;
-  lvds_data_f1_n_2_1 <= lvds_data_f1_n_2;
   lvds_data_f1_p_0_1 <= lvds_data_f1_p_0;
   lvds_data_f1_p_1_1 <= lvds_data_f1_p_1;
-  lvds_data_f1_p_2_1 <= lvds_data_f1_p_2;
   lvds_data_f2_n_0_1 <= lvds_data_f2_n_0;
   lvds_data_f2_n_1_1 <= lvds_data_f2_n_1;
-  lvds_data_f2_n_2_1 <= lvds_data_f2_n_2;
   lvds_data_f2_p_0_1 <= lvds_data_f2_p_0;
   lvds_data_f2_p_1_1 <= lvds_data_f2_p_1;
-  lvds_data_f2_p_2_1 <= lvds_data_f2_p_2;
   lvds_data_g1_n_0_1 <= lvds_data_g1_n_0;
   lvds_data_g1_n_1_1 <= lvds_data_g1_n_1;
-  lvds_data_g1_n_2_1 <= lvds_data_g1_n_2;
   lvds_data_g1_p_0_1 <= lvds_data_g1_p_0;
   lvds_data_g1_p_1_1 <= lvds_data_g1_p_1;
-  lvds_data_g1_p_2_1 <= lvds_data_g1_p_2;
   lvds_data_g2_n_0_1 <= lvds_data_g2_n_0;
   lvds_data_g2_n_1_1 <= lvds_data_g2_n_1;
-  lvds_data_g2_n_2_1 <= lvds_data_g2_n_2;
   lvds_data_g2_p_0_1 <= lvds_data_g2_p_0;
   lvds_data_g2_p_1_1 <= lvds_data_g2_p_1;
-  lvds_data_g2_p_2_1 <= lvds_data_g2_p_2;
   lvds_data_h1_n_0_1 <= lvds_data_h1_n_0;
   lvds_data_h1_n_1_1 <= lvds_data_h1_n_1;
-  lvds_data_h1_n_2_1 <= lvds_data_h1_n_2;
   lvds_data_h1_p_0_1 <= lvds_data_h1_p_0;
   lvds_data_h1_p_1_1 <= lvds_data_h1_p_1;
-  lvds_data_h1_p_2_1 <= lvds_data_h1_p_2;
   lvds_data_h2_n_0_1 <= lvds_data_h2_n_0;
   lvds_data_h2_n_1_1 <= lvds_data_h2_n_1;
-  lvds_data_h2_n_2_1 <= lvds_data_h2_n_2;
   lvds_data_h2_p_0_1 <= lvds_data_h2_p_0;
   lvds_data_h2_p_1_1 <= lvds_data_h2_p_1;
-  lvds_data_h2_p_2_1 <= lvds_data_h2_p_2;
   lvds_dco1_n_1_1 <= lvds_dco1_n_0;
   lvds_dco1_n_1_2 <= lvds_dco1_n_1;
   lvds_dco1_n_2_1 <= lvds_dco1_n_2;
@@ -2829,7 +2756,6 @@ begin
   master_rst_n_1 <= master_rst_n;
   modulator_out(35 downto 0) <= modulater_14bit_0_mod_out(35 downto 0);
   sclk_0 <= spi3_WICSC_top_0_sclk;
-  tsc_0 <= spi3_WICSC_top_0_tsc;
 MSBs_selector_0: component design_1_MSBs_selector_0_2
      port map (
       data_in_a1(15 downto 0) => fpga_dig_top_0_captured_data_a1(15 downto 0),
@@ -3245,28 +3171,28 @@ fpga_dig_top_2: component design_1_fpga_dig_top_2_0
       lvds_data_b2_p => lvds_data_b2_p_2_1,
       lvds_data_c1_n => lvds_data_c1_n_2_1,
       lvds_data_c1_p => lvds_data_c1_p_2_1,
-      lvds_data_c2_n => lvds_data_c2_n_2_1,
-      lvds_data_c2_p => lvds_data_c2_p_2_1,
-      lvds_data_d1_n => lvds_data_d1_n_2_1,
-      lvds_data_d1_p => lvds_data_d1_p_2_1,
-      lvds_data_d2_n => lvds_data_d2_n_2_1,
-      lvds_data_d2_p => lvds_data_d2_p_2_1,
-      lvds_data_e1_n => lvds_data_e1_n_2_1,
-      lvds_data_e1_p => lvds_data_e1_p_2_1,
-      lvds_data_e2_n => lvds_data_e2_n_2_1,
-      lvds_data_e2_p => lvds_data_e2_p_2_1,
-      lvds_data_f1_n => lvds_data_f1_n_2_1,
-      lvds_data_f1_p => lvds_data_f1_p_2_1,
-      lvds_data_f2_n => lvds_data_f2_n_2_1,
-      lvds_data_f2_p => lvds_data_f2_p_2_1,
-      lvds_data_g1_n => lvds_data_g1_n_2_1,
-      lvds_data_g1_p => lvds_data_g1_p_2_1,
-      lvds_data_g2_n => lvds_data_g2_n_2_1,
-      lvds_data_g2_p => lvds_data_g2_p_2_1,
-      lvds_data_h1_n => lvds_data_h1_n_2_1,
-      lvds_data_h1_p => lvds_data_h1_p_2_1,
-      lvds_data_h2_n => lvds_data_h2_n_2_1,
-      lvds_data_h2_p => lvds_data_h2_p_2_1,
+      lvds_data_c2_n => '0',
+      lvds_data_c2_p => '0',
+      lvds_data_d1_n => '0',
+      lvds_data_d1_p => '0',
+      lvds_data_d2_n => '0',
+      lvds_data_d2_p => '0',
+      lvds_data_e1_n => '0',
+      lvds_data_e1_p => '0',
+      lvds_data_e2_n => '0',
+      lvds_data_e2_p => '0',
+      lvds_data_f1_n => '0',
+      lvds_data_f1_p => '0',
+      lvds_data_f2_n => '0',
+      lvds_data_f2_p => '0',
+      lvds_data_g1_n => '0',
+      lvds_data_g1_p => '0',
+      lvds_data_g2_n => '0',
+      lvds_data_g2_p => '0',
+      lvds_data_h1_n => '0',
+      lvds_data_h1_p => '0',
+      lvds_data_h2_n => '0',
+      lvds_data_h2_p => '0',
       lvds_dco1_n => lvds_dco1_n_2_1,
       lvds_dco1_p => lvds_dco1_p_2_1,
       lvds_dco2_n => lvds_dco2_n_2_1,
@@ -3510,15 +3436,15 @@ rst_ps7_0_100M: component design_1_rst_ps7_0_100M_0
 spi3_WICSC_top_0: component design_1_spi3_WICSC_top_0_0
      port map (
       PL_clkin => processing_system7_0_FCLK_CLK0,
-      busy => spi3_WICSC_top_0_busy,
+      busy => NLW_spi3_WICSC_top_0_busy_UNCONNECTED,
       clk_div(31 downto 0) => axi_gpio_0_gpio2_io_o(31 downto 0),
-      csb => spi3_WICSC_top_0_csb,
+      csb => NLW_spi3_WICSC_top_0_csb_UNCONNECTED,
       enable => axi_gpio_0_gpio_io_o(0),
       reset_n => master_rst_n_1,
       rx_data(7 downto 0) => spi3_WICSC_top_0_rx_data(7 downto 0),
       sclk => spi3_WICSC_top_0_sclk,
       sdio => sdio_0,
-      tsc => spi3_WICSC_top_0_tsc,
+      tsc => NLW_spi3_WICSC_top_0_tsc_UNCONNECTED,
       tx_cmd_in(15 downto 0) => axi_gpio_1_gpio_io_o(15 downto 0),
       tx_data_in(7 downto 0) => axi_gpio_1_gpio2_io_o(7 downto 0)
     );
