@@ -4,7 +4,5 @@
 
 #### Needs to be adressed:
 
-* Specify pin constraint for deserializers
-* Specify pin constraint for modulator 
-* Specify pin constraint for SPI 
-* Specify pin constraint for rotary encoder 
+* Connect something to all deserializer inputs to enable implementation
+
