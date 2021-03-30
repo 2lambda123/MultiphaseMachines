@@ -400,6 +400,9 @@ set_clock_groups -asynchronous -group clk_fpga_0 -group clk_130_design_1_clk_wiz
 #set_property PACKAGE_PIN P18            [get_ports ZO_in]
 #set_property IOSTANDARD LVCMOS25        [get_ports ZO_in]
 #C22 (LPC)
+set_property PACKAGE_PIN A8 [get_ports master_rst_n]
+set_property IOSTANDARD LVCMOS15 [get_ports master_rst_n]
+
 set_property PACKAGE_PIN AG17 [get_ports lvds_dco1_p_0]
 #D8
 set_property PACKAGE_PIN AG21 [get_ports lvds_fco1_p_0]
@@ -722,3 +725,6 @@ set_property IOSTANDARD LVCMOS25 [get_ports {modulator_out[34]}]
 set_property PACKAGE_PIN AG26 [get_ports {modulator_out[35]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {modulator_out[35]}]
 
+
+set_property DIFF_TERM TRUE [get_ports lvds_data_c1_n_0]
+set_property DIFF_TERM TRUE [get_ports lvds_data_c1_p_0]

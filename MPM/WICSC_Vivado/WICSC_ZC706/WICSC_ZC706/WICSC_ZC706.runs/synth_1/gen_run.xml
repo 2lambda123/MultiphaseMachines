@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z045ffg900-2" LaunchTime="1615370157">
+<GenRun Id="synth_1" LaunchPart="xc7z045ffg900-2" LaunchTime="1617091634">
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
@@ -366,4 +366,6 @@
   <BlockFileSet Type="BlockSrcs" Name="design_1_fpga_dig_top_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_modulater_14bit_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_MSBs_selector_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_4_0"/>
 </GenRun>

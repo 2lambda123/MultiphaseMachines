@@ -86,6 +86,7 @@ set_property target_language VHDL [current_project]
 set_property board_part xilinx.com:zc706:part0:1.4 [current_project]
 set_property ip_repo_paths {
   c:/Users/Meklarn/Desktop/EXJOBB/ZC706/spi_master_WICSC
+  c:/Users/Meklarn/Desktop/EXJOBB/ZC706/AD9249_deserializer_5_channel
   {c:/Users/Meklarn/Desktop/EXJOBB/ZC706/quadrature _decoder}
 } [current_project]
 update_ip_catalog
@@ -115,6 +116,9 @@ set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Deskt
 set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
