@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.runs/synth_1/design_1_wrapper.tcl"
+  variable script "C:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.runs/synth_1/design_1_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,49 +78,56 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.cache/wt [current_project]
-set_property parent.project_path C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.xpr} [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part xilinx.com:zc706:part0:1.4 [current_project]
 set_property ip_repo_paths {
-  c:/Users/Meklarn/Desktop/EXJOBB/ZC706/spi_master_WICSC
-  c:/Users/Meklarn/Desktop/EXJOBB/ZC706/AD9249_deserializer_5_channel
-  {c:/Users/Meklarn/Desktop/EXJOBB/ZC706/quadrature _decoder}
+  {c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/spi_master_WICSC}
+  {c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/quadrature_decoder_v1}
+  {c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/AD9249_deserializer_5_channel}
+  {c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/quadrature _decoder}
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
-add_files C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+read_vhdl -library xil_defaultlib {{C:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd}}
+add_files {{C:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/design_1.bd}}
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_5_0/design_1_axi_gpio_5_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_5_0/design_1_axi_gpio_5_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_5_0/design_1_axi_gpio_5_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_6_0/design_1_axi_gpio_6_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_6_0/design_1_axi_gpio_6_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_6_0/design_1_axi_gpio_6_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{C:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/design_1_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -131,8 +138,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc
-set_property used_in_implementation false [get_files C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc]
+read_xdc {{C:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Jonas/Desktop/EXJOBB/ZC706 - 2020.1/WICSC_ZC706/WICSC_ZC706.srcs/constrs_1/new/wrapper_const.xdc}}]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

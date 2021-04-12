@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# MSBs_selector, MSBs_selector, MSBs_selector, PS_Interface_TOP, fpga_dig_top, fpga_dig_top, fpga_dig_top, modulater_14bit
+# MSBs_selector, MSBs_selector, MSBs_selector, PS_Interface_TOP, fpga_dig_top, fpga_dig_top, fpga_dig_top_1_bank, modulater_14bit
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -171,6 +171,8 @@ proc create_root_design { parentCell } {
   # Create ports
   set AO_in [ create_bd_port -dir I AO_in ]
   set BO_in [ create_bd_port -dir I BO_in ]
+  set CSB [ create_bd_port -dir O -from 2 -to 0 CSB ]
+  set PWM_SIGNAL [ create_bd_port -dir O -type data PWM_SIGNAL ]
   set ZO_in [ create_bd_port -dir I ZO_in ]
   set lvds_data_a1_n_0 [ create_bd_port -dir I lvds_data_a1_n_0 ]
   set lvds_data_a1_n_1 [ create_bd_port -dir I lvds_data_a1_n_1 ]
@@ -180,10 +182,8 @@ proc create_root_design { parentCell } {
   set lvds_data_a1_p_2 [ create_bd_port -dir I lvds_data_a1_p_2 ]
   set lvds_data_a2_n_0 [ create_bd_port -dir I lvds_data_a2_n_0 ]
   set lvds_data_a2_n_1 [ create_bd_port -dir I lvds_data_a2_n_1 ]
-  set lvds_data_a2_n_2 [ create_bd_port -dir I lvds_data_a2_n_2 ]
   set lvds_data_a2_p_0 [ create_bd_port -dir I lvds_data_a2_p_0 ]
   set lvds_data_a2_p_1 [ create_bd_port -dir I lvds_data_a2_p_1 ]
-  set lvds_data_a2_p_2 [ create_bd_port -dir I lvds_data_a2_p_2 ]
   set lvds_data_b1_n_0 [ create_bd_port -dir I lvds_data_b1_n_0 ]
   set lvds_data_b1_n_1 [ create_bd_port -dir I lvds_data_b1_n_1 ]
   set lvds_data_b1_n_2 [ create_bd_port -dir I lvds_data_b1_n_2 ]
@@ -192,10 +192,8 @@ proc create_root_design { parentCell } {
   set lvds_data_b1_p_2 [ create_bd_port -dir I lvds_data_b1_p_2 ]
   set lvds_data_b2_n_0 [ create_bd_port -dir I lvds_data_b2_n_0 ]
   set lvds_data_b2_n_1 [ create_bd_port -dir I lvds_data_b2_n_1 ]
-  set lvds_data_b2_n_2 [ create_bd_port -dir I lvds_data_b2_n_2 ]
   set lvds_data_b2_p_0 [ create_bd_port -dir I lvds_data_b2_p_0 ]
   set lvds_data_b2_p_1 [ create_bd_port -dir I lvds_data_b2_p_1 ]
-  set lvds_data_b2_p_2 [ create_bd_port -dir I lvds_data_b2_p_2 ]
   set lvds_data_c1_n_0 [ create_bd_port -dir I lvds_data_c1_n_0 ]
   set lvds_data_c1_n_1 [ create_bd_port -dir I lvds_data_c1_n_1 ]
   set lvds_data_c1_n_2 [ create_bd_port -dir I lvds_data_c1_n_2 ]
@@ -208,16 +206,20 @@ proc create_root_design { parentCell } {
   set lvds_data_c2_p_1 [ create_bd_port -dir I lvds_data_c2_p_1 ]
   set lvds_data_d1_n_0 [ create_bd_port -dir I lvds_data_d1_n_0 ]
   set lvds_data_d1_n_1 [ create_bd_port -dir I lvds_data_d1_n_1 ]
+  set lvds_data_d1_n_2 [ create_bd_port -dir I lvds_data_d1_n_2 ]
   set lvds_data_d1_p_0 [ create_bd_port -dir I lvds_data_d1_p_0 ]
   set lvds_data_d1_p_1 [ create_bd_port -dir I lvds_data_d1_p_1 ]
+  set lvds_data_d1_p_2 [ create_bd_port -dir I lvds_data_d1_p_2 ]
   set lvds_data_d2_n_0 [ create_bd_port -dir I lvds_data_d2_n_0 ]
   set lvds_data_d2_n_1 [ create_bd_port -dir I lvds_data_d2_n_1 ]
   set lvds_data_d2_p_0 [ create_bd_port -dir I lvds_data_d2_p_0 ]
   set lvds_data_d2_p_1 [ create_bd_port -dir I lvds_data_d2_p_1 ]
   set lvds_data_e1_n_0 [ create_bd_port -dir I lvds_data_e1_n_0 ]
   set lvds_data_e1_n_1 [ create_bd_port -dir I lvds_data_e1_n_1 ]
+  set lvds_data_e1_n_2 [ create_bd_port -dir I lvds_data_e1_n_2 ]
   set lvds_data_e1_p_0 [ create_bd_port -dir I lvds_data_e1_p_0 ]
   set lvds_data_e1_p_1 [ create_bd_port -dir I lvds_data_e1_p_1 ]
+  set lvds_data_e1_p_2 [ create_bd_port -dir I lvds_data_e1_p_2 ]
   set lvds_data_e2_n_0 [ create_bd_port -dir I lvds_data_e2_n_0 ]
   set lvds_data_e2_n_1 [ create_bd_port -dir I lvds_data_e2_n_1 ]
   set lvds_data_e2_p_0 [ create_bd_port -dir I lvds_data_e2_p_0 ]
@@ -254,10 +256,8 @@ proc create_root_design { parentCell } {
   set lvds_dco1_p_2 [ create_bd_port -dir I lvds_dco1_p_2 ]
   set lvds_dco2_n_0 [ create_bd_port -dir I lvds_dco2_n_0 ]
   set lvds_dco2_n_1 [ create_bd_port -dir I lvds_dco2_n_1 ]
-  set lvds_dco2_n_2 [ create_bd_port -dir I lvds_dco2_n_2 ]
   set lvds_dco2_p_0 [ create_bd_port -dir I lvds_dco2_p_0 ]
   set lvds_dco2_p_1 [ create_bd_port -dir I lvds_dco2_p_1 ]
-  set lvds_dco2_p_2 [ create_bd_port -dir I lvds_dco2_p_2 ]
   set lvds_fco1_n_0 [ create_bd_port -dir I lvds_fco1_n_0 ]
   set lvds_fco1_n_1 [ create_bd_port -dir I lvds_fco1_n_1 ]
   set lvds_fco1_n_2 [ create_bd_port -dir I lvds_fco1_n_2 ]
@@ -266,10 +266,8 @@ proc create_root_design { parentCell } {
   set lvds_fco1_p_2 [ create_bd_port -dir I lvds_fco1_p_2 ]
   set lvds_fco2_n_0 [ create_bd_port -dir I lvds_fco2_n_0 ]
   set lvds_fco2_n_1 [ create_bd_port -dir I lvds_fco2_n_1 ]
-  set lvds_fco2_n_2 [ create_bd_port -dir I lvds_fco2_n_2 ]
   set lvds_fco2_p_0 [ create_bd_port -dir I lvds_fco2_p_0 ]
   set lvds_fco2_p_1 [ create_bd_port -dir I lvds_fco2_p_1 ]
-  set lvds_fco2_p_2 [ create_bd_port -dir I lvds_fco2_p_2 ]
   set master_rst_n [ create_bd_port -dir I master_rst_n ]
   set modulator_out [ create_bd_port -dir O -from 35 -to 0 modulator_out ]
   set sclk_0 [ create_bd_port -dir O sclk_0 ]
@@ -360,6 +358,22 @@ proc create_root_design { parentCell } {
    CONFIG.C_GPIO_WIDTH {3} \
  ] $axi_gpio_4
 
+  # Create instance: axi_gpio_5, and set properties
+  set axi_gpio_5 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_5 ]
+  set_property -dict [ list \
+   CONFIG.C_ALL_OUTPUTS {1} \
+   CONFIG.C_DOUT_DEFAULT {0x00000003} \
+   CONFIG.C_GPIO_WIDTH {3} \
+ ] $axi_gpio_5
+
+  # Create instance: axi_gpio_6, and set properties
+  set axi_gpio_6 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_6 ]
+  set_property -dict [ list \
+   CONFIG.C_ALL_INPUTS {1} \
+   CONFIG.C_ALL_INPUTS_2 {1} \
+   CONFIG.C_IS_DUAL {1} \
+ ] $axi_gpio_6
+
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \
@@ -394,13 +408,13 @@ proc create_root_design { parentCell } {
      return 1
    }
   
-  # Create instance: fpga_dig_top_2, and set properties
-  set block_name fpga_dig_top
-  set block_cell_name fpga_dig_top_2
-  if { [catch {set fpga_dig_top_2 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+  # Create instance: fpga_dig_top_1_bank_0, and set properties
+  set block_name fpga_dig_top_1_bank
+  set block_cell_name fpga_dig_top_1_bank_0
+  if { [catch {set fpga_dig_top_1_bank_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
-   } elseif { $fpga_dig_top_2 eq "" } {
+   } elseif { $fpga_dig_top_1_bank_0 eq "" } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
@@ -833,11 +847,15 @@ proc create_root_design { parentCell } {
   # Create instance: ps7_0_axi_periph, and set properties
   set ps7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps7_0_axi_periph ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {5} \
+   CONFIG.NUM_MI {7} \
  ] $ps7_0_axi_periph
 
   # Create instance: quadrature_decoder_0, and set properties
   set quadrature_decoder_0 [ create_bd_cell -type ip -vlnv kth.se:user:quadrature_decoder:1.0 quadrature_decoder_0 ]
+  set_property -dict [ list \
+   CONFIG.debounce_time {50000} \
+   CONFIG.set_origin_debounce_time {500000} \
+ ] $quadrature_decoder_0
 
   # Create instance: rst_ps7_0_100M, and set properties
   set rst_ps7_0_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_ps7_0_100M ]
@@ -870,6 +888,8 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins axi_gpio_2/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M03_AXI [get_bd_intf_pins axi_gpio_3/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M03_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M04_AXI [get_bd_intf_pins axi_gpio_4/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M04_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M05_AXI [get_bd_intf_pins axi_gpio_5/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M05_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M06_AXI [get_bd_intf_pins axi_gpio_6/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M06_AXI]
 
   # Create port connections
   connect_bd_net -net AO_in_1 [get_bd_ports AO_in] [get_bd_pins quadrature_decoder_0/a]
@@ -932,6 +952,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net axi_gpio_1_gpio2_io_o [get_bd_pins axi_gpio_1/gpio2_io_o] [get_bd_pins spi3_WICSC_top_0/tx_data_in]
   connect_bd_net -net axi_gpio_1_gpio_io_o [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins spi3_WICSC_top_0/tx_cmd_in]
   connect_bd_net -net axi_gpio_2_ip2intc_irpt [get_bd_pins axi_gpio_2/ip2intc_irpt] [get_bd_pins processing_system7_0/Core0_nIRQ]
+  connect_bd_net -net axi_gpio_5_gpio_io_o [get_bd_ports CSB] [get_bd_pins axi_gpio_5/gpio_io_o]
   connect_bd_net -net clk_wiz_0_clk_130 [get_bd_pins clk_wiz_0/clk_130] [get_bd_pins modulater_14bit_0/clk_130]
   connect_bd_net -net fpga_dig_top_0_captured_data_a1 [get_bd_pins MSBs_selector_0/data_in_a1] [get_bd_pins fpga_dig_top_0/captured_data_a1]
   connect_bd_net -net fpga_dig_top_0_captured_data_a2 [get_bd_pins MSBs_selector_0/data_in_a2] [get_bd_pins fpga_dig_top_0/captured_data_a2]
@@ -950,6 +971,12 @@ proc create_root_design { parentCell } {
   connect_bd_net -net fpga_dig_top_0_captured_data_h1 [get_bd_pins MSBs_selector_0/data_in_h1] [get_bd_pins fpga_dig_top_0/captured_data_h1]
   connect_bd_net -net fpga_dig_top_0_captured_data_h2 [get_bd_pins MSBs_selector_0/data_in_h2] [get_bd_pins fpga_dig_top_0/captured_data_h2]
   connect_bd_net -net fpga_dig_top_0_sysclk_ready [get_bd_pins fpga_dig_top_0/sysclk_ready] [get_bd_pins xlconcat_1/In0]
+  connect_bd_net -net fpga_dig_top_1_bank_0_captured_data_a1 [get_bd_pins MSBs_selector_2/data_in_a1] [get_bd_pins fpga_dig_top_1_bank_0/captured_data_a1]
+  connect_bd_net -net fpga_dig_top_1_bank_0_captured_data_b1 [get_bd_pins MSBs_selector_2/data_in_a2] [get_bd_pins fpga_dig_top_1_bank_0/captured_data_b1]
+  connect_bd_net -net fpga_dig_top_1_bank_0_captured_data_c1 [get_bd_pins MSBs_selector_2/data_in_b1] [get_bd_pins fpga_dig_top_1_bank_0/captured_data_c1]
+  connect_bd_net -net fpga_dig_top_1_bank_0_captured_data_d1 [get_bd_pins MSBs_selector_2/data_in_b2] [get_bd_pins fpga_dig_top_1_bank_0/captured_data_d1]
+  connect_bd_net -net fpga_dig_top_1_bank_0_captured_data_e1 [get_bd_pins MSBs_selector_2/data_in_c1] [get_bd_pins fpga_dig_top_1_bank_0/captured_data_e1]
+  connect_bd_net -net fpga_dig_top_1_bank_0_sysclk_ready [get_bd_pins fpga_dig_top_1_bank_0/sysclk_ready] [get_bd_pins xlconcat_1/In2]
   connect_bd_net -net fpga_dig_top_1_captured_data_a1 [get_bd_pins MSBs_selector_1/data_in_a1] [get_bd_pins fpga_dig_top_1/captured_data_a1]
   connect_bd_net -net fpga_dig_top_1_captured_data_a2 [get_bd_pins MSBs_selector_1/data_in_a2] [get_bd_pins fpga_dig_top_1/captured_data_a2]
   connect_bd_net -net fpga_dig_top_1_captured_data_b1 [get_bd_pins MSBs_selector_1/data_in_b1] [get_bd_pins fpga_dig_top_1/captured_data_b1]
@@ -967,58 +994,52 @@ proc create_root_design { parentCell } {
   connect_bd_net -net fpga_dig_top_1_captured_data_h1 [get_bd_pins MSBs_selector_1/data_in_h1] [get_bd_pins fpga_dig_top_1/captured_data_h1]
   connect_bd_net -net fpga_dig_top_1_captured_data_h2 [get_bd_pins MSBs_selector_1/data_in_h2] [get_bd_pins fpga_dig_top_1/captured_data_h2]
   connect_bd_net -net fpga_dig_top_1_sysclk_ready [get_bd_pins fpga_dig_top_1/sysclk_ready] [get_bd_pins xlconcat_1/In1]
-  connect_bd_net -net fpga_dig_top_2_captured_data_a1 [get_bd_pins MSBs_selector_2/data_in_a1] [get_bd_pins fpga_dig_top_2/captured_data_a1]
-  connect_bd_net -net fpga_dig_top_2_captured_data_a2 [get_bd_pins MSBs_selector_2/data_in_a2] [get_bd_pins fpga_dig_top_2/captured_data_a2]
-  connect_bd_net -net fpga_dig_top_2_captured_data_b1 [get_bd_pins MSBs_selector_2/data_in_b1] [get_bd_pins fpga_dig_top_2/captured_data_b1]
-  connect_bd_net -net fpga_dig_top_2_captured_data_b2 [get_bd_pins MSBs_selector_2/data_in_b2] [get_bd_pins fpga_dig_top_2/captured_data_b2]
-  connect_bd_net -net fpga_dig_top_2_captured_data_c1 [get_bd_pins MSBs_selector_2/data_in_c1] [get_bd_pins fpga_dig_top_2/captured_data_c1]
-  connect_bd_net -net fpga_dig_top_2_sysclk_ready [get_bd_pins fpga_dig_top_2/sysclk_ready] [get_bd_pins xlconcat_1/In2]
   connect_bd_net -net lvds_data_a1_n_0_1 [get_bd_ports lvds_data_a1_n_0] [get_bd_pins fpga_dig_top_0/lvds_data_a1_n]
   connect_bd_net -net lvds_data_a1_n_1_1 [get_bd_ports lvds_data_a1_n_1] [get_bd_pins fpga_dig_top_1/lvds_data_a1_n]
-  connect_bd_net -net lvds_data_a1_n_2_1 [get_bd_ports lvds_data_a1_n_2] [get_bd_pins fpga_dig_top_2/lvds_data_a1_n]
+  connect_bd_net -net lvds_data_a1_n_2_1 [get_bd_ports lvds_data_a1_n_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_data_a1_n]
   connect_bd_net -net lvds_data_a1_p_0_1 [get_bd_ports lvds_data_a1_p_0] [get_bd_pins fpga_dig_top_0/lvds_data_a1_p]
   connect_bd_net -net lvds_data_a1_p_1_1 [get_bd_ports lvds_data_a1_p_1] [get_bd_pins fpga_dig_top_1/lvds_data_a1_p]
-  connect_bd_net -net lvds_data_a1_p_2_1 [get_bd_ports lvds_data_a1_p_2] [get_bd_pins fpga_dig_top_2/lvds_data_a1_p]
+  connect_bd_net -net lvds_data_a1_p_2_1 [get_bd_ports lvds_data_a1_p_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_data_a1_p]
   connect_bd_net -net lvds_data_a2_n_0_1 [get_bd_ports lvds_data_a2_n_0] [get_bd_pins fpga_dig_top_0/lvds_data_a2_n]
   connect_bd_net -net lvds_data_a2_n_1_1 [get_bd_ports lvds_data_a2_n_1] [get_bd_pins fpga_dig_top_1/lvds_data_a2_n]
-  connect_bd_net -net lvds_data_a2_n_2_1 [get_bd_ports lvds_data_a2_n_2] [get_bd_pins fpga_dig_top_2/lvds_data_a2_n]
   connect_bd_net -net lvds_data_a2_p_0_1 [get_bd_ports lvds_data_a2_p_0] [get_bd_pins fpga_dig_top_0/lvds_data_a2_p]
   connect_bd_net -net lvds_data_a2_p_1_1 [get_bd_ports lvds_data_a2_p_1] [get_bd_pins fpga_dig_top_1/lvds_data_a2_p]
-  connect_bd_net -net lvds_data_a2_p_2_1 [get_bd_ports lvds_data_a2_p_2] [get_bd_pins fpga_dig_top_2/lvds_data_a2_p]
   connect_bd_net -net lvds_data_b1_n_0_1 [get_bd_ports lvds_data_b1_n_0] [get_bd_pins fpga_dig_top_0/lvds_data_b1_n]
   connect_bd_net -net lvds_data_b1_n_1_1 [get_bd_ports lvds_data_b1_n_1] [get_bd_pins fpga_dig_top_1/lvds_data_b1_n]
-  connect_bd_net -net lvds_data_b1_n_2_1 [get_bd_ports lvds_data_b1_n_2] [get_bd_pins fpga_dig_top_2/lvds_data_b1_n]
+  connect_bd_net -net lvds_data_b1_n_2_1 [get_bd_ports lvds_data_b1_n_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_data_b1_n]
   connect_bd_net -net lvds_data_b1_p_0_1 [get_bd_ports lvds_data_b1_p_0] [get_bd_pins fpga_dig_top_0/lvds_data_b1_p]
   connect_bd_net -net lvds_data_b1_p_1_1 [get_bd_ports lvds_data_b1_p_1] [get_bd_pins fpga_dig_top_1/lvds_data_b1_p]
-  connect_bd_net -net lvds_data_b1_p_2_1 [get_bd_ports lvds_data_b1_p_2] [get_bd_pins fpga_dig_top_2/lvds_data_b1_p]
+  connect_bd_net -net lvds_data_b1_p_2_1 [get_bd_ports lvds_data_b1_p_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_data_b1_p]
   connect_bd_net -net lvds_data_b2_n_0_1 [get_bd_ports lvds_data_b2_n_0] [get_bd_pins fpga_dig_top_0/lvds_data_b2_n]
   connect_bd_net -net lvds_data_b2_n_1_1 [get_bd_ports lvds_data_b2_n_1] [get_bd_pins fpga_dig_top_1/lvds_data_b2_n]
-  connect_bd_net -net lvds_data_b2_n_2_1 [get_bd_ports lvds_data_b2_n_2] [get_bd_pins fpga_dig_top_2/lvds_data_b2_n]
   connect_bd_net -net lvds_data_b2_p_0_1 [get_bd_ports lvds_data_b2_p_0] [get_bd_pins fpga_dig_top_0/lvds_data_b2_p]
   connect_bd_net -net lvds_data_b2_p_1_1 [get_bd_ports lvds_data_b2_p_1] [get_bd_pins fpga_dig_top_1/lvds_data_b2_p]
-  connect_bd_net -net lvds_data_b2_p_2_1 [get_bd_ports lvds_data_b2_p_2] [get_bd_pins fpga_dig_top_2/lvds_data_b2_p]
   connect_bd_net -net lvds_data_c1_n_0_1 [get_bd_ports lvds_data_c1_n_0] [get_bd_pins fpga_dig_top_0/lvds_data_c1_n]
   connect_bd_net -net lvds_data_c1_n_1_1 [get_bd_ports lvds_data_c1_n_1] [get_bd_pins fpga_dig_top_1/lvds_data_c1_n]
-  connect_bd_net -net lvds_data_c1_n_2_1 [get_bd_ports lvds_data_c1_n_2] [get_bd_pins fpga_dig_top_2/lvds_data_c1_n]
+  connect_bd_net -net lvds_data_c1_n_2_1 [get_bd_ports lvds_data_c1_n_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_data_c1_n]
   connect_bd_net -net lvds_data_c1_p_0_1 [get_bd_ports lvds_data_c1_p_0] [get_bd_pins fpga_dig_top_0/lvds_data_c1_p]
   connect_bd_net -net lvds_data_c1_p_1_1 [get_bd_ports lvds_data_c1_p_1] [get_bd_pins fpga_dig_top_1/lvds_data_c1_p]
-  connect_bd_net -net lvds_data_c1_p_2_1 [get_bd_ports lvds_data_c1_p_2] [get_bd_pins fpga_dig_top_2/lvds_data_c1_p]
+  connect_bd_net -net lvds_data_c1_p_2_1 [get_bd_ports lvds_data_c1_p_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_data_c1_p]
   connect_bd_net -net lvds_data_c2_n_0_1 [get_bd_ports lvds_data_c2_n_0] [get_bd_pins fpga_dig_top_0/lvds_data_c2_n]
   connect_bd_net -net lvds_data_c2_n_1_1 [get_bd_ports lvds_data_c2_n_1] [get_bd_pins fpga_dig_top_1/lvds_data_c2_n]
   connect_bd_net -net lvds_data_c2_p_0_1 [get_bd_ports lvds_data_c2_p_0] [get_bd_pins fpga_dig_top_0/lvds_data_c2_p]
   connect_bd_net -net lvds_data_c2_p_1_1 [get_bd_ports lvds_data_c2_p_1] [get_bd_pins fpga_dig_top_1/lvds_data_c2_p]
   connect_bd_net -net lvds_data_d1_n_0_1 [get_bd_ports lvds_data_d1_n_0] [get_bd_pins fpga_dig_top_0/lvds_data_d1_n]
   connect_bd_net -net lvds_data_d1_n_1_1 [get_bd_ports lvds_data_d1_n_1] [get_bd_pins fpga_dig_top_1/lvds_data_d1_n]
+  connect_bd_net -net lvds_data_d1_n_2_1 [get_bd_ports lvds_data_d1_n_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_data_d1_n]
   connect_bd_net -net lvds_data_d1_p_0_1 [get_bd_ports lvds_data_d1_p_0] [get_bd_pins fpga_dig_top_0/lvds_data_d1_p]
   connect_bd_net -net lvds_data_d1_p_1_1 [get_bd_ports lvds_data_d1_p_1] [get_bd_pins fpga_dig_top_1/lvds_data_d1_p]
+  connect_bd_net -net lvds_data_d1_p_2_1 [get_bd_ports lvds_data_d1_p_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_data_d1_p]
   connect_bd_net -net lvds_data_d2_n_0_1 [get_bd_ports lvds_data_d2_n_0] [get_bd_pins fpga_dig_top_0/lvds_data_d2_n]
   connect_bd_net -net lvds_data_d2_n_1_1 [get_bd_ports lvds_data_d2_n_1] [get_bd_pins fpga_dig_top_1/lvds_data_d2_n]
   connect_bd_net -net lvds_data_d2_p_0_1 [get_bd_ports lvds_data_d2_p_0] [get_bd_pins fpga_dig_top_0/lvds_data_d2_p]
   connect_bd_net -net lvds_data_d2_p_1_1 [get_bd_ports lvds_data_d2_p_1] [get_bd_pins fpga_dig_top_1/lvds_data_d2_p]
   connect_bd_net -net lvds_data_e1_n_0_1 [get_bd_ports lvds_data_e1_n_0] [get_bd_pins fpga_dig_top_0/lvds_data_e1_n]
   connect_bd_net -net lvds_data_e1_n_1_1 [get_bd_ports lvds_data_e1_n_1] [get_bd_pins fpga_dig_top_1/lvds_data_e1_n]
+  connect_bd_net -net lvds_data_e1_n_2_1 [get_bd_ports lvds_data_e1_n_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_data_e1_n]
   connect_bd_net -net lvds_data_e1_p_0_1 [get_bd_ports lvds_data_e1_p_0] [get_bd_pins fpga_dig_top_0/lvds_data_e1_p]
   connect_bd_net -net lvds_data_e1_p_1_1 [get_bd_ports lvds_data_e1_p_1] [get_bd_pins fpga_dig_top_1/lvds_data_e1_p]
+  connect_bd_net -net lvds_data_e1_p_2_1 [get_bd_ports lvds_data_e1_p_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_data_e1_p]
   connect_bd_net -net lvds_data_e2_n_0_1 [get_bd_ports lvds_data_e2_n_0] [get_bd_pins fpga_dig_top_0/lvds_data_e2_n]
   connect_bd_net -net lvds_data_e2_n_1_1 [get_bd_ports lvds_data_e2_n_1] [get_bd_pins fpga_dig_top_1/lvds_data_e2_n]
   connect_bd_net -net lvds_data_e2_p_0_1 [get_bd_ports lvds_data_e2_p_0] [get_bd_pins fpga_dig_top_0/lvds_data_e2_p]
@@ -1049,37 +1070,35 @@ proc create_root_design { parentCell } {
   connect_bd_net -net lvds_data_h2_p_1_1 [get_bd_ports lvds_data_h2_p_1] [get_bd_pins fpga_dig_top_1/lvds_data_h2_p]
   connect_bd_net -net lvds_dco1_n_1_1 [get_bd_ports lvds_dco1_n_0] [get_bd_pins fpga_dig_top_0/lvds_dco1_n]
   connect_bd_net -net lvds_dco1_n_1_2 [get_bd_ports lvds_dco1_n_1] [get_bd_pins fpga_dig_top_1/lvds_dco1_n]
-  connect_bd_net -net lvds_dco1_n_2_1 [get_bd_ports lvds_dco1_n_2] [get_bd_pins fpga_dig_top_2/lvds_dco1_n]
+  connect_bd_net -net lvds_dco1_n_2_1 [get_bd_ports lvds_dco1_n_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_dco1_n]
   connect_bd_net -net lvds_dco1_p_1_1 [get_bd_ports lvds_dco1_p_0] [get_bd_pins fpga_dig_top_0/lvds_dco1_p]
   connect_bd_net -net lvds_dco1_p_1_2 [get_bd_ports lvds_dco1_p_1] [get_bd_pins fpga_dig_top_1/lvds_dco1_p]
-  connect_bd_net -net lvds_dco1_p_2_1 [get_bd_ports lvds_dco1_p_2] [get_bd_pins fpga_dig_top_2/lvds_dco1_p]
+  connect_bd_net -net lvds_dco1_p_2_1 [get_bd_ports lvds_dco1_p_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_dco1_p]
   connect_bd_net -net lvds_dco2_n_0_1 [get_bd_ports lvds_dco2_n_0] [get_bd_pins fpga_dig_top_0/lvds_dco2_n]
   connect_bd_net -net lvds_dco2_n_1_1 [get_bd_ports lvds_dco2_n_1] [get_bd_pins fpga_dig_top_1/lvds_dco2_n]
-  connect_bd_net -net lvds_dco2_n_2_1 [get_bd_ports lvds_dco2_n_2] [get_bd_pins fpga_dig_top_2/lvds_dco2_n]
   connect_bd_net -net lvds_dco2_p_0_1 [get_bd_ports lvds_dco2_p_0] [get_bd_pins fpga_dig_top_0/lvds_dco2_p]
   connect_bd_net -net lvds_dco2_p_1_1 [get_bd_ports lvds_dco2_p_1] [get_bd_pins fpga_dig_top_1/lvds_dco2_p]
-  connect_bd_net -net lvds_dco2_p_2_1 [get_bd_ports lvds_dco2_p_2] [get_bd_pins fpga_dig_top_2/lvds_dco2_p]
   connect_bd_net -net lvds_fco1_n_0_1 [get_bd_ports lvds_fco1_n_0] [get_bd_pins fpga_dig_top_0/lvds_fco1_n]
   connect_bd_net -net lvds_fco1_n_1_1 [get_bd_ports lvds_fco1_n_1] [get_bd_pins fpga_dig_top_1/lvds_fco1_n]
-  connect_bd_net -net lvds_fco1_n_2_1 [get_bd_ports lvds_fco1_n_2] [get_bd_pins fpga_dig_top_2/lvds_fco1_n]
+  connect_bd_net -net lvds_fco1_n_2_1 [get_bd_ports lvds_fco1_n_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_fco1_n]
   connect_bd_net -net lvds_fco1_p_0_1 [get_bd_ports lvds_fco1_p_0] [get_bd_pins fpga_dig_top_0/lvds_fco1_p]
   connect_bd_net -net lvds_fco1_p_1_1 [get_bd_ports lvds_fco1_p_1] [get_bd_pins fpga_dig_top_1/lvds_fco1_p]
-  connect_bd_net -net lvds_fco1_p_2_1 [get_bd_ports lvds_fco1_p_2] [get_bd_pins fpga_dig_top_2/lvds_fco1_p]
+  connect_bd_net -net lvds_fco1_p_2_1 [get_bd_ports lvds_fco1_p_2] [get_bd_pins fpga_dig_top_1_bank_0/lvds_fco1_p]
   connect_bd_net -net lvds_fco2_n_0_1 [get_bd_ports lvds_fco2_n_0] [get_bd_pins fpga_dig_top_0/lvds_fco2_n]
   connect_bd_net -net lvds_fco2_n_1_1 [get_bd_ports lvds_fco2_n_1] [get_bd_pins fpga_dig_top_1/lvds_fco2_n]
-  connect_bd_net -net lvds_fco2_n_2_1 [get_bd_ports lvds_fco2_n_2] [get_bd_pins fpga_dig_top_2/lvds_fco2_n]
   connect_bd_net -net lvds_fco2_p_0_1 [get_bd_ports lvds_fco2_p_0] [get_bd_pins fpga_dig_top_0/lvds_fco2_p]
   connect_bd_net -net lvds_fco2_p_1_1 [get_bd_ports lvds_fco2_p_1] [get_bd_pins fpga_dig_top_1/lvds_fco2_p]
-  connect_bd_net -net lvds_fco2_p_2_1 [get_bd_ports lvds_fco2_p_2] [get_bd_pins fpga_dig_top_2/lvds_fco2_p]
-  connect_bd_net -net master_rst_n_1 [get_bd_ports master_rst_n] [get_bd_pins fpga_dig_top_0/master_rst_n] [get_bd_pins fpga_dig_top_1/master_rst_n] [get_bd_pins fpga_dig_top_2/master_rst_n] [get_bd_pins spi3_WICSC_top_0/reset_n]
-  connect_bd_net -net modulater_14bit_0_carrier_zero [get_bd_pins modulater_14bit_0/carrier_zero] [get_bd_pins processing_system7_0/Core0_nFIQ]
+  connect_bd_net -net master_rst_n_1 [get_bd_ports master_rst_n] [get_bd_pins fpga_dig_top_0/master_rst_n] [get_bd_pins fpga_dig_top_1/master_rst_n] [get_bd_pins fpga_dig_top_1_bank_0/master_rst_n] [get_bd_pins spi3_WICSC_top_0/reset_n]
+  connect_bd_net -net modulater_14bit_0_carrier_zero [get_bd_ports PWM_SIGNAL] [get_bd_pins modulater_14bit_0/carrier_zero] [get_bd_pins processing_system7_0/Core0_nFIQ] [get_bd_pins quadrature_decoder_0/clk_PWM]
   connect_bd_net -net modulater_14bit_0_mod_out [get_bd_ports modulator_out] [get_bd_pins modulater_14bit_0/mod_out]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins PS_Interface_TOP_0/clk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_gpio_2/s_axi_aclk] [get_bd_pins axi_gpio_3/s_axi_aclk] [get_bd_pins axi_gpio_4/s_axi_aclk] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins fpga_dig_top_0/zynq_sys_clkin] [get_bd_pins fpga_dig_top_1/zynq_sys_clkin] [get_bd_pins fpga_dig_top_2/zynq_sys_clkin] [get_bd_pins modulater_14bit_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins quadrature_decoder_0/clk] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk] [get_bd_pins spi3_WICSC_top_0/PL_clkin]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins PS_Interface_TOP_0/clk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_gpio_2/s_axi_aclk] [get_bd_pins axi_gpio_3/s_axi_aclk] [get_bd_pins axi_gpio_4/s_axi_aclk] [get_bd_pins axi_gpio_5/s_axi_aclk] [get_bd_pins axi_gpio_6/s_axi_aclk] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins fpga_dig_top_0/zynq_sys_clkin] [get_bd_pins fpga_dig_top_1/zynq_sys_clkin] [get_bd_pins fpga_dig_top_1_bank_0/zynq_sys_clkin] [get_bd_pins modulater_14bit_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins ps7_0_axi_periph/M06_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins quadrature_decoder_0/clk] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk] [get_bd_pins spi3_WICSC_top_0/PL_clkin]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
   connect_bd_net -net processing_system7_0_GPIO_O [get_bd_pins PS_Interface_TOP_0/PS_OUT] [get_bd_pins processing_system7_0/GPIO_O]
+  connect_bd_net -net quadrature_decoder_0_Th_value [get_bd_pins axi_gpio_6/gpio2_io_i] [get_bd_pins quadrature_decoder_0/Th_value]
   connect_bd_net -net quadrature_decoder_0_direction [get_bd_pins quadrature_decoder_0/direction] [get_bd_pins xlconcat_0/In1]
+  connect_bd_net -net quadrature_decoder_0_freq_counter [get_bd_pins axi_gpio_6/gpio_io_i] [get_bd_pins quadrature_decoder_0/freq_counter]
   connect_bd_net -net quadrature_decoder_0_position [get_bd_pins quadrature_decoder_0/position] [get_bd_pins xlconcat_0/In0]
-  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_gpio_1/s_axi_aresetn] [get_bd_pins axi_gpio_2/s_axi_aresetn] [get_bd_pins axi_gpio_3/s_axi_aresetn] [get_bd_pins axi_gpio_4/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+  connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_gpio_1/s_axi_aresetn] [get_bd_pins axi_gpio_2/s_axi_aresetn] [get_bd_pins axi_gpio_3/s_axi_aresetn] [get_bd_pins axi_gpio_4/s_axi_aresetn] [get_bd_pins axi_gpio_5/s_axi_aresetn] [get_bd_pins axi_gpio_6/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/M05_ARESETN] [get_bd_pins ps7_0_axi_periph/M06_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
   connect_bd_net -net spi3_WICSC_top_0_rx_data [get_bd_pins axi_gpio_2/gpio_io_i] [get_bd_pins spi3_WICSC_top_0/rx_data]
   connect_bd_net -net spi3_WICSC_top_0_sclk [get_bd_ports sclk_0] [get_bd_pins spi3_WICSC_top_0/sclk]
   connect_bd_net -net xlconcat_0_dout [get_bd_pins axi_gpio_3/gpio_io_i] [get_bd_pins xlconcat_0/dout]
@@ -1091,6 +1110,8 @@ proc create_root_design { parentCell } {
   assign_bd_address -offset 0x41220000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_gpio_2/S_AXI/Reg] -force
   assign_bd_address -offset 0x41230000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_gpio_3/S_AXI/Reg] -force
   assign_bd_address -offset 0x41240000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_gpio_4/S_AXI/Reg] -force
+  assign_bd_address -offset 0x41250000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_gpio_5/S_AXI/Reg] -force
+  assign_bd_address -offset 0x41260000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs axi_gpio_6/S_AXI/Reg] -force
 
 
   # Restore current instance

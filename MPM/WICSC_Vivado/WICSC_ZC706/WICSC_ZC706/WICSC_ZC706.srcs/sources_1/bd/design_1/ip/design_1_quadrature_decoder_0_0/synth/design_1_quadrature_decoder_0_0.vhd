@@ -59,8 +59,11 @@ ENTITY design_1_quadrature_decoder_0_0 IS
     a : IN STD_LOGIC;
     b : IN STD_LOGIC;
     set_origin_n : IN STD_LOGIC;
+    clk_PWM : IN STD_LOGIC;
     direction : OUT STD_LOGIC;
-    position : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+    position : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    freq_counter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    Th_value : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END design_1_quadrature_decoder_0_0;
 
@@ -79,8 +82,11 @@ ARCHITECTURE design_1_quadrature_decoder_0_0_arch OF design_1_quadrature_decoder
       a : IN STD_LOGIC;
       b : IN STD_LOGIC;
       set_origin_n : IN STD_LOGIC;
+      clk_PWM : IN STD_LOGIC;
       direction : OUT STD_LOGIC;
-      position : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+      position : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+      freq_counter : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+      Th_value : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
   END COMPONENT quadrature_decoder;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -91,7 +97,7 @@ ARCHITECTURE design_1_quadrature_decoder_0_0_arch OF design_1_quadrature_decoder
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_quadrature_decoder_0_0_arch: ARCHITECTURE IS "package_project";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : quadrature_decoder
@@ -106,7 +112,10 @@ BEGIN
       a => a,
       b => b,
       set_origin_n => set_origin_n,
+      clk_PWM => clk_PWM,
       direction => direction,
-      position => position
+      position => position,
+      freq_counter => freq_counter,
+      Th_value => Th_value
     );
 END design_1_quadrature_decoder_0_0_arch;
