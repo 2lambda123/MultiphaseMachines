@@ -4,5 +4,5 @@
 
 #### Needs to be adressed:
 
-* Connect something to all deserializer inputs to enable implementation
+
 
