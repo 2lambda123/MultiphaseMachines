@@ -1,0 +1,1412 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 1 1
+Title "Pg3-Microcontroller-SchDoc"
+Date "29 01 2021"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 15300 10600 0    60   ~ 0
+3
+Text Notes 15550 10600 0    60   ~ 0
+9
+Text Notes 13610 10500 0    60   ~ 0
+MSP430F6779 + Crystal
+Text Notes 15200 10300 0    60   ~ 0
+Not shown in title block
+Text Notes 13320 10700 0    60   ~ 0
+Not shown in title block
+Text Notes 13130 10500 0    60   ~ 0
+Sheet Title:
+Text Notes 15230 10700 0    60   ~ 0
+Size:
+Text Notes 14720 10300 0    60   ~ 0
+Mod. Date:
+Text Notes 13130 10700 0    60   ~ 0
+File:
+Text Notes 15030 10600 0    60   ~ 0
+Sheet:
+Text Notes 15420 10600 0    60   ~ 0
+of
+Text Notes 15450 10700 0    60   ~ 0
+B
+Text Notes 15900 10700 0    60   ~ 0
+http://www.ti.com
+Text Notes 13130 10800 0    60   ~ 0
+Contact:
+Text Notes 13500 10800 0    60   ~ 0
+=TechSupport
+Wire Notes Line
+	14700 10300 14700 10200
+Text Notes 13650 10400 0    60   ~ 0
+=PRJ_Title
+Text Notes 13130 10400 0    60   ~ 0
+Project Title:
+Wire Notes Line
+	13100 10200 13100 10800
+Wire Notes Line
+	16800 10200 13100 10200
+Text Notes 13130 10300 0    60   ~ 0
+Designed for:
+Text Notes 13680 10300 0    60   ~ 0
+=PRJ_Customer
+Wire Notes Line
+	15000 10600 15000 10500
+Text Notes 13130 10600 0    60   ~ 0
+Assembly Variant:
+Text Notes 13870 10600 0    60   ~ 0
+=variantName
+Text Notes 15800 10800 0    48   ~ 0
+© Texas Instruments
+Text Notes 16500 10800 0    48   ~ 0
+=CopyrightYear
+Text Notes 11630 10700 0    60   ~ 0
+Drawn By:
+Text Notes 11630 10800 0    60   ~ 0
+Engineer:
+Text Notes 12050 10700 0    60   ~ 0
+=DrawnBy
+Text Notes 12050 10800 0    60   ~ 0
+=PRJ_Engineer
+Wire Notes Line
+	15700 10200 15700 10700
+Text Label 4150 10500 0    60   ~ 0
+Texas Instruments and/or its licensors do not warrant the accuracy or completeness of this specification or any information contained therein. Texas Instruments and/or its licensors do not warrant that this design will meet the specifications, will be suitable for your application or fit for any particular purpose, or will operate in an implementation. Texas Instruments and/or its licensors do not warrant that the design is production worthy. You should completely validate and test your design implementation to confirm the system functionality for your application.
+Wire Notes Line
+	11600 10400 11600 10800
+Wire Notes Line
+	15200 10700 15200 10600
+Wire Notes Line
+	15700 10300 13100 10300
+Wire Notes Line
+	4100 10800 4100 10500
+Text Notes 12100 10600 0    60   ~ 0
+=VersionControl_RevNumber
+Text Notes 11630 10600 0    60   ~ 0
+SVN Rev:
+Text Notes 12000 10500 0    60   ~ 0
+=PRJ_Number
+Text Notes 11630 10500 0    60   ~ 0
+Number:
+Text Notes 12630 10500 0    60   ~ 0
+Rev:
+Wire Notes Line
+	12600 10500 12600 10400
+Text Notes 12900 10500 0    60   ~ 0
+=SCH_Rev
+Text GLabel 6360 6000 2    60   Input ~ 0
+DOUTP_CH_U
+Text GLabel 6360 6300 2    60   Input ~ 0
+DOUTN_CH_U
+Text GLabel 6440 5400 2    60   Input ~ 0
+DOUTP_CH_V
+Text GLabel 6350 5700 2    60   Input ~ 0
+DOUTN_CH_V
+Text GLabel 6180 2800 2    60   Input ~ 0
+DOUTP_CH_W
+Text GLabel 6200 3200 2    60   Input ~ 0
+DOUTN_CH_W
+Text GLabel 6400 4500 2    60   Input ~ 0
+DOUTP_U_PH
+Text GLabel 6400 4800 2    60   Input ~ 0
+DOUTN_U_PH
+Text GLabel 6200 2200 2    60   Input ~ 0
+DOUTP_V_PH
+Text GLabel 6130 2500 2    60   Input ~ 0
+DOUTN_V_PH
+Text GLabel 6360 3900 2    60   Input ~ 0
+DOUTP_W_PH
+Text GLabel 6380 4200 2    60   Input ~ 0
+DOUTN_W_PH
+Text Label 7570 7190 0    70   ~ 0
+12pF
+Text Label 7590 7890 0    70   ~ 0
+12pF
+Text Label 8330 7540 0    70   ~ 0
+32.768KHz
+$Comp
+L power:GND DGND
+U 1 1 60142907
+P 8580 7000
+F 0 "DGND" H 8580 7140 20  0000 C CNN
+F 1 "GND" H 8580 7110 30  0000 C CNN
+F 2 "" H 8580 7000 70  0000 C CNN
+F 3 "" H 8580 7000 70  0000 C CNN
+	1    8580 7000
+	1    0    0    -1  
+$EndComp
+Text Label 7830 7000 0    60   ~ 0
+XIN
+Text Label 7800 7700 0    60   ~ 0
+XOUT
+Text Label 12900 2790 0    70   ~ 0
+0.1µF
+$Comp
+L power:GND AGND
+U 1 1 60142906
+P 12810 2800
+F 0 "AGND" H 12810 2940 20  0000 C CNN
+F 1 "GND" H 12810 2910 30  0000 C CNN
+F 2 "" H 12810 2800 70  0000 C CNN
+F 3 "" H 12810 2800 70  0000 C CNN
+	1    12810 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND DGND_2
+U 1 1 60142905
+P 12800 3600
+F 0 "DGND_2" H 12800 3740 20  0000 C CNN
+F 1 "GND" H 12800 3710 30  0000 C CNN
+F 2 "" H 12800 3600 70  0000 C CNN
+F 3 "" H 12800 3600 70  0000 C CNN
+	1    12800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:AVCC AVCC
+U 1 1 60142904
+P 13200 2500
+F 0 "AVCC" H 13200 2500 20  0000 C CNN
+F 1 "AVCC" H 13200 2430 30  0000 C CNN
+F 2 "" H 13200 2500 70  0000 C CNN
+F 3 "" H 13200 2500 70  0000 C CNN
+	1    13200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:DVCC DVCC
+U 1 1 60142903
+P 13450 3300
+F 0 "DVCC" H 13450 3300 20  0000 C CNN
+F 1 "DVCC" H 13450 3230 30  0000 C CNN
+F 2 "" H 13450 3300 70  0000 C CNN
+F 3 "" H 13450 3300 70  0000 C CNN
+	1    13450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND DGND_3
+U 1 1 60142902
+P 13170 6750
+F 0 "DGND_3" H 13170 6890 20  0000 C CNN
+F 1 "GND" H 13170 6860 30  0000 C CNN
+F 2 "" H 13170 6750 70  0000 C CNN
+F 3 "" H 13170 6750 70  0000 C CNN
+	1    13170 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND DGND_4
+U 1 1 60142901
+P 7280 7850
+F 0 "DGND_4" H 7280 7990 20  0000 C CNN
+F 1 "GND" H 7280 7960 30  0000 C CNN
+F 2 "" H 7280 7850 70  0000 C CNN
+F 3 "" H 7280 7850 70  0000 C CNN
+	1    7280 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND AGND_2
+U 1 1 60142900
+P 12870 7200
+F 0 "AGND_2" H 12870 7340 20  0000 C CNN
+F 1 "GND" H 12870 7310 30  0000 C CNN
+F 2 "" H 12870 7200 70  0000 C CNN
+F 3 "" H 12870 7200 70  0000 C CNN
+	1    12870 7200
+	1    0    0    -1  
+$EndComp
+Text GLabel 8200 6500 2    60   BiDi ~ 0
+TDO
+Text GLabel 8200 6600 2    60   Output ~ 0
+TDI
+Text GLabel 8200 6700 2    60   BiDi ~ 0
+TMS
+Text GLabel 8200 6800 2    60   BiDi ~ 0
+TCK
+Text GLabel 13000 4500 2    60   BiDi ~ 0
+RESET
+Text Label 8800 3100 0    60   ~ 0
+P1.2
+Text Label 8800 3200 0    60   ~ 0
+P1.3
+Text Label 8800 3800 0    60   ~ 0
+P2.0
+Text Label 8800 3900 0    60   ~ 0
+P2.1
+Text Label 8800 4000 0    60   ~ 0
+P2.2
+Text Label 8800 4500 0    60   ~ 0
+P2.7
+Text Label 8800 5100 0    60   ~ 0
+P3.4
+Text Label 8800 5200 0    60   ~ 0
+P3.5
+Text Label 8800 5300 0    60   ~ 0
+P3.6
+Text Label 8800 5400 0    60   ~ 0
+P3.7
+Text Label 8800 6000 0    60   ~ 0
+P4.4
+Text Label 8800 6300 0    60   ~ 0
+P4.7
+Text Label 1050 4850 0    60   ~ 0
+P1.2
+Text Label 1050 4650 0    60   ~ 0
+P1.3
+Text Label 3050 4450 0    60   ~ 0
+P2.0
+Text Label 3050 4650 0    60   ~ 0
+P2.2
+Text Label 1050 4950 0    60   ~ 0
+P2.7
+Text Label 3050 4750 0    60   ~ 0
+P3.4
+Text Label 3050 4850 0    60   ~ 0
+P3.5
+Text Label 3050 4950 0    60   ~ 0
+P3.6
+Text Label 3050 5050 0    60   ~ 0
+P3.7
+Text Label 1050 4750 0    60   ~ 0
+P4.7
+Text GLabel 13600 4200 2    60   BiDi ~ 0
+TEST/SBWTCK
+Text GLabel 8000 6200 2    60   Input ~ 0
+LED1
+Text GLabel 8000 6100 2    60   Input ~ 0
+LED2
+Text Label 1050 5250 0    60   ~ 0
+P4.4
+Text Label 12890 3590 0    70   ~ 0
+0.1µF
+Text Label 13290 2790 0    70   ~ 0
+1µF
+Text Label 13540 3590 0    70   ~ 0
+1µF
+Text Label 7890 2490 0    70   ~ 0
+100pF
+Text Label 7400 2200 0    70   ~ 0
+1.00k
+Text Label 7400 2600 0    70   ~ 0
+1.00k
+Text Label 7400 2800 0    70   ~ 0
+1.00k
+Text Label 7400 3200 0    70   ~ 0
+1.00k
+Text Label 7400 3900 0    70   ~ 0
+1.00k
+Text Label 7400 4200 0    70   ~ 0
+1.00k
+Text Label 7400 4500 0    70   ~ 0
+1.00k
+Text Label 7500 4800 0    70   ~ 0
+1.00k
+Text Label 7400 5400 0    70   ~ 0
+1.00k
+Text Label 7400 5700 0    70   ~ 0
+1.00k
+Text Label 7400 6000 0    70   ~ 0
+1.00k
+Text Label 7300 6300 0    70   ~ 0
+1.00k
+Text Label 7890 3090 0    70   ~ 0
+100pF
+Text Label 7890 4190 0    70   ~ 0
+100pF
+Text Label 7990 4790 0    70   ~ 0
+100pF
+Text Label 8290 5690 0    70   ~ 0
+100pF
+Wire Wire Line
+	8230 7000 8230 7050
+Wire Wire Line
+	8580 7000 8230 7000
+Wire Wire Line
+	8130 7000 7780 7000
+Wire Wire Line
+	8130 6900 9200 6900
+Wire Wire Line
+	8130 7000 8130 6900
+Wire Wire Line
+	8130 7050 8130 7000
+Wire Wire Line
+	13200 2800 13600 2800
+Wire Wire Line
+	12810 2800 13200 2800
+Wire Wire Line
+	13170 6700 13170 6750
+Wire Wire Line
+	12600 6700 13170 6700
+Wire Wire Line
+	12870 6900 12600 6900
+Wire Wire Line
+	12870 7000 12870 6900
+Wire Wire Line
+	12870 7000 12600 7000
+Wire Wire Line
+	12870 7100 12870 7000
+Wire Wire Line
+	12600 7100 12870 7100
+Wire Wire Line
+	12870 7200 12600 7200
+Wire Wire Line
+	12870 7100 12870 7200
+Wire Wire Line
+	13000 4500 12600 4500
+Wire Wire Line
+	8800 7700 8130 7700
+Wire Wire Line
+	8800 7000 8800 7700
+Wire Wire Line
+	9200 7000 8800 7000
+Wire Wire Line
+	7280 7000 7480 7000
+Wire Wire Line
+	7280 7700 7280 7000
+Wire Wire Line
+	7280 7850 7280 7700
+Wire Wire Line
+	7280 7700 7500 7700
+Wire Wire Line
+	8800 6500 9200 6500
+Wire Wire Line
+	8800 6600 9200 6600
+Wire Wire Line
+	8800 6700 9200 6700
+Wire Wire Line
+	8800 6800 9200 6800
+Wire Wire Line
+	3600 4450 2600 4450
+Wire Wire Line
+	3600 5250 2600 5250
+Wire Wire Line
+	3600 4650 2600 4650
+Wire Wire Line
+	3600 4750 2600 4750
+Wire Wire Line
+	2600 4850 3600 4850
+Wire Wire Line
+	800  4850 1800 4850
+Wire Wire Line
+	800  4950 1800 4950
+Wire Wire Line
+	800  5250 1800 5250
+Wire Wire Line
+	800  4750 1800 4750
+Wire Wire Line
+	2600 5150 3550 5150
+Wire Wire Line
+	1800 4650 800  4650
+Wire Wire Line
+	3600 5050 2600 5050
+Wire Wire Line
+	8600 3100 9200 3100
+Wire Wire Line
+	8600 3200 9200 3200
+Wire Wire Line
+	8600 3800 9200 3800
+Wire Wire Line
+	8600 4300 9200 4300
+Wire Wire Line
+	8600 4400 9200 4400
+Wire Wire Line
+	8600 4000 9200 4000
+Wire Wire Line
+	8600 5200 9200 5200
+Wire Wire Line
+	8600 5300 9200 5300
+Wire Wire Line
+	8600 6000 9200 6000
+Wire Wire Line
+	8600 6200 9200 6200
+Wire Wire Line
+	8600 6300 9200 6300
+Wire Wire Line
+	13600 4200 12600 4200
+Wire Wire Line
+	3600 4950 2600 4950
+Wire Wire Line
+	7200 2500 6830 2500
+Wire Wire Line
+	7800 2500 7600 2500
+Wire Wire Line
+	8900 2500 7800 2500
+Wire Wire Line
+	8900 3000 8900 2500
+Wire Wire Line
+	9200 3000 8900 3000
+Wire Wire Line
+	8130 7700 7800 7700
+Wire Wire Line
+	8130 7650 8130 7700
+Wire Wire Line
+	7800 2800 7600 2800
+Wire Wire Line
+	8400 2800 7800 2800
+Wire Wire Line
+	8400 3300 8400 2800
+Wire Wire Line
+	9200 3300 8400 3300
+Wire Wire Line
+	7200 3900 7060 3900
+Wire Wire Line
+	7800 3900 7600 3900
+Wire Wire Line
+	8300 3900 7800 3900
+Wire Wire Line
+	8300 4100 8300 3900
+Wire Wire Line
+	9200 4100 8300 4100
+Wire Wire Line
+	7200 4200 7080 4200
+Wire Wire Line
+	7800 4200 7600 4200
+Wire Wire Line
+	9200 4200 7800 4200
+Wire Wire Line
+	7200 4500 7100 4500
+Wire Wire Line
+	7200 4800 7100 4800
+Wire Wire Line
+	7900 4800 7600 4800
+Wire Wire Line
+	9200 4800 7900 4800
+Wire Wire Line
+	7200 5400 7140 5400
+Wire Wire Line
+	7200 5700 7050 5700
+Wire Wire Line
+	7800 5700 7600 5700
+Wire Wire Line
+	8200 5700 7800 5700
+Wire Wire Line
+	9200 5700 8200 5700
+Wire Wire Line
+	7200 6000 7060 6000
+Wire Wire Line
+	7100 6300 7060 6300
+Wire Wire Line
+	7200 2200 6900 2200
+Wire Wire Line
+	9200 5400 8600 5400
+Wire Wire Line
+	7800 5400 7600 5400
+Wire Wire Line
+	8200 5400 7800 5400
+Wire Wire Line
+	8400 5400 8200 5400
+Wire Wire Line
+	8400 5600 8400 5400
+Wire Wire Line
+	9200 5600 8400 5600
+Wire Wire Line
+	7700 6300 7500 6300
+Wire Wire Line
+	7900 6300 7700 6300
+Wire Wire Line
+	7900 5900 7900 6300
+Wire Wire Line
+	9200 5900 7900 5900
+Wire Wire Line
+	9200 6100 8600 6100
+Text Label 7790 6290 0    70   ~ 0
+100pF
+Wire Wire Line
+	8600 3900 9200 3900
+Wire Wire Line
+	8600 5100 9200 5100
+Wire Wire Line
+	7900 4500 7600 4500
+Wire Wire Line
+	8300 4500 7900 4500
+Wire Wire Line
+	8300 4700 8300 4500
+Wire Wire Line
+	9200 4700 8300 4700
+Wire Wire Line
+	8600 4500 9200 4500
+NoConn ~ 2600 5350
+NoConn ~ 1800 5350
+$Comp
+L power:GND AGND_3
+U 1 1 601428FF
+P 2200 6600
+F 0 "AGND_3" H 2200 6740 20  0000 C CNN
+F 1 "GND" H 2200 6710 30  0000 C CNN
+F 2 "" H 2200 6600 70  0000 C CNN
+F 3 "" H 2200 6600 70  0000 C CNN
+	1    2200 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 6600 2200 6600
+Wire Wire Line
+	3200 6600 2900 6600
+$Comp
+L power:GND DGND_5
+U 1 1 601428FE
+P 3200 6600
+F 0 "DGND_5" H 3200 6740 20  0000 C CNN
+F 1 "GND" H 3200 6710 30  0000 C CNN
+F 2 "" H 3200 6600 70  0000 C CNN
+F 3 "" H 3200 6600 70  0000 C CNN
+	1    3200 6600
+	1    0    0    -1  
+$EndComp
+Text Label 3390 7940 0    70   ~ 0
+4.7µF
+Text Label 3840 7940 0    70   ~ 0
+0.1µF
+Wire Wire Line
+	3750 8200 3750 7950
+Wire Wire Line
+	3300 8200 3750 8200
+Wire Wire Line
+	3300 8200 3300 7950
+Wire Wire Line
+	3300 8450 3300 8200
+$Comp
+L power:AVCC AVCC_2
+U 1 1 601428FD
+P 3300 7400
+F 0 "AVCC_2" H 3300 7400 20  0000 C CNN
+F 1 "AVCC" H 3300 7330 30  0000 C CNN
+F 2 "" H 3300 7400 70  0000 C CNN
+F 3 "" H 3300 7400 70  0000 C CNN
+	1    3300 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 7400 1850 7400
+$Comp
+L power:GND AGND_4
+U 1 1 601428FC
+P 3300 8450
+F 0 "AGND_4" H 3300 8590 20  0000 C CNN
+F 1 "GND" H 3300 8560 30  0000 C CNN
+F 2 "" H 3300 8450 70  0000 C CNN
+F 3 "" H 3300 8450 70  0000 C CNN
+	1    3300 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 7400 3300 7650
+Wire Wire Line
+	13600 2500 13900 2500
+Wire Wire Line
+	13200 2500 13600 2500
+Wire Wire Line
+	12810 2500 13200 2500
+Wire Wire Line
+	12600 2500 12810 2500
+Wire Wire Line
+	12600 2900 12600 2500
+Wire Wire Line
+	13450 3600 12800 3600
+Wire Wire Line
+	13900 3600 13450 3600
+Wire Wire Line
+	13900 3300 14150 3300
+Wire Wire Line
+	13450 3300 13900 3300
+Wire Wire Line
+	12800 3300 13450 3300
+Wire Wire Line
+	12800 3100 12800 3300
+Wire Wire Line
+	12600 3100 12800 3100
+Wire Wire Line
+	7800 2200 7600 2200
+Wire Wire Line
+	9100 2200 7800 2200
+Wire Wire Line
+	9100 2900 9100 2200
+Wire Wire Line
+	9200 2900 9100 2900
+Wire Wire Line
+	7200 2800 6880 2800
+Wire Wire Line
+	7200 3200 6900 3200
+Wire Wire Line
+	7800 3200 7600 3200
+Wire Wire Line
+	7800 3100 7800 3200
+Wire Wire Line
+	7800 3600 9200 3600
+Text Label 8100 3500 0    60   ~ 0
+SDA
+Text Label 8100 3600 0    60   ~ 0
+SCL
+$Comp
+L power:DVCC DVCC_2
+U 1 1 601428FB
+P 7000 3400
+F 0 "DVCC_2" H 7000 3400 20  0000 C CNN
+F 1 "DVCC" H 7000 3330 30  0000 C CNN
+F 2 "" H 7000 3400 70  0000 C CNN
+F 3 "" H 7000 3400 70  0000 C CNN
+	1    7000 3400
+	1    0    0    -1  
+$EndComp
+Text Label 3050 5150 0    60   ~ 0
+SDA
+Text Label 3050 5250 0    60   ~ 0
+SCL
+Wire Wire Line
+	7700 6000 7600 6000
+Wire Wire Line
+	7700 5800 7700 6000
+Wire Wire Line
+	9200 5800 7700 5800
+Wire Wire Line
+	7800 5500 6200 5500
+Wire Wire Line
+	7800 5400 7800 5500
+Wire Wire Line
+	6200 5600 6200 5700
+Wire Wire Line
+	7800 5600 6200 5600
+Wire Wire Line
+	7800 5700 7800 5600
+Text GLabel 5100 5500 2    60   BiDi ~ 0
+UART_RTS
+Text GLabel 5100 5700 2    60   BiDi ~ 0
+UART_CTS
+$Comp
+L power:DVCC DVCC_3
+U 1 1 601428FA
+P 1650 5450
+F 0 "DVCC_3" H 1650 5450 20  0000 C CNN
+F 1 "DVCC" H 1650 5380 30  0000 C CNN
+F 2 "" H 1650 5450 70  0000 C CNN
+F 3 "" H 1650 5450 70  0000 C CNN
+	1    1650 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5450 1800 5450
+Wire Wire Line
+	1650 5550 1650 5450
+Wire Wire Line
+	1800 5550 1650 5550
+$Comp
+L power:GND DGND_6
+U 1 1 601428F9
+P 2850 5550
+F 0 "DGND_6" H 2850 5690 20  0000 C CNN
+F 1 "GND" H 2850 5660 30  0000 C CNN
+F 2 "" H 2850 5550 70  0000 C CNN
+F 3 "" H 2850 5550 70  0000 C CNN
+	1    2850 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 5550 2600 5550
+Wire Wire Line
+	2850 5450 2850 5550
+Wire Wire Line
+	2600 5450 2850 5450
+Text Label 9090 8370 0    70   ~ 0
+8MHz
+Text Label 8990 8590 0    70   ~ 0
+18pF
+Text Label 9490 8590 0    70   ~ 0
+18pF
+Wire Wire Line
+	8900 8100 8900 8300
+Wire Wire Line
+	8900 7800 8900 8100
+Wire Wire Line
+	9000 7800 8900 7800
+Wire Wire Line
+	9000 7100 9000 7800
+Wire Wire Line
+	9200 7100 9000 7100
+Wire Wire Line
+	9400 8100 9400 8300
+Wire Wire Line
+	9400 7800 9400 8100
+Wire Wire Line
+	9200 7800 9400 7800
+Wire Wire Line
+	9200 7200 9200 7800
+Wire Wire Line
+	9200 8600 8900 8600
+Wire Wire Line
+	9400 8600 9200 8600
+$Comp
+L power:GND AGND_5
+U 1 1 601428F8
+P 9200 8600
+F 0 "AGND_5" H 9200 8740 20  0000 C CNN
+F 1 "GND" H 9200 8710 30  0000 C CNN
+F 2 "" H 9200 8600 70  0000 C CNN
+F 3 "" H 9200 8600 70  0000 C CNN
+	1    9200 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4550 3550 4550
+Text Label 3050 4550 0    60   ~ 0
+P2.1
+NoConn ~ 1800 5150
+NoConn ~ 1800 4450
+Text GLabel 8100 4300 2    60   Output ~ 0
+A1_TX
+Text GLabel 8100 4400 2    60   Output ~ 0
+A1_RX
+$Comp
+L power:DVCC DVCC_4
+U 1 1 601428F7
+P 1850 7400
+F 0 "DVCC_4" H 1850 7400 20  0000 C CNN
+F 1 "DVCC" H 1850 7330 30  0000 C CNN
+F 2 "" H 1850 7400 70  0000 C CNN
+F 3 "" H 1850 7400 70  0000 C CNN
+	1    1850 7400
+	1    0    0    -1  
+$EndComp
+Text Label 13690 2790 0    70   ~ 0
+10µF
+Text Label 13990 3590 0    70   ~ 0
+10µF
+Wire Wire Line
+	7000 3600 7400 3600
+Wire Wire Line
+	7000 3400 7000 3600
+Wire Wire Line
+	7300 3400 7000 3400
+Wire Wire Line
+	8200 3200 7800 3200
+Wire Wire Line
+	8200 3400 8200 3200
+Wire Wire Line
+	9200 3400 8200 3400
+Wire Wire Line
+	7800 3500 9200 3500
+Wire Wire Line
+	7800 3400 7800 3500
+Wire Wire Line
+	7700 3400 7800 3400
+NoConn ~ 1800 4550
+NoConn ~ 1800 5050
+Wire Wire Line
+	9200 4900 7600 4900
+Wire Wire Line
+	9200 5000 7600 5000
+Text Notes 1700 600  0    72   ~ 0
+J8 connector can be used for SPI / I2C / UART communication
+Wire Notes Line
+	600  3650 600  400 
+Wire Notes Line
+	600  3650 5800 3650
+Wire Notes Line
+	600  400  5800 400 
+Wire Notes Line
+	5800 3650 5800 400 
+Text Notes 2600 850  0    60   ~ 0
+Configuration for SPI:
+Text Notes 2600 1000 0    60   ~ 0
+Existing net = SPI signal
+Text Notes 2700 1150 0    60   ~ 0
+SDA = UCB0SIMO
+Text Notes 2700 1300 0    60   ~ 0
+SCL = UCB0SOMI
+Text Notes 2700 1450 0    60   ~ 0
+P2.2  = UCB0CLK
+Text Notes 2700 1600 0    60   ~ 0
+P3.7 = /CS
+Text Notes 2600 2050 0    60   ~ 0
+Configuration for I2C:
+Text Notes 2800 2150 0    60   ~ 0
+SDA
+Text Notes 2800 2250 0    60   ~ 0
+SCL
+Text Notes 2600 2650 0    60   ~ 0
+Configuration for UART:
+Text Notes 2600 2750 0    60   ~ 0
+Existing net = UART signal
+Text Notes 2700 2850 0    60   ~ 0
+P2.0 = UCA0TXD
+Text Notes 2700 2950 0    60   ~ 0
+P2.1 = UCA0RXD
+Wire Wire Line
+	3300 7400 2950 7400
+Wire Wire Line
+	3750 7400 3300 7400
+Wire Wire Line
+	3750 7650 3750 7400
+Connection ~ 2850 5550
+Connection ~ 3300 8200
+Connection ~ 3300 7400
+Connection ~ 7280 7700
+Connection ~ 7700 6300
+Connection ~ 7700 6000
+Connection ~ 7800 5700
+Connection ~ 7800 5400
+Connection ~ 7800 4200
+Connection ~ 7800 3900
+Connection ~ 7800 3200
+Connection ~ 7800 2800
+Connection ~ 7800 2500
+Connection ~ 7800 2200
+Connection ~ 7900 4800
+Connection ~ 7900 4500
+Connection ~ 8130 7700
+Connection ~ 8130 7000
+Connection ~ 8200 5700
+Connection ~ 8200 5400
+Connection ~ 8900 8100
+Connection ~ 9200 8600
+Connection ~ 9400 8100
+Connection ~ 12800 3600
+Connection ~ 12800 3300
+Connection ~ 12810 2800
+Connection ~ 12810 2500
+Connection ~ 12870 7200
+Connection ~ 12870 7100
+Connection ~ 12870 7000
+Connection ~ 13200 2800
+Connection ~ 13200 2500
+Connection ~ 13450 3600
+Connection ~ 13450 3300
+Connection ~ 13600 2500
+Connection ~ 13900 3300
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:MSP430FR5969IRGZ- U7
+U 1 1 601428F6
+P 10900 5100
+F 0 "U7" H 9400 7400 60  0000 L BNN
+F 1 "MSP430FR5869RGZ" H 9400 2700 60  0000 L BNN
+F 2 "" H 9400 2700 60  0000 C CNN
+F 3 "" H 9400 2700 60  0000 C CNN
+	1    10900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:C0603C101J5GAC- C32
+U 1 1 601428F5
+P 7800 2300
+F 0 "C32" V 7890 2390 60  0000 L BNN
+F 1 "" H 7800 2300 50  0001 C CNN
+F 2 "" H 7800 2300 50  0001 C CNN
+F 3 "" H 7800 2300 50  0001 C CNN
+F 4 "100pF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7800 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R48
+U 1 1 601428F4
+P 7400 2200
+F 0 "R48" H 7200 2200 60  0000 L BNN
+F 1 "" H 7400 2200 50  0001 C CNN
+F 2 "" H 7400 2200 50  0001 C CNN
+F 3 "" H 7400 2200 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R45
+U 1 1 601428F3
+P 7400 2500
+F 0 "R45" H 7200 2400 60  0000 L BNN
+F 1 "" H 7400 2500 50  0001 C CNN
+F 2 "" H 7400 2500 50  0001 C CNN
+F 3 "" H 7400 2500 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R35
+U 1 1 601428F2
+P 7400 2800
+F 0 "R35" H 7200 2800 60  0000 L BNN
+F 1 "" H 7400 2800 50  0001 C CNN
+F 2 "" H 7400 2800 50  0001 C CNN
+F 3 "" H 7400 2800 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R34
+U 1 1 601428F1
+P 7400 3200
+F 0 "R34" H 7200 3200 60  0000 L BNN
+F 1 "" H 7400 3200 50  0001 C CNN
+F 2 "" H 7400 3200 50  0001 C CNN
+F 3 "" H 7400 3200 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R51
+U 1 1 601428F0
+P 7400 3900
+F 0 "R51" H 7200 3900 60  0000 L BNN
+F 1 "" H 7400 3900 50  0001 C CNN
+F 2 "" H 7400 3900 50  0001 C CNN
+F 3 "" H 7400 3900 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R50
+U 1 1 601428EF
+P 7400 4200
+F 0 "R50" H 7200 4200 60  0000 L BNN
+F 1 "" H 7400 4200 50  0001 C CNN
+F 2 "" H 7400 4200 50  0001 C CNN
+F 3 "" H 7400 4200 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R42
+U 1 1 601428EE
+P 7400 4500
+F 0 "R42" H 7200 4500 60  0000 L BNN
+F 1 "" H 7400 4500 50  0001 C CNN
+F 2 "" H 7400 4500 50  0001 C CNN
+F 3 "" H 7400 4500 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R41
+U 1 1 601428ED
+P 7400 4800
+F 0 "R41" H 7200 4800 60  0000 L BNN
+F 1 "" H 7400 4800 50  0001 C CNN
+F 2 "" H 7400 4800 50  0001 C CNN
+F 3 "" H 7400 4800 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R29
+U 1 1 601428EC
+P 7400 5400
+F 0 "R29" H 7200 5400 60  0000 L BNN
+F 1 "" H 7400 5400 50  0001 C CNN
+F 2 "" H 7400 5400 50  0001 C CNN
+F 3 "" H 7400 5400 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:06035A120JAT2A- C41
+U 1 1 601428EB
+P 7580 7000
+F 0 "C41" H 7570 7090 60  0000 L BNN
+F 1 "" H 7580 7000 50  0001 C CNN
+F 2 "" H 7580 7000 50  0001 C CNN
+F 3 "" H 7580 7000 50  0001 C CNN
+F 4 "12pF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7580 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R30
+U 1 1 601428EA
+P 7400 5700
+F 0 "R30" H 7200 5700 60  0000 L BNN
+F 1 "" H 7400 5700 50  0001 C CNN
+F 2 "" H 7400 5700 50  0001 C CNN
+F 3 "" H 7400 5700 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7400 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R31
+U 1 1 601428E9
+P 7400 6000
+F 0 "R31" H 7200 6000 60  0000 L BNN
+F 1 "" H 7400 6000 50  0001 C CNN
+F 2 "" H 7400 6000 50  0001 C CNN
+F 3 "" H 7400 6000 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RG1608P-102-B-T5- R32
+U 1 1 601428E8
+P 7300 6300
+F 0 "R32" H 7100 6300 60  0000 L BNN
+F 1 "" H 7300 6300 50  0001 C CNN
+F 2 "" H 7300 6300 50  0001 C CNN
+F 3 "" H 7300 6300 50  0001 C CNN
+F 4 "1.00k" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7300 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:C0603C101J5GAC- C24
+U 1 1 601428E7
+P 7800 2900
+F 0 "C24" V 7890 2990 60  0000 L BNN
+F 1 "" H 7800 2900 50  0001 C CNN
+F 2 "" H 7800 2900 50  0001 C CNN
+F 3 "" H 7800 2900 50  0001 C CNN
+F 4 "100pF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7800 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:C0603C101J5GAC- C34
+U 1 1 601428E6
+P 7800 4000
+F 0 "C34" V 7890 4090 60  0000 L BNN
+F 1 "" H 7800 4000 50  0001 C CNN
+F 2 "" H 7800 4000 50  0001 C CNN
+F 3 "" H 7800 4000 50  0001 C CNN
+F 4 "100pF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7800 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:C0603C101J5GAC- C29
+U 1 1 601428E5
+P 7900 4600
+F 0 "C29" V 7990 4690 60  0000 L BNN
+F 1 "" H 7900 4600 50  0001 C CNN
+F 2 "" H 7900 4600 50  0001 C CNN
+F 3 "" H 7900 4600 50  0001 C CNN
+F 4 "100pF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7900 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:C0603C101J5GAC- C21
+U 1 1 601428E4
+P 8200 5500
+F 0 "C21" V 8290 5590 60  0000 L BNN
+F 1 "" H 8200 5500 50  0001 C CNN
+F 2 "" H 8200 5500 50  0001 C CNN
+F 3 "" H 8200 5500 50  0001 C CNN
+F 4 "100pF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    8200 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:C0603C101J5GAC- C22
+U 1 1 601428E3
+P 7700 6100
+F 0 "C22" V 7790 6190 60  0000 L BNN
+F 1 "" H 7700 6100 50  0001 C CNN
+F 2 "" H 7700 6100 50  0001 C CNN
+F 3 "" H 7700 6100 50  0001 C CNN
+F 4 "100pF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7700 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:CRCW0805330KJNEA- R98
+U 1 1 601428E2
+P 2700 6600
+F 0 "R98" H 2590 6630 60  0000 L BNN
+F 1 "0" H 2590 6470 60  0000 L BNN
+F 2 "" H 2590 6470 60  0000 C CNN
+F 3 "" H 2590 6470 60  0000 C CNN
+	1    2700 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:0603ZD475KAT2A- C53
+U 1 1 601428E1
+P 3300 7850
+F 0 "C53" V 3310 7760 60  0000 R TNN
+F 1 "" H 3300 7850 50  0001 C CNN
+F 2 "" H 3300 7850 50  0001 C CNN
+F 3 "" H 3300 7850 50  0001 C CNN
+F 4 "4.7µF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    3300 7850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:06035A120JAT2A- C40
+U 1 1 601428E0
+P 7600 7700
+F 0 "C40" H 7590 7790 60  0000 L BNN
+F 1 "" H 7600 7700 50  0001 C CNN
+F 2 "" H 7600 7700 50  0001 C CNN
+F 3 "" H 7600 7700 50  0001 C CNN
+F 4 "12pF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    7600 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:06033C104JAT2A- C52
+U 1 1 601428DF
+P 3750 7850
+F 0 "C52" V 3760 7760 60  0000 R TNN
+F 1 "" H 3750 7850 50  0001 C CNN
+F 2 "" H 3750 7850 50  0001 C CNN
+F 3 "" H 3750 7850 50  0001 C CNN
+F 4 "0.1µF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    3750 7850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:TP-040_RND- TP15
+U 1 1 601428DE
+P 13900 2500
+F 0 "TP15" V 13900 2700 60  0000 L BNN
+F 1 "" H 13900 2500 50  0001 C CNN
+F 2 "" H 13900 2500 50  0001 C CNN
+F 3 "" H 13900 2500 50  0001 C CNN
+	1    13900 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:TP-040_RND- TP13
+U 1 1 601428DD
+P 14150 3300
+F 0 "TP13" V 14150 3500 60  0000 L BNN
+F 1 "" H 14150 3300 50  0001 C CNN
+F 2 "" H 14150 3300 50  0001 C CNN
+F 3 "" H 14150 3300 50  0001 C CNN
+	1    14150 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RC0603FR-074K7L- R40
+U 1 1 601428DC
+P 7500 3400
+F 0 "R40" H 7390 3430 60  0000 L BNN
+F 1 "4.70k" H 7390 3270 60  0000 L BNN
+F 2 "" H 7390 3270 60  0000 C CNN
+F 3 "" H 7390 3270 60  0000 C CNN
+	1    7500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:RC0603FR-074K7L- R43
+U 1 1 601428DB
+P 7600 3600
+F 0 "R43" H 7400 3600 60  0000 L BNN
+F 1 "4.70k" H 7490 3470 60  0000 L BNN
+F 2 "" H 7490 3470 60  0000 C CNN
+F 3 "" H 7490 3470 60  0000 C CNN
+	1    7600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:CRCW06030000Z0EA- R27
+U 1 1 601428DA
+P 6000 5500
+F 0 "R27" H 6000 5500 60  0000 L BNN
+F 1 "0" H 5900 5400 60  0000 L BNN
+F 2 "" H 5900 5400 60  0000 C CNN
+F 3 "" H 5900 5400 60  0000 C CNN
+	1    6000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:CRCW06030000Z0EA- R28
+U 1 1 601428D9
+P 6000 5700
+F 0 "R28" H 6000 5700 60  0000 L BNN
+F 1 "0" H 5890 5570 60  0000 L BNN
+F 2 "" H 5890 5570 60  0000 C CNN
+F 3 "" H 5890 5570 60  0000 C CNN
+	1    6000 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:ABLS-8.000MHZ-B4-T- Y2
+U 1 1 601428D8
+P 9100 8100
+F 0 "Y2" H 9090 8170 60  0000 L BNN
+F 1 "ABLS-8.000MHZ-B4-T" H 9090 7930 60  0000 L BNN
+F 2 "" H 9090 7930 60  0000 C CNN
+F 3 "" H 9090 7930 60  0000 C CNN
+F 4 "8MHz" V 1400 2000 60  0001 C CNN "Frequency"
+	1    9100 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:GRM1885C1H180JA01D- C48
+U 1 1 601428D7
+P 8900 8500
+F 0 "C48" V 8910 8410 60  0000 R TNN
+F 1 "" H 8900 8500 50  0001 C CNN
+F 2 "" H 8900 8500 50  0001 C CNN
+F 3 "" H 8900 8500 50  0001 C CNN
+F 4 "18pF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    8900 8500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:GRM1885C1H180JA01D- C39
+U 1 1 601428D6
+P 9400 8500
+F 0 "C39" V 9410 8410 60  0000 R TNN
+F 1 "" H 9400 8500 50  0001 C CNN
+F 2 "" H 9400 8500 50  0001 C CNN
+F 3 "" H 9400 8500 50  0001 C CNN
+F 4 "18pF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    9400 8500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:CMR200T-32.768KDZBT- Y1
+U 1 1 601428D5
+P 8130 7350
+F 0 "Y1" V 8140 7150 60  0000 R TNN
+F 1 "CMR200T-32.768KDZBT" V 7580 7680 60  0000 R TNN
+F 2 "" H 7580 7680 60  0000 C CNN
+F 3 "" H 7580 7680 60  0000 C CNN
+F 4 "32.768KHz" V 1400 2000 60  0001 C CNN "Frequency"
+	1    8130 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:GRM188R61E106MA73- C102
+U 1 1 601428D4
+P 13600 2700
+F 0 "C102" V 13610 2610 60  0000 R TNN
+F 1 "" H 13600 2700 50  0001 C CNN
+F 2 "" H 13600 2700 50  0001 C CNN
+F 3 "" H 13600 2700 50  0001 C CNN
+F 4 "10µF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    13600 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:GRM188R61E106MA73- C37
+U 1 1 601428D3
+P 13900 3500
+F 0 "C37" V 13910 3410 60  0000 R TNN
+F 1 "" H 13900 3500 50  0001 C CNN
+F 2 "" H 13900 3500 50  0001 C CNN
+F 3 "" H 13900 3500 50  0001 C CNN
+F 4 "10µF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    13900 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:TP-040_RND- TP11
+U 1 1 601428D2
+P 7600 4900
+F 0 "TP11" V 7540 5240 60  0000 R TNN
+F 1 "" H 7600 4900 50  0001 C CNN
+F 2 "" H 7600 4900 50  0001 C CNN
+F 3 "" H 7600 4900 50  0001 C CNN
+	1    7600 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:TP-040_RND- TP12
+U 1 1 601428D1
+P 7600 5000
+F 0 "TP12" V 7560 5330 60  0000 R TNN
+F 1 "" H 7600 5000 50  0001 C CNN
+F 2 "" H 7600 5000 50  0001 C CNN
+F 3 "" H 7600 5000 50  0001 C CNN
+	1    7600 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:MMZ1608B102C- FB7
+U 1 1 601428D0
+P 2350 7300
+F 0 "FB7" H 2340 7260 60  0000 L BNN
+F 1 "MMZ1608B102C" H 2340 7040 60  0000 L BNN
+F 2 "" H 2340 7040 60  0000 C CNN
+F 3 "" H 2340 7040 60  0000 C CNN
+	1    2350 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:0603YC104JAT2A- C105
+U 1 1 601428CF
+P 12810 2700
+F 0 "C105" V 12820 2610 60  0000 R TNN
+F 1 "" H 12810 2700 50  0001 C CNN
+F 2 "" H 12810 2700 50  0001 C CNN
+F 3 "" H 12810 2700 50  0001 C CNN
+F 4 "0.1µF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    12810 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:TSW-112-07-G-D- J8
+U 1 1 601428CE
+P 2200 4950
+F 0 "J8" H 1990 5550 60  0000 L BNN
+F 1 "67997-424HLF" H 1990 4150 60  0000 L BNN
+F 2 "" H 1990 4150 60  0000 C CNN
+F 3 "" H 1990 4150 60  0000 C CNN
+	1    2200 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:0603YC104JAT2A- C36
+U 1 1 601428CD
+P 12800 3500
+F 0 "C36" V 12810 3410 60  0000 R TNN
+F 1 "" H 12800 3500 50  0001 C CNN
+F 2 "" H 12800 3500 50  0001 C CNN
+F 3 "" H 12800 3500 50  0001 C CNN
+F 4 "0.1µF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    12800 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:GRM188R71C105KA12D- C103
+U 1 1 601428CC
+P 13200 2700
+F 0 "C103" V 13210 2610 60  0000 R TNN
+F 1 "" H 13200 2700 50  0001 C CNN
+F 2 "" H 13200 2700 50  0001 C CNN
+F 3 "" H 13200 2700 50  0001 C CNN
+F 4 "1µF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    13200 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Pg3-Microcontroller-SchDoc-rescue:GRM188R71C105KA12D- C35
+U 1 1 601428CB
+P 13450 3500
+F 0 "C35" V 13460 3410 60  0000 R TNN
+F 1 "" H 13450 3500 50  0001 C CNN
+F 2 "" H 13450 3500 50  0001 C CNN
+F 3 "" H 13450 3500 50  0001 C CNN
+F 4 "1µF" V 1400 2000 60  0001 C CNN "ValueDisplayed"
+	1    13450 3500
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	11600 10700 16800 10700
+Wire Notes Line
+	4100 10500 15700 10500
+Wire Notes Line
+	11600 10600 15700 10600
+Wire Notes Line
+	11600 10400 15700 10400
+Connection ~ 14150 3300
+Wire Wire Line
+	14150 3300 14200 3300
+$EndSCHEMATC
