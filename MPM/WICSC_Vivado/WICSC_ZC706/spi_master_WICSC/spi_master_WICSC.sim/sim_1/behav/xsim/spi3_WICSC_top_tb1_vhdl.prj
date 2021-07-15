@@ -1,8 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../spi_master_WICSC.srcs/sources_1/new/spi3_WICSC_top.vhd" \
-"../../../../spi_master_WICSC.srcs/sources_1/new/spi_master.vhd" \
-"../../../../spi_master_WICSC.srcs/sim_1/new/spi3_WICSC_top_tb1.vhd" \
-
-# Do not sort compile order
-nosort
