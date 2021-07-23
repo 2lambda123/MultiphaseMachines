@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Thu Jul 15 13:19:57 2021
+--Date        : Fri Jul 23 19:16:15 2021
 --Host        : DESKTOP-R1R40B4 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -2349,7 +2349,7 @@ entity design_1 is
     sdio_0 : inout STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=35,numReposBlks=26,numNonXlnxBlks=2,numHierBlks=9,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=9,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=39,numReposBlks=30,numNonXlnxBlks=2,numHierBlks=9,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=12,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=1,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -3062,57 +3062,202 @@ architecture STRUCTURE of design_1 is
     carrier_zero : out STD_LOGIC
   );
   end component design_1_modulater_14bit_0_0;
+  component design_1_moving_average_top_0_0 is
+  port (
+    data_a1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_a2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    clk : in STD_LOGIC;
+    data_a1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_a2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h2_out : out STD_LOGIC_VECTOR ( 13 downto 0 )
+  );
+  end component design_1_moving_average_top_0_0;
+  component design_1_clk_wiz_1_0 is
+  port (
+    reset : in STD_LOGIC;
+    clk_in1 : in STD_LOGIC;
+    locked : out STD_LOGIC;
+    clk_12mhz : out STD_LOGIC
+  );
+  end component design_1_clk_wiz_1_0;
+  component design_1_moving_average_top_1_0 is
+  port (
+    data_a1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_a2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    clk : in STD_LOGIC;
+    data_a1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_a2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h2_out : out STD_LOGIC_VECTOR ( 13 downto 0 )
+  );
+  end component design_1_moving_average_top_1_0;
+  component design_1_moving_average_top_2_0 is
+  port (
+    data_a1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_a2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h2_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    clk : in STD_LOGIC;
+    data_a1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_a2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_b2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_c2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_d2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_e2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_f2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_g2_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h1_out : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    data_h2_out : out STD_LOGIC_VECTOR ( 13 downto 0 )
+  );
+  end component design_1_moving_average_top_2_0;
   signal AND_GATE_0_Y : STD_LOGIC;
   signal AO_in_1 : STD_LOGIC;
   signal BO_in_1 : STD_LOGIC;
   signal MSBs_selector_0_data_out_a1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_a2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_a3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_a4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_b1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_b2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_b3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_b4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_c1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_c2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_c3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_c4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_d1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_d2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_d3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_d4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_e1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_e2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_e3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_e4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_f1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_f2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_f3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_f4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_g1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_g2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_g3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_g4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_h1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_0_data_out_h2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_h3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_0_data_out_h4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_a1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_a2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_a3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_a4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_b1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_b2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_b3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_b4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_c1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_c2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_c3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_c4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_d1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_d2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_d3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_d4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_e1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_e2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_e3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_e4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_f1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_f2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_f3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_f4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_g1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_g2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_g3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_g4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_h1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_1_data_out_h2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_h3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_1_data_out_h4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_2_data_out_a1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_2_data_out_a2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_2_data_out_a3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_2_data_out_a4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_2_data_out_b1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_2_data_out_b2 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_2_data_out_b3 : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal MSBs_selector_2_data_out_b4 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_2_data_out_c1 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal MSBs_selector_2_data_out_c2 : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal MSBs_selector_2_data_out_d1 : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal MSBs_selector_2_data_out_d2 : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal MSBs_selector_2_data_out_e1 : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal MSBs_selector_2_data_out_e2 : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal MSBs_selector_2_data_out_f1 : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal MSBs_selector_2_data_out_f2 : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal MSBs_selector_2_data_out_g1 : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal MSBs_selector_2_data_out_g2 : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal MSBs_selector_2_data_out_h1 : STD_LOGIC_VECTOR ( 13 downto 0 );
-  signal MSBs_selector_2_data_out_h2 : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal Net : STD_LOGIC;
   signal PS_Interface_TOP_0_PS_IN : STD_LOGIC_VECTOR ( 63 downto 0 );
   signal PS_Interface_TOP_0_toMod1 : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -3125,6 +3270,7 @@ architecture STRUCTURE of design_1 is
   signal axi_gpio_2_ip2intc_irpt : STD_LOGIC;
   signal axi_gpio_4_gpio2_io_o : STD_LOGIC_VECTOR ( 0 to 0 );
   signal clk_wiz_0_clk_130 : STD_LOGIC;
+  signal clk_wiz_1_clk_12mhz : STD_LOGIC;
   signal fpga_dig_top_0_captured_data_a1 : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal fpga_dig_top_0_captured_data_a2 : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal fpga_dig_top_0_captured_data_b1 : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -3453,11 +3599,34 @@ architecture STRUCTURE of design_1 is
   signal spi3_WICSC_top_0_sclk : STD_LOGIC;
   signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal xlconcat_1_dout : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_MSBs_selector_2_data_out_c2_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_MSBs_selector_2_data_out_d1_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_MSBs_selector_2_data_out_d2_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_MSBs_selector_2_data_out_e1_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_MSBs_selector_2_data_out_e2_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_MSBs_selector_2_data_out_f1_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_MSBs_selector_2_data_out_f2_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_MSBs_selector_2_data_out_g1_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_MSBs_selector_2_data_out_g2_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_MSBs_selector_2_data_out_h1_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_MSBs_selector_2_data_out_h2_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal NLW_axi_gpio_5_gpio_io_o_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_clk_wiz_0_locked_UNCONNECTED : STD_LOGIC;
+  signal NLW_clk_wiz_1_locked_UNCONNECTED : STD_LOGIC;
   signal NLW_fpga_dig_top_1_bank_0_captured_data_f1_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal NLW_fpga_dig_top_1_bank_0_captured_data_g1_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal NLW_fpga_dig_top_1_bank_0_captured_data_h1_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_moving_average_top_2_data_c2_out_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_moving_average_top_2_data_d1_out_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_moving_average_top_2_data_d2_out_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_moving_average_top_2_data_e1_out_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_moving_average_top_2_data_e2_out_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_moving_average_top_2_data_f1_out_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_moving_average_top_2_data_f2_out_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_moving_average_top_2_data_g1_out_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_moving_average_top_2_data_g2_out_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_moving_average_top_2_data_h1_out_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
+  signal NLW_moving_average_top_2_data_h2_out_UNCONNECTED : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal NLW_processing_system7_0_TTC0_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE2_OUT_UNCONNECTED : STD_LOGIC;
@@ -3626,22 +3795,22 @@ MSBs_selector_0: component design_1_MSBs_selector_0_2
       data_in_g2(15 downto 0) => fpga_dig_top_0_captured_data_g2(15 downto 0),
       data_in_h1(15 downto 0) => fpga_dig_top_0_captured_data_h1(15 downto 0),
       data_in_h2(15 downto 0) => fpga_dig_top_0_captured_data_h2(15 downto 0),
-      data_out_a1(13 downto 0) => MSBs_selector_0_data_out_a1(13 downto 0),
-      data_out_a2(13 downto 0) => MSBs_selector_0_data_out_a2(13 downto 0),
-      data_out_b1(13 downto 0) => MSBs_selector_0_data_out_b1(13 downto 0),
-      data_out_b2(13 downto 0) => MSBs_selector_0_data_out_b2(13 downto 0),
-      data_out_c1(13 downto 0) => MSBs_selector_0_data_out_c1(13 downto 0),
-      data_out_c2(13 downto 0) => MSBs_selector_0_data_out_c2(13 downto 0),
-      data_out_d1(13 downto 0) => MSBs_selector_0_data_out_d1(13 downto 0),
-      data_out_d2(13 downto 0) => MSBs_selector_0_data_out_d2(13 downto 0),
-      data_out_e1(13 downto 0) => MSBs_selector_0_data_out_e1(13 downto 0),
-      data_out_e2(13 downto 0) => MSBs_selector_0_data_out_e2(13 downto 0),
-      data_out_f1(13 downto 0) => MSBs_selector_0_data_out_f1(13 downto 0),
-      data_out_f2(13 downto 0) => MSBs_selector_0_data_out_f2(13 downto 0),
-      data_out_g1(13 downto 0) => MSBs_selector_0_data_out_g1(13 downto 0),
-      data_out_g2(13 downto 0) => MSBs_selector_0_data_out_g2(13 downto 0),
-      data_out_h1(13 downto 0) => MSBs_selector_0_data_out_h1(13 downto 0),
-      data_out_h2(13 downto 0) => MSBs_selector_0_data_out_h2(13 downto 0)
+      data_out_a1(13 downto 0) => MSBs_selector_0_data_out_a3(13 downto 0),
+      data_out_a2(13 downto 0) => MSBs_selector_0_data_out_a4(13 downto 0),
+      data_out_b1(13 downto 0) => MSBs_selector_0_data_out_b3(13 downto 0),
+      data_out_b2(13 downto 0) => MSBs_selector_0_data_out_b4(13 downto 0),
+      data_out_c1(13 downto 0) => MSBs_selector_0_data_out_c3(13 downto 0),
+      data_out_c2(13 downto 0) => MSBs_selector_0_data_out_c4(13 downto 0),
+      data_out_d1(13 downto 0) => MSBs_selector_0_data_out_d3(13 downto 0),
+      data_out_d2(13 downto 0) => MSBs_selector_0_data_out_d4(13 downto 0),
+      data_out_e1(13 downto 0) => MSBs_selector_0_data_out_e3(13 downto 0),
+      data_out_e2(13 downto 0) => MSBs_selector_0_data_out_e4(13 downto 0),
+      data_out_f1(13 downto 0) => MSBs_selector_0_data_out_f3(13 downto 0),
+      data_out_f2(13 downto 0) => MSBs_selector_0_data_out_f4(13 downto 0),
+      data_out_g1(13 downto 0) => MSBs_selector_0_data_out_g3(13 downto 0),
+      data_out_g2(13 downto 0) => MSBs_selector_0_data_out_g4(13 downto 0),
+      data_out_h1(13 downto 0) => MSBs_selector_0_data_out_h3(13 downto 0),
+      data_out_h2(13 downto 0) => MSBs_selector_0_data_out_h4(13 downto 0)
     );
 MSBs_selector_1: component design_1_MSBs_selector_1_0
      port map (
@@ -3661,22 +3830,22 @@ MSBs_selector_1: component design_1_MSBs_selector_1_0
       data_in_g2(15 downto 0) => fpga_dig_top_1_captured_data_g2(15 downto 0),
       data_in_h1(15 downto 0) => fpga_dig_top_1_captured_data_h1(15 downto 0),
       data_in_h2(15 downto 0) => fpga_dig_top_1_captured_data_h2(15 downto 0),
-      data_out_a1(13 downto 0) => MSBs_selector_1_data_out_a1(13 downto 0),
-      data_out_a2(13 downto 0) => MSBs_selector_1_data_out_a2(13 downto 0),
-      data_out_b1(13 downto 0) => MSBs_selector_1_data_out_b1(13 downto 0),
-      data_out_b2(13 downto 0) => MSBs_selector_1_data_out_b2(13 downto 0),
-      data_out_c1(13 downto 0) => MSBs_selector_1_data_out_c1(13 downto 0),
-      data_out_c2(13 downto 0) => MSBs_selector_1_data_out_c2(13 downto 0),
-      data_out_d1(13 downto 0) => MSBs_selector_1_data_out_d1(13 downto 0),
-      data_out_d2(13 downto 0) => MSBs_selector_1_data_out_d2(13 downto 0),
-      data_out_e1(13 downto 0) => MSBs_selector_1_data_out_e1(13 downto 0),
-      data_out_e2(13 downto 0) => MSBs_selector_1_data_out_e2(13 downto 0),
-      data_out_f1(13 downto 0) => MSBs_selector_1_data_out_f1(13 downto 0),
-      data_out_f2(13 downto 0) => MSBs_selector_1_data_out_f2(13 downto 0),
-      data_out_g1(13 downto 0) => MSBs_selector_1_data_out_g1(13 downto 0),
-      data_out_g2(13 downto 0) => MSBs_selector_1_data_out_g2(13 downto 0),
-      data_out_h1(13 downto 0) => MSBs_selector_1_data_out_h1(13 downto 0),
-      data_out_h2(13 downto 0) => MSBs_selector_1_data_out_h2(13 downto 0)
+      data_out_a1(13 downto 0) => MSBs_selector_1_data_out_a3(13 downto 0),
+      data_out_a2(13 downto 0) => MSBs_selector_1_data_out_a4(13 downto 0),
+      data_out_b1(13 downto 0) => MSBs_selector_1_data_out_b3(13 downto 0),
+      data_out_b2(13 downto 0) => MSBs_selector_1_data_out_b4(13 downto 0),
+      data_out_c1(13 downto 0) => MSBs_selector_1_data_out_c3(13 downto 0),
+      data_out_c2(13 downto 0) => MSBs_selector_1_data_out_c4(13 downto 0),
+      data_out_d1(13 downto 0) => MSBs_selector_1_data_out_d3(13 downto 0),
+      data_out_d2(13 downto 0) => MSBs_selector_1_data_out_d4(13 downto 0),
+      data_out_e1(13 downto 0) => MSBs_selector_1_data_out_e3(13 downto 0),
+      data_out_e2(13 downto 0) => MSBs_selector_1_data_out_e4(13 downto 0),
+      data_out_f1(13 downto 0) => MSBs_selector_1_data_out_f3(13 downto 0),
+      data_out_f2(13 downto 0) => MSBs_selector_1_data_out_f4(13 downto 0),
+      data_out_g1(13 downto 0) => MSBs_selector_1_data_out_g3(13 downto 0),
+      data_out_g2(13 downto 0) => MSBs_selector_1_data_out_g4(13 downto 0),
+      data_out_h1(13 downto 0) => MSBs_selector_1_data_out_h3(13 downto 0),
+      data_out_h2(13 downto 0) => MSBs_selector_1_data_out_h4(13 downto 0)
     );
 MSBs_selector_2: component design_1_MSBs_selector_2_0
      port map (
@@ -3696,22 +3865,22 @@ MSBs_selector_2: component design_1_MSBs_selector_2_0
       data_in_g2(15 downto 0) => B"0000000000000000",
       data_in_h1(15 downto 0) => B"0000000000000000",
       data_in_h2(15 downto 0) => B"0000000000000000",
-      data_out_a1(13 downto 0) => MSBs_selector_2_data_out_a1(13 downto 0),
-      data_out_a2(13 downto 0) => MSBs_selector_2_data_out_a2(13 downto 0),
-      data_out_b1(13 downto 0) => MSBs_selector_2_data_out_b1(13 downto 0),
-      data_out_b2(13 downto 0) => MSBs_selector_2_data_out_b2(13 downto 0),
-      data_out_c1(13 downto 0) => MSBs_selector_2_data_out_c1(13 downto 0),
-      data_out_c2(13 downto 0) => MSBs_selector_2_data_out_c2(13 downto 0),
-      data_out_d1(13 downto 0) => MSBs_selector_2_data_out_d1(13 downto 0),
-      data_out_d2(13 downto 0) => MSBs_selector_2_data_out_d2(13 downto 0),
-      data_out_e1(13 downto 0) => MSBs_selector_2_data_out_e1(13 downto 0),
-      data_out_e2(13 downto 0) => MSBs_selector_2_data_out_e2(13 downto 0),
-      data_out_f1(13 downto 0) => MSBs_selector_2_data_out_f1(13 downto 0),
-      data_out_f2(13 downto 0) => MSBs_selector_2_data_out_f2(13 downto 0),
-      data_out_g1(13 downto 0) => MSBs_selector_2_data_out_g1(13 downto 0),
-      data_out_g2(13 downto 0) => MSBs_selector_2_data_out_g2(13 downto 0),
-      data_out_h1(13 downto 0) => MSBs_selector_2_data_out_h1(13 downto 0),
-      data_out_h2(13 downto 0) => MSBs_selector_2_data_out_h2(13 downto 0)
+      data_out_a1(13 downto 0) => MSBs_selector_2_data_out_a3(13 downto 0),
+      data_out_a2(13 downto 0) => MSBs_selector_2_data_out_a4(13 downto 0),
+      data_out_b1(13 downto 0) => MSBs_selector_2_data_out_b3(13 downto 0),
+      data_out_b2(13 downto 0) => MSBs_selector_2_data_out_b4(13 downto 0),
+      data_out_c1(13 downto 0) => MSBs_selector_2_data_out_c2(13 downto 0),
+      data_out_c2(13 downto 0) => NLW_MSBs_selector_2_data_out_c2_UNCONNECTED(13 downto 0),
+      data_out_d1(13 downto 0) => NLW_MSBs_selector_2_data_out_d1_UNCONNECTED(13 downto 0),
+      data_out_d2(13 downto 0) => NLW_MSBs_selector_2_data_out_d2_UNCONNECTED(13 downto 0),
+      data_out_e1(13 downto 0) => NLW_MSBs_selector_2_data_out_e1_UNCONNECTED(13 downto 0),
+      data_out_e2(13 downto 0) => NLW_MSBs_selector_2_data_out_e2_UNCONNECTED(13 downto 0),
+      data_out_f1(13 downto 0) => NLW_MSBs_selector_2_data_out_f1_UNCONNECTED(13 downto 0),
+      data_out_f2(13 downto 0) => NLW_MSBs_selector_2_data_out_f2_UNCONNECTED(13 downto 0),
+      data_out_g1(13 downto 0) => NLW_MSBs_selector_2_data_out_g1_UNCONNECTED(13 downto 0),
+      data_out_g2(13 downto 0) => NLW_MSBs_selector_2_data_out_g2_UNCONNECTED(13 downto 0),
+      data_out_h1(13 downto 0) => NLW_MSBs_selector_2_data_out_h1_UNCONNECTED(13 downto 0),
+      data_out_h2(13 downto 0) => NLW_MSBs_selector_2_data_out_h2_UNCONNECTED(13 downto 0)
     );
 PS_Interface_TOP_0: component design_1_PS_Interface_TOP_0_0
      port map (
@@ -3748,18 +3917,18 @@ PS_Interface_TOP_0: component design_1_PS_Interface_TOP_0_0
       adc_34(13 downto 0) => MSBs_selector_2_data_out_b1(13 downto 0),
       adc_35(13 downto 0) => MSBs_selector_2_data_out_b2(13 downto 0),
       adc_36(13 downto 0) => MSBs_selector_2_data_out_c1(13 downto 0),
-      adc_37(13 downto 0) => MSBs_selector_2_data_out_c2(13 downto 0),
-      adc_38(13 downto 0) => MSBs_selector_2_data_out_d1(13 downto 0),
-      adc_39(13 downto 0) => MSBs_selector_2_data_out_d2(13 downto 0),
+      adc_37(13 downto 0) => B"00000000000000",
+      adc_38(13 downto 0) => B"00000000000000",
+      adc_39(13 downto 0) => B"00000000000000",
       adc_4(13 downto 0) => MSBs_selector_0_data_out_c1(13 downto 0),
-      adc_40(13 downto 0) => MSBs_selector_2_data_out_e1(13 downto 0),
-      adc_41(13 downto 0) => MSBs_selector_2_data_out_e2(13 downto 0),
-      adc_42(13 downto 0) => MSBs_selector_2_data_out_f1(13 downto 0),
-      adc_43(13 downto 0) => MSBs_selector_2_data_out_f2(13 downto 0),
-      adc_44(13 downto 0) => MSBs_selector_2_data_out_g1(13 downto 0),
-      adc_45(13 downto 0) => MSBs_selector_2_data_out_g2(13 downto 0),
-      adc_46(13 downto 0) => MSBs_selector_2_data_out_h1(13 downto 0),
-      adc_47(13 downto 0) => MSBs_selector_2_data_out_h2(13 downto 0),
+      adc_40(13 downto 0) => B"00000000000000",
+      adc_41(13 downto 0) => B"00000000000000",
+      adc_42(13 downto 0) => B"00000000000000",
+      adc_43(13 downto 0) => B"00000000000000",
+      adc_44(13 downto 0) => B"00000000000000",
+      adc_45(13 downto 0) => B"00000000000000",
+      adc_46(13 downto 0) => B"00000000000000",
+      adc_47(13 downto 0) => B"00000000000000",
       adc_5(13 downto 0) => MSBs_selector_0_data_out_c2(13 downto 0),
       adc_6(13 downto 0) => MSBs_selector_0_data_out_d1(13 downto 0),
       adc_7(13 downto 0) => MSBs_selector_0_data_out_d2(13 downto 0),
@@ -3940,6 +4109,13 @@ clk_wiz_0: component design_1_clk_wiz_0_0
       clk_130 => clk_wiz_0_clk_130,
       clk_in1 => processing_system7_0_FCLK_CLK0,
       locked => NLW_clk_wiz_0_locked_UNCONNECTED,
+      reset => '0'
+    );
+clk_wiz_1: component design_1_clk_wiz_1_0
+     port map (
+      clk_12mhz => clk_wiz_1_clk_12mhz,
+      clk_in1 => processing_system7_0_FCLK_CLK0,
+      locked => NLW_clk_wiz_1_locked_UNCONNECTED,
       reset => '0'
     );
 fpga_dig_top_0: component design_1_fpga_dig_top_0_0
@@ -4155,6 +4331,114 @@ modulater_14bit_0: component design_1_modulater_14bit_0_0
       mod_input1(31 downto 0) => PS_Interface_TOP_0_toMod1(31 downto 0),
       mod_input2_adress(31 downto 0) => PS_Interface_TOP_0_toMod2(31 downto 0),
       mod_out(35 downto 0) => modulater_14bit_0_mod_out(35 downto 0)
+    );
+moving_average_top_0: component design_1_moving_average_top_0_0
+     port map (
+      clk => clk_wiz_1_clk_12mhz,
+      data_a1_in(13 downto 0) => MSBs_selector_0_data_out_a3(13 downto 0),
+      data_a1_out(13 downto 0) => MSBs_selector_0_data_out_a1(13 downto 0),
+      data_a2_in(13 downto 0) => MSBs_selector_0_data_out_a4(13 downto 0),
+      data_a2_out(13 downto 0) => MSBs_selector_0_data_out_a2(13 downto 0),
+      data_b1_in(13 downto 0) => MSBs_selector_0_data_out_b3(13 downto 0),
+      data_b1_out(13 downto 0) => MSBs_selector_0_data_out_b1(13 downto 0),
+      data_b2_in(13 downto 0) => MSBs_selector_0_data_out_b4(13 downto 0),
+      data_b2_out(13 downto 0) => MSBs_selector_0_data_out_b2(13 downto 0),
+      data_c1_in(13 downto 0) => MSBs_selector_0_data_out_c3(13 downto 0),
+      data_c1_out(13 downto 0) => MSBs_selector_0_data_out_c1(13 downto 0),
+      data_c2_in(13 downto 0) => MSBs_selector_0_data_out_c4(13 downto 0),
+      data_c2_out(13 downto 0) => MSBs_selector_0_data_out_c2(13 downto 0),
+      data_d1_in(13 downto 0) => MSBs_selector_0_data_out_d3(13 downto 0),
+      data_d1_out(13 downto 0) => MSBs_selector_0_data_out_d1(13 downto 0),
+      data_d2_in(13 downto 0) => MSBs_selector_0_data_out_d4(13 downto 0),
+      data_d2_out(13 downto 0) => MSBs_selector_0_data_out_d2(13 downto 0),
+      data_e1_in(13 downto 0) => MSBs_selector_0_data_out_e3(13 downto 0),
+      data_e1_out(13 downto 0) => MSBs_selector_0_data_out_e1(13 downto 0),
+      data_e2_in(13 downto 0) => MSBs_selector_0_data_out_e4(13 downto 0),
+      data_e2_out(13 downto 0) => MSBs_selector_0_data_out_e2(13 downto 0),
+      data_f1_in(13 downto 0) => MSBs_selector_0_data_out_f3(13 downto 0),
+      data_f1_out(13 downto 0) => MSBs_selector_0_data_out_f1(13 downto 0),
+      data_f2_in(13 downto 0) => MSBs_selector_0_data_out_f4(13 downto 0),
+      data_f2_out(13 downto 0) => MSBs_selector_0_data_out_f2(13 downto 0),
+      data_g1_in(13 downto 0) => MSBs_selector_0_data_out_g3(13 downto 0),
+      data_g1_out(13 downto 0) => MSBs_selector_0_data_out_g1(13 downto 0),
+      data_g2_in(13 downto 0) => MSBs_selector_0_data_out_g4(13 downto 0),
+      data_g2_out(13 downto 0) => MSBs_selector_0_data_out_g2(13 downto 0),
+      data_h1_in(13 downto 0) => MSBs_selector_0_data_out_h3(13 downto 0),
+      data_h1_out(13 downto 0) => MSBs_selector_0_data_out_h1(13 downto 0),
+      data_h2_in(13 downto 0) => MSBs_selector_0_data_out_h4(13 downto 0),
+      data_h2_out(13 downto 0) => MSBs_selector_0_data_out_h2(13 downto 0)
+    );
+moving_average_top_1: component design_1_moving_average_top_1_0
+     port map (
+      clk => clk_wiz_1_clk_12mhz,
+      data_a1_in(13 downto 0) => MSBs_selector_1_data_out_a3(13 downto 0),
+      data_a1_out(13 downto 0) => MSBs_selector_1_data_out_a1(13 downto 0),
+      data_a2_in(13 downto 0) => MSBs_selector_1_data_out_a4(13 downto 0),
+      data_a2_out(13 downto 0) => MSBs_selector_1_data_out_a2(13 downto 0),
+      data_b1_in(13 downto 0) => MSBs_selector_1_data_out_b3(13 downto 0),
+      data_b1_out(13 downto 0) => MSBs_selector_1_data_out_b1(13 downto 0),
+      data_b2_in(13 downto 0) => MSBs_selector_1_data_out_b4(13 downto 0),
+      data_b2_out(13 downto 0) => MSBs_selector_1_data_out_b2(13 downto 0),
+      data_c1_in(13 downto 0) => MSBs_selector_1_data_out_c3(13 downto 0),
+      data_c1_out(13 downto 0) => MSBs_selector_1_data_out_c1(13 downto 0),
+      data_c2_in(13 downto 0) => MSBs_selector_1_data_out_c4(13 downto 0),
+      data_c2_out(13 downto 0) => MSBs_selector_1_data_out_c2(13 downto 0),
+      data_d1_in(13 downto 0) => MSBs_selector_1_data_out_d3(13 downto 0),
+      data_d1_out(13 downto 0) => MSBs_selector_1_data_out_d1(13 downto 0),
+      data_d2_in(13 downto 0) => MSBs_selector_1_data_out_d4(13 downto 0),
+      data_d2_out(13 downto 0) => MSBs_selector_1_data_out_d2(13 downto 0),
+      data_e1_in(13 downto 0) => MSBs_selector_1_data_out_e3(13 downto 0),
+      data_e1_out(13 downto 0) => MSBs_selector_1_data_out_e1(13 downto 0),
+      data_e2_in(13 downto 0) => MSBs_selector_1_data_out_e4(13 downto 0),
+      data_e2_out(13 downto 0) => MSBs_selector_1_data_out_e2(13 downto 0),
+      data_f1_in(13 downto 0) => MSBs_selector_1_data_out_f3(13 downto 0),
+      data_f1_out(13 downto 0) => MSBs_selector_1_data_out_f1(13 downto 0),
+      data_f2_in(13 downto 0) => MSBs_selector_1_data_out_f4(13 downto 0),
+      data_f2_out(13 downto 0) => MSBs_selector_1_data_out_f2(13 downto 0),
+      data_g1_in(13 downto 0) => MSBs_selector_1_data_out_g3(13 downto 0),
+      data_g1_out(13 downto 0) => MSBs_selector_1_data_out_g1(13 downto 0),
+      data_g2_in(13 downto 0) => MSBs_selector_1_data_out_g4(13 downto 0),
+      data_g2_out(13 downto 0) => MSBs_selector_1_data_out_g2(13 downto 0),
+      data_h1_in(13 downto 0) => MSBs_selector_1_data_out_h3(13 downto 0),
+      data_h1_out(13 downto 0) => MSBs_selector_1_data_out_h1(13 downto 0),
+      data_h2_in(13 downto 0) => MSBs_selector_1_data_out_h4(13 downto 0),
+      data_h2_out(13 downto 0) => MSBs_selector_1_data_out_h2(13 downto 0)
+    );
+moving_average_top_2: component design_1_moving_average_top_2_0
+     port map (
+      clk => clk_wiz_1_clk_12mhz,
+      data_a1_in(13 downto 0) => MSBs_selector_2_data_out_a3(13 downto 0),
+      data_a1_out(13 downto 0) => MSBs_selector_2_data_out_a1(13 downto 0),
+      data_a2_in(13 downto 0) => MSBs_selector_2_data_out_a4(13 downto 0),
+      data_a2_out(13 downto 0) => MSBs_selector_2_data_out_a2(13 downto 0),
+      data_b1_in(13 downto 0) => MSBs_selector_2_data_out_b3(13 downto 0),
+      data_b1_out(13 downto 0) => MSBs_selector_2_data_out_b1(13 downto 0),
+      data_b2_in(13 downto 0) => MSBs_selector_2_data_out_b4(13 downto 0),
+      data_b2_out(13 downto 0) => MSBs_selector_2_data_out_b2(13 downto 0),
+      data_c1_in(13 downto 0) => MSBs_selector_2_data_out_c2(13 downto 0),
+      data_c1_out(13 downto 0) => MSBs_selector_2_data_out_c1(13 downto 0),
+      data_c2_in(13 downto 0) => B"00000000000000",
+      data_c2_out(13 downto 0) => NLW_moving_average_top_2_data_c2_out_UNCONNECTED(13 downto 0),
+      data_d1_in(13 downto 0) => B"00000000000000",
+      data_d1_out(13 downto 0) => NLW_moving_average_top_2_data_d1_out_UNCONNECTED(13 downto 0),
+      data_d2_in(13 downto 0) => B"00000000000000",
+      data_d2_out(13 downto 0) => NLW_moving_average_top_2_data_d2_out_UNCONNECTED(13 downto 0),
+      data_e1_in(13 downto 0) => B"00000000000000",
+      data_e1_out(13 downto 0) => NLW_moving_average_top_2_data_e1_out_UNCONNECTED(13 downto 0),
+      data_e2_in(13 downto 0) => B"00000000000000",
+      data_e2_out(13 downto 0) => NLW_moving_average_top_2_data_e2_out_UNCONNECTED(13 downto 0),
+      data_f1_in(13 downto 0) => B"00000000000000",
+      data_f1_out(13 downto 0) => NLW_moving_average_top_2_data_f1_out_UNCONNECTED(13 downto 0),
+      data_f2_in(13 downto 0) => B"00000000000000",
+      data_f2_out(13 downto 0) => NLW_moving_average_top_2_data_f2_out_UNCONNECTED(13 downto 0),
+      data_g1_in(13 downto 0) => B"00000000000000",
+      data_g1_out(13 downto 0) => NLW_moving_average_top_2_data_g1_out_UNCONNECTED(13 downto 0),
+      data_g2_in(13 downto 0) => B"00000000000000",
+      data_g2_out(13 downto 0) => NLW_moving_average_top_2_data_g2_out_UNCONNECTED(13 downto 0),
+      data_h1_in(13 downto 0) => B"00000000000000",
+      data_h1_out(13 downto 0) => NLW_moving_average_top_2_data_h1_out_UNCONNECTED(13 downto 0),
+      data_h2_in(13 downto 0) => B"00000000000000",
+      data_h2_out(13 downto 0) => NLW_moving_average_top_2_data_h2_out_UNCONNECTED(13 downto 0)
     );
 processing_system7_0: component design_1_processing_system7_0_0
      port map (

@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# AND_GATE, MSBs_selector, MSBs_selector, MSBs_selector, PS_Interface_TOP, fpga_dig_top, fpga_dig_top, fpga_dig_top_1_bank, modulater_14bit
+# AND_GATE, MSBs_selector, MSBs_selector, MSBs_selector, PS_Interface_TOP, fpga_dig_top, fpga_dig_top, fpga_dig_top_1_bank, modulater_14bit, moving_average_top, moving_average_top, moving_average_top
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -403,6 +403,18 @@ proc create_root_design { parentCell } {
    CONFIG.MMCM_DIVCLK_DIVIDE {5} \
  ] $clk_wiz_0
 
+  # Create instance: clk_wiz_1, and set properties
+  set clk_wiz_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_1 ]
+  set_property -dict [ list \
+   CONFIG.CLKOUT1_JITTER {345.775} \
+   CONFIG.CLKOUT1_PHASE_ERROR {293.793} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {12} \
+   CONFIG.CLK_OUT1_PORT {clk_12mhz} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {49.875} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {83.125} \
+   CONFIG.MMCM_DIVCLK_DIVIDE {5} \
+ ] $clk_wiz_1
+
   # Create instance: fpga_dig_top_0, and set properties
   set block_name fpga_dig_top
   set block_cell_name fpga_dig_top_0
@@ -495,6 +507,39 @@ proc create_root_design { parentCell } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    } elseif { $modulater_14bit_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: moving_average_top_0, and set properties
+  set block_name moving_average_top
+  set block_cell_name moving_average_top_0
+  if { [catch {set moving_average_top_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $moving_average_top_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: moving_average_top_1, and set properties
+  set block_name moving_average_top
+  set block_cell_name moving_average_top_1
+  if { [catch {set moving_average_top_1 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $moving_average_top_1 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: moving_average_top_2, and set properties
+  set block_name moving_average_top
+  set block_cell_name moving_average_top_2
+  if { [catch {set moving_average_top_2 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $moving_average_top_2 eq "" } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
@@ -965,54 +1010,80 @@ proc create_root_design { parentCell } {
   connect_bd_net -net AND_GATE_0_Y [get_bd_pins AND_GATE_0/Y] [get_bd_pins fpga_dig_top_0/master_rst_n] [get_bd_pins fpga_dig_top_1/master_rst_n] [get_bd_pins fpga_dig_top_1_bank_0/master_rst_n] [get_bd_pins spi3_WICSC_top_0/reset_n]
   connect_bd_net -net AO_in_1 [get_bd_ports AO_in] [get_bd_pins quadrature_decoder_0/a]
   connect_bd_net -net BO_in_1 [get_bd_ports BO_in] [get_bd_pins quadrature_decoder_0/b]
-  connect_bd_net -net MSBs_selector_0_data_out_a1 [get_bd_pins MSBs_selector_0/data_out_a1] [get_bd_pins PS_Interface_TOP_0/adc_0] [get_bd_pins ila_0/probe5]
-  connect_bd_net -net MSBs_selector_0_data_out_a2 [get_bd_pins MSBs_selector_0/data_out_a2] [get_bd_pins PS_Interface_TOP_0/adc_1] [get_bd_pins ila_0/probe6]
-  connect_bd_net -net MSBs_selector_0_data_out_b1 [get_bd_pins MSBs_selector_0/data_out_b1] [get_bd_pins PS_Interface_TOP_0/adc_2] [get_bd_pins ila_0/probe7]
-  connect_bd_net -net MSBs_selector_0_data_out_b2 [get_bd_pins MSBs_selector_0/data_out_b2] [get_bd_pins PS_Interface_TOP_0/adc_3] [get_bd_pins ila_0/probe8]
-  connect_bd_net -net MSBs_selector_0_data_out_c1 [get_bd_pins MSBs_selector_0/data_out_c1] [get_bd_pins PS_Interface_TOP_0/adc_4] [get_bd_pins ila_0/probe9]
-  connect_bd_net -net MSBs_selector_0_data_out_c2 [get_bd_pins MSBs_selector_0/data_out_c2] [get_bd_pins PS_Interface_TOP_0/adc_5] [get_bd_pins ila_0/probe10]
-  connect_bd_net -net MSBs_selector_0_data_out_d1 [get_bd_pins MSBs_selector_0/data_out_d1] [get_bd_pins PS_Interface_TOP_0/adc_6] [get_bd_pins ila_0/probe11]
-  connect_bd_net -net MSBs_selector_0_data_out_d2 [get_bd_pins MSBs_selector_0/data_out_d2] [get_bd_pins PS_Interface_TOP_0/adc_7] [get_bd_pins ila_0/probe12]
-  connect_bd_net -net MSBs_selector_0_data_out_e1 [get_bd_pins MSBs_selector_0/data_out_e1] [get_bd_pins PS_Interface_TOP_0/adc_8] [get_bd_pins ila_0/probe13]
-  connect_bd_net -net MSBs_selector_0_data_out_e2 [get_bd_pins MSBs_selector_0/data_out_e2] [get_bd_pins PS_Interface_TOP_0/adc_9] [get_bd_pins ila_0/probe14]
-  connect_bd_net -net MSBs_selector_0_data_out_f1 [get_bd_pins MSBs_selector_0/data_out_f1] [get_bd_pins PS_Interface_TOP_0/adc_10] [get_bd_pins ila_0/probe15]
-  connect_bd_net -net MSBs_selector_0_data_out_f2 [get_bd_pins MSBs_selector_0/data_out_f2] [get_bd_pins PS_Interface_TOP_0/adc_11] [get_bd_pins ila_0/probe16]
-  connect_bd_net -net MSBs_selector_0_data_out_g1 [get_bd_pins MSBs_selector_0/data_out_g1] [get_bd_pins PS_Interface_TOP_0/adc_12] [get_bd_pins ila_0/probe17]
-  connect_bd_net -net MSBs_selector_0_data_out_g2 [get_bd_pins MSBs_selector_0/data_out_g2] [get_bd_pins PS_Interface_TOP_0/adc_13] [get_bd_pins ila_0/probe18]
-  connect_bd_net -net MSBs_selector_0_data_out_h1 [get_bd_pins MSBs_selector_0/data_out_h1] [get_bd_pins PS_Interface_TOP_0/adc_14] [get_bd_pins ila_0/probe19]
-  connect_bd_net -net MSBs_selector_0_data_out_h2 [get_bd_pins MSBs_selector_0/data_out_h2] [get_bd_pins PS_Interface_TOP_0/adc_15] [get_bd_pins ila_0/probe20]
-  connect_bd_net -net MSBs_selector_1_data_out_a1 [get_bd_pins MSBs_selector_1/data_out_a1] [get_bd_pins PS_Interface_TOP_0/adc_16] [get_bd_pins ila_0/probe21]
-  connect_bd_net -net MSBs_selector_1_data_out_a2 [get_bd_pins MSBs_selector_1/data_out_a2] [get_bd_pins PS_Interface_TOP_0/adc_17] [get_bd_pins ila_0/probe22]
-  connect_bd_net -net MSBs_selector_1_data_out_b1 [get_bd_pins MSBs_selector_1/data_out_b1] [get_bd_pins PS_Interface_TOP_0/adc_18] [get_bd_pins ila_0/probe23]
-  connect_bd_net -net MSBs_selector_1_data_out_b2 [get_bd_pins MSBs_selector_1/data_out_b2] [get_bd_pins PS_Interface_TOP_0/adc_19] [get_bd_pins ila_0/probe24]
-  connect_bd_net -net MSBs_selector_1_data_out_c1 [get_bd_pins MSBs_selector_1/data_out_c1] [get_bd_pins PS_Interface_TOP_0/adc_20] [get_bd_pins ila_0/probe25]
-  connect_bd_net -net MSBs_selector_1_data_out_c2 [get_bd_pins MSBs_selector_1/data_out_c2] [get_bd_pins PS_Interface_TOP_0/adc_21] [get_bd_pins ila_0/probe26]
-  connect_bd_net -net MSBs_selector_1_data_out_d1 [get_bd_pins MSBs_selector_1/data_out_d1] [get_bd_pins PS_Interface_TOP_0/adc_22] [get_bd_pins ila_0/probe27]
-  connect_bd_net -net MSBs_selector_1_data_out_d2 [get_bd_pins MSBs_selector_1/data_out_d2] [get_bd_pins PS_Interface_TOP_0/adc_23] [get_bd_pins ila_0/probe28]
-  connect_bd_net -net MSBs_selector_1_data_out_e1 [get_bd_pins MSBs_selector_1/data_out_e1] [get_bd_pins PS_Interface_TOP_0/adc_24] [get_bd_pins ila_0/probe29]
-  connect_bd_net -net MSBs_selector_1_data_out_e2 [get_bd_pins MSBs_selector_1/data_out_e2] [get_bd_pins PS_Interface_TOP_0/adc_25] [get_bd_pins ila_0/probe30]
-  connect_bd_net -net MSBs_selector_1_data_out_f1 [get_bd_pins MSBs_selector_1/data_out_f1] [get_bd_pins PS_Interface_TOP_0/adc_26] [get_bd_pins ila_0/probe31]
-  connect_bd_net -net MSBs_selector_1_data_out_f2 [get_bd_pins MSBs_selector_1/data_out_f2] [get_bd_pins PS_Interface_TOP_0/adc_27] [get_bd_pins ila_0/probe32]
-  connect_bd_net -net MSBs_selector_1_data_out_g1 [get_bd_pins MSBs_selector_1/data_out_g1] [get_bd_pins PS_Interface_TOP_0/adc_28] [get_bd_pins ila_0/probe33]
-  connect_bd_net -net MSBs_selector_1_data_out_g2 [get_bd_pins MSBs_selector_1/data_out_g2] [get_bd_pins PS_Interface_TOP_0/adc_29] [get_bd_pins ila_0/probe34]
-  connect_bd_net -net MSBs_selector_1_data_out_h1 [get_bd_pins MSBs_selector_1/data_out_h1] [get_bd_pins PS_Interface_TOP_0/adc_30] [get_bd_pins ila_0/probe35]
-  connect_bd_net -net MSBs_selector_1_data_out_h2 [get_bd_pins MSBs_selector_1/data_out_h2] [get_bd_pins PS_Interface_TOP_0/adc_31] [get_bd_pins ila_0/probe36]
-  connect_bd_net -net MSBs_selector_2_data_out_a1 [get_bd_pins MSBs_selector_2/data_out_a1] [get_bd_pins PS_Interface_TOP_0/adc_32] [get_bd_pins ila_0/probe37]
-  connect_bd_net -net MSBs_selector_2_data_out_a2 [get_bd_pins MSBs_selector_2/data_out_a2] [get_bd_pins PS_Interface_TOP_0/adc_33] [get_bd_pins ila_0/probe38]
-  connect_bd_net -net MSBs_selector_2_data_out_b1 [get_bd_pins MSBs_selector_2/data_out_b1] [get_bd_pins PS_Interface_TOP_0/adc_34] [get_bd_pins ila_0/probe39]
-  connect_bd_net -net MSBs_selector_2_data_out_b2 [get_bd_pins MSBs_selector_2/data_out_b2] [get_bd_pins PS_Interface_TOP_0/adc_35] [get_bd_pins ila_0/probe40]
-  connect_bd_net -net MSBs_selector_2_data_out_c1 [get_bd_pins MSBs_selector_2/data_out_c1] [get_bd_pins PS_Interface_TOP_0/adc_36] [get_bd_pins ila_0/probe41]
-  connect_bd_net -net MSBs_selector_2_data_out_c2 [get_bd_pins MSBs_selector_2/data_out_c2] [get_bd_pins PS_Interface_TOP_0/adc_37]
-  connect_bd_net -net MSBs_selector_2_data_out_d1 [get_bd_pins MSBs_selector_2/data_out_d1] [get_bd_pins PS_Interface_TOP_0/adc_38]
-  connect_bd_net -net MSBs_selector_2_data_out_d2 [get_bd_pins MSBs_selector_2/data_out_d2] [get_bd_pins PS_Interface_TOP_0/adc_39]
-  connect_bd_net -net MSBs_selector_2_data_out_e1 [get_bd_pins MSBs_selector_2/data_out_e1] [get_bd_pins PS_Interface_TOP_0/adc_40]
-  connect_bd_net -net MSBs_selector_2_data_out_e2 [get_bd_pins MSBs_selector_2/data_out_e2] [get_bd_pins PS_Interface_TOP_0/adc_41]
-  connect_bd_net -net MSBs_selector_2_data_out_f1 [get_bd_pins MSBs_selector_2/data_out_f1] [get_bd_pins PS_Interface_TOP_0/adc_42]
-  connect_bd_net -net MSBs_selector_2_data_out_f2 [get_bd_pins MSBs_selector_2/data_out_f2] [get_bd_pins PS_Interface_TOP_0/adc_43]
-  connect_bd_net -net MSBs_selector_2_data_out_g1 [get_bd_pins MSBs_selector_2/data_out_g1] [get_bd_pins PS_Interface_TOP_0/adc_44]
-  connect_bd_net -net MSBs_selector_2_data_out_g2 [get_bd_pins MSBs_selector_2/data_out_g2] [get_bd_pins PS_Interface_TOP_0/adc_45]
-  connect_bd_net -net MSBs_selector_2_data_out_h1 [get_bd_pins MSBs_selector_2/data_out_h1] [get_bd_pins PS_Interface_TOP_0/adc_46]
-  connect_bd_net -net MSBs_selector_2_data_out_h2 [get_bd_pins MSBs_selector_2/data_out_h2] [get_bd_pins PS_Interface_TOP_0/adc_47]
+  connect_bd_net -net MSBs_selector_0_data_out_a1 [get_bd_pins PS_Interface_TOP_0/adc_0] [get_bd_pins ila_0/probe5] [get_bd_pins moving_average_top_0/data_a1_out]
+  connect_bd_net -net MSBs_selector_0_data_out_a2 [get_bd_pins PS_Interface_TOP_0/adc_1] [get_bd_pins ila_0/probe6] [get_bd_pins moving_average_top_0/data_a2_out]
+  connect_bd_net -net MSBs_selector_0_data_out_a3 [get_bd_pins MSBs_selector_0/data_out_a1] [get_bd_pins moving_average_top_0/data_a1_in]
+  connect_bd_net -net MSBs_selector_0_data_out_a4 [get_bd_pins MSBs_selector_0/data_out_a2] [get_bd_pins moving_average_top_0/data_a2_in]
+  connect_bd_net -net MSBs_selector_0_data_out_b1 [get_bd_pins PS_Interface_TOP_0/adc_2] [get_bd_pins ila_0/probe7] [get_bd_pins moving_average_top_0/data_b1_out]
+  connect_bd_net -net MSBs_selector_0_data_out_b2 [get_bd_pins PS_Interface_TOP_0/adc_3] [get_bd_pins ila_0/probe8] [get_bd_pins moving_average_top_0/data_b2_out]
+  connect_bd_net -net MSBs_selector_0_data_out_b3 [get_bd_pins MSBs_selector_0/data_out_b1] [get_bd_pins moving_average_top_0/data_b1_in]
+  connect_bd_net -net MSBs_selector_0_data_out_b4 [get_bd_pins MSBs_selector_0/data_out_b2] [get_bd_pins moving_average_top_0/data_b2_in]
+  connect_bd_net -net MSBs_selector_0_data_out_c1 [get_bd_pins PS_Interface_TOP_0/adc_4] [get_bd_pins ila_0/probe9] [get_bd_pins moving_average_top_0/data_c1_out]
+  connect_bd_net -net MSBs_selector_0_data_out_c2 [get_bd_pins PS_Interface_TOP_0/adc_5] [get_bd_pins ila_0/probe10] [get_bd_pins moving_average_top_0/data_c2_out]
+  connect_bd_net -net MSBs_selector_0_data_out_c3 [get_bd_pins MSBs_selector_0/data_out_c1] [get_bd_pins moving_average_top_0/data_c1_in]
+  connect_bd_net -net MSBs_selector_0_data_out_c4 [get_bd_pins MSBs_selector_0/data_out_c2] [get_bd_pins moving_average_top_0/data_c2_in]
+  connect_bd_net -net MSBs_selector_0_data_out_d1 [get_bd_pins PS_Interface_TOP_0/adc_6] [get_bd_pins ila_0/probe11] [get_bd_pins moving_average_top_0/data_d1_out]
+  connect_bd_net -net MSBs_selector_0_data_out_d2 [get_bd_pins PS_Interface_TOP_0/adc_7] [get_bd_pins ila_0/probe12] [get_bd_pins moving_average_top_0/data_d2_out]
+  connect_bd_net -net MSBs_selector_0_data_out_d3 [get_bd_pins MSBs_selector_0/data_out_d1] [get_bd_pins moving_average_top_0/data_d1_in]
+  connect_bd_net -net MSBs_selector_0_data_out_d4 [get_bd_pins MSBs_selector_0/data_out_d2] [get_bd_pins moving_average_top_0/data_d2_in]
+  connect_bd_net -net MSBs_selector_0_data_out_e1 [get_bd_pins PS_Interface_TOP_0/adc_8] [get_bd_pins ila_0/probe13] [get_bd_pins moving_average_top_0/data_e1_out]
+  connect_bd_net -net MSBs_selector_0_data_out_e2 [get_bd_pins PS_Interface_TOP_0/adc_9] [get_bd_pins ila_0/probe14] [get_bd_pins moving_average_top_0/data_e2_out]
+  connect_bd_net -net MSBs_selector_0_data_out_e3 [get_bd_pins MSBs_selector_0/data_out_e1] [get_bd_pins moving_average_top_0/data_e1_in]
+  connect_bd_net -net MSBs_selector_0_data_out_e4 [get_bd_pins MSBs_selector_0/data_out_e2] [get_bd_pins moving_average_top_0/data_e2_in]
+  connect_bd_net -net MSBs_selector_0_data_out_f1 [get_bd_pins PS_Interface_TOP_0/adc_10] [get_bd_pins ila_0/probe15] [get_bd_pins moving_average_top_0/data_f1_out]
+  connect_bd_net -net MSBs_selector_0_data_out_f2 [get_bd_pins PS_Interface_TOP_0/adc_11] [get_bd_pins ila_0/probe16] [get_bd_pins moving_average_top_0/data_f2_out]
+  connect_bd_net -net MSBs_selector_0_data_out_f3 [get_bd_pins MSBs_selector_0/data_out_f1] [get_bd_pins moving_average_top_0/data_f1_in]
+  connect_bd_net -net MSBs_selector_0_data_out_f4 [get_bd_pins MSBs_selector_0/data_out_f2] [get_bd_pins moving_average_top_0/data_f2_in]
+  connect_bd_net -net MSBs_selector_0_data_out_g1 [get_bd_pins PS_Interface_TOP_0/adc_12] [get_bd_pins ila_0/probe17] [get_bd_pins moving_average_top_0/data_g1_out]
+  connect_bd_net -net MSBs_selector_0_data_out_g2 [get_bd_pins PS_Interface_TOP_0/adc_13] [get_bd_pins ila_0/probe18] [get_bd_pins moving_average_top_0/data_g2_out]
+  connect_bd_net -net MSBs_selector_0_data_out_g3 [get_bd_pins MSBs_selector_0/data_out_g1] [get_bd_pins moving_average_top_0/data_g1_in]
+  connect_bd_net -net MSBs_selector_0_data_out_g4 [get_bd_pins MSBs_selector_0/data_out_g2] [get_bd_pins moving_average_top_0/data_g2_in]
+  connect_bd_net -net MSBs_selector_0_data_out_h1 [get_bd_pins PS_Interface_TOP_0/adc_14] [get_bd_pins ila_0/probe19] [get_bd_pins moving_average_top_0/data_h1_out]
+  connect_bd_net -net MSBs_selector_0_data_out_h2 [get_bd_pins PS_Interface_TOP_0/adc_15] [get_bd_pins ila_0/probe20] [get_bd_pins moving_average_top_0/data_h2_out]
+  connect_bd_net -net MSBs_selector_0_data_out_h3 [get_bd_pins MSBs_selector_0/data_out_h1] [get_bd_pins moving_average_top_0/data_h1_in]
+  connect_bd_net -net MSBs_selector_0_data_out_h4 [get_bd_pins MSBs_selector_0/data_out_h2] [get_bd_pins moving_average_top_0/data_h2_in]
+  connect_bd_net -net MSBs_selector_1_data_out_a1 [get_bd_pins PS_Interface_TOP_0/adc_16] [get_bd_pins ila_0/probe21] [get_bd_pins moving_average_top_1/data_a1_out]
+  connect_bd_net -net MSBs_selector_1_data_out_a2 [get_bd_pins PS_Interface_TOP_0/adc_17] [get_bd_pins ila_0/probe22] [get_bd_pins moving_average_top_1/data_a2_out]
+  connect_bd_net -net MSBs_selector_1_data_out_a3 [get_bd_pins MSBs_selector_1/data_out_a1] [get_bd_pins moving_average_top_1/data_a1_in]
+  connect_bd_net -net MSBs_selector_1_data_out_a4 [get_bd_pins MSBs_selector_1/data_out_a2] [get_bd_pins moving_average_top_1/data_a2_in]
+  connect_bd_net -net MSBs_selector_1_data_out_b1 [get_bd_pins PS_Interface_TOP_0/adc_18] [get_bd_pins ila_0/probe23] [get_bd_pins moving_average_top_1/data_b1_out]
+  connect_bd_net -net MSBs_selector_1_data_out_b2 [get_bd_pins PS_Interface_TOP_0/adc_19] [get_bd_pins ila_0/probe24] [get_bd_pins moving_average_top_1/data_b2_out]
+  connect_bd_net -net MSBs_selector_1_data_out_b3 [get_bd_pins MSBs_selector_1/data_out_b1] [get_bd_pins moving_average_top_1/data_b1_in]
+  connect_bd_net -net MSBs_selector_1_data_out_b4 [get_bd_pins MSBs_selector_1/data_out_b2] [get_bd_pins moving_average_top_1/data_b2_in]
+  connect_bd_net -net MSBs_selector_1_data_out_c1 [get_bd_pins PS_Interface_TOP_0/adc_20] [get_bd_pins ila_0/probe25] [get_bd_pins moving_average_top_1/data_c1_out]
+  connect_bd_net -net MSBs_selector_1_data_out_c2 [get_bd_pins PS_Interface_TOP_0/adc_21] [get_bd_pins ila_0/probe26] [get_bd_pins moving_average_top_1/data_c2_out]
+  connect_bd_net -net MSBs_selector_1_data_out_c3 [get_bd_pins MSBs_selector_1/data_out_c1] [get_bd_pins moving_average_top_1/data_c1_in]
+  connect_bd_net -net MSBs_selector_1_data_out_c4 [get_bd_pins MSBs_selector_1/data_out_c2] [get_bd_pins moving_average_top_1/data_c2_in]
+  connect_bd_net -net MSBs_selector_1_data_out_d1 [get_bd_pins PS_Interface_TOP_0/adc_22] [get_bd_pins ila_0/probe27] [get_bd_pins moving_average_top_1/data_d1_out]
+  connect_bd_net -net MSBs_selector_1_data_out_d2 [get_bd_pins PS_Interface_TOP_0/adc_23] [get_bd_pins ila_0/probe28] [get_bd_pins moving_average_top_1/data_d2_out]
+  connect_bd_net -net MSBs_selector_1_data_out_d3 [get_bd_pins MSBs_selector_1/data_out_d1] [get_bd_pins moving_average_top_1/data_d1_in]
+  connect_bd_net -net MSBs_selector_1_data_out_d4 [get_bd_pins MSBs_selector_1/data_out_d2] [get_bd_pins moving_average_top_1/data_d2_in]
+  connect_bd_net -net MSBs_selector_1_data_out_e1 [get_bd_pins PS_Interface_TOP_0/adc_24] [get_bd_pins ila_0/probe29] [get_bd_pins moving_average_top_1/data_e1_out]
+  connect_bd_net -net MSBs_selector_1_data_out_e2 [get_bd_pins PS_Interface_TOP_0/adc_25] [get_bd_pins ila_0/probe30] [get_bd_pins moving_average_top_1/data_e2_out]
+  connect_bd_net -net MSBs_selector_1_data_out_e3 [get_bd_pins MSBs_selector_1/data_out_e1] [get_bd_pins moving_average_top_1/data_e1_in]
+  connect_bd_net -net MSBs_selector_1_data_out_e4 [get_bd_pins MSBs_selector_1/data_out_e2] [get_bd_pins moving_average_top_1/data_e2_in]
+  connect_bd_net -net MSBs_selector_1_data_out_f1 [get_bd_pins PS_Interface_TOP_0/adc_26] [get_bd_pins ila_0/probe31] [get_bd_pins moving_average_top_1/data_f1_out]
+  connect_bd_net -net MSBs_selector_1_data_out_f2 [get_bd_pins PS_Interface_TOP_0/adc_27] [get_bd_pins ila_0/probe32] [get_bd_pins moving_average_top_1/data_f2_out]
+  connect_bd_net -net MSBs_selector_1_data_out_f3 [get_bd_pins MSBs_selector_1/data_out_f1] [get_bd_pins moving_average_top_1/data_f1_in]
+  connect_bd_net -net MSBs_selector_1_data_out_f4 [get_bd_pins MSBs_selector_1/data_out_f2] [get_bd_pins moving_average_top_1/data_f2_in]
+  connect_bd_net -net MSBs_selector_1_data_out_g1 [get_bd_pins PS_Interface_TOP_0/adc_28] [get_bd_pins ila_0/probe33] [get_bd_pins moving_average_top_1/data_g1_out]
+  connect_bd_net -net MSBs_selector_1_data_out_g2 [get_bd_pins PS_Interface_TOP_0/adc_29] [get_bd_pins ila_0/probe34] [get_bd_pins moving_average_top_1/data_g2_out]
+  connect_bd_net -net MSBs_selector_1_data_out_g3 [get_bd_pins MSBs_selector_1/data_out_g1] [get_bd_pins moving_average_top_1/data_g1_in]
+  connect_bd_net -net MSBs_selector_1_data_out_g4 [get_bd_pins MSBs_selector_1/data_out_g2] [get_bd_pins moving_average_top_1/data_g2_in]
+  connect_bd_net -net MSBs_selector_1_data_out_h1 [get_bd_pins PS_Interface_TOP_0/adc_30] [get_bd_pins ila_0/probe35] [get_bd_pins moving_average_top_1/data_h1_out]
+  connect_bd_net -net MSBs_selector_1_data_out_h2 [get_bd_pins PS_Interface_TOP_0/adc_31] [get_bd_pins ila_0/probe36] [get_bd_pins moving_average_top_1/data_h2_out]
+  connect_bd_net -net MSBs_selector_1_data_out_h3 [get_bd_pins MSBs_selector_1/data_out_h1] [get_bd_pins moving_average_top_1/data_h1_in]
+  connect_bd_net -net MSBs_selector_1_data_out_h4 [get_bd_pins MSBs_selector_1/data_out_h2] [get_bd_pins moving_average_top_1/data_h2_in]
+  connect_bd_net -net MSBs_selector_2_data_out_a1 [get_bd_pins PS_Interface_TOP_0/adc_32] [get_bd_pins ila_0/probe37] [get_bd_pins moving_average_top_2/data_a1_out]
+  connect_bd_net -net MSBs_selector_2_data_out_a2 [get_bd_pins PS_Interface_TOP_0/adc_33] [get_bd_pins ila_0/probe38] [get_bd_pins moving_average_top_2/data_a2_out]
+  connect_bd_net -net MSBs_selector_2_data_out_a3 [get_bd_pins MSBs_selector_2/data_out_a1] [get_bd_pins moving_average_top_2/data_a1_in]
+  connect_bd_net -net MSBs_selector_2_data_out_a4 [get_bd_pins MSBs_selector_2/data_out_a2] [get_bd_pins moving_average_top_2/data_a2_in]
+  connect_bd_net -net MSBs_selector_2_data_out_b1 [get_bd_pins PS_Interface_TOP_0/adc_34] [get_bd_pins ila_0/probe39] [get_bd_pins moving_average_top_2/data_b1_out]
+  connect_bd_net -net MSBs_selector_2_data_out_b2 [get_bd_pins PS_Interface_TOP_0/adc_35] [get_bd_pins ila_0/probe40] [get_bd_pins moving_average_top_2/data_b2_out]
+  connect_bd_net -net MSBs_selector_2_data_out_b3 [get_bd_pins MSBs_selector_2/data_out_b1] [get_bd_pins moving_average_top_2/data_b1_in]
+  connect_bd_net -net MSBs_selector_2_data_out_b4 [get_bd_pins MSBs_selector_2/data_out_b2] [get_bd_pins moving_average_top_2/data_b2_in]
+  connect_bd_net -net MSBs_selector_2_data_out_c1 [get_bd_pins PS_Interface_TOP_0/adc_36] [get_bd_pins ila_0/probe41] [get_bd_pins moving_average_top_2/data_c1_out]
+  connect_bd_net -net MSBs_selector_2_data_out_c2 [get_bd_pins MSBs_selector_2/data_out_c1] [get_bd_pins moving_average_top_2/data_c1_in]
   connect_bd_net -net Net [get_bd_ports sdio_0] [get_bd_pins spi3_WICSC_top_0/sdio]
   connect_bd_net -net PS_Interface_TOP_0_PS_IN [get_bd_pins PS_Interface_TOP_0/PS_IN] [get_bd_pins ila_0/probe1] [get_bd_pins processing_system7_0/GPIO_I]
   connect_bd_net -net PS_Interface_TOP_0_toMod1 [get_bd_pins PS_Interface_TOP_0/toMod1] [get_bd_pins ila_0/probe3] [get_bd_pins modulater_14bit_0/mod_input1]
@@ -1025,6 +1096,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net axi_gpio_2_ip2intc_irpt [get_bd_pins axi_gpio_2/ip2intc_irpt] [get_bd_pins processing_system7_0/Core0_nIRQ]
   connect_bd_net -net axi_gpio_4_gpio2_io_o [get_bd_pins AND_GATE_0/B] [get_bd_pins axi_gpio_4/gpio2_io_o]
   connect_bd_net -net clk_wiz_0_clk_130 [get_bd_pins clk_wiz_0/clk_130] [get_bd_pins modulater_14bit_0/clk_130]
+  connect_bd_net -net clk_wiz_1_clk_12mhz [get_bd_pins clk_wiz_1/clk_12mhz] [get_bd_pins moving_average_top_0/clk] [get_bd_pins moving_average_top_1/clk] [get_bd_pins moving_average_top_2/clk]
   connect_bd_net -net fpga_dig_top_0_captured_data_a1 [get_bd_pins MSBs_selector_0/data_in_a1] [get_bd_pins fpga_dig_top_0/captured_data_a1]
   connect_bd_net -net fpga_dig_top_0_captured_data_a2 [get_bd_pins MSBs_selector_0/data_in_a2] [get_bd_pins fpga_dig_top_0/captured_data_a2]
   connect_bd_net -net fpga_dig_top_0_captured_data_b1 [get_bd_pins MSBs_selector_0/data_in_b1] [get_bd_pins fpga_dig_top_0/captured_data_b1]
@@ -1162,7 +1234,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net master_rst_n_1 [get_bd_ports master_rst_n] [get_bd_pins AND_GATE_0/A]
   connect_bd_net -net modulater_14bit_0_carrier_zero [get_bd_ports PWM_SIGNAL] [get_bd_pins ila_0/probe42] [get_bd_pins modulater_14bit_0/carrier_zero] [get_bd_pins processing_system7_0/Core0_nFIQ] [get_bd_pins quadrature_decoder_0/clk_PWM]
   connect_bd_net -net modulater_14bit_0_mod_out [get_bd_ports modulator_out] [get_bd_pins ila_0/probe0] [get_bd_pins modulater_14bit_0/mod_out]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins PS_Interface_TOP_0/clk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_gpio_2/s_axi_aclk] [get_bd_pins axi_gpio_3/s_axi_aclk] [get_bd_pins axi_gpio_4/s_axi_aclk] [get_bd_pins axi_gpio_5/s_axi_aclk] [get_bd_pins axi_gpio_6/s_axi_aclk] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins fpga_dig_top_0/zynq_sys_clkin] [get_bd_pins fpga_dig_top_1/zynq_sys_clkin] [get_bd_pins fpga_dig_top_1_bank_0/zynq_sys_clkin] [get_bd_pins ila_0/clk] [get_bd_pins modulater_14bit_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins ps7_0_axi_periph/M06_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins quadrature_decoder_0/clk] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk] [get_bd_pins spi3_WICSC_top_0/PL_clkin]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins PS_Interface_TOP_0/clk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_gpio_1/s_axi_aclk] [get_bd_pins axi_gpio_2/s_axi_aclk] [get_bd_pins axi_gpio_3/s_axi_aclk] [get_bd_pins axi_gpio_4/s_axi_aclk] [get_bd_pins axi_gpio_5/s_axi_aclk] [get_bd_pins axi_gpio_6/s_axi_aclk] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins clk_wiz_1/clk_in1] [get_bd_pins fpga_dig_top_0/zynq_sys_clkin] [get_bd_pins fpga_dig_top_1/zynq_sys_clkin] [get_bd_pins fpga_dig_top_1_bank_0/zynq_sys_clkin] [get_bd_pins ila_0/clk] [get_bd_pins modulater_14bit_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins ps7_0_axi_periph/M06_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins quadrature_decoder_0/clk] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk] [get_bd_pins spi3_WICSC_top_0/PL_clkin]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
   connect_bd_net -net processing_system7_0_GPIO_O [get_bd_pins PS_Interface_TOP_0/PS_OUT] [get_bd_pins ila_0/probe2] [get_bd_pins processing_system7_0/GPIO_O]
   connect_bd_net -net quadrature_decoder_0_Th_value [get_bd_pins axi_gpio_6/gpio2_io_i] [get_bd_pins quadrature_decoder_0/Th_value]

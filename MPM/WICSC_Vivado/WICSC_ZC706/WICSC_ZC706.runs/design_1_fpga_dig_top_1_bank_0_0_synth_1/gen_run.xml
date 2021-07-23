@@ -10,7 +10,7 @@
     <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_fpga_dig_top_1_bank_0_0/design_1_fpga_dig_top_1_bank_0_0.xci">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Desktop/EXJOBB/WICSC_ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_fpga_dig_top_1_bank_0_0/design_1_fpga_dig_top_1_bank_0_0.xci"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../Desktop/EXJOBB/WICSC_ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_fpga_dig_top_1_bank_0_0/design_1_fpga_dig_top_1_bank_0_0.xci"/>
         <Attr Name="ImportTime" Val="1620393949"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -27,7 +27,7 @@
     <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_fpga_dig_top_1_bank_0_0/design_1_fpga_dig_top_1_bank_0_0.xci">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Desktop/EXJOBB/WICSC_ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_fpga_dig_top_1_bank_0_0/design_1_fpga_dig_top_1_bank_0_0.xci"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../Desktop/EXJOBB/WICSC_ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_fpga_dig_top_1_bank_0_0/design_1_fpga_dig_top_1_bank_0_0.xci"/>
         <Attr Name="ImportTime" Val="1620393949"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

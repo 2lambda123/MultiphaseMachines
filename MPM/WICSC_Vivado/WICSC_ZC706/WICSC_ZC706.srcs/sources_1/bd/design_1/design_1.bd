@@ -46,7 +46,11 @@
       "fpga_dig_top_0": "",
       "ila_0": "",
       "AND_GATE_0": "",
-      "modulater_14bit_0": ""
+      "modulater_14bit_0": "",
+      "moving_average_top_0": "",
+      "clk_wiz_1": "",
+      "moving_average_top_1": "",
+      "moving_average_top_2": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1699,16 +1703,16 @@
               }
             },
             "interface_nets": {
-              "s00_couplers_to_auto_pc": {
-                "interface_ports": [
-                  "S_AXI",
-                  "auto_pc/S_AXI"
-                ]
-              },
               "auto_pc_to_s00_couplers": {
                 "interface_ports": [
                   "M_AXI",
                   "auto_pc/M_AXI"
+                ]
+              },
+              "s00_couplers_to_auto_pc": {
+                "interface_ports": [
+                  "S_AXI",
+                  "auto_pc/S_AXI"
                 ]
               }
             },
@@ -2107,10 +2111,46 @@
           }
         },
         "interface_nets": {
-          "xbar_to_m05_couplers": {
+          "s00_couplers_to_xbar": {
             "interface_ports": [
-              "xbar/M05_AXI",
-              "m05_couplers/S_AXI"
+              "s00_couplers/M_AXI",
+              "xbar/S00_AXI"
+            ]
+          },
+          "ps7_0_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
+            ]
+          },
+          "m01_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m02_couplers": {
+            "interface_ports": [
+              "xbar/M02_AXI",
+              "m02_couplers/S_AXI"
+            ]
+          },
+          "m02_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M02_AXI",
+              "m02_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m01_couplers": {
+            "interface_ports": [
+              "xbar/M01_AXI",
+              "m01_couplers/S_AXI"
+            ]
+          },
+          "m04_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M04_AXI",
+              "m04_couplers/M_AXI"
             ]
           },
           "xbar_to_m04_couplers": {
@@ -2125,10 +2165,34 @@
               "m00_couplers/M_AXI"
             ]
           },
-          "s00_couplers_to_xbar": {
+          "xbar_to_m00_couplers": {
             "interface_ports": [
-              "s00_couplers/M_AXI",
-              "xbar/S00_AXI"
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
+            ]
+          },
+          "xbar_to_m05_couplers": {
+            "interface_ports": [
+              "xbar/M05_AXI",
+              "m05_couplers/S_AXI"
+            ]
+          },
+          "xbar_to_m03_couplers": {
+            "interface_ports": [
+              "xbar/M03_AXI",
+              "m03_couplers/S_AXI"
+            ]
+          },
+          "m03_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M03_AXI",
+              "m03_couplers/M_AXI"
+            ]
+          },
+          "m05_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M05_AXI",
+              "m05_couplers/M_AXI"
             ]
           },
           "m06_couplers_to_ps7_0_axi_periph": {
@@ -2141,66 +2205,6 @@
             "interface_ports": [
               "xbar/M06_AXI",
               "m06_couplers/S_AXI"
-            ]
-          },
-          "ps7_0_axi_periph_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
-          "xbar_to_m01_couplers": {
-            "interface_ports": [
-              "xbar/M01_AXI",
-              "m01_couplers/S_AXI"
-            ]
-          },
-          "m02_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M02_AXI",
-              "m02_couplers/M_AXI"
-            ]
-          },
-          "m03_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M03_AXI",
-              "m03_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m02_couplers": {
-            "interface_ports": [
-              "xbar/M02_AXI",
-              "m02_couplers/S_AXI"
-            ]
-          },
-          "xbar_to_m00_couplers": {
-            "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
-            ]
-          },
-          "m01_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
-          "m04_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M04_AXI",
-              "m04_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m03_couplers": {
-            "interface_ports": [
-              "xbar/M03_AXI",
-              "m03_couplers/S_AXI"
-            ]
-          },
-          "m05_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M05_AXI",
-              "m05_couplers/M_AXI"
             ]
           }
         },
@@ -4048,19 +4052,613 @@
             }
           }
         }
+      },
+      "moving_average_top_0": {
+        "vlnv": "xilinx.com:module_ref:moving_average_top:1.0",
+        "xci_name": "design_1_moving_average_top_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "moving_average_top",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_a1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_a2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_1_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "12000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "data_a1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_a2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      },
+      "clk_wiz_1": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_1_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "345.775"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "293.793"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "12"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "clk_12mhz"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "49.875"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "83.125"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "5"
+          }
+        }
+      },
+      "moving_average_top_1": {
+        "vlnv": "xilinx.com:module_ref:moving_average_top:1.0",
+        "xci_name": "design_1_moving_average_top_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "moving_average_top",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_a1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_a2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_1_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "12000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "data_a1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_a2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      },
+      "moving_average_top_2": {
+        "vlnv": "xilinx.com:module_ref:moving_average_top:1.0",
+        "xci_name": "design_1_moving_average_top_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "moving_average_top",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_a1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_a2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h1_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h2_in": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_1_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "12000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "data_a1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_a2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_b2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_c2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_d2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_e2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_f2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_g2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h1_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "data_h2_out": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          }
+        }
       }
     },
     "interface_nets": {
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
+        ]
+      },
       "ps7_0_axi_periph_M02_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M02_AXI",
           "axi_gpio_2/S_AXI"
-        ]
-      },
-      "ps7_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M00_AXI",
-          "axi_gpio_0/S_AXI"
         ]
       },
       "processing_system7_0_FIXED_IO": {
@@ -4069,10 +4667,22 @@
           "processing_system7_0/FIXED_IO"
         ]
       },
-      "processing_system7_0_DDR": {
+      "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
+          "ps7_0_axi_periph/M00_AXI",
+          "axi_gpio_0/S_AXI"
+        ]
+      },
+      "processing_system7_0_M_AXI_GP0": {
+        "interface_ports": [
+          "processing_system7_0/M_AXI_GP0",
+          "ps7_0_axi_periph/S00_AXI"
+        ]
+      },
+      "ps7_0_axi_periph_M05_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M05_AXI",
+          "axi_gpio_5/S_AXI"
         ]
       },
       "ps7_0_axi_periph_M04_AXI": {
@@ -4081,10 +4691,10 @@
           "axi_gpio_4/S_AXI"
         ]
       },
-      "processing_system7_0_M_AXI_GP0": {
+      "ps7_0_axi_periph_M06_AXI": {
         "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "ps7_0_axi_periph/S00_AXI"
+          "ps7_0_axi_periph/M06_AXI",
+          "axi_gpio_6/S_AXI"
         ]
       },
       "ps7_0_axi_periph_M03_AXI": {
@@ -4097,18 +4707,6 @@
         "interface_ports": [
           "ps7_0_axi_periph/M01_AXI",
           "axi_gpio_1/S_AXI"
-        ]
-      },
-      "ps7_0_axi_periph_M05_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M05_AXI",
-          "axi_gpio_5/S_AXI"
-        ]
-      },
-      "ps7_0_axi_periph_M06_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M06_AXI",
-          "axi_gpio_6/S_AXI"
         ]
       }
     },
@@ -4142,7 +4740,8 @@
           "fpga_dig_top_1_bank_0/zynq_sys_clkin",
           "fpga_dig_top_0/zynq_sys_clkin",
           "ila_0/clk",
-          "modulater_14bit_0/clk"
+          "modulater_14bit_0/clk",
+          "clk_wiz_1/clk_in1"
         ]
       },
       "axi_gpio_0_gpio_io_o": {
@@ -4349,98 +4948,98 @@
       },
       "MSBs_selector_0_data_out_b1": {
         "ports": [
-          "MSBs_selector_0/data_out_b1",
+          "moving_average_top_0/data_b1_out",
           "PS_Interface_TOP_0/adc_2",
           "ila_0/probe7"
         ]
       },
       "MSBs_selector_0_data_out_b2": {
         "ports": [
-          "MSBs_selector_0/data_out_b2",
+          "moving_average_top_0/data_b2_out",
           "PS_Interface_TOP_0/adc_3",
           "ila_0/probe8"
         ]
       },
       "MSBs_selector_0_data_out_c1": {
         "ports": [
-          "MSBs_selector_0/data_out_c1",
+          "moving_average_top_0/data_c1_out",
           "PS_Interface_TOP_0/adc_4",
           "ila_0/probe9"
         ]
       },
       "MSBs_selector_0_data_out_c2": {
         "ports": [
-          "MSBs_selector_0/data_out_c2",
+          "moving_average_top_0/data_c2_out",
           "PS_Interface_TOP_0/adc_5",
           "ila_0/probe10"
         ]
       },
       "MSBs_selector_0_data_out_d1": {
         "ports": [
-          "MSBs_selector_0/data_out_d1",
+          "moving_average_top_0/data_d1_out",
           "PS_Interface_TOP_0/adc_6",
           "ila_0/probe11"
         ]
       },
       "MSBs_selector_0_data_out_d2": {
         "ports": [
-          "MSBs_selector_0/data_out_d2",
+          "moving_average_top_0/data_d2_out",
           "PS_Interface_TOP_0/adc_7",
           "ila_0/probe12"
         ]
       },
       "MSBs_selector_0_data_out_e1": {
         "ports": [
-          "MSBs_selector_0/data_out_e1",
+          "moving_average_top_0/data_e1_out",
           "PS_Interface_TOP_0/adc_8",
           "ila_0/probe13"
         ]
       },
       "MSBs_selector_0_data_out_e2": {
         "ports": [
-          "MSBs_selector_0/data_out_e2",
+          "moving_average_top_0/data_e2_out",
           "PS_Interface_TOP_0/adc_9",
           "ila_0/probe14"
         ]
       },
       "MSBs_selector_0_data_out_f1": {
         "ports": [
-          "MSBs_selector_0/data_out_f1",
+          "moving_average_top_0/data_f1_out",
           "PS_Interface_TOP_0/adc_10",
           "ila_0/probe15"
         ]
       },
       "MSBs_selector_0_data_out_f2": {
         "ports": [
-          "MSBs_selector_0/data_out_f2",
+          "moving_average_top_0/data_f2_out",
           "PS_Interface_TOP_0/adc_11",
           "ila_0/probe16"
         ]
       },
       "MSBs_selector_0_data_out_g1": {
         "ports": [
-          "MSBs_selector_0/data_out_g1",
+          "moving_average_top_0/data_g1_out",
           "PS_Interface_TOP_0/adc_12",
           "ila_0/probe17"
         ]
       },
       "MSBs_selector_0_data_out_g2": {
         "ports": [
-          "MSBs_selector_0/data_out_g2",
+          "moving_average_top_0/data_g2_out",
           "PS_Interface_TOP_0/adc_13",
           "ila_0/probe18"
         ]
       },
       "MSBs_selector_0_data_out_h1": {
         "ports": [
-          "MSBs_selector_0/data_out_h1",
+          "moving_average_top_0/data_h1_out",
           "PS_Interface_TOP_0/adc_14",
           "ila_0/probe19"
         ]
       },
       "MSBs_selector_0_data_out_h2": {
         "ports": [
-          "MSBs_selector_0/data_out_h2",
+          "moving_average_top_0/data_h2_out",
           "PS_Interface_TOP_0/adc_15",
           "ila_0/probe20"
         ]
@@ -5059,187 +5658,121 @@
       },
       "MSBs_selector_1_data_out_b1": {
         "ports": [
-          "MSBs_selector_1/data_out_b1",
+          "moving_average_top_1/data_b1_out",
           "PS_Interface_TOP_0/adc_18",
           "ila_0/probe23"
         ]
       },
       "MSBs_selector_1_data_out_b2": {
         "ports": [
-          "MSBs_selector_1/data_out_b2",
+          "moving_average_top_1/data_b2_out",
           "PS_Interface_TOP_0/adc_19",
           "ila_0/probe24"
         ]
       },
       "MSBs_selector_1_data_out_c1": {
         "ports": [
-          "MSBs_selector_1/data_out_c1",
+          "moving_average_top_1/data_c1_out",
           "PS_Interface_TOP_0/adc_20",
           "ila_0/probe25"
         ]
       },
       "MSBs_selector_1_data_out_c2": {
         "ports": [
-          "MSBs_selector_1/data_out_c2",
+          "moving_average_top_1/data_c2_out",
           "PS_Interface_TOP_0/adc_21",
           "ila_0/probe26"
         ]
       },
       "MSBs_selector_1_data_out_d1": {
         "ports": [
-          "MSBs_selector_1/data_out_d1",
+          "moving_average_top_1/data_d1_out",
           "PS_Interface_TOP_0/adc_22",
           "ila_0/probe27"
         ]
       },
       "MSBs_selector_1_data_out_d2": {
         "ports": [
-          "MSBs_selector_1/data_out_d2",
+          "moving_average_top_1/data_d2_out",
           "PS_Interface_TOP_0/adc_23",
           "ila_0/probe28"
         ]
       },
       "MSBs_selector_1_data_out_e1": {
         "ports": [
-          "MSBs_selector_1/data_out_e1",
+          "moving_average_top_1/data_e1_out",
           "PS_Interface_TOP_0/adc_24",
           "ila_0/probe29"
         ]
       },
       "MSBs_selector_1_data_out_e2": {
         "ports": [
-          "MSBs_selector_1/data_out_e2",
+          "moving_average_top_1/data_e2_out",
           "PS_Interface_TOP_0/adc_25",
           "ila_0/probe30"
         ]
       },
       "MSBs_selector_1_data_out_f1": {
         "ports": [
-          "MSBs_selector_1/data_out_f1",
+          "moving_average_top_1/data_f1_out",
           "PS_Interface_TOP_0/adc_26",
           "ila_0/probe31"
         ]
       },
       "MSBs_selector_1_data_out_f2": {
         "ports": [
-          "MSBs_selector_1/data_out_f2",
+          "moving_average_top_1/data_f2_out",
           "PS_Interface_TOP_0/adc_27",
           "ila_0/probe32"
         ]
       },
       "MSBs_selector_1_data_out_g1": {
         "ports": [
-          "MSBs_selector_1/data_out_g1",
+          "moving_average_top_1/data_g1_out",
           "PS_Interface_TOP_0/adc_28",
           "ila_0/probe33"
         ]
       },
       "MSBs_selector_1_data_out_g2": {
         "ports": [
-          "MSBs_selector_1/data_out_g2",
+          "moving_average_top_1/data_g2_out",
           "PS_Interface_TOP_0/adc_29",
           "ila_0/probe34"
         ]
       },
       "MSBs_selector_1_data_out_h1": {
         "ports": [
-          "MSBs_selector_1/data_out_h1",
+          "moving_average_top_1/data_h1_out",
           "PS_Interface_TOP_0/adc_30",
           "ila_0/probe35"
         ]
       },
       "MSBs_selector_1_data_out_h2": {
         "ports": [
-          "MSBs_selector_1/data_out_h2",
+          "moving_average_top_1/data_h2_out",
           "PS_Interface_TOP_0/adc_31",
           "ila_0/probe36"
         ]
       },
       "MSBs_selector_2_data_out_b1": {
         "ports": [
-          "MSBs_selector_2/data_out_b1",
+          "moving_average_top_2/data_b1_out",
           "PS_Interface_TOP_0/adc_34",
           "ila_0/probe39"
         ]
       },
       "MSBs_selector_2_data_out_b2": {
         "ports": [
-          "MSBs_selector_2/data_out_b2",
+          "moving_average_top_2/data_b2_out",
           "PS_Interface_TOP_0/adc_35",
           "ila_0/probe40"
         ]
       },
       "MSBs_selector_2_data_out_c1": {
         "ports": [
-          "MSBs_selector_2/data_out_c1",
+          "moving_average_top_2/data_c1_out",
           "PS_Interface_TOP_0/adc_36",
           "ila_0/probe41"
-        ]
-      },
-      "MSBs_selector_2_data_out_c2": {
-        "ports": [
-          "MSBs_selector_2/data_out_c2",
-          "PS_Interface_TOP_0/adc_37"
-        ]
-      },
-      "MSBs_selector_2_data_out_d1": {
-        "ports": [
-          "MSBs_selector_2/data_out_d1",
-          "PS_Interface_TOP_0/adc_38"
-        ]
-      },
-      "MSBs_selector_2_data_out_d2": {
-        "ports": [
-          "MSBs_selector_2/data_out_d2",
-          "PS_Interface_TOP_0/adc_39"
-        ]
-      },
-      "MSBs_selector_2_data_out_e1": {
-        "ports": [
-          "MSBs_selector_2/data_out_e1",
-          "PS_Interface_TOP_0/adc_40"
-        ]
-      },
-      "MSBs_selector_2_data_out_e2": {
-        "ports": [
-          "MSBs_selector_2/data_out_e2",
-          "PS_Interface_TOP_0/adc_41"
-        ]
-      },
-      "MSBs_selector_2_data_out_f1": {
-        "ports": [
-          "MSBs_selector_2/data_out_f1",
-          "PS_Interface_TOP_0/adc_42"
-        ]
-      },
-      "MSBs_selector_2_data_out_f2": {
-        "ports": [
-          "MSBs_selector_2/data_out_f2",
-          "PS_Interface_TOP_0/adc_43"
-        ]
-      },
-      "MSBs_selector_2_data_out_g1": {
-        "ports": [
-          "MSBs_selector_2/data_out_g1",
-          "PS_Interface_TOP_0/adc_44"
-        ]
-      },
-      "MSBs_selector_2_data_out_g2": {
-        "ports": [
-          "MSBs_selector_2/data_out_g2",
-          "PS_Interface_TOP_0/adc_45"
-        ]
-      },
-      "MSBs_selector_2_data_out_h1": {
-        "ports": [
-          "MSBs_selector_2/data_out_h1",
-          "PS_Interface_TOP_0/adc_46"
-        ]
-      },
-      "MSBs_selector_2_data_out_h2": {
-        "ports": [
-          "MSBs_selector_2/data_out_h2",
-          "PS_Interface_TOP_0/adc_47"
         ]
       },
       "Net": {
@@ -5434,42 +5967,42 @@
       },
       "MSBs_selector_0_data_out_a1": {
         "ports": [
-          "MSBs_selector_0/data_out_a1",
+          "moving_average_top_0/data_a1_out",
           "PS_Interface_TOP_0/adc_0",
           "ila_0/probe5"
         ]
       },
       "MSBs_selector_0_data_out_a2": {
         "ports": [
-          "MSBs_selector_0/data_out_a2",
+          "moving_average_top_0/data_a2_out",
           "PS_Interface_TOP_0/adc_1",
           "ila_0/probe6"
         ]
       },
       "MSBs_selector_1_data_out_a1": {
         "ports": [
-          "MSBs_selector_1/data_out_a1",
+          "moving_average_top_1/data_a1_out",
           "PS_Interface_TOP_0/adc_16",
           "ila_0/probe21"
         ]
       },
       "MSBs_selector_1_data_out_a2": {
         "ports": [
-          "MSBs_selector_1/data_out_a2",
+          "moving_average_top_1/data_a2_out",
           "PS_Interface_TOP_0/adc_17",
           "ila_0/probe22"
         ]
       },
       "MSBs_selector_2_data_out_a1": {
         "ports": [
-          "MSBs_selector_2/data_out_a1",
+          "moving_average_top_2/data_a1_out",
           "PS_Interface_TOP_0/adc_32",
           "ila_0/probe37"
         ]
       },
       "MSBs_selector_2_data_out_a2": {
         "ports": [
-          "MSBs_selector_2/data_out_a2",
+          "moving_average_top_2/data_a2_out",
           "PS_Interface_TOP_0/adc_33",
           "ila_0/probe38"
         ]
@@ -5480,6 +6013,236 @@
           "csb_0",
           "csb_1",
           "csb_2"
+        ]
+      },
+      "MSBs_selector_0_data_out_a3": {
+        "ports": [
+          "MSBs_selector_0/data_out_a1",
+          "moving_average_top_0/data_a1_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_a4": {
+        "ports": [
+          "MSBs_selector_0/data_out_a2",
+          "moving_average_top_0/data_a2_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_b3": {
+        "ports": [
+          "MSBs_selector_0/data_out_b1",
+          "moving_average_top_0/data_b1_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_b4": {
+        "ports": [
+          "MSBs_selector_0/data_out_b2",
+          "moving_average_top_0/data_b2_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_c3": {
+        "ports": [
+          "MSBs_selector_0/data_out_c1",
+          "moving_average_top_0/data_c1_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_c4": {
+        "ports": [
+          "MSBs_selector_0/data_out_c2",
+          "moving_average_top_0/data_c2_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_d3": {
+        "ports": [
+          "MSBs_selector_0/data_out_d1",
+          "moving_average_top_0/data_d1_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_d4": {
+        "ports": [
+          "MSBs_selector_0/data_out_d2",
+          "moving_average_top_0/data_d2_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_e3": {
+        "ports": [
+          "MSBs_selector_0/data_out_e1",
+          "moving_average_top_0/data_e1_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_e4": {
+        "ports": [
+          "MSBs_selector_0/data_out_e2",
+          "moving_average_top_0/data_e2_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_f3": {
+        "ports": [
+          "MSBs_selector_0/data_out_f1",
+          "moving_average_top_0/data_f1_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_f4": {
+        "ports": [
+          "MSBs_selector_0/data_out_f2",
+          "moving_average_top_0/data_f2_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_g3": {
+        "ports": [
+          "MSBs_selector_0/data_out_g1",
+          "moving_average_top_0/data_g1_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_g4": {
+        "ports": [
+          "MSBs_selector_0/data_out_g2",
+          "moving_average_top_0/data_g2_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_h3": {
+        "ports": [
+          "MSBs_selector_0/data_out_h1",
+          "moving_average_top_0/data_h1_in"
+        ]
+      },
+      "MSBs_selector_0_data_out_h4": {
+        "ports": [
+          "MSBs_selector_0/data_out_h2",
+          "moving_average_top_0/data_h2_in"
+        ]
+      },
+      "clk_wiz_1_clk_12mhz": {
+        "ports": [
+          "clk_wiz_1/clk_12mhz",
+          "moving_average_top_0/clk",
+          "moving_average_top_1/clk",
+          "moving_average_top_2/clk"
+        ]
+      },
+      "MSBs_selector_1_data_out_a3": {
+        "ports": [
+          "MSBs_selector_1/data_out_a1",
+          "moving_average_top_1/data_a1_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_a4": {
+        "ports": [
+          "MSBs_selector_1/data_out_a2",
+          "moving_average_top_1/data_a2_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_b3": {
+        "ports": [
+          "MSBs_selector_1/data_out_b1",
+          "moving_average_top_1/data_b1_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_b4": {
+        "ports": [
+          "MSBs_selector_1/data_out_b2",
+          "moving_average_top_1/data_b2_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_c3": {
+        "ports": [
+          "MSBs_selector_1/data_out_c1",
+          "moving_average_top_1/data_c1_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_c4": {
+        "ports": [
+          "MSBs_selector_1/data_out_c2",
+          "moving_average_top_1/data_c2_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_d3": {
+        "ports": [
+          "MSBs_selector_1/data_out_d1",
+          "moving_average_top_1/data_d1_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_d4": {
+        "ports": [
+          "MSBs_selector_1/data_out_d2",
+          "moving_average_top_1/data_d2_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_e3": {
+        "ports": [
+          "MSBs_selector_1/data_out_e1",
+          "moving_average_top_1/data_e1_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_e4": {
+        "ports": [
+          "MSBs_selector_1/data_out_e2",
+          "moving_average_top_1/data_e2_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_f3": {
+        "ports": [
+          "MSBs_selector_1/data_out_f1",
+          "moving_average_top_1/data_f1_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_f4": {
+        "ports": [
+          "MSBs_selector_1/data_out_f2",
+          "moving_average_top_1/data_f2_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_g3": {
+        "ports": [
+          "MSBs_selector_1/data_out_g1",
+          "moving_average_top_1/data_g1_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_g4": {
+        "ports": [
+          "MSBs_selector_1/data_out_g2",
+          "moving_average_top_1/data_g2_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_h3": {
+        "ports": [
+          "MSBs_selector_1/data_out_h1",
+          "moving_average_top_1/data_h1_in"
+        ]
+      },
+      "MSBs_selector_1_data_out_h4": {
+        "ports": [
+          "MSBs_selector_1/data_out_h2",
+          "moving_average_top_1/data_h2_in"
+        ]
+      },
+      "MSBs_selector_2_data_out_a3": {
+        "ports": [
+          "MSBs_selector_2/data_out_a1",
+          "moving_average_top_2/data_a1_in"
+        ]
+      },
+      "MSBs_selector_2_data_out_a4": {
+        "ports": [
+          "MSBs_selector_2/data_out_a2",
+          "moving_average_top_2/data_a2_in"
+        ]
+      },
+      "MSBs_selector_2_data_out_b3": {
+        "ports": [
+          "MSBs_selector_2/data_out_b1",
+          "moving_average_top_2/data_b1_in"
+        ]
+      },
+      "MSBs_selector_2_data_out_b4": {
+        "ports": [
+          "MSBs_selector_2/data_out_b2",
+          "moving_average_top_2/data_b2_in"
+        ]
+      },
+      "MSBs_selector_2_data_out_c2": {
+        "ports": [
+          "MSBs_selector_2/data_out_c1",
+          "moving_average_top_2/data_c1_in"
         ]
       }
     },
