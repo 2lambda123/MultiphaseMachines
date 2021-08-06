@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Fri Jul 23 19:21:45 2021
+// Date        : Fri Aug  6 10:08:31 2021
 // Host        : DESKTOP-R1R40B4 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_moving_average_top_1_0_sim_netlist.v
@@ -136,21 +136,21 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
         .data_g2_in(data_g2_in),
         .data_h1_in(data_h1_in),
         .data_h2_in(data_h2_in),
-        .\r_acc_reg[17] (data_a2_out),
-        .\r_acc_reg[17]_0 (data_b1_out),
-        .\r_acc_reg[17]_1 (data_b2_out),
-        .\r_acc_reg[17]_10 (data_g1_out),
-        .\r_acc_reg[17]_11 (data_g2_out),
-        .\r_acc_reg[17]_12 (data_h1_out),
-        .\r_acc_reg[17]_13 (data_h2_out),
-        .\r_acc_reg[17]_2 (data_c1_out),
-        .\r_acc_reg[17]_3 (data_c2_out),
-        .\r_acc_reg[17]_4 (data_d1_out),
-        .\r_acc_reg[17]_5 (data_d2_out),
-        .\r_acc_reg[17]_6 (data_e1_out),
-        .\r_acc_reg[17]_7 (data_e2_out),
-        .\r_acc_reg[17]_8 (data_f1_out),
-        .\r_acc_reg[17]_9 (data_f2_out));
+        .\r_acc_reg[13] (data_a2_out),
+        .\r_acc_reg[13]_0 (data_b1_out),
+        .\r_acc_reg[13]_1 (data_b2_out),
+        .\r_acc_reg[13]_10 (data_g1_out),
+        .\r_acc_reg[13]_11 (data_g2_out),
+        .\r_acc_reg[13]_12 (data_h1_out),
+        .\r_acc_reg[13]_13 (data_h2_out),
+        .\r_acc_reg[13]_2 (data_c1_out),
+        .\r_acc_reg[13]_3 (data_c2_out),
+        .\r_acc_reg[13]_4 (data_d1_out),
+        .\r_acc_reg[13]_5 (data_d2_out),
+        .\r_acc_reg[13]_6 (data_e1_out),
+        .\r_acc_reg[13]_7 (data_e2_out),
+        .\r_acc_reg[13]_8 (data_f1_out),
+        .\r_acc_reg[13]_9 (data_f2_out));
 endmodule
 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
@@ -164,22 +164,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_a1_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire [13:0]\p_moving_average_reg[15] ;
-  wire [3:0]r_acc;
+  wire [13:0]\p_moving_average_reg[0] ;
   wire r_acc0_carry__0_i_1_n_0;
   wire r_acc0_carry__0_i_2_n_0;
   wire r_acc0_carry__0_i_3_n_0;
@@ -215,23 +200,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
   wire r_acc0_carry__2_i_1_n_0;
   wire r_acc0_carry__2_i_2_n_0;
   wire r_acc0_carry__2_i_3_n_0;
-  wire r_acc0_carry__2_i_4_n_0;
-  wire r_acc0_carry__2_i_5_n_0;
-  wire r_acc0_carry__2_i_6_n_0;
-  wire r_acc0_carry__2_i_7_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1_n_0;
-  wire r_acc0_carry__3_i_2_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1_n_0;
   wire r_acc0_carry_i_2_n_0;
   wire r_acc0_carry_i_3_n_0;
@@ -248,302 +219,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [0]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [10]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [11]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [12]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [13]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [1]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [2]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [3]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [4]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [5]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [6]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [7]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA0/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA0/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg[0] [8]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a1_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [0]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [13]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [1]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [2]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [3]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [4]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [5]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [6]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [7]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [8]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg[15] [9]),
+        .Q(\p_moving_average_reg[0] [9]),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -565,68 +354,68 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_a1_in[6]),
-        .I2(\p_moving_average_reg[15] [6]),
+        .I2(\p_moving_average_reg[0] [6]),
         .O(r_acc0_carry__0_i_1_n_0));
   (* HLUTNM = "lutpair4" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_a1_in[5]),
-        .I2(\p_moving_average_reg[15] [5]),
+        .I2(\p_moving_average_reg[0] [5]),
         .O(r_acc0_carry__0_i_2_n_0));
   (* HLUTNM = "lutpair3" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_a1_in[4]),
-        .I2(\p_moving_average_reg[15] [4]),
+        .I2(\p_moving_average_reg[0] [4]),
         .O(r_acc0_carry__0_i_3_n_0));
   (* HLUTNM = "lutpair2" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4
-       (.I0(r_acc[3]),
+       (.I0(Q[3]),
         .I1(data_a1_in[3]),
-        .I2(\p_moving_average_reg[15] [3]),
+        .I2(\p_moving_average_reg[0] [3]),
         .O(r_acc0_carry__0_i_4_n_0));
   (* HLUTNM = "lutpair6" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_a1_in[7]),
-        .I2(\p_moving_average_reg[15] [7]),
+        .I2(\p_moving_average_reg[0] [7]),
         .I3(r_acc0_carry__0_i_1_n_0),
         .O(r_acc0_carry__0_i_5_n_0));
   (* HLUTNM = "lutpair5" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_a1_in[6]),
-        .I2(\p_moving_average_reg[15] [6]),
+        .I2(\p_moving_average_reg[0] [6]),
         .I3(r_acc0_carry__0_i_2_n_0),
         .O(r_acc0_carry__0_i_6_n_0));
   (* HLUTNM = "lutpair4" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_a1_in[5]),
-        .I2(\p_moving_average_reg[15] [5]),
+        .I2(\p_moving_average_reg[0] [5]),
         .I3(r_acc0_carry__0_i_3_n_0),
         .O(r_acc0_carry__0_i_7_n_0));
   (* HLUTNM = "lutpair3" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_a1_in[4]),
-        .I2(\p_moving_average_reg[15] [4]),
+        .I2(\p_moving_average_reg[0] [4]),
         .I3(r_acc0_carry__0_i_4_n_0),
         .O(r_acc0_carry__0_i_8_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -641,215 +430,167 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_a1_in[10]),
-        .I2(\p_moving_average_reg[15] [10]),
+        .I2(\p_moving_average_reg[0] [10]),
         .O(r_acc0_carry__1_i_1_n_0));
   (* HLUTNM = "lutpair8" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_a1_in[9]),
-        .I2(\p_moving_average_reg[15] [9]),
+        .I2(\p_moving_average_reg[0] [9]),
         .O(r_acc0_carry__1_i_2_n_0));
   (* HLUTNM = "lutpair7" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_a1_in[8]),
-        .I2(\p_moving_average_reg[15] [8]),
+        .I2(\p_moving_average_reg[0] [8]),
         .O(r_acc0_carry__1_i_3_n_0));
   (* HLUTNM = "lutpair6" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_a1_in[7]),
-        .I2(\p_moving_average_reg[15] [7]),
+        .I2(\p_moving_average_reg[0] [7]),
         .O(r_acc0_carry__1_i_4_n_0));
   (* HLUTNM = "lutpair10" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_a1_in[11]),
-        .I2(\p_moving_average_reg[15] [11]),
+        .I2(\p_moving_average_reg[0] [11]),
         .I3(r_acc0_carry__1_i_1_n_0),
         .O(r_acc0_carry__1_i_5_n_0));
   (* HLUTNM = "lutpair9" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_a1_in[10]),
-        .I2(\p_moving_average_reg[15] [10]),
+        .I2(\p_moving_average_reg[0] [10]),
         .I3(r_acc0_carry__1_i_2_n_0),
         .O(r_acc0_carry__1_i_6_n_0));
   (* HLUTNM = "lutpair8" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_a1_in[9]),
-        .I2(\p_moving_average_reg[15] [9]),
+        .I2(\p_moving_average_reg[0] [9]),
         .I3(r_acc0_carry__1_i_3_n_0),
         .O(r_acc0_carry__1_i_7_n_0));
   (* HLUTNM = "lutpair7" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_a1_in[8]),
-        .I2(\p_moving_average_reg[15] [8]),
+        .I2(\p_moving_average_reg[0] [8]),
         .I3(r_acc0_carry__1_i_4_n_0),
         .O(r_acc0_carry__1_i_8_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1_n_0,r_acc0_carry__2_i_2_n_0,r_acc0_carry__2_i_3_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4_n_0,r_acc0_carry__2_i_5_n_0,r_acc0_carry__2_i_6_n_0,r_acc0_carry__2_i_7_n_0}));
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_1
-       (.I0(Q[9]),
-        .I1(data_a1_in[13]),
-        .I2(\p_moving_average_reg[15] [13]),
-        .O(r_acc0_carry__2_i_1_n_0));
-  (* HLUTNM = "lutpair11" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2
-       (.I0(Q[8]),
-        .I1(data_a1_in[12]),
-        .I2(\p_moving_average_reg[15] [12]),
-        .O(r_acc0_carry__2_i_2_n_0));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2_n_0,r_acc0_carry__2_i_3_n_0}));
   (* HLUTNM = "lutpair10" *) 
   LUT3 #(
     .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3
-       (.I0(Q[7]),
-        .I1(data_a1_in[11]),
-        .I2(\p_moving_average_reg[15] [11]),
-        .O(r_acc0_carry__2_i_3_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5
-       (.I0(\p_moving_average_reg[15] [13]),
-        .I1(data_a1_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6
-       (.I0(r_acc0_carry__2_i_2_n_0),
-        .I1(data_a1_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg[15] [13]),
-        .O(r_acc0_carry__2_i_6_n_0));
-  (* HLUTNM = "lutpair11" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7
-       (.I0(Q[8]),
-        .I1(data_a1_in[12]),
-        .I2(\p_moving_average_reg[15] [12]),
-        .I3(r_acc0_carry__2_i_3_n_0),
-        .O(r_acc0_carry__2_i_7_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1_n_0,r_acc0_carry__3_i_2_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2
+    r_acc0_carry__2_i_1
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2_n_0));
+        .I1(data_a1_in[11]),
+        .I2(\p_moving_average_reg[0] [11]),
+        .O(r_acc0_carry__2_i_1_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2
+       (.I0(\p_moving_average_reg[0] [12]),
+        .I1(data_a1_in[12]),
+        .I2(Q[12]),
+        .I3(data_a1_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg[0] [13]),
+        .O(r_acc0_carry__2_i_2_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3
+       (.I0(r_acc0_carry__2_i_1_n_0),
+        .I1(data_a1_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg[0] [12]),
+        .O(r_acc0_carry__2_i_3_n_0));
   (* HLUTNM = "lutpair1" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1
-       (.I0(r_acc[2]),
+       (.I0(Q[2]),
         .I1(data_a1_in[2]),
-        .I2(\p_moving_average_reg[15] [2]),
+        .I2(\p_moving_average_reg[0] [2]),
         .O(r_acc0_carry_i_1_n_0));
   (* HLUTNM = "lutpair0" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2
-       (.I0(r_acc[1]),
+       (.I0(Q[1]),
         .I1(data_a1_in[1]),
-        .I2(\p_moving_average_reg[15] [1]),
+        .I2(\p_moving_average_reg[0] [1]),
         .O(r_acc0_carry_i_2_n_0));
-  (* HLUTNM = "lutpair192" *) 
+  (* HLUTNM = "lutpair176" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3
        (.I0(data_a1_in[0]),
-        .I1(r_acc[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4
-       (.I0(r_acc[0]),
+       (.I0(Q[0]),
         .I1(data_a1_in[0]),
         .O(r_acc0_carry_i_4_n_0));
   (* HLUTNM = "lutpair2" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5
-       (.I0(r_acc[3]),
+       (.I0(Q[3]),
         .I1(data_a1_in[3]),
-        .I2(\p_moving_average_reg[15] [3]),
+        .I2(\p_moving_average_reg[0] [3]),
         .I3(r_acc0_carry_i_1_n_0),
         .O(r_acc0_carry_i_5_n_0));
   (* HLUTNM = "lutpair1" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6
-       (.I0(r_acc[2]),
+       (.I0(Q[2]),
         .I1(data_a1_in[2]),
-        .I2(\p_moving_average_reg[15] [2]),
+        .I2(\p_moving_average_reg[0] [2]),
         .I3(r_acc0_carry_i_2_n_0),
         .O(r_acc0_carry_i_6_n_0));
   (* HLUTNM = "lutpair0" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7
-       (.I0(r_acc[1]),
+       (.I0(Q[1]),
         .I1(data_a1_in[1]),
-        .I2(\p_moving_average_reg[15] [1]),
+        .I2(\p_moving_average_reg[0] [1]),
         .I3(r_acc0_carry_i_3_n_0),
         .O(r_acc0_carry_i_7_n_0));
-  (* HLUTNM = "lutpair192" *) 
+  (* HLUTNM = "lutpair176" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8
        (.I0(data_a1_in[0]),
-        .I1(r_acc[0]),
-        .I2(\p_moving_average_reg[15] [0]),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg[0] [0]),
         .O(r_acc0_carry_i_8_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -857,7 +598,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -865,7 +606,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -873,7 +614,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -881,7 +622,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -889,38 +630,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -929,7 +638,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -937,7 +646,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -945,7 +654,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -953,7 +662,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -961,7 +670,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -969,7 +678,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -977,7 +686,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -985,7 +694,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -993,7 +702,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -1009,34 +718,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_a2_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__0_n_0;
   wire r_acc0_carry__0_i_2__0_n_0;
   wire r_acc0_carry__0_i_3__0_n_0;
@@ -1072,23 +767,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
   wire r_acc0_carry__2_i_1__0_n_0;
   wire r_acc0_carry__2_i_2__0_n_0;
   wire r_acc0_carry__2_i_3__0_n_0;
-  wire r_acc0_carry__2_i_4__0_n_0;
-  wire r_acc0_carry__2_i_5__0_n_0;
-  wire r_acc0_carry__2_i_6__0_n_0;
-  wire r_acc0_carry__2_i_7__0_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__0_n_0;
-  wire r_acc0_carry__3_i_2__0_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__0_n_0;
   wire r_acc0_carry_i_2__0_n_0;
   wire r_acc0_carry_i_3__0_n_0;
@@ -1105,303 +786,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__0;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA1/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA1/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_a2_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -1419,72 +917,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
         .DI({r_acc0_carry__0_i_1__0_n_0,r_acc0_carry__0_i_2__0_n_0,r_acc0_carry__0_i_3__0_n_0,r_acc0_carry__0_i_4__0_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__0_n_0,r_acc0_carry__0_i_6__0_n_0,r_acc0_carry__0_i_7__0_n_0,r_acc0_carry__0_i_8__0_n_0}));
-  (* HLUTNM = "lutpair17" *) 
+  (* HLUTNM = "lutpair16" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__0
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_a2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__0_n_0));
-  (* HLUTNM = "lutpair16" *) 
+  (* HLUTNM = "lutpair15" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__0
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_a2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__0_n_0));
-  (* HLUTNM = "lutpair15" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__0_i_3__0
-       (.I0(Q[0]),
-        .I1(data_a2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
-        .O(r_acc0_carry__0_i_3__0_n_0));
   (* HLUTNM = "lutpair14" *) 
   LUT3 #(
     .INIT(8'h8E)) 
+    r_acc0_carry__0_i_3__0
+       (.I0(Q[4]),
+        .I1(data_a2_in[4]),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
+        .O(r_acc0_carry__0_i_3__0_n_0));
+  (* HLUTNM = "lutpair13" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__0
-       (.I0(r_acc__0[3]),
-        .I1(data_a2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
-        .O(r_acc0_carry__0_i_4__0_n_0));
-  (* HLUTNM = "lutpair18" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__0_i_5__0
        (.I0(Q[3]),
-        .I1(data_a2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
-        .I3(r_acc0_carry__0_i_1__0_n_0),
-        .O(r_acc0_carry__0_i_5__0_n_0));
+        .I1(data_a2_in[3]),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
+        .O(r_acc0_carry__0_i_4__0_n_0));
   (* HLUTNM = "lutpair17" *) 
   LUT4 #(
     .INIT(16'h9669)) 
-    r_acc0_carry__0_i_6__0
-       (.I0(Q[2]),
-        .I1(data_a2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
-        .I3(r_acc0_carry__0_i_2__0_n_0),
-        .O(r_acc0_carry__0_i_6__0_n_0));
+    r_acc0_carry__0_i_5__0
+       (.I0(Q[7]),
+        .I1(data_a2_in[7]),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
+        .I3(r_acc0_carry__0_i_1__0_n_0),
+        .O(r_acc0_carry__0_i_5__0_n_0));
   (* HLUTNM = "lutpair16" *) 
   LUT4 #(
     .INIT(16'h9669)) 
-    r_acc0_carry__0_i_7__0
-       (.I0(Q[1]),
-        .I1(data_a2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
-        .I3(r_acc0_carry__0_i_3__0_n_0),
-        .O(r_acc0_carry__0_i_7__0_n_0));
+    r_acc0_carry__0_i_6__0
+       (.I0(Q[6]),
+        .I1(data_a2_in[6]),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
+        .I3(r_acc0_carry__0_i_2__0_n_0),
+        .O(r_acc0_carry__0_i_6__0_n_0));
   (* HLUTNM = "lutpair15" *) 
   LUT4 #(
     .INIT(16'h9669)) 
+    r_acc0_carry__0_i_7__0
+       (.I0(Q[5]),
+        .I1(data_a2_in[5]),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
+        .I3(r_acc0_carry__0_i_3__0_n_0),
+        .O(r_acc0_carry__0_i_7__0_n_0));
+  (* HLUTNM = "lutpair14" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__0
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_a2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__0_n_0),
         .O(r_acc0_carry__0_i_8__0_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -1495,219 +993,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
         .DI({r_acc0_carry__1_i_1__0_n_0,r_acc0_carry__1_i_2__0_n_0,r_acc0_carry__1_i_3__0_n_0,r_acc0_carry__1_i_4__0_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__0_n_0,r_acc0_carry__1_i_6__0_n_0,r_acc0_carry__1_i_7__0_n_0,r_acc0_carry__1_i_8__0_n_0}));
-  (* HLUTNM = "lutpair21" *) 
+  (* HLUTNM = "lutpair20" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__0
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_a2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__0_n_0));
-  (* HLUTNM = "lutpair20" *) 
+  (* HLUTNM = "lutpair19" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__0
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_a2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__0_n_0));
-  (* HLUTNM = "lutpair19" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__1_i_3__0
-       (.I0(Q[4]),
-        .I1(data_a2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
-        .O(r_acc0_carry__1_i_3__0_n_0));
   (* HLUTNM = "lutpair18" *) 
   LUT3 #(
     .INIT(8'h8E)) 
+    r_acc0_carry__1_i_3__0
+       (.I0(Q[8]),
+        .I1(data_a2_in[8]),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
+        .O(r_acc0_carry__1_i_3__0_n_0));
+  (* HLUTNM = "lutpair17" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__0
-       (.I0(Q[3]),
-        .I1(data_a2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
-        .O(r_acc0_carry__1_i_4__0_n_0));
-  (* HLUTNM = "lutpair22" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__1_i_5__0
        (.I0(Q[7]),
-        .I1(data_a2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .I3(r_acc0_carry__1_i_1__0_n_0),
-        .O(r_acc0_carry__1_i_5__0_n_0));
+        .I1(data_a2_in[7]),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
+        .O(r_acc0_carry__1_i_4__0_n_0));
   (* HLUTNM = "lutpair21" *) 
   LUT4 #(
     .INIT(16'h9669)) 
-    r_acc0_carry__1_i_6__0
-       (.I0(Q[6]),
-        .I1(data_a2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
-        .I3(r_acc0_carry__1_i_2__0_n_0),
-        .O(r_acc0_carry__1_i_6__0_n_0));
+    r_acc0_carry__1_i_5__0
+       (.I0(Q[11]),
+        .I1(data_a2_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .I3(r_acc0_carry__1_i_1__0_n_0),
+        .O(r_acc0_carry__1_i_5__0_n_0));
   (* HLUTNM = "lutpair20" *) 
   LUT4 #(
     .INIT(16'h9669)) 
-    r_acc0_carry__1_i_7__0
-       (.I0(Q[5]),
-        .I1(data_a2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
-        .I3(r_acc0_carry__1_i_3__0_n_0),
-        .O(r_acc0_carry__1_i_7__0_n_0));
+    r_acc0_carry__1_i_6__0
+       (.I0(Q[10]),
+        .I1(data_a2_in[10]),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
+        .I3(r_acc0_carry__1_i_2__0_n_0),
+        .O(r_acc0_carry__1_i_6__0_n_0));
   (* HLUTNM = "lutpair19" *) 
   LUT4 #(
     .INIT(16'h9669)) 
+    r_acc0_carry__1_i_7__0
+       (.I0(Q[9]),
+        .I1(data_a2_in[9]),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
+        .I3(r_acc0_carry__1_i_3__0_n_0),
+        .O(r_acc0_carry__1_i_7__0_n_0));
+  (* HLUTNM = "lutpair18" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__0
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_a2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__0_n_0),
         .O(r_acc0_carry__1_i_8__0_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__0_n_0,r_acc0_carry__2_i_2__0_n_0,r_acc0_carry__2_i_3__0_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__0_n_0,r_acc0_carry__2_i_5__0_n_0,r_acc0_carry__2_i_6__0_n_0,r_acc0_carry__2_i_7__0_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__0_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__0_n_0,r_acc0_carry__2_i_3__0_n_0}));
+  (* HLUTNM = "lutpair21" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__0
-       (.I0(Q[9]),
-        .I1(data_a2_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__0_n_0));
-  (* HLUTNM = "lutpair23" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__0
-       (.I0(Q[8]),
-        .I1(data_a2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__0_n_0));
-  (* HLUTNM = "lutpair22" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__0
-       (.I0(Q[7]),
-        .I1(data_a2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__0_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__0
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__0_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__0
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_a2_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__0_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__0
-       (.I0(r_acc0_carry__2_i_2__0_n_0),
-        .I1(data_a2_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__0_n_0));
-  (* HLUTNM = "lutpair23" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__0
-       (.I0(Q[8]),
-        .I1(data_a2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__0_n_0),
-        .O(r_acc0_carry__2_i_7__0_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__0_n_0,r_acc0_carry__3_i_2__0_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__0
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__0_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__0
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__0_n_0));
-  (* HLUTNM = "lutpair13" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry_i_1__0
-       (.I0(r_acc__0[2]),
-        .I1(data_a2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
-        .O(r_acc0_carry_i_1__0_n_0));
+        .I1(data_a2_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__0_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__0
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_a2_in[12]),
+        .I2(Q[12]),
+        .I3(data_a2_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__0_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__0
+       (.I0(r_acc0_carry__2_i_1__0_n_0),
+        .I1(data_a2_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__0_n_0));
   (* HLUTNM = "lutpair12" *) 
   LUT3 #(
     .INIT(8'h8E)) 
+    r_acc0_carry_i_1__0
+       (.I0(Q[2]),
+        .I1(data_a2_in[2]),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
+        .O(r_acc0_carry_i_1__0_n_0));
+  (* HLUTNM = "lutpair11" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
     r_acc0_carry_i_2__0
-       (.I0(r_acc__0[1]),
+       (.I0(Q[1]),
         .I1(data_a2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__0_n_0));
-  (* HLUTNM = "lutpair193" *) 
+  (* HLUTNM = "lutpair177" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__0
        (.I0(data_a2_in[0]),
-        .I1(r_acc__0[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__0_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__0
-       (.I0(r_acc__0[0]),
+       (.I0(Q[0]),
         .I1(data_a2_in[0]),
         .O(r_acc0_carry_i_4__0_n_0));
-  (* HLUTNM = "lutpair14" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry_i_5__0
-       (.I0(r_acc__0[3]),
-        .I1(data_a2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
-        .I3(r_acc0_carry_i_1__0_n_0),
-        .O(r_acc0_carry_i_5__0_n_0));
   (* HLUTNM = "lutpair13" *) 
   LUT4 #(
     .INIT(16'h9669)) 
-    r_acc0_carry_i_6__0
-       (.I0(r_acc__0[2]),
-        .I1(data_a2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
-        .I3(r_acc0_carry_i_2__0_n_0),
-        .O(r_acc0_carry_i_6__0_n_0));
+    r_acc0_carry_i_5__0
+       (.I0(Q[3]),
+        .I1(data_a2_in[3]),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
+        .I3(r_acc0_carry_i_1__0_n_0),
+        .O(r_acc0_carry_i_5__0_n_0));
   (* HLUTNM = "lutpair12" *) 
   LUT4 #(
     .INIT(16'h9669)) 
+    r_acc0_carry_i_6__0
+       (.I0(Q[2]),
+        .I1(data_a2_in[2]),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
+        .I3(r_acc0_carry_i_2__0_n_0),
+        .O(r_acc0_carry_i_6__0_n_0));
+  (* HLUTNM = "lutpair11" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
     r_acc0_carry_i_7__0
-       (.I0(r_acc__0[1]),
+       (.I0(Q[1]),
         .I1(data_a2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__0_n_0),
         .O(r_acc0_carry_i_7__0_n_0));
-  (* HLUTNM = "lutpair193" *) 
+  (* HLUTNM = "lutpair177" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__0
        (.I0(data_a2_in[0]),
-        .I1(r_acc__0[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__0_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1715,7 +1165,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__0[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1723,7 +1173,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1731,7 +1181,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1739,7 +1189,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1747,38 +1197,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -1787,7 +1205,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__0[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1795,7 +1213,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__0[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1803,7 +1221,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__0[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1811,7 +1229,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1819,7 +1237,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1827,7 +1245,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1835,7 +1253,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1843,7 +1261,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -1851,7 +1269,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -1867,34 +1285,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_f1_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__9_n_0;
   wire r_acc0_carry__0_i_2__9_n_0;
   wire r_acc0_carry__0_i_3__9_n_0;
@@ -1930,23 +1334,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
   wire r_acc0_carry__2_i_1__9_n_0;
   wire r_acc0_carry__2_i_2__9_n_0;
   wire r_acc0_carry__2_i_3__9_n_0;
-  wire r_acc0_carry__2_i_4__9_n_0;
-  wire r_acc0_carry__2_i_5__9_n_0;
-  wire r_acc0_carry__2_i_6__9_n_0;
-  wire r_acc0_carry__2_i_7__9_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__9_n_0;
-  wire r_acc0_carry__3_i_2__9_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__9_n_0;
   wire r_acc0_carry_i_2__9_n_0;
   wire r_acc0_carry_i_3__9_n_0;
@@ -1963,303 +1353,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__9;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA10/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA10/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f1_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -2277,72 +1484,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
         .DI({r_acc0_carry__0_i_1__9_n_0,r_acc0_carry__0_i_2__9_n_0,r_acc0_carry__0_i_3__9_n_0,r_acc0_carry__0_i_4__9_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__9_n_0,r_acc0_carry__0_i_6__9_n_0,r_acc0_carry__0_i_7__9_n_0,r_acc0_carry__0_i_8__9_n_0}));
-  (* HLUTNM = "lutpair125" *) 
+  (* HLUTNM = "lutpair115" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__9
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_f1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__9_n_0));
-  (* HLUTNM = "lutpair124" *) 
+  (* HLUTNM = "lutpair114" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__9
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_f1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__9_n_0));
-  (* HLUTNM = "lutpair123" *) 
+  (* HLUTNM = "lutpair113" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__9
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_f1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__9_n_0));
-  (* HLUTNM = "lutpair122" *) 
+  (* HLUTNM = "lutpair112" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__9
-       (.I0(r_acc__9[3]),
+       (.I0(Q[3]),
         .I1(data_f1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__9_n_0));
-  (* HLUTNM = "lutpair126" *) 
+  (* HLUTNM = "lutpair116" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__9
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_f1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__9_n_0),
         .O(r_acc0_carry__0_i_5__9_n_0));
-  (* HLUTNM = "lutpair125" *) 
+  (* HLUTNM = "lutpair115" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__9
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_f1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__9_n_0),
         .O(r_acc0_carry__0_i_6__9_n_0));
-  (* HLUTNM = "lutpair124" *) 
+  (* HLUTNM = "lutpair114" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__9
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_f1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__9_n_0),
         .O(r_acc0_carry__0_i_7__9_n_0));
-  (* HLUTNM = "lutpair123" *) 
+  (* HLUTNM = "lutpair113" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__9
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_f1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__9_n_0),
         .O(r_acc0_carry__0_i_8__9_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -2353,219 +1560,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
         .DI({r_acc0_carry__1_i_1__9_n_0,r_acc0_carry__1_i_2__9_n_0,r_acc0_carry__1_i_3__9_n_0,r_acc0_carry__1_i_4__9_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__9_n_0,r_acc0_carry__1_i_6__9_n_0,r_acc0_carry__1_i_7__9_n_0,r_acc0_carry__1_i_8__9_n_0}));
-  (* HLUTNM = "lutpair129" *) 
+  (* HLUTNM = "lutpair119" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__9
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_f1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__9_n_0));
-  (* HLUTNM = "lutpair128" *) 
+  (* HLUTNM = "lutpair118" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__9
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_f1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__9_n_0));
-  (* HLUTNM = "lutpair127" *) 
+  (* HLUTNM = "lutpair117" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__9
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_f1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__9_n_0));
-  (* HLUTNM = "lutpair126" *) 
+  (* HLUTNM = "lutpair116" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__9
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_f1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__9_n_0));
-  (* HLUTNM = "lutpair130" *) 
+  (* HLUTNM = "lutpair120" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__9
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_f1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__9_n_0),
         .O(r_acc0_carry__1_i_5__9_n_0));
-  (* HLUTNM = "lutpair129" *) 
+  (* HLUTNM = "lutpair119" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__9
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_f1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__9_n_0),
         .O(r_acc0_carry__1_i_6__9_n_0));
-  (* HLUTNM = "lutpair128" *) 
+  (* HLUTNM = "lutpair118" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__9
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_f1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__9_n_0),
         .O(r_acc0_carry__1_i_7__9_n_0));
-  (* HLUTNM = "lutpair127" *) 
+  (* HLUTNM = "lutpair117" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__9
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_f1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__9_n_0),
         .O(r_acc0_carry__1_i_8__9_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__9_n_0,r_acc0_carry__2_i_2__9_n_0,r_acc0_carry__2_i_3__9_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__9_n_0,r_acc0_carry__2_i_5__9_n_0,r_acc0_carry__2_i_6__9_n_0,r_acc0_carry__2_i_7__9_n_0}));
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_1__9
-       (.I0(Q[9]),
-        .I1(data_f1_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__9_n_0));
-  (* HLUTNM = "lutpair131" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__9
-       (.I0(Q[8]),
-        .I1(data_f1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__9_n_0));
-  (* HLUTNM = "lutpair130" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__9
-       (.I0(Q[7]),
-        .I1(data_f1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__9_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__9
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__9_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__9
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_f1_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__9_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__9
-       (.I0(r_acc0_carry__2_i_2__9_n_0),
-        .I1(data_f1_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__9_n_0));
-  (* HLUTNM = "lutpair131" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__9
-       (.I0(Q[8]),
-        .I1(data_f1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__9_n_0),
-        .O(r_acc0_carry__2_i_7__9_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__9_n_0,r_acc0_carry__3_i_2__9_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__9
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__9_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__9
-       (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__9_n_0));
-  (* HLUTNM = "lutpair121" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry_i_1__9
-       (.I0(r_acc__9[2]),
-        .I1(data_f1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
-        .O(r_acc0_carry_i_1__9_n_0));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__9_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__9_n_0,r_acc0_carry__2_i_3__9_n_0}));
   (* HLUTNM = "lutpair120" *) 
   LUT3 #(
     .INIT(8'h8E)) 
+    r_acc0_carry__2_i_1__9
+       (.I0(Q[11]),
+        .I1(data_f1_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__9_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__9
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_f1_in[12]),
+        .I2(Q[12]),
+        .I3(data_f1_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__9_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__9
+       (.I0(r_acc0_carry__2_i_1__9_n_0),
+        .I1(data_f1_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__9_n_0));
+  (* HLUTNM = "lutpair111" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
+    r_acc0_carry_i_1__9
+       (.I0(Q[2]),
+        .I1(data_f1_in[2]),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
+        .O(r_acc0_carry_i_1__9_n_0));
+  (* HLUTNM = "lutpair110" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
     r_acc0_carry_i_2__9
-       (.I0(r_acc__9[1]),
+       (.I0(Q[1]),
         .I1(data_f1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__9_n_0));
-  (* HLUTNM = "lutpair202" *) 
+  (* HLUTNM = "lutpair186" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__9
        (.I0(data_f1_in[0]),
-        .I1(r_acc__9[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__9_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__9
-       (.I0(r_acc__9[0]),
+       (.I0(Q[0]),
         .I1(data_f1_in[0]),
         .O(r_acc0_carry_i_4__9_n_0));
-  (* HLUTNM = "lutpair122" *) 
+  (* HLUTNM = "lutpair112" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__9
-       (.I0(r_acc__9[3]),
+       (.I0(Q[3]),
         .I1(data_f1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__9_n_0),
         .O(r_acc0_carry_i_5__9_n_0));
-  (* HLUTNM = "lutpair121" *) 
+  (* HLUTNM = "lutpair111" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__9
-       (.I0(r_acc__9[2]),
+       (.I0(Q[2]),
         .I1(data_f1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__9_n_0),
         .O(r_acc0_carry_i_6__9_n_0));
-  (* HLUTNM = "lutpair120" *) 
+  (* HLUTNM = "lutpair110" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__9
-       (.I0(r_acc__9[1]),
+       (.I0(Q[1]),
         .I1(data_f1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__9_n_0),
         .O(r_acc0_carry_i_7__9_n_0));
-  (* HLUTNM = "lutpair202" *) 
+  (* HLUTNM = "lutpair186" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__9
        (.I0(data_f1_in[0]),
-        .I1(r_acc__9[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__9_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2573,7 +1732,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__9[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2581,7 +1740,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2589,7 +1748,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2597,7 +1756,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2605,38 +1764,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -2645,7 +1772,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__9[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2653,7 +1780,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__9[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2661,7 +1788,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__9[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2669,7 +1796,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2677,7 +1804,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2685,7 +1812,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2693,7 +1820,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2701,7 +1828,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2709,7 +1836,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -2725,34 +1852,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_c2_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__4_n_0;
   wire r_acc0_carry__0_i_2__4_n_0;
   wire r_acc0_carry__0_i_3__4_n_0;
@@ -2788,23 +1901,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
   wire r_acc0_carry__2_i_1__4_n_0;
   wire r_acc0_carry__2_i_2__4_n_0;
   wire r_acc0_carry__2_i_3__4_n_0;
-  wire r_acc0_carry__2_i_4__4_n_0;
-  wire r_acc0_carry__2_i_5__4_n_0;
-  wire r_acc0_carry__2_i_6__4_n_0;
-  wire r_acc0_carry__2_i_7__4_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__4_n_0;
-  wire r_acc0_carry__3_i_2__4_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__4_n_0;
   wire r_acc0_carry_i_2__4_n_0;
   wire r_acc0_carry_i_3__4_n_0;
@@ -2821,303 +1920,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__4;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA5/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA5/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c2_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -3135,72 +2051,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
         .DI({r_acc0_carry__0_i_1__4_n_0,r_acc0_carry__0_i_2__4_n_0,r_acc0_carry__0_i_3__4_n_0,r_acc0_carry__0_i_4__4_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__4_n_0,r_acc0_carry__0_i_6__4_n_0,r_acc0_carry__0_i_7__4_n_0,r_acc0_carry__0_i_8__4_n_0}));
-  (* HLUTNM = "lutpair65" *) 
+  (* HLUTNM = "lutpair60" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__4
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_c2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__4_n_0));
-  (* HLUTNM = "lutpair64" *) 
+  (* HLUTNM = "lutpair59" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__4
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_c2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__4_n_0));
-  (* HLUTNM = "lutpair63" *) 
+  (* HLUTNM = "lutpair58" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__4
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_c2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__4_n_0));
-  (* HLUTNM = "lutpair62" *) 
+  (* HLUTNM = "lutpair57" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__4
-       (.I0(r_acc__4[3]),
+       (.I0(Q[3]),
         .I1(data_c2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__4_n_0));
-  (* HLUTNM = "lutpair66" *) 
+  (* HLUTNM = "lutpair61" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__4
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_c2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__4_n_0),
         .O(r_acc0_carry__0_i_5__4_n_0));
-  (* HLUTNM = "lutpair65" *) 
+  (* HLUTNM = "lutpair60" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__4
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_c2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__4_n_0),
         .O(r_acc0_carry__0_i_6__4_n_0));
-  (* HLUTNM = "lutpair64" *) 
+  (* HLUTNM = "lutpair59" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__4
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_c2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__4_n_0),
         .O(r_acc0_carry__0_i_7__4_n_0));
-  (* HLUTNM = "lutpair63" *) 
+  (* HLUTNM = "lutpair58" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__4
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_c2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__4_n_0),
         .O(r_acc0_carry__0_i_8__4_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -3211,219 +2127,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
         .DI({r_acc0_carry__1_i_1__4_n_0,r_acc0_carry__1_i_2__4_n_0,r_acc0_carry__1_i_3__4_n_0,r_acc0_carry__1_i_4__4_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__4_n_0,r_acc0_carry__1_i_6__4_n_0,r_acc0_carry__1_i_7__4_n_0,r_acc0_carry__1_i_8__4_n_0}));
-  (* HLUTNM = "lutpair69" *) 
+  (* HLUTNM = "lutpair64" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__4
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_c2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__4_n_0));
-  (* HLUTNM = "lutpair68" *) 
+  (* HLUTNM = "lutpair63" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__4
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_c2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__4_n_0));
-  (* HLUTNM = "lutpair67" *) 
+  (* HLUTNM = "lutpair62" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__4
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_c2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__4_n_0));
-  (* HLUTNM = "lutpair66" *) 
+  (* HLUTNM = "lutpair61" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__4
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_c2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__4_n_0));
-  (* HLUTNM = "lutpair70" *) 
+  (* HLUTNM = "lutpair65" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__4
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_c2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__4_n_0),
         .O(r_acc0_carry__1_i_5__4_n_0));
-  (* HLUTNM = "lutpair69" *) 
+  (* HLUTNM = "lutpair64" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__4
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_c2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__4_n_0),
         .O(r_acc0_carry__1_i_6__4_n_0));
-  (* HLUTNM = "lutpair68" *) 
+  (* HLUTNM = "lutpair63" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__4
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_c2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__4_n_0),
         .O(r_acc0_carry__1_i_7__4_n_0));
-  (* HLUTNM = "lutpair67" *) 
+  (* HLUTNM = "lutpair62" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__4
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_c2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__4_n_0),
         .O(r_acc0_carry__1_i_8__4_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__4_n_0,r_acc0_carry__2_i_2__4_n_0,r_acc0_carry__2_i_3__4_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__4_n_0,r_acc0_carry__2_i_5__4_n_0,r_acc0_carry__2_i_6__4_n_0,r_acc0_carry__2_i_7__4_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__4_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__4_n_0,r_acc0_carry__2_i_3__4_n_0}));
+  (* HLUTNM = "lutpair65" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__4
-       (.I0(Q[9]),
-        .I1(data_c2_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__4_n_0));
-  (* HLUTNM = "lutpair71" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__4
-       (.I0(Q[8]),
-        .I1(data_c2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__4_n_0));
-  (* HLUTNM = "lutpair70" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__4
-       (.I0(Q[7]),
-        .I1(data_c2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__4_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__4
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__4_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__4
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_c2_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__4_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__4
-       (.I0(r_acc0_carry__2_i_2__4_n_0),
-        .I1(data_c2_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__4_n_0));
-  (* HLUTNM = "lutpair71" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__4
-       (.I0(Q[8]),
-        .I1(data_c2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__4_n_0),
-        .O(r_acc0_carry__2_i_7__4_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__4_n_0,r_acc0_carry__3_i_2__4_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__4
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__4_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__4
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__4_n_0));
-  (* HLUTNM = "lutpair61" *) 
+        .I1(data_c2_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__4_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__4
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_c2_in[12]),
+        .I2(Q[12]),
+        .I3(data_c2_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__4_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__4
+       (.I0(r_acc0_carry__2_i_1__4_n_0),
+        .I1(data_c2_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__4_n_0));
+  (* HLUTNM = "lutpair56" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__4
-       (.I0(r_acc__4[2]),
+       (.I0(Q[2]),
         .I1(data_c2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__4_n_0));
-  (* HLUTNM = "lutpair60" *) 
+  (* HLUTNM = "lutpair55" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__4
-       (.I0(r_acc__4[1]),
+       (.I0(Q[1]),
         .I1(data_c2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__4_n_0));
-  (* HLUTNM = "lutpair197" *) 
+  (* HLUTNM = "lutpair181" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__4
        (.I0(data_c2_in[0]),
-        .I1(r_acc__4[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__4_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__4
-       (.I0(r_acc__4[0]),
+       (.I0(Q[0]),
         .I1(data_c2_in[0]),
         .O(r_acc0_carry_i_4__4_n_0));
-  (* HLUTNM = "lutpair62" *) 
+  (* HLUTNM = "lutpair57" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__4
-       (.I0(r_acc__4[3]),
+       (.I0(Q[3]),
         .I1(data_c2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__4_n_0),
         .O(r_acc0_carry_i_5__4_n_0));
-  (* HLUTNM = "lutpair61" *) 
+  (* HLUTNM = "lutpair56" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__4
-       (.I0(r_acc__4[2]),
+       (.I0(Q[2]),
         .I1(data_c2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__4_n_0),
         .O(r_acc0_carry_i_6__4_n_0));
-  (* HLUTNM = "lutpair60" *) 
+  (* HLUTNM = "lutpair55" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__4
-       (.I0(r_acc__4[1]),
+       (.I0(Q[1]),
         .I1(data_c2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__4_n_0),
         .O(r_acc0_carry_i_7__4_n_0));
-  (* HLUTNM = "lutpair197" *) 
+  (* HLUTNM = "lutpair181" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__4
        (.I0(data_c2_in[0]),
-        .I1(r_acc__4[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__4_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3431,7 +2299,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__4[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3439,7 +2307,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3447,7 +2315,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3455,7 +2323,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3463,38 +2331,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -3503,7 +2339,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__4[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3511,7 +2347,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__4[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3519,7 +2355,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__4[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3527,7 +2363,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3535,7 +2371,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3543,7 +2379,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3551,7 +2387,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3559,7 +2395,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3567,7 +2403,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -3583,34 +2419,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_d1_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__5_n_0;
   wire r_acc0_carry__0_i_2__5_n_0;
   wire r_acc0_carry__0_i_3__5_n_0;
@@ -3646,23 +2468,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
   wire r_acc0_carry__2_i_1__5_n_0;
   wire r_acc0_carry__2_i_2__5_n_0;
   wire r_acc0_carry__2_i_3__5_n_0;
-  wire r_acc0_carry__2_i_4__5_n_0;
-  wire r_acc0_carry__2_i_5__5_n_0;
-  wire r_acc0_carry__2_i_6__5_n_0;
-  wire r_acc0_carry__2_i_7__5_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__5_n_0;
-  wire r_acc0_carry__3_i_2__5_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__5_n_0;
   wire r_acc0_carry_i_2__5_n_0;
   wire r_acc0_carry_i_3__5_n_0;
@@ -3679,303 +2487,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__5;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA6/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA6/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d1_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -3993,72 +2618,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
         .DI({r_acc0_carry__0_i_1__5_n_0,r_acc0_carry__0_i_2__5_n_0,r_acc0_carry__0_i_3__5_n_0,r_acc0_carry__0_i_4__5_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__5_n_0,r_acc0_carry__0_i_6__5_n_0,r_acc0_carry__0_i_7__5_n_0,r_acc0_carry__0_i_8__5_n_0}));
-  (* HLUTNM = "lutpair77" *) 
+  (* HLUTNM = "lutpair71" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__5
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_d1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__5_n_0));
-  (* HLUTNM = "lutpair76" *) 
+  (* HLUTNM = "lutpair70" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__5
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_d1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__5_n_0));
-  (* HLUTNM = "lutpair75" *) 
+  (* HLUTNM = "lutpair69" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__5
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_d1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__5_n_0));
-  (* HLUTNM = "lutpair74" *) 
+  (* HLUTNM = "lutpair68" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__5
-       (.I0(r_acc__5[3]),
+       (.I0(Q[3]),
         .I1(data_d1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__5_n_0));
-  (* HLUTNM = "lutpair78" *) 
+  (* HLUTNM = "lutpair72" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__5
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_d1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__5_n_0),
         .O(r_acc0_carry__0_i_5__5_n_0));
-  (* HLUTNM = "lutpair77" *) 
+  (* HLUTNM = "lutpair71" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__5
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_d1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__5_n_0),
         .O(r_acc0_carry__0_i_6__5_n_0));
-  (* HLUTNM = "lutpair76" *) 
+  (* HLUTNM = "lutpair70" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__5
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_d1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__5_n_0),
         .O(r_acc0_carry__0_i_7__5_n_0));
-  (* HLUTNM = "lutpair75" *) 
+  (* HLUTNM = "lutpair69" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__5
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_d1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__5_n_0),
         .O(r_acc0_carry__0_i_8__5_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -4069,219 +2694,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
         .DI({r_acc0_carry__1_i_1__5_n_0,r_acc0_carry__1_i_2__5_n_0,r_acc0_carry__1_i_3__5_n_0,r_acc0_carry__1_i_4__5_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__5_n_0,r_acc0_carry__1_i_6__5_n_0,r_acc0_carry__1_i_7__5_n_0,r_acc0_carry__1_i_8__5_n_0}));
-  (* HLUTNM = "lutpair81" *) 
+  (* HLUTNM = "lutpair75" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__5
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_d1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__5_n_0));
-  (* HLUTNM = "lutpair80" *) 
+  (* HLUTNM = "lutpair74" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__5
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_d1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__5_n_0));
-  (* HLUTNM = "lutpair79" *) 
+  (* HLUTNM = "lutpair73" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__5
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_d1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__5_n_0));
-  (* HLUTNM = "lutpair78" *) 
+  (* HLUTNM = "lutpair72" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__5
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_d1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__5_n_0));
-  (* HLUTNM = "lutpair82" *) 
+  (* HLUTNM = "lutpair76" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__5
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_d1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__5_n_0),
         .O(r_acc0_carry__1_i_5__5_n_0));
-  (* HLUTNM = "lutpair81" *) 
+  (* HLUTNM = "lutpair75" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__5
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_d1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__5_n_0),
         .O(r_acc0_carry__1_i_6__5_n_0));
-  (* HLUTNM = "lutpair80" *) 
+  (* HLUTNM = "lutpair74" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__5
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_d1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__5_n_0),
         .O(r_acc0_carry__1_i_7__5_n_0));
-  (* HLUTNM = "lutpair79" *) 
+  (* HLUTNM = "lutpair73" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__5
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_d1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__5_n_0),
         .O(r_acc0_carry__1_i_8__5_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__5_n_0,r_acc0_carry__2_i_2__5_n_0,r_acc0_carry__2_i_3__5_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__5_n_0,r_acc0_carry__2_i_5__5_n_0,r_acc0_carry__2_i_6__5_n_0,r_acc0_carry__2_i_7__5_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__5_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__5_n_0,r_acc0_carry__2_i_3__5_n_0}));
+  (* HLUTNM = "lutpair76" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__5
-       (.I0(Q[9]),
-        .I1(data_d1_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__5_n_0));
-  (* HLUTNM = "lutpair83" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__5
-       (.I0(Q[8]),
-        .I1(data_d1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__5_n_0));
-  (* HLUTNM = "lutpair82" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__5
-       (.I0(Q[7]),
-        .I1(data_d1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__5_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__5
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__5_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__5
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_d1_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__5_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__5
-       (.I0(r_acc0_carry__2_i_2__5_n_0),
-        .I1(data_d1_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__5_n_0));
-  (* HLUTNM = "lutpair83" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__5
-       (.I0(Q[8]),
-        .I1(data_d1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__5_n_0),
-        .O(r_acc0_carry__2_i_7__5_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__5_n_0,r_acc0_carry__3_i_2__5_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__5
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__5_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__5
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__5_n_0));
-  (* HLUTNM = "lutpair73" *) 
+        .I1(data_d1_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__5_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__5
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_d1_in[12]),
+        .I2(Q[12]),
+        .I3(data_d1_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__5_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__5
+       (.I0(r_acc0_carry__2_i_1__5_n_0),
+        .I1(data_d1_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__5_n_0));
+  (* HLUTNM = "lutpair67" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__5
-       (.I0(r_acc__5[2]),
+       (.I0(Q[2]),
         .I1(data_d1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__5_n_0));
-  (* HLUTNM = "lutpair72" *) 
+  (* HLUTNM = "lutpair66" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__5
-       (.I0(r_acc__5[1]),
+       (.I0(Q[1]),
         .I1(data_d1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__5_n_0));
-  (* HLUTNM = "lutpair198" *) 
+  (* HLUTNM = "lutpair182" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__5
        (.I0(data_d1_in[0]),
-        .I1(r_acc__5[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__5_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__5
-       (.I0(r_acc__5[0]),
+       (.I0(Q[0]),
         .I1(data_d1_in[0]),
         .O(r_acc0_carry_i_4__5_n_0));
-  (* HLUTNM = "lutpair74" *) 
+  (* HLUTNM = "lutpair68" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__5
-       (.I0(r_acc__5[3]),
+       (.I0(Q[3]),
         .I1(data_d1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__5_n_0),
         .O(r_acc0_carry_i_5__5_n_0));
-  (* HLUTNM = "lutpair73" *) 
+  (* HLUTNM = "lutpair67" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__5
-       (.I0(r_acc__5[2]),
+       (.I0(Q[2]),
         .I1(data_d1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__5_n_0),
         .O(r_acc0_carry_i_6__5_n_0));
-  (* HLUTNM = "lutpair72" *) 
+  (* HLUTNM = "lutpair66" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__5
-       (.I0(r_acc__5[1]),
+       (.I0(Q[1]),
         .I1(data_d1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__5_n_0),
         .O(r_acc0_carry_i_7__5_n_0));
-  (* HLUTNM = "lutpair198" *) 
+  (* HLUTNM = "lutpair182" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__5
        (.I0(data_d1_in[0]),
-        .I1(r_acc__5[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__5_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4289,7 +2866,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__5[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4297,7 +2874,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4305,7 +2882,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4313,7 +2890,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4321,38 +2898,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -4361,7 +2906,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__5[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4369,7 +2914,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__5[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4377,7 +2922,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__5[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4385,7 +2930,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4393,7 +2938,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4401,7 +2946,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4409,7 +2954,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4417,7 +2962,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -4425,7 +2970,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -4441,34 +2986,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_d2_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__6_n_0;
   wire r_acc0_carry__0_i_2__6_n_0;
   wire r_acc0_carry__0_i_3__6_n_0;
@@ -4504,23 +3035,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
   wire r_acc0_carry__2_i_1__6_n_0;
   wire r_acc0_carry__2_i_2__6_n_0;
   wire r_acc0_carry__2_i_3__6_n_0;
-  wire r_acc0_carry__2_i_4__6_n_0;
-  wire r_acc0_carry__2_i_5__6_n_0;
-  wire r_acc0_carry__2_i_6__6_n_0;
-  wire r_acc0_carry__2_i_7__6_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__6_n_0;
-  wire r_acc0_carry__3_i_2__6_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__6_n_0;
   wire r_acc0_carry_i_2__6_n_0;
   wire r_acc0_carry_i_3__6_n_0;
@@ -4537,303 +3054,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__6;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA7/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA7/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_d2_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -4851,72 +3185,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
         .DI({r_acc0_carry__0_i_1__6_n_0,r_acc0_carry__0_i_2__6_n_0,r_acc0_carry__0_i_3__6_n_0,r_acc0_carry__0_i_4__6_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__6_n_0,r_acc0_carry__0_i_6__6_n_0,r_acc0_carry__0_i_7__6_n_0,r_acc0_carry__0_i_8__6_n_0}));
-  (* HLUTNM = "lutpair89" *) 
+  (* HLUTNM = "lutpair82" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__6
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_d2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__6_n_0));
-  (* HLUTNM = "lutpair88" *) 
+  (* HLUTNM = "lutpair81" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__6
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_d2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__6_n_0));
-  (* HLUTNM = "lutpair87" *) 
+  (* HLUTNM = "lutpair80" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__6
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_d2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__6_n_0));
-  (* HLUTNM = "lutpair86" *) 
+  (* HLUTNM = "lutpair79" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__6
-       (.I0(r_acc__6[3]),
+       (.I0(Q[3]),
         .I1(data_d2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__6_n_0));
-  (* HLUTNM = "lutpair90" *) 
+  (* HLUTNM = "lutpair83" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__6
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_d2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__6_n_0),
         .O(r_acc0_carry__0_i_5__6_n_0));
-  (* HLUTNM = "lutpair89" *) 
+  (* HLUTNM = "lutpair82" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__6
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_d2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__6_n_0),
         .O(r_acc0_carry__0_i_6__6_n_0));
-  (* HLUTNM = "lutpair88" *) 
+  (* HLUTNM = "lutpair81" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__6
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_d2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__6_n_0),
         .O(r_acc0_carry__0_i_7__6_n_0));
-  (* HLUTNM = "lutpair87" *) 
+  (* HLUTNM = "lutpair80" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__6
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_d2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__6_n_0),
         .O(r_acc0_carry__0_i_8__6_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -4927,219 +3261,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
         .DI({r_acc0_carry__1_i_1__6_n_0,r_acc0_carry__1_i_2__6_n_0,r_acc0_carry__1_i_3__6_n_0,r_acc0_carry__1_i_4__6_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__6_n_0,r_acc0_carry__1_i_6__6_n_0,r_acc0_carry__1_i_7__6_n_0,r_acc0_carry__1_i_8__6_n_0}));
-  (* HLUTNM = "lutpair93" *) 
+  (* HLUTNM = "lutpair86" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__6
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_d2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__6_n_0));
-  (* HLUTNM = "lutpair92" *) 
+  (* HLUTNM = "lutpair85" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__6
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_d2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__6_n_0));
-  (* HLUTNM = "lutpair91" *) 
+  (* HLUTNM = "lutpair84" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__6
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_d2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__6_n_0));
-  (* HLUTNM = "lutpair90" *) 
+  (* HLUTNM = "lutpair83" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__6
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_d2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__6_n_0));
-  (* HLUTNM = "lutpair94" *) 
+  (* HLUTNM = "lutpair87" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__6
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_d2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__6_n_0),
         .O(r_acc0_carry__1_i_5__6_n_0));
-  (* HLUTNM = "lutpair93" *) 
+  (* HLUTNM = "lutpair86" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__6
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_d2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__6_n_0),
         .O(r_acc0_carry__1_i_6__6_n_0));
-  (* HLUTNM = "lutpair92" *) 
+  (* HLUTNM = "lutpair85" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__6
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_d2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__6_n_0),
         .O(r_acc0_carry__1_i_7__6_n_0));
-  (* HLUTNM = "lutpair91" *) 
+  (* HLUTNM = "lutpair84" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__6
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_d2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__6_n_0),
         .O(r_acc0_carry__1_i_8__6_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__6_n_0,r_acc0_carry__2_i_2__6_n_0,r_acc0_carry__2_i_3__6_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__6_n_0,r_acc0_carry__2_i_5__6_n_0,r_acc0_carry__2_i_6__6_n_0,r_acc0_carry__2_i_7__6_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__6_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__6_n_0,r_acc0_carry__2_i_3__6_n_0}));
+  (* HLUTNM = "lutpair87" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__6
-       (.I0(Q[9]),
-        .I1(data_d2_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__6_n_0));
-  (* HLUTNM = "lutpair95" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__6
-       (.I0(Q[8]),
-        .I1(data_d2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__6_n_0));
-  (* HLUTNM = "lutpair94" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__6
-       (.I0(Q[7]),
-        .I1(data_d2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__6_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__6
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__6_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__6
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_d2_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__6_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__6
-       (.I0(r_acc0_carry__2_i_2__6_n_0),
-        .I1(data_d2_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__6_n_0));
-  (* HLUTNM = "lutpair95" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__6
-       (.I0(Q[8]),
-        .I1(data_d2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__6_n_0),
-        .O(r_acc0_carry__2_i_7__6_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__6_n_0,r_acc0_carry__3_i_2__6_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__6
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__6_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__6
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__6_n_0));
-  (* HLUTNM = "lutpair85" *) 
+        .I1(data_d2_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__6_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__6
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_d2_in[12]),
+        .I2(Q[12]),
+        .I3(data_d2_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__6_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__6
+       (.I0(r_acc0_carry__2_i_1__6_n_0),
+        .I1(data_d2_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__6_n_0));
+  (* HLUTNM = "lutpair78" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__6
-       (.I0(r_acc__6[2]),
+       (.I0(Q[2]),
         .I1(data_d2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__6_n_0));
-  (* HLUTNM = "lutpair84" *) 
+  (* HLUTNM = "lutpair77" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__6
-       (.I0(r_acc__6[1]),
+       (.I0(Q[1]),
         .I1(data_d2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__6_n_0));
-  (* HLUTNM = "lutpair199" *) 
+  (* HLUTNM = "lutpair183" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__6
        (.I0(data_d2_in[0]),
-        .I1(r_acc__6[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__6_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__6
-       (.I0(r_acc__6[0]),
+       (.I0(Q[0]),
         .I1(data_d2_in[0]),
         .O(r_acc0_carry_i_4__6_n_0));
-  (* HLUTNM = "lutpair86" *) 
+  (* HLUTNM = "lutpair79" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__6
-       (.I0(r_acc__6[3]),
+       (.I0(Q[3]),
         .I1(data_d2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__6_n_0),
         .O(r_acc0_carry_i_5__6_n_0));
-  (* HLUTNM = "lutpair85" *) 
+  (* HLUTNM = "lutpair78" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__6
-       (.I0(r_acc__6[2]),
+       (.I0(Q[2]),
         .I1(data_d2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__6_n_0),
         .O(r_acc0_carry_i_6__6_n_0));
-  (* HLUTNM = "lutpair84" *) 
+  (* HLUTNM = "lutpair77" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__6
-       (.I0(r_acc__6[1]),
+       (.I0(Q[1]),
         .I1(data_d2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__6_n_0),
         .O(r_acc0_carry_i_7__6_n_0));
-  (* HLUTNM = "lutpair199" *) 
+  (* HLUTNM = "lutpair183" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__6
        (.I0(data_d2_in[0]),
-        .I1(r_acc__6[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__6_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5147,7 +3433,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__6[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5155,7 +3441,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5163,7 +3449,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5171,7 +3457,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5179,38 +3465,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -5219,7 +3473,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__6[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5227,7 +3481,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__6[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5235,7 +3489,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__6[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5243,7 +3497,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5251,7 +3505,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5259,7 +3513,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5267,7 +3521,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5275,7 +3529,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5283,7 +3537,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -5299,34 +3553,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_e1_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__7_n_0;
   wire r_acc0_carry__0_i_2__7_n_0;
   wire r_acc0_carry__0_i_3__7_n_0;
@@ -5362,23 +3602,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
   wire r_acc0_carry__2_i_1__7_n_0;
   wire r_acc0_carry__2_i_2__7_n_0;
   wire r_acc0_carry__2_i_3__7_n_0;
-  wire r_acc0_carry__2_i_4__7_n_0;
-  wire r_acc0_carry__2_i_5__7_n_0;
-  wire r_acc0_carry__2_i_6__7_n_0;
-  wire r_acc0_carry__2_i_7__7_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__7_n_0;
-  wire r_acc0_carry__3_i_2__7_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__7_n_0;
   wire r_acc0_carry_i_2__7_n_0;
   wire r_acc0_carry_i_3__7_n_0;
@@ -5395,303 +3621,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__7;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA8/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA8/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e1_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -5709,72 +3752,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
         .DI({r_acc0_carry__0_i_1__7_n_0,r_acc0_carry__0_i_2__7_n_0,r_acc0_carry__0_i_3__7_n_0,r_acc0_carry__0_i_4__7_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__7_n_0,r_acc0_carry__0_i_6__7_n_0,r_acc0_carry__0_i_7__7_n_0,r_acc0_carry__0_i_8__7_n_0}));
-  (* HLUTNM = "lutpair101" *) 
+  (* HLUTNM = "lutpair93" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__7
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_e1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__7_n_0));
-  (* HLUTNM = "lutpair100" *) 
+  (* HLUTNM = "lutpair92" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__7
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_e1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__7_n_0));
-  (* HLUTNM = "lutpair99" *) 
+  (* HLUTNM = "lutpair91" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__7
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_e1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__7_n_0));
-  (* HLUTNM = "lutpair98" *) 
+  (* HLUTNM = "lutpair90" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__7
-       (.I0(r_acc__7[3]),
+       (.I0(Q[3]),
         .I1(data_e1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__7_n_0));
-  (* HLUTNM = "lutpair102" *) 
+  (* HLUTNM = "lutpair94" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__7
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_e1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__7_n_0),
         .O(r_acc0_carry__0_i_5__7_n_0));
-  (* HLUTNM = "lutpair101" *) 
+  (* HLUTNM = "lutpair93" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__7
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_e1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__7_n_0),
         .O(r_acc0_carry__0_i_6__7_n_0));
-  (* HLUTNM = "lutpair100" *) 
+  (* HLUTNM = "lutpair92" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__7
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_e1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__7_n_0),
         .O(r_acc0_carry__0_i_7__7_n_0));
-  (* HLUTNM = "lutpair99" *) 
+  (* HLUTNM = "lutpair91" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__7
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_e1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__7_n_0),
         .O(r_acc0_carry__0_i_8__7_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -5785,219 +3828,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
         .DI({r_acc0_carry__1_i_1__7_n_0,r_acc0_carry__1_i_2__7_n_0,r_acc0_carry__1_i_3__7_n_0,r_acc0_carry__1_i_4__7_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__7_n_0,r_acc0_carry__1_i_6__7_n_0,r_acc0_carry__1_i_7__7_n_0,r_acc0_carry__1_i_8__7_n_0}));
-  (* HLUTNM = "lutpair105" *) 
+  (* HLUTNM = "lutpair97" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__7
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_e1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__7_n_0));
-  (* HLUTNM = "lutpair104" *) 
+  (* HLUTNM = "lutpair96" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__7
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_e1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__7_n_0));
-  (* HLUTNM = "lutpair103" *) 
+  (* HLUTNM = "lutpair95" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__7
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_e1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__7_n_0));
-  (* HLUTNM = "lutpair102" *) 
+  (* HLUTNM = "lutpair94" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__7
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_e1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__7_n_0));
-  (* HLUTNM = "lutpair106" *) 
+  (* HLUTNM = "lutpair98" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__7
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_e1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__7_n_0),
         .O(r_acc0_carry__1_i_5__7_n_0));
-  (* HLUTNM = "lutpair105" *) 
+  (* HLUTNM = "lutpair97" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__7
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_e1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__7_n_0),
         .O(r_acc0_carry__1_i_6__7_n_0));
-  (* HLUTNM = "lutpair104" *) 
+  (* HLUTNM = "lutpair96" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__7
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_e1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__7_n_0),
         .O(r_acc0_carry__1_i_7__7_n_0));
-  (* HLUTNM = "lutpair103" *) 
+  (* HLUTNM = "lutpair95" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__7
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_e1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__7_n_0),
         .O(r_acc0_carry__1_i_8__7_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__7_n_0,r_acc0_carry__2_i_2__7_n_0,r_acc0_carry__2_i_3__7_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__7_n_0,r_acc0_carry__2_i_5__7_n_0,r_acc0_carry__2_i_6__7_n_0,r_acc0_carry__2_i_7__7_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__7_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__7_n_0,r_acc0_carry__2_i_3__7_n_0}));
+  (* HLUTNM = "lutpair98" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__7
-       (.I0(Q[9]),
-        .I1(data_e1_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__7_n_0));
-  (* HLUTNM = "lutpair107" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__7
-       (.I0(Q[8]),
-        .I1(data_e1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__7_n_0));
-  (* HLUTNM = "lutpair106" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__7
-       (.I0(Q[7]),
-        .I1(data_e1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__7_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__7
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__7_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__7
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_e1_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__7_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__7
-       (.I0(r_acc0_carry__2_i_2__7_n_0),
-        .I1(data_e1_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__7_n_0));
-  (* HLUTNM = "lutpair107" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__7
-       (.I0(Q[8]),
-        .I1(data_e1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__7_n_0),
-        .O(r_acc0_carry__2_i_7__7_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__7_n_0,r_acc0_carry__3_i_2__7_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__7
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__7_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__7
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__7_n_0));
-  (* HLUTNM = "lutpair97" *) 
+        .I1(data_e1_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__7_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__7
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_e1_in[12]),
+        .I2(Q[12]),
+        .I3(data_e1_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__7_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__7
+       (.I0(r_acc0_carry__2_i_1__7_n_0),
+        .I1(data_e1_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__7_n_0));
+  (* HLUTNM = "lutpair89" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__7
-       (.I0(r_acc__7[2]),
+       (.I0(Q[2]),
         .I1(data_e1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__7_n_0));
-  (* HLUTNM = "lutpair96" *) 
+  (* HLUTNM = "lutpair88" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__7
-       (.I0(r_acc__7[1]),
+       (.I0(Q[1]),
         .I1(data_e1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__7_n_0));
-  (* HLUTNM = "lutpair200" *) 
+  (* HLUTNM = "lutpair184" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__7
        (.I0(data_e1_in[0]),
-        .I1(r_acc__7[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__7_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__7
-       (.I0(r_acc__7[0]),
+       (.I0(Q[0]),
         .I1(data_e1_in[0]),
         .O(r_acc0_carry_i_4__7_n_0));
-  (* HLUTNM = "lutpair98" *) 
+  (* HLUTNM = "lutpair90" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__7
-       (.I0(r_acc__7[3]),
+       (.I0(Q[3]),
         .I1(data_e1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__7_n_0),
         .O(r_acc0_carry_i_5__7_n_0));
-  (* HLUTNM = "lutpair97" *) 
+  (* HLUTNM = "lutpair89" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__7
-       (.I0(r_acc__7[2]),
+       (.I0(Q[2]),
         .I1(data_e1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__7_n_0),
         .O(r_acc0_carry_i_6__7_n_0));
-  (* HLUTNM = "lutpair96" *) 
+  (* HLUTNM = "lutpair88" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__7
-       (.I0(r_acc__7[1]),
+       (.I0(Q[1]),
         .I1(data_e1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__7_n_0),
         .O(r_acc0_carry_i_7__7_n_0));
-  (* HLUTNM = "lutpair200" *) 
+  (* HLUTNM = "lutpair184" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__7
        (.I0(data_e1_in[0]),
-        .I1(r_acc__7[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__7_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6005,7 +4000,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__7[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6013,7 +4008,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6021,7 +4016,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6029,7 +4024,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6037,38 +4032,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -6077,7 +4040,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__7[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6085,7 +4048,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__7[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6093,7 +4056,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__7[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6101,7 +4064,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6109,7 +4072,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6117,7 +4080,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6125,7 +4088,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6133,7 +4096,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6141,7 +4104,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -6157,34 +4120,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_e2_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__8_n_0;
   wire r_acc0_carry__0_i_2__8_n_0;
   wire r_acc0_carry__0_i_3__8_n_0;
@@ -6220,23 +4169,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
   wire r_acc0_carry__2_i_1__8_n_0;
   wire r_acc0_carry__2_i_2__8_n_0;
   wire r_acc0_carry__2_i_3__8_n_0;
-  wire r_acc0_carry__2_i_4__8_n_0;
-  wire r_acc0_carry__2_i_5__8_n_0;
-  wire r_acc0_carry__2_i_6__8_n_0;
-  wire r_acc0_carry__2_i_7__8_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__8_n_0;
-  wire r_acc0_carry__3_i_2__8_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__8_n_0;
   wire r_acc0_carry_i_2__8_n_0;
   wire r_acc0_carry_i_3__8_n_0;
@@ -6253,303 +4188,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__8;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA9/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA9/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_e2_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -6567,72 +4319,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
         .DI({r_acc0_carry__0_i_1__8_n_0,r_acc0_carry__0_i_2__8_n_0,r_acc0_carry__0_i_3__8_n_0,r_acc0_carry__0_i_4__8_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__8_n_0,r_acc0_carry__0_i_6__8_n_0,r_acc0_carry__0_i_7__8_n_0,r_acc0_carry__0_i_8__8_n_0}));
-  (* HLUTNM = "lutpair113" *) 
+  (* HLUTNM = "lutpair104" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__8
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_e2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__8_n_0));
-  (* HLUTNM = "lutpair112" *) 
+  (* HLUTNM = "lutpair103" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__8
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_e2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__8_n_0));
-  (* HLUTNM = "lutpair111" *) 
+  (* HLUTNM = "lutpair102" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__8
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_e2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__8_n_0));
-  (* HLUTNM = "lutpair110" *) 
+  (* HLUTNM = "lutpair101" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__8
-       (.I0(r_acc__8[3]),
+       (.I0(Q[3]),
         .I1(data_e2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__8_n_0));
-  (* HLUTNM = "lutpair114" *) 
+  (* HLUTNM = "lutpair105" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__8
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_e2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__8_n_0),
         .O(r_acc0_carry__0_i_5__8_n_0));
-  (* HLUTNM = "lutpair113" *) 
+  (* HLUTNM = "lutpair104" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__8
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_e2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__8_n_0),
         .O(r_acc0_carry__0_i_6__8_n_0));
-  (* HLUTNM = "lutpair112" *) 
+  (* HLUTNM = "lutpair103" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__8
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_e2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__8_n_0),
         .O(r_acc0_carry__0_i_7__8_n_0));
-  (* HLUTNM = "lutpair111" *) 
+  (* HLUTNM = "lutpair102" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__8
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_e2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__8_n_0),
         .O(r_acc0_carry__0_i_8__8_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -6643,219 +4395,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
         .DI({r_acc0_carry__1_i_1__8_n_0,r_acc0_carry__1_i_2__8_n_0,r_acc0_carry__1_i_3__8_n_0,r_acc0_carry__1_i_4__8_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__8_n_0,r_acc0_carry__1_i_6__8_n_0,r_acc0_carry__1_i_7__8_n_0,r_acc0_carry__1_i_8__8_n_0}));
-  (* HLUTNM = "lutpair117" *) 
+  (* HLUTNM = "lutpair108" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__8
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_e2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__8_n_0));
-  (* HLUTNM = "lutpair116" *) 
+  (* HLUTNM = "lutpair107" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__8
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_e2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__8_n_0));
-  (* HLUTNM = "lutpair115" *) 
+  (* HLUTNM = "lutpair106" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__8
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_e2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__8_n_0));
-  (* HLUTNM = "lutpair114" *) 
+  (* HLUTNM = "lutpair105" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__8
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_e2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__8_n_0));
-  (* HLUTNM = "lutpair118" *) 
+  (* HLUTNM = "lutpair109" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__8
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_e2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__8_n_0),
         .O(r_acc0_carry__1_i_5__8_n_0));
-  (* HLUTNM = "lutpair117" *) 
+  (* HLUTNM = "lutpair108" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__8
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_e2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__8_n_0),
         .O(r_acc0_carry__1_i_6__8_n_0));
-  (* HLUTNM = "lutpair116" *) 
+  (* HLUTNM = "lutpair107" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__8
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_e2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__8_n_0),
         .O(r_acc0_carry__1_i_7__8_n_0));
-  (* HLUTNM = "lutpair115" *) 
+  (* HLUTNM = "lutpair106" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__8
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_e2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__8_n_0),
         .O(r_acc0_carry__1_i_8__8_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__8_n_0,r_acc0_carry__2_i_2__8_n_0,r_acc0_carry__2_i_3__8_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__8_n_0,r_acc0_carry__2_i_5__8_n_0,r_acc0_carry__2_i_6__8_n_0,r_acc0_carry__2_i_7__8_n_0}));
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_1__8
-       (.I0(Q[9]),
-        .I1(data_e2_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__8_n_0));
-  (* HLUTNM = "lutpair119" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__8
-       (.I0(Q[8]),
-        .I1(data_e2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__8_n_0));
-  (* HLUTNM = "lutpair118" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__8
-       (.I0(Q[7]),
-        .I1(data_e2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__8_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__8
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__8_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__8
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_e2_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__8_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__8
-       (.I0(r_acc0_carry__2_i_2__8_n_0),
-        .I1(data_e2_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__8_n_0));
-  (* HLUTNM = "lutpair119" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__8
-       (.I0(Q[8]),
-        .I1(data_e2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__8_n_0),
-        .O(r_acc0_carry__2_i_7__8_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__8_n_0,r_acc0_carry__3_i_2__8_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__8
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__8_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__8
-       (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__8_n_0));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__8_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__8_n_0,r_acc0_carry__2_i_3__8_n_0}));
   (* HLUTNM = "lutpair109" *) 
   LUT3 #(
     .INIT(8'h8E)) 
+    r_acc0_carry__2_i_1__8
+       (.I0(Q[11]),
+        .I1(data_e2_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__8_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__8
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_e2_in[12]),
+        .I2(Q[12]),
+        .I3(data_e2_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__8_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__8
+       (.I0(r_acc0_carry__2_i_1__8_n_0),
+        .I1(data_e2_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__8_n_0));
+  (* HLUTNM = "lutpair100" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
     r_acc0_carry_i_1__8
-       (.I0(r_acc__8[2]),
+       (.I0(Q[2]),
         .I1(data_e2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__8_n_0));
-  (* HLUTNM = "lutpair108" *) 
+  (* HLUTNM = "lutpair99" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__8
-       (.I0(r_acc__8[1]),
+       (.I0(Q[1]),
         .I1(data_e2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__8_n_0));
-  (* HLUTNM = "lutpair201" *) 
+  (* HLUTNM = "lutpair185" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__8
        (.I0(data_e2_in[0]),
-        .I1(r_acc__8[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__8_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__8
-       (.I0(r_acc__8[0]),
+       (.I0(Q[0]),
         .I1(data_e2_in[0]),
         .O(r_acc0_carry_i_4__8_n_0));
-  (* HLUTNM = "lutpair110" *) 
+  (* HLUTNM = "lutpair101" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__8
-       (.I0(r_acc__8[3]),
+       (.I0(Q[3]),
         .I1(data_e2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__8_n_0),
         .O(r_acc0_carry_i_5__8_n_0));
-  (* HLUTNM = "lutpair109" *) 
+  (* HLUTNM = "lutpair100" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__8
-       (.I0(r_acc__8[2]),
+       (.I0(Q[2]),
         .I1(data_e2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__8_n_0),
         .O(r_acc0_carry_i_6__8_n_0));
-  (* HLUTNM = "lutpair108" *) 
+  (* HLUTNM = "lutpair99" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__8
-       (.I0(r_acc__8[1]),
+       (.I0(Q[1]),
         .I1(data_e2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__8_n_0),
         .O(r_acc0_carry_i_7__8_n_0));
-  (* HLUTNM = "lutpair201" *) 
+  (* HLUTNM = "lutpair185" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__8
        (.I0(data_e2_in[0]),
-        .I1(r_acc__8[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__8_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6863,7 +4567,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__8[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6871,7 +4575,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6879,7 +4583,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6887,7 +4591,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6895,38 +4599,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -6935,7 +4607,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__8[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6943,7 +4615,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__8[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6951,7 +4623,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__8[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6959,7 +4631,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6967,7 +4639,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6975,7 +4647,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6983,7 +4655,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6991,7 +4663,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6999,7 +4671,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -7015,34 +4687,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_f2_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__10_n_0;
   wire r_acc0_carry__0_i_2__10_n_0;
   wire r_acc0_carry__0_i_3__10_n_0;
@@ -7078,23 +4736,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
   wire r_acc0_carry__2_i_1__10_n_0;
   wire r_acc0_carry__2_i_2__10_n_0;
   wire r_acc0_carry__2_i_3__10_n_0;
-  wire r_acc0_carry__2_i_4__10_n_0;
-  wire r_acc0_carry__2_i_5__10_n_0;
-  wire r_acc0_carry__2_i_6__10_n_0;
-  wire r_acc0_carry__2_i_7__10_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__10_n_0;
-  wire r_acc0_carry__3_i_2__10_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__10_n_0;
   wire r_acc0_carry_i_2__10_n_0;
   wire r_acc0_carry_i_3__10_n_0;
@@ -7111,303 +4755,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__10;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA11/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA11/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_f2_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -7425,72 +4886,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
         .DI({r_acc0_carry__0_i_1__10_n_0,r_acc0_carry__0_i_2__10_n_0,r_acc0_carry__0_i_3__10_n_0,r_acc0_carry__0_i_4__10_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__10_n_0,r_acc0_carry__0_i_6__10_n_0,r_acc0_carry__0_i_7__10_n_0,r_acc0_carry__0_i_8__10_n_0}));
-  (* HLUTNM = "lutpair137" *) 
+  (* HLUTNM = "lutpair126" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__10
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_f2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__10_n_0));
-  (* HLUTNM = "lutpair136" *) 
+  (* HLUTNM = "lutpair125" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__10
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_f2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__10_n_0));
-  (* HLUTNM = "lutpair135" *) 
+  (* HLUTNM = "lutpair124" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__10
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_f2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__10_n_0));
-  (* HLUTNM = "lutpair134" *) 
+  (* HLUTNM = "lutpair123" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__10
-       (.I0(r_acc__10[3]),
+       (.I0(Q[3]),
         .I1(data_f2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__10_n_0));
-  (* HLUTNM = "lutpair138" *) 
+  (* HLUTNM = "lutpair127" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__10
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_f2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__10_n_0),
         .O(r_acc0_carry__0_i_5__10_n_0));
-  (* HLUTNM = "lutpair137" *) 
+  (* HLUTNM = "lutpair126" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__10
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_f2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__10_n_0),
         .O(r_acc0_carry__0_i_6__10_n_0));
-  (* HLUTNM = "lutpair136" *) 
+  (* HLUTNM = "lutpair125" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__10
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_f2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__10_n_0),
         .O(r_acc0_carry__0_i_7__10_n_0));
-  (* HLUTNM = "lutpair135" *) 
+  (* HLUTNM = "lutpair124" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__10
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_f2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__10_n_0),
         .O(r_acc0_carry__0_i_8__10_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -7501,219 +4962,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
         .DI({r_acc0_carry__1_i_1__10_n_0,r_acc0_carry__1_i_2__10_n_0,r_acc0_carry__1_i_3__10_n_0,r_acc0_carry__1_i_4__10_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__10_n_0,r_acc0_carry__1_i_6__10_n_0,r_acc0_carry__1_i_7__10_n_0,r_acc0_carry__1_i_8__10_n_0}));
-  (* HLUTNM = "lutpair141" *) 
+  (* HLUTNM = "lutpair130" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__10
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_f2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__10_n_0));
-  (* HLUTNM = "lutpair140" *) 
+  (* HLUTNM = "lutpair129" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__10
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_f2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__10_n_0));
-  (* HLUTNM = "lutpair139" *) 
+  (* HLUTNM = "lutpair128" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__10
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_f2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__10_n_0));
-  (* HLUTNM = "lutpair138" *) 
+  (* HLUTNM = "lutpair127" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__10
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_f2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__10_n_0));
-  (* HLUTNM = "lutpair142" *) 
+  (* HLUTNM = "lutpair131" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__10
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_f2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__10_n_0),
         .O(r_acc0_carry__1_i_5__10_n_0));
-  (* HLUTNM = "lutpair141" *) 
+  (* HLUTNM = "lutpair130" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__10
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_f2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__10_n_0),
         .O(r_acc0_carry__1_i_6__10_n_0));
-  (* HLUTNM = "lutpair140" *) 
+  (* HLUTNM = "lutpair129" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__10
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_f2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__10_n_0),
         .O(r_acc0_carry__1_i_7__10_n_0));
-  (* HLUTNM = "lutpair139" *) 
+  (* HLUTNM = "lutpair128" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__10
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_f2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__10_n_0),
         .O(r_acc0_carry__1_i_8__10_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__10_n_0,r_acc0_carry__2_i_2__10_n_0,r_acc0_carry__2_i_3__10_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__10_n_0,r_acc0_carry__2_i_5__10_n_0,r_acc0_carry__2_i_6__10_n_0,r_acc0_carry__2_i_7__10_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__10_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__10_n_0,r_acc0_carry__2_i_3__10_n_0}));
+  (* HLUTNM = "lutpair131" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__10
-       (.I0(Q[9]),
-        .I1(data_f2_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__10_n_0));
-  (* HLUTNM = "lutpair143" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__10
-       (.I0(Q[8]),
-        .I1(data_f2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__10_n_0));
-  (* HLUTNM = "lutpair142" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__10
-       (.I0(Q[7]),
-        .I1(data_f2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__10_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__10
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__10_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__10
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_f2_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__10_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__10
-       (.I0(r_acc0_carry__2_i_2__10_n_0),
-        .I1(data_f2_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__10_n_0));
-  (* HLUTNM = "lutpair143" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__10
-       (.I0(Q[8]),
-        .I1(data_f2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__10_n_0),
-        .O(r_acc0_carry__2_i_7__10_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__10_n_0,r_acc0_carry__3_i_2__10_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__10
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__10_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__10
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__10_n_0));
-  (* HLUTNM = "lutpair133" *) 
+        .I1(data_f2_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__10_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__10
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_f2_in[12]),
+        .I2(Q[12]),
+        .I3(data_f2_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__10_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__10
+       (.I0(r_acc0_carry__2_i_1__10_n_0),
+        .I1(data_f2_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__10_n_0));
+  (* HLUTNM = "lutpair122" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__10
-       (.I0(r_acc__10[2]),
+       (.I0(Q[2]),
         .I1(data_f2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__10_n_0));
-  (* HLUTNM = "lutpair132" *) 
+  (* HLUTNM = "lutpair121" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__10
-       (.I0(r_acc__10[1]),
+       (.I0(Q[1]),
         .I1(data_f2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__10_n_0));
-  (* HLUTNM = "lutpair203" *) 
+  (* HLUTNM = "lutpair187" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__10
        (.I0(data_f2_in[0]),
-        .I1(r_acc__10[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__10_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__10
-       (.I0(r_acc__10[0]),
+       (.I0(Q[0]),
         .I1(data_f2_in[0]),
         .O(r_acc0_carry_i_4__10_n_0));
-  (* HLUTNM = "lutpair134" *) 
+  (* HLUTNM = "lutpair123" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__10
-       (.I0(r_acc__10[3]),
+       (.I0(Q[3]),
         .I1(data_f2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__10_n_0),
         .O(r_acc0_carry_i_5__10_n_0));
-  (* HLUTNM = "lutpair133" *) 
+  (* HLUTNM = "lutpair122" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__10
-       (.I0(r_acc__10[2]),
+       (.I0(Q[2]),
         .I1(data_f2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__10_n_0),
         .O(r_acc0_carry_i_6__10_n_0));
-  (* HLUTNM = "lutpair132" *) 
+  (* HLUTNM = "lutpair121" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__10
-       (.I0(r_acc__10[1]),
+       (.I0(Q[1]),
         .I1(data_f2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__10_n_0),
         .O(r_acc0_carry_i_7__10_n_0));
-  (* HLUTNM = "lutpair203" *) 
+  (* HLUTNM = "lutpair187" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__10
        (.I0(data_f2_in[0]),
-        .I1(r_acc__10[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__10_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7721,7 +5134,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__10[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7729,7 +5142,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7737,7 +5150,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7745,7 +5158,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7753,38 +5166,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -7793,7 +5174,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__10[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7801,7 +5182,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__10[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7809,7 +5190,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__10[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7817,7 +5198,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7825,7 +5206,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7833,7 +5214,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7841,7 +5222,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7849,7 +5230,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -7857,7 +5238,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -7873,34 +5254,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_g1_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__11_n_0;
   wire r_acc0_carry__0_i_2__11_n_0;
   wire r_acc0_carry__0_i_3__11_n_0;
@@ -7936,23 +5303,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
   wire r_acc0_carry__2_i_1__11_n_0;
   wire r_acc0_carry__2_i_2__11_n_0;
   wire r_acc0_carry__2_i_3__11_n_0;
-  wire r_acc0_carry__2_i_4__11_n_0;
-  wire r_acc0_carry__2_i_5__11_n_0;
-  wire r_acc0_carry__2_i_6__11_n_0;
-  wire r_acc0_carry__2_i_7__11_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__11_n_0;
-  wire r_acc0_carry__3_i_2__11_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__11_n_0;
   wire r_acc0_carry_i_2__11_n_0;
   wire r_acc0_carry_i_3__11_n_0;
@@ -7969,303 +5322,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__11;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA12/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA12/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g1_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -8283,72 +5453,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
         .DI({r_acc0_carry__0_i_1__11_n_0,r_acc0_carry__0_i_2__11_n_0,r_acc0_carry__0_i_3__11_n_0,r_acc0_carry__0_i_4__11_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__11_n_0,r_acc0_carry__0_i_6__11_n_0,r_acc0_carry__0_i_7__11_n_0,r_acc0_carry__0_i_8__11_n_0}));
-  (* HLUTNM = "lutpair149" *) 
+  (* HLUTNM = "lutpair137" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__11
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_g1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__11_n_0));
-  (* HLUTNM = "lutpair148" *) 
+  (* HLUTNM = "lutpair136" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__11
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_g1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__11_n_0));
-  (* HLUTNM = "lutpair147" *) 
+  (* HLUTNM = "lutpair135" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__11
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_g1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__11_n_0));
-  (* HLUTNM = "lutpair146" *) 
+  (* HLUTNM = "lutpair134" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__11
-       (.I0(r_acc__11[3]),
+       (.I0(Q[3]),
         .I1(data_g1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__11_n_0));
-  (* HLUTNM = "lutpair150" *) 
+  (* HLUTNM = "lutpair138" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__11
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_g1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__11_n_0),
         .O(r_acc0_carry__0_i_5__11_n_0));
-  (* HLUTNM = "lutpair149" *) 
+  (* HLUTNM = "lutpair137" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__11
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_g1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__11_n_0),
         .O(r_acc0_carry__0_i_6__11_n_0));
-  (* HLUTNM = "lutpair148" *) 
+  (* HLUTNM = "lutpair136" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__11
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_g1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__11_n_0),
         .O(r_acc0_carry__0_i_7__11_n_0));
-  (* HLUTNM = "lutpair147" *) 
+  (* HLUTNM = "lutpair135" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__11
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_g1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__11_n_0),
         .O(r_acc0_carry__0_i_8__11_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -8359,219 +5529,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
         .DI({r_acc0_carry__1_i_1__11_n_0,r_acc0_carry__1_i_2__11_n_0,r_acc0_carry__1_i_3__11_n_0,r_acc0_carry__1_i_4__11_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__11_n_0,r_acc0_carry__1_i_6__11_n_0,r_acc0_carry__1_i_7__11_n_0,r_acc0_carry__1_i_8__11_n_0}));
-  (* HLUTNM = "lutpair153" *) 
+  (* HLUTNM = "lutpair141" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__11
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_g1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__11_n_0));
-  (* HLUTNM = "lutpair152" *) 
+  (* HLUTNM = "lutpair140" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__11
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_g1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__11_n_0));
-  (* HLUTNM = "lutpair151" *) 
+  (* HLUTNM = "lutpair139" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__11
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_g1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__11_n_0));
-  (* HLUTNM = "lutpair150" *) 
+  (* HLUTNM = "lutpair138" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__11
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_g1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__11_n_0));
-  (* HLUTNM = "lutpair154" *) 
+  (* HLUTNM = "lutpair142" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__11
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_g1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__11_n_0),
         .O(r_acc0_carry__1_i_5__11_n_0));
-  (* HLUTNM = "lutpair153" *) 
+  (* HLUTNM = "lutpair141" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__11
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_g1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__11_n_0),
         .O(r_acc0_carry__1_i_6__11_n_0));
-  (* HLUTNM = "lutpair152" *) 
+  (* HLUTNM = "lutpair140" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__11
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_g1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__11_n_0),
         .O(r_acc0_carry__1_i_7__11_n_0));
-  (* HLUTNM = "lutpair151" *) 
+  (* HLUTNM = "lutpair139" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__11
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_g1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__11_n_0),
         .O(r_acc0_carry__1_i_8__11_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__11_n_0,r_acc0_carry__2_i_2__11_n_0,r_acc0_carry__2_i_3__11_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__11_n_0,r_acc0_carry__2_i_5__11_n_0,r_acc0_carry__2_i_6__11_n_0,r_acc0_carry__2_i_7__11_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__11_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__11_n_0,r_acc0_carry__2_i_3__11_n_0}));
+  (* HLUTNM = "lutpair142" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__11
-       (.I0(Q[9]),
-        .I1(data_g1_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__11_n_0));
-  (* HLUTNM = "lutpair155" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__11
-       (.I0(Q[8]),
-        .I1(data_g1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__11_n_0));
-  (* HLUTNM = "lutpair154" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__11
-       (.I0(Q[7]),
-        .I1(data_g1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__11_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__11
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__11_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__11
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_g1_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__11_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__11
-       (.I0(r_acc0_carry__2_i_2__11_n_0),
-        .I1(data_g1_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__11_n_0));
-  (* HLUTNM = "lutpair155" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__11
-       (.I0(Q[8]),
-        .I1(data_g1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__11_n_0),
-        .O(r_acc0_carry__2_i_7__11_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__11_n_0,r_acc0_carry__3_i_2__11_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__11
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__11_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__11
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__11_n_0));
-  (* HLUTNM = "lutpair145" *) 
+        .I1(data_g1_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__11_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__11
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_g1_in[12]),
+        .I2(Q[12]),
+        .I3(data_g1_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__11_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__11
+       (.I0(r_acc0_carry__2_i_1__11_n_0),
+        .I1(data_g1_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__11_n_0));
+  (* HLUTNM = "lutpair133" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__11
-       (.I0(r_acc__11[2]),
+       (.I0(Q[2]),
         .I1(data_g1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__11_n_0));
-  (* HLUTNM = "lutpair144" *) 
+  (* HLUTNM = "lutpair132" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__11
-       (.I0(r_acc__11[1]),
+       (.I0(Q[1]),
         .I1(data_g1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__11_n_0));
-  (* HLUTNM = "lutpair204" *) 
+  (* HLUTNM = "lutpair188" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__11
        (.I0(data_g1_in[0]),
-        .I1(r_acc__11[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__11_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__11
-       (.I0(r_acc__11[0]),
+       (.I0(Q[0]),
         .I1(data_g1_in[0]),
         .O(r_acc0_carry_i_4__11_n_0));
-  (* HLUTNM = "lutpair146" *) 
+  (* HLUTNM = "lutpair134" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__11
-       (.I0(r_acc__11[3]),
+       (.I0(Q[3]),
         .I1(data_g1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__11_n_0),
         .O(r_acc0_carry_i_5__11_n_0));
-  (* HLUTNM = "lutpair145" *) 
+  (* HLUTNM = "lutpair133" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__11
-       (.I0(r_acc__11[2]),
+       (.I0(Q[2]),
         .I1(data_g1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__11_n_0),
         .O(r_acc0_carry_i_6__11_n_0));
-  (* HLUTNM = "lutpair144" *) 
+  (* HLUTNM = "lutpair132" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__11
-       (.I0(r_acc__11[1]),
+       (.I0(Q[1]),
         .I1(data_g1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__11_n_0),
         .O(r_acc0_carry_i_7__11_n_0));
-  (* HLUTNM = "lutpair204" *) 
+  (* HLUTNM = "lutpair188" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__11
        (.I0(data_g1_in[0]),
-        .I1(r_acc__11[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__11_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8579,7 +5701,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__11[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8587,7 +5709,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8595,7 +5717,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8603,7 +5725,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8611,38 +5733,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -8651,7 +5741,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__11[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8659,7 +5749,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__11[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8667,7 +5757,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__11[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8675,7 +5765,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8683,7 +5773,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8691,7 +5781,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8699,7 +5789,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8707,7 +5797,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -8715,7 +5805,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -8731,34 +5821,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_g2_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__12_n_0;
   wire r_acc0_carry__0_i_2__12_n_0;
   wire r_acc0_carry__0_i_3__12_n_0;
@@ -8794,23 +5870,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
   wire r_acc0_carry__2_i_1__12_n_0;
   wire r_acc0_carry__2_i_2__12_n_0;
   wire r_acc0_carry__2_i_3__12_n_0;
-  wire r_acc0_carry__2_i_4__12_n_0;
-  wire r_acc0_carry__2_i_5__12_n_0;
-  wire r_acc0_carry__2_i_6__12_n_0;
-  wire r_acc0_carry__2_i_7__12_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__12_n_0;
-  wire r_acc0_carry__3_i_2__12_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__12_n_0;
   wire r_acc0_carry_i_2__12_n_0;
   wire r_acc0_carry_i_3__12_n_0;
@@ -8827,303 +5889,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__12;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA13/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA13/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_g2_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -9141,72 +6020,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
         .DI({r_acc0_carry__0_i_1__12_n_0,r_acc0_carry__0_i_2__12_n_0,r_acc0_carry__0_i_3__12_n_0,r_acc0_carry__0_i_4__12_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__12_n_0,r_acc0_carry__0_i_6__12_n_0,r_acc0_carry__0_i_7__12_n_0,r_acc0_carry__0_i_8__12_n_0}));
-  (* HLUTNM = "lutpair161" *) 
+  (* HLUTNM = "lutpair148" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__12
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_g2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__12_n_0));
-  (* HLUTNM = "lutpair160" *) 
+  (* HLUTNM = "lutpair147" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__12
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_g2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__12_n_0));
-  (* HLUTNM = "lutpair159" *) 
+  (* HLUTNM = "lutpair146" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__12
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_g2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__12_n_0));
-  (* HLUTNM = "lutpair158" *) 
+  (* HLUTNM = "lutpair145" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__12
-       (.I0(r_acc__12[3]),
+       (.I0(Q[3]),
         .I1(data_g2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__12_n_0));
-  (* HLUTNM = "lutpair162" *) 
+  (* HLUTNM = "lutpair149" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__12
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_g2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__12_n_0),
         .O(r_acc0_carry__0_i_5__12_n_0));
-  (* HLUTNM = "lutpair161" *) 
+  (* HLUTNM = "lutpair148" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__12
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_g2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__12_n_0),
         .O(r_acc0_carry__0_i_6__12_n_0));
-  (* HLUTNM = "lutpair160" *) 
+  (* HLUTNM = "lutpair147" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__12
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_g2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__12_n_0),
         .O(r_acc0_carry__0_i_7__12_n_0));
-  (* HLUTNM = "lutpair159" *) 
+  (* HLUTNM = "lutpair146" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__12
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_g2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__12_n_0),
         .O(r_acc0_carry__0_i_8__12_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -9217,219 +6096,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
         .DI({r_acc0_carry__1_i_1__12_n_0,r_acc0_carry__1_i_2__12_n_0,r_acc0_carry__1_i_3__12_n_0,r_acc0_carry__1_i_4__12_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__12_n_0,r_acc0_carry__1_i_6__12_n_0,r_acc0_carry__1_i_7__12_n_0,r_acc0_carry__1_i_8__12_n_0}));
-  (* HLUTNM = "lutpair165" *) 
+  (* HLUTNM = "lutpair152" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__12
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_g2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__12_n_0));
-  (* HLUTNM = "lutpair164" *) 
+  (* HLUTNM = "lutpair151" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__12
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_g2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__12_n_0));
-  (* HLUTNM = "lutpair163" *) 
+  (* HLUTNM = "lutpair150" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__12
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_g2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__12_n_0));
-  (* HLUTNM = "lutpair162" *) 
+  (* HLUTNM = "lutpair149" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__12
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_g2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__12_n_0));
-  (* HLUTNM = "lutpair166" *) 
+  (* HLUTNM = "lutpair153" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__12
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_g2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__12_n_0),
         .O(r_acc0_carry__1_i_5__12_n_0));
-  (* HLUTNM = "lutpair165" *) 
+  (* HLUTNM = "lutpair152" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__12
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_g2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__12_n_0),
         .O(r_acc0_carry__1_i_6__12_n_0));
-  (* HLUTNM = "lutpair164" *) 
+  (* HLUTNM = "lutpair151" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__12
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_g2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__12_n_0),
         .O(r_acc0_carry__1_i_7__12_n_0));
-  (* HLUTNM = "lutpair163" *) 
+  (* HLUTNM = "lutpair150" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__12
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_g2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__12_n_0),
         .O(r_acc0_carry__1_i_8__12_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__12_n_0,r_acc0_carry__2_i_2__12_n_0,r_acc0_carry__2_i_3__12_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__12_n_0,r_acc0_carry__2_i_5__12_n_0,r_acc0_carry__2_i_6__12_n_0,r_acc0_carry__2_i_7__12_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__12_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__12_n_0,r_acc0_carry__2_i_3__12_n_0}));
+  (* HLUTNM = "lutpair153" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__12
-       (.I0(Q[9]),
-        .I1(data_g2_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__12_n_0));
-  (* HLUTNM = "lutpair167" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__12
-       (.I0(Q[8]),
-        .I1(data_g2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__12_n_0));
-  (* HLUTNM = "lutpair166" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__12
-       (.I0(Q[7]),
-        .I1(data_g2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__12_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__12
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__12_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__12
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_g2_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__12_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__12
-       (.I0(r_acc0_carry__2_i_2__12_n_0),
-        .I1(data_g2_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__12_n_0));
-  (* HLUTNM = "lutpair167" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__12
-       (.I0(Q[8]),
-        .I1(data_g2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__12_n_0),
-        .O(r_acc0_carry__2_i_7__12_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__12_n_0,r_acc0_carry__3_i_2__12_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__12
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__12_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__12
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__12_n_0));
-  (* HLUTNM = "lutpair157" *) 
+        .I1(data_g2_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__12_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__12
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_g2_in[12]),
+        .I2(Q[12]),
+        .I3(data_g2_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__12_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__12
+       (.I0(r_acc0_carry__2_i_1__12_n_0),
+        .I1(data_g2_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__12_n_0));
+  (* HLUTNM = "lutpair144" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__12
-       (.I0(r_acc__12[2]),
+       (.I0(Q[2]),
         .I1(data_g2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__12_n_0));
-  (* HLUTNM = "lutpair156" *) 
+  (* HLUTNM = "lutpair143" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__12
-       (.I0(r_acc__12[1]),
+       (.I0(Q[1]),
         .I1(data_g2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__12_n_0));
-  (* HLUTNM = "lutpair205" *) 
+  (* HLUTNM = "lutpair189" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__12
        (.I0(data_g2_in[0]),
-        .I1(r_acc__12[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__12_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__12
-       (.I0(r_acc__12[0]),
+       (.I0(Q[0]),
         .I1(data_g2_in[0]),
         .O(r_acc0_carry_i_4__12_n_0));
-  (* HLUTNM = "lutpair158" *) 
+  (* HLUTNM = "lutpair145" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__12
-       (.I0(r_acc__12[3]),
+       (.I0(Q[3]),
         .I1(data_g2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__12_n_0),
         .O(r_acc0_carry_i_5__12_n_0));
-  (* HLUTNM = "lutpair157" *) 
+  (* HLUTNM = "lutpair144" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__12
-       (.I0(r_acc__12[2]),
+       (.I0(Q[2]),
         .I1(data_g2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__12_n_0),
         .O(r_acc0_carry_i_6__12_n_0));
-  (* HLUTNM = "lutpair156" *) 
+  (* HLUTNM = "lutpair143" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__12
-       (.I0(r_acc__12[1]),
+       (.I0(Q[1]),
         .I1(data_g2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__12_n_0),
         .O(r_acc0_carry_i_7__12_n_0));
-  (* HLUTNM = "lutpair205" *) 
+  (* HLUTNM = "lutpair189" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__12
        (.I0(data_g2_in[0]),
-        .I1(r_acc__12[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__12_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9437,7 +6268,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__12[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9445,7 +6276,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9453,7 +6284,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9461,7 +6292,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9469,38 +6300,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -9509,7 +6308,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__12[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9517,7 +6316,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__12[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9525,7 +6324,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__12[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9533,7 +6332,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9541,7 +6340,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9549,7 +6348,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9557,7 +6356,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9565,7 +6364,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -9573,7 +6372,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -9589,34 +6388,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_h1_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__13_n_0;
   wire r_acc0_carry__0_i_2__13_n_0;
   wire r_acc0_carry__0_i_3__13_n_0;
@@ -9652,23 +6437,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
   wire r_acc0_carry__2_i_1__13_n_0;
   wire r_acc0_carry__2_i_2__13_n_0;
   wire r_acc0_carry__2_i_3__13_n_0;
-  wire r_acc0_carry__2_i_4__13_n_0;
-  wire r_acc0_carry__2_i_5__13_n_0;
-  wire r_acc0_carry__2_i_6__13_n_0;
-  wire r_acc0_carry__2_i_7__13_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__13_n_0;
-  wire r_acc0_carry__3_i_2__13_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__13_n_0;
   wire r_acc0_carry_i_2__13_n_0;
   wire r_acc0_carry_i_3__13_n_0;
@@ -9685,303 +6456,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__13;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA14/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA14/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h1_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -9999,72 +6587,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
         .DI({r_acc0_carry__0_i_1__13_n_0,r_acc0_carry__0_i_2__13_n_0,r_acc0_carry__0_i_3__13_n_0,r_acc0_carry__0_i_4__13_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__13_n_0,r_acc0_carry__0_i_6__13_n_0,r_acc0_carry__0_i_7__13_n_0,r_acc0_carry__0_i_8__13_n_0}));
-  (* HLUTNM = "lutpair173" *) 
+  (* HLUTNM = "lutpair159" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__13
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_h1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__13_n_0));
-  (* HLUTNM = "lutpair172" *) 
+  (* HLUTNM = "lutpair158" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__13
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_h1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__13_n_0));
-  (* HLUTNM = "lutpair171" *) 
+  (* HLUTNM = "lutpair157" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__13
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_h1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__13_n_0));
-  (* HLUTNM = "lutpair170" *) 
+  (* HLUTNM = "lutpair156" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__13
-       (.I0(r_acc__13[3]),
+       (.I0(Q[3]),
         .I1(data_h1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__13_n_0));
-  (* HLUTNM = "lutpair174" *) 
+  (* HLUTNM = "lutpair160" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__13
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_h1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__13_n_0),
         .O(r_acc0_carry__0_i_5__13_n_0));
-  (* HLUTNM = "lutpair173" *) 
+  (* HLUTNM = "lutpair159" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__13
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_h1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__13_n_0),
         .O(r_acc0_carry__0_i_6__13_n_0));
-  (* HLUTNM = "lutpair172" *) 
+  (* HLUTNM = "lutpair158" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__13
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_h1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__13_n_0),
         .O(r_acc0_carry__0_i_7__13_n_0));
-  (* HLUTNM = "lutpair171" *) 
+  (* HLUTNM = "lutpair157" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__13
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_h1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__13_n_0),
         .O(r_acc0_carry__0_i_8__13_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -10075,219 +6663,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
         .DI({r_acc0_carry__1_i_1__13_n_0,r_acc0_carry__1_i_2__13_n_0,r_acc0_carry__1_i_3__13_n_0,r_acc0_carry__1_i_4__13_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__13_n_0,r_acc0_carry__1_i_6__13_n_0,r_acc0_carry__1_i_7__13_n_0,r_acc0_carry__1_i_8__13_n_0}));
-  (* HLUTNM = "lutpair177" *) 
+  (* HLUTNM = "lutpair163" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__13
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_h1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__13_n_0));
-  (* HLUTNM = "lutpair176" *) 
+  (* HLUTNM = "lutpair162" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__13
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_h1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__13_n_0));
-  (* HLUTNM = "lutpair175" *) 
+  (* HLUTNM = "lutpair161" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__13
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_h1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__13_n_0));
-  (* HLUTNM = "lutpair174" *) 
+  (* HLUTNM = "lutpair160" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__13
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_h1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__13_n_0));
-  (* HLUTNM = "lutpair178" *) 
+  (* HLUTNM = "lutpair164" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__13
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_h1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__13_n_0),
         .O(r_acc0_carry__1_i_5__13_n_0));
-  (* HLUTNM = "lutpair177" *) 
+  (* HLUTNM = "lutpair163" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__13
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_h1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__13_n_0),
         .O(r_acc0_carry__1_i_6__13_n_0));
-  (* HLUTNM = "lutpair176" *) 
+  (* HLUTNM = "lutpair162" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__13
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_h1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__13_n_0),
         .O(r_acc0_carry__1_i_7__13_n_0));
-  (* HLUTNM = "lutpair175" *) 
+  (* HLUTNM = "lutpair161" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__13
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_h1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__13_n_0),
         .O(r_acc0_carry__1_i_8__13_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__13_n_0,r_acc0_carry__2_i_2__13_n_0,r_acc0_carry__2_i_3__13_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__13_n_0,r_acc0_carry__2_i_5__13_n_0,r_acc0_carry__2_i_6__13_n_0,r_acc0_carry__2_i_7__13_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__13_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__13_n_0,r_acc0_carry__2_i_3__13_n_0}));
+  (* HLUTNM = "lutpair164" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__13
-       (.I0(Q[9]),
-        .I1(data_h1_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__13_n_0));
-  (* HLUTNM = "lutpair179" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__13
-       (.I0(Q[8]),
-        .I1(data_h1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__13_n_0));
-  (* HLUTNM = "lutpair178" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__13
-       (.I0(Q[7]),
-        .I1(data_h1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__13_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__13
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__13_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__13
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_h1_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__13_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__13
-       (.I0(r_acc0_carry__2_i_2__13_n_0),
-        .I1(data_h1_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__13_n_0));
-  (* HLUTNM = "lutpair179" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__13
-       (.I0(Q[8]),
-        .I1(data_h1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__13_n_0),
-        .O(r_acc0_carry__2_i_7__13_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__13_n_0,r_acc0_carry__3_i_2__13_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__13
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__13_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__13
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__13_n_0));
-  (* HLUTNM = "lutpair169" *) 
+        .I1(data_h1_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__13_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__13
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_h1_in[12]),
+        .I2(Q[12]),
+        .I3(data_h1_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__13_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__13
+       (.I0(r_acc0_carry__2_i_1__13_n_0),
+        .I1(data_h1_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__13_n_0));
+  (* HLUTNM = "lutpair155" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__13
-       (.I0(r_acc__13[2]),
+       (.I0(Q[2]),
         .I1(data_h1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__13_n_0));
-  (* HLUTNM = "lutpair168" *) 
+  (* HLUTNM = "lutpair154" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__13
-       (.I0(r_acc__13[1]),
+       (.I0(Q[1]),
         .I1(data_h1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__13_n_0));
-  (* HLUTNM = "lutpair206" *) 
+  (* HLUTNM = "lutpair190" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__13
        (.I0(data_h1_in[0]),
-        .I1(r_acc__13[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__13_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__13
-       (.I0(r_acc__13[0]),
+       (.I0(Q[0]),
         .I1(data_h1_in[0]),
         .O(r_acc0_carry_i_4__13_n_0));
-  (* HLUTNM = "lutpair170" *) 
+  (* HLUTNM = "lutpair156" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__13
-       (.I0(r_acc__13[3]),
+       (.I0(Q[3]),
         .I1(data_h1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__13_n_0),
         .O(r_acc0_carry_i_5__13_n_0));
-  (* HLUTNM = "lutpair169" *) 
+  (* HLUTNM = "lutpair155" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__13
-       (.I0(r_acc__13[2]),
+       (.I0(Q[2]),
         .I1(data_h1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__13_n_0),
         .O(r_acc0_carry_i_6__13_n_0));
-  (* HLUTNM = "lutpair168" *) 
+  (* HLUTNM = "lutpair154" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__13
-       (.I0(r_acc__13[1]),
+       (.I0(Q[1]),
         .I1(data_h1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__13_n_0),
         .O(r_acc0_carry_i_7__13_n_0));
-  (* HLUTNM = "lutpair206" *) 
+  (* HLUTNM = "lutpair190" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__13
        (.I0(data_h1_in[0]),
-        .I1(r_acc__13[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__13_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10295,7 +6835,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__13[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10303,7 +6843,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10311,7 +6851,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10319,7 +6859,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10327,38 +6867,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -10367,7 +6875,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__13[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10375,7 +6883,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__13[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10383,7 +6891,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__13[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10391,7 +6899,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10399,7 +6907,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10407,7 +6915,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10415,7 +6923,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10423,7 +6931,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -10431,7 +6939,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -10447,34 +6955,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_h2_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__14_n_0;
   wire r_acc0_carry__0_i_2__14_n_0;
   wire r_acc0_carry__0_i_3__14_n_0;
@@ -10510,23 +7004,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
   wire r_acc0_carry__2_i_1__14_n_0;
   wire r_acc0_carry__2_i_2__14_n_0;
   wire r_acc0_carry__2_i_3__14_n_0;
-  wire r_acc0_carry__2_i_4__14_n_0;
-  wire r_acc0_carry__2_i_5__14_n_0;
-  wire r_acc0_carry__2_i_6__14_n_0;
-  wire r_acc0_carry__2_i_7__14_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__14_n_0;
-  wire r_acc0_carry__3_i_2__14_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__14_n_0;
   wire r_acc0_carry_i_2__14_n_0;
   wire r_acc0_carry_i_3__14_n_0;
@@ -10543,303 +7023,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__14;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA15/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA15/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_h2_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -10857,72 +7154,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
         .DI({r_acc0_carry__0_i_1__14_n_0,r_acc0_carry__0_i_2__14_n_0,r_acc0_carry__0_i_3__14_n_0,r_acc0_carry__0_i_4__14_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__14_n_0,r_acc0_carry__0_i_6__14_n_0,r_acc0_carry__0_i_7__14_n_0,r_acc0_carry__0_i_8__14_n_0}));
-  (* HLUTNM = "lutpair185" *) 
+  (* HLUTNM = "lutpair170" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__14
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_h2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__14_n_0));
-  (* HLUTNM = "lutpair184" *) 
+  (* HLUTNM = "lutpair169" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__14
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_h2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__14_n_0));
-  (* HLUTNM = "lutpair183" *) 
+  (* HLUTNM = "lutpair168" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__14
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_h2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__14_n_0));
-  (* HLUTNM = "lutpair182" *) 
+  (* HLUTNM = "lutpair167" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__14
-       (.I0(r_acc__14[3]),
+       (.I0(Q[3]),
         .I1(data_h2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__14_n_0));
-  (* HLUTNM = "lutpair186" *) 
+  (* HLUTNM = "lutpair171" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__14
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_h2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__14_n_0),
         .O(r_acc0_carry__0_i_5__14_n_0));
-  (* HLUTNM = "lutpair185" *) 
+  (* HLUTNM = "lutpair170" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__14
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_h2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__14_n_0),
         .O(r_acc0_carry__0_i_6__14_n_0));
-  (* HLUTNM = "lutpair184" *) 
+  (* HLUTNM = "lutpair169" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__14
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_h2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__14_n_0),
         .O(r_acc0_carry__0_i_7__14_n_0));
-  (* HLUTNM = "lutpair183" *) 
+  (* HLUTNM = "lutpair168" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__14
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_h2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__14_n_0),
         .O(r_acc0_carry__0_i_8__14_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -10933,219 +7230,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
         .DI({r_acc0_carry__1_i_1__14_n_0,r_acc0_carry__1_i_2__14_n_0,r_acc0_carry__1_i_3__14_n_0,r_acc0_carry__1_i_4__14_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__14_n_0,r_acc0_carry__1_i_6__14_n_0,r_acc0_carry__1_i_7__14_n_0,r_acc0_carry__1_i_8__14_n_0}));
-  (* HLUTNM = "lutpair189" *) 
+  (* HLUTNM = "lutpair174" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__14
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_h2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__14_n_0));
-  (* HLUTNM = "lutpair188" *) 
+  (* HLUTNM = "lutpair173" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__14
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_h2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__14_n_0));
-  (* HLUTNM = "lutpair187" *) 
+  (* HLUTNM = "lutpair172" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__14
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_h2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__14_n_0));
-  (* HLUTNM = "lutpair186" *) 
+  (* HLUTNM = "lutpair171" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__14
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_h2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__14_n_0));
-  (* HLUTNM = "lutpair190" *) 
+  (* HLUTNM = "lutpair175" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__14
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_h2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__14_n_0),
         .O(r_acc0_carry__1_i_5__14_n_0));
-  (* HLUTNM = "lutpair189" *) 
+  (* HLUTNM = "lutpair174" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__14
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_h2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__14_n_0),
         .O(r_acc0_carry__1_i_6__14_n_0));
-  (* HLUTNM = "lutpair188" *) 
+  (* HLUTNM = "lutpair173" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__14
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_h2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__14_n_0),
         .O(r_acc0_carry__1_i_7__14_n_0));
-  (* HLUTNM = "lutpair187" *) 
+  (* HLUTNM = "lutpair172" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__14
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_h2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__14_n_0),
         .O(r_acc0_carry__1_i_8__14_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__14_n_0,r_acc0_carry__2_i_2__14_n_0,r_acc0_carry__2_i_3__14_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__14_n_0,r_acc0_carry__2_i_5__14_n_0,r_acc0_carry__2_i_6__14_n_0,r_acc0_carry__2_i_7__14_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__14_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__14_n_0,r_acc0_carry__2_i_3__14_n_0}));
+  (* HLUTNM = "lutpair175" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__14
-       (.I0(Q[9]),
-        .I1(data_h2_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__14_n_0));
-  (* HLUTNM = "lutpair191" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__14
-       (.I0(Q[8]),
-        .I1(data_h2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__14_n_0));
-  (* HLUTNM = "lutpair190" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__14
-       (.I0(Q[7]),
-        .I1(data_h2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__14_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__14
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__14_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__14
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_h2_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__14_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__14
-       (.I0(r_acc0_carry__2_i_2__14_n_0),
-        .I1(data_h2_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__14_n_0));
-  (* HLUTNM = "lutpair191" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__14
-       (.I0(Q[8]),
-        .I1(data_h2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__14_n_0),
-        .O(r_acc0_carry__2_i_7__14_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__14_n_0,r_acc0_carry__3_i_2__14_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__14
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__14_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__14
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__14_n_0));
-  (* HLUTNM = "lutpair181" *) 
+        .I1(data_h2_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__14_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__14
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_h2_in[12]),
+        .I2(Q[12]),
+        .I3(data_h2_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__14_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__14
+       (.I0(r_acc0_carry__2_i_1__14_n_0),
+        .I1(data_h2_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__14_n_0));
+  (* HLUTNM = "lutpair166" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__14
-       (.I0(r_acc__14[2]),
+       (.I0(Q[2]),
         .I1(data_h2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__14_n_0));
-  (* HLUTNM = "lutpair180" *) 
+  (* HLUTNM = "lutpair165" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__14
-       (.I0(r_acc__14[1]),
+       (.I0(Q[1]),
         .I1(data_h2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__14_n_0));
-  (* HLUTNM = "lutpair207" *) 
+  (* HLUTNM = "lutpair191" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__14
        (.I0(data_h2_in[0]),
-        .I1(r_acc__14[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__14_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__14
-       (.I0(r_acc__14[0]),
+       (.I0(Q[0]),
         .I1(data_h2_in[0]),
         .O(r_acc0_carry_i_4__14_n_0));
-  (* HLUTNM = "lutpair182" *) 
+  (* HLUTNM = "lutpair167" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__14
-       (.I0(r_acc__14[3]),
+       (.I0(Q[3]),
         .I1(data_h2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__14_n_0),
         .O(r_acc0_carry_i_5__14_n_0));
-  (* HLUTNM = "lutpair181" *) 
+  (* HLUTNM = "lutpair166" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__14
-       (.I0(r_acc__14[2]),
+       (.I0(Q[2]),
         .I1(data_h2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__14_n_0),
         .O(r_acc0_carry_i_6__14_n_0));
-  (* HLUTNM = "lutpair180" *) 
+  (* HLUTNM = "lutpair165" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__14
-       (.I0(r_acc__14[1]),
+       (.I0(Q[1]),
         .I1(data_h2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__14_n_0),
         .O(r_acc0_carry_i_7__14_n_0));
-  (* HLUTNM = "lutpair207" *) 
+  (* HLUTNM = "lutpair191" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__14
        (.I0(data_h2_in[0]),
-        .I1(r_acc__14[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__14_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11153,7 +7402,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__14[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11161,7 +7410,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11169,7 +7418,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11177,7 +7426,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11185,38 +7434,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -11225,7 +7442,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__14[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11233,7 +7450,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__14[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11241,7 +7458,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__14[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11249,7 +7466,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11257,7 +7474,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11265,7 +7482,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11273,7 +7490,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11281,7 +7498,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -11289,7 +7506,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -11305,34 +7522,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_b1_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__1_n_0;
   wire r_acc0_carry__0_i_2__1_n_0;
   wire r_acc0_carry__0_i_3__1_n_0;
@@ -11368,23 +7571,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
   wire r_acc0_carry__2_i_1__1_n_0;
   wire r_acc0_carry__2_i_2__1_n_0;
   wire r_acc0_carry__2_i_3__1_n_0;
-  wire r_acc0_carry__2_i_4__1_n_0;
-  wire r_acc0_carry__2_i_5__1_n_0;
-  wire r_acc0_carry__2_i_6__1_n_0;
-  wire r_acc0_carry__2_i_7__1_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__1_n_0;
-  wire r_acc0_carry__3_i_2__1_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__1_n_0;
   wire r_acc0_carry_i_2__1_n_0;
   wire r_acc0_carry_i_3__1_n_0;
@@ -11401,303 +7590,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__1;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA2/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA2/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b1_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -11715,72 +7721,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
         .DI({r_acc0_carry__0_i_1__1_n_0,r_acc0_carry__0_i_2__1_n_0,r_acc0_carry__0_i_3__1_n_0,r_acc0_carry__0_i_4__1_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__1_n_0,r_acc0_carry__0_i_6__1_n_0,r_acc0_carry__0_i_7__1_n_0,r_acc0_carry__0_i_8__1_n_0}));
-  (* HLUTNM = "lutpair29" *) 
+  (* HLUTNM = "lutpair27" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__1
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_b1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__1_n_0));
-  (* HLUTNM = "lutpair28" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__0_i_2__1
-       (.I0(Q[1]),
-        .I1(data_b1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
-        .O(r_acc0_carry__0_i_2__1_n_0));
-  (* HLUTNM = "lutpair27" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__0_i_3__1
-       (.I0(Q[0]),
-        .I1(data_b1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
-        .O(r_acc0_carry__0_i_3__1_n_0));
   (* HLUTNM = "lutpair26" *) 
   LUT3 #(
     .INIT(8'h8E)) 
+    r_acc0_carry__0_i_2__1
+       (.I0(Q[5]),
+        .I1(data_b1_in[5]),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
+        .O(r_acc0_carry__0_i_2__1_n_0));
+  (* HLUTNM = "lutpair25" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
+    r_acc0_carry__0_i_3__1
+       (.I0(Q[4]),
+        .I1(data_b1_in[4]),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
+        .O(r_acc0_carry__0_i_3__1_n_0));
+  (* HLUTNM = "lutpair24" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__1
-       (.I0(r_acc__1[3]),
-        .I1(data_b1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
-        .O(r_acc0_carry__0_i_4__1_n_0));
-  (* HLUTNM = "lutpair30" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__0_i_5__1
        (.I0(Q[3]),
-        .I1(data_b1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
-        .I3(r_acc0_carry__0_i_1__1_n_0),
-        .O(r_acc0_carry__0_i_5__1_n_0));
-  (* HLUTNM = "lutpair29" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__0_i_6__1
-       (.I0(Q[2]),
-        .I1(data_b1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
-        .I3(r_acc0_carry__0_i_2__1_n_0),
-        .O(r_acc0_carry__0_i_6__1_n_0));
+        .I1(data_b1_in[3]),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
+        .O(r_acc0_carry__0_i_4__1_n_0));
   (* HLUTNM = "lutpair28" *) 
   LUT4 #(
     .INIT(16'h9669)) 
-    r_acc0_carry__0_i_7__1
-       (.I0(Q[1]),
-        .I1(data_b1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
-        .I3(r_acc0_carry__0_i_3__1_n_0),
-        .O(r_acc0_carry__0_i_7__1_n_0));
+    r_acc0_carry__0_i_5__1
+       (.I0(Q[7]),
+        .I1(data_b1_in[7]),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
+        .I3(r_acc0_carry__0_i_1__1_n_0),
+        .O(r_acc0_carry__0_i_5__1_n_0));
   (* HLUTNM = "lutpair27" *) 
   LUT4 #(
     .INIT(16'h9669)) 
+    r_acc0_carry__0_i_6__1
+       (.I0(Q[6]),
+        .I1(data_b1_in[6]),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
+        .I3(r_acc0_carry__0_i_2__1_n_0),
+        .O(r_acc0_carry__0_i_6__1_n_0));
+  (* HLUTNM = "lutpair26" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__0_i_7__1
+       (.I0(Q[5]),
+        .I1(data_b1_in[5]),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
+        .I3(r_acc0_carry__0_i_3__1_n_0),
+        .O(r_acc0_carry__0_i_7__1_n_0));
+  (* HLUTNM = "lutpair25" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__1
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_b1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__1_n_0),
         .O(r_acc0_carry__0_i_8__1_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -11791,219 +7797,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
         .DI({r_acc0_carry__1_i_1__1_n_0,r_acc0_carry__1_i_2__1_n_0,r_acc0_carry__1_i_3__1_n_0,r_acc0_carry__1_i_4__1_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__1_n_0,r_acc0_carry__1_i_6__1_n_0,r_acc0_carry__1_i_7__1_n_0,r_acc0_carry__1_i_8__1_n_0}));
-  (* HLUTNM = "lutpair33" *) 
+  (* HLUTNM = "lutpair31" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__1
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_b1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__1_n_0));
-  (* HLUTNM = "lutpair32" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__1_i_2__1
-       (.I0(Q[5]),
-        .I1(data_b1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
-        .O(r_acc0_carry__1_i_2__1_n_0));
-  (* HLUTNM = "lutpair31" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__1_i_3__1
-       (.I0(Q[4]),
-        .I1(data_b1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
-        .O(r_acc0_carry__1_i_3__1_n_0));
   (* HLUTNM = "lutpair30" *) 
   LUT3 #(
     .INIT(8'h8E)) 
+    r_acc0_carry__1_i_2__1
+       (.I0(Q[9]),
+        .I1(data_b1_in[9]),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
+        .O(r_acc0_carry__1_i_2__1_n_0));
+  (* HLUTNM = "lutpair29" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
+    r_acc0_carry__1_i_3__1
+       (.I0(Q[8]),
+        .I1(data_b1_in[8]),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
+        .O(r_acc0_carry__1_i_3__1_n_0));
+  (* HLUTNM = "lutpair28" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__1
-       (.I0(Q[3]),
-        .I1(data_b1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
-        .O(r_acc0_carry__1_i_4__1_n_0));
-  (* HLUTNM = "lutpair34" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__1_i_5__1
        (.I0(Q[7]),
-        .I1(data_b1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .I3(r_acc0_carry__1_i_1__1_n_0),
-        .O(r_acc0_carry__1_i_5__1_n_0));
-  (* HLUTNM = "lutpair33" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__1_i_6__1
-       (.I0(Q[6]),
-        .I1(data_b1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
-        .I3(r_acc0_carry__1_i_2__1_n_0),
-        .O(r_acc0_carry__1_i_6__1_n_0));
+        .I1(data_b1_in[7]),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
+        .O(r_acc0_carry__1_i_4__1_n_0));
   (* HLUTNM = "lutpair32" *) 
   LUT4 #(
     .INIT(16'h9669)) 
-    r_acc0_carry__1_i_7__1
-       (.I0(Q[5]),
-        .I1(data_b1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
-        .I3(r_acc0_carry__1_i_3__1_n_0),
-        .O(r_acc0_carry__1_i_7__1_n_0));
+    r_acc0_carry__1_i_5__1
+       (.I0(Q[11]),
+        .I1(data_b1_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .I3(r_acc0_carry__1_i_1__1_n_0),
+        .O(r_acc0_carry__1_i_5__1_n_0));
   (* HLUTNM = "lutpair31" *) 
   LUT4 #(
     .INIT(16'h9669)) 
+    r_acc0_carry__1_i_6__1
+       (.I0(Q[10]),
+        .I1(data_b1_in[10]),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
+        .I3(r_acc0_carry__1_i_2__1_n_0),
+        .O(r_acc0_carry__1_i_6__1_n_0));
+  (* HLUTNM = "lutpair30" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__1_i_7__1
+       (.I0(Q[9]),
+        .I1(data_b1_in[9]),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
+        .I3(r_acc0_carry__1_i_3__1_n_0),
+        .O(r_acc0_carry__1_i_7__1_n_0));
+  (* HLUTNM = "lutpair29" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__1
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_b1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__1_n_0),
         .O(r_acc0_carry__1_i_8__1_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__1_n_0,r_acc0_carry__2_i_2__1_n_0,r_acc0_carry__2_i_3__1_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__1_n_0,r_acc0_carry__2_i_5__1_n_0,r_acc0_carry__2_i_6__1_n_0,r_acc0_carry__2_i_7__1_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__1_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__1_n_0,r_acc0_carry__2_i_3__1_n_0}));
+  (* HLUTNM = "lutpair32" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__1
-       (.I0(Q[9]),
-        .I1(data_b1_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__1_n_0));
-  (* HLUTNM = "lutpair35" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__1
-       (.I0(Q[8]),
-        .I1(data_b1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__1_n_0));
-  (* HLUTNM = "lutpair34" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__1
-       (.I0(Q[7]),
-        .I1(data_b1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__1_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__1
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__1_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__1
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_b1_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__1_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__1
-       (.I0(r_acc0_carry__2_i_2__1_n_0),
-        .I1(data_b1_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__1_n_0));
-  (* HLUTNM = "lutpair35" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__1
-       (.I0(Q[8]),
-        .I1(data_b1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__1_n_0),
-        .O(r_acc0_carry__2_i_7__1_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__1_n_0,r_acc0_carry__3_i_2__1_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__1
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__1_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__1
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__1_n_0));
-  (* HLUTNM = "lutpair25" *) 
+        .I1(data_b1_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__1_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__1
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_b1_in[12]),
+        .I2(Q[12]),
+        .I3(data_b1_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__1_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__1
+       (.I0(r_acc0_carry__2_i_1__1_n_0),
+        .I1(data_b1_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__1_n_0));
+  (* HLUTNM = "lutpair23" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__1
-       (.I0(r_acc__1[2]),
+       (.I0(Q[2]),
         .I1(data_b1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__1_n_0));
-  (* HLUTNM = "lutpair24" *) 
+  (* HLUTNM = "lutpair22" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__1
-       (.I0(r_acc__1[1]),
+       (.I0(Q[1]),
         .I1(data_b1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__1_n_0));
-  (* HLUTNM = "lutpair194" *) 
+  (* HLUTNM = "lutpair178" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__1
        (.I0(data_b1_in[0]),
-        .I1(r_acc__1[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__1_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__1
-       (.I0(r_acc__1[0]),
+       (.I0(Q[0]),
         .I1(data_b1_in[0]),
         .O(r_acc0_carry_i_4__1_n_0));
-  (* HLUTNM = "lutpair26" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry_i_5__1
-       (.I0(r_acc__1[3]),
-        .I1(data_b1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
-        .I3(r_acc0_carry_i_1__1_n_0),
-        .O(r_acc0_carry_i_5__1_n_0));
-  (* HLUTNM = "lutpair25" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry_i_6__1
-       (.I0(r_acc__1[2]),
-        .I1(data_b1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
-        .I3(r_acc0_carry_i_2__1_n_0),
-        .O(r_acc0_carry_i_6__1_n_0));
   (* HLUTNM = "lutpair24" *) 
   LUT4 #(
     .INIT(16'h9669)) 
+    r_acc0_carry_i_5__1
+       (.I0(Q[3]),
+        .I1(data_b1_in[3]),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
+        .I3(r_acc0_carry_i_1__1_n_0),
+        .O(r_acc0_carry_i_5__1_n_0));
+  (* HLUTNM = "lutpair23" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry_i_6__1
+       (.I0(Q[2]),
+        .I1(data_b1_in[2]),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
+        .I3(r_acc0_carry_i_2__1_n_0),
+        .O(r_acc0_carry_i_6__1_n_0));
+  (* HLUTNM = "lutpair22" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
     r_acc0_carry_i_7__1
-       (.I0(r_acc__1[1]),
+       (.I0(Q[1]),
         .I1(data_b1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__1_n_0),
         .O(r_acc0_carry_i_7__1_n_0));
-  (* HLUTNM = "lutpair194" *) 
+  (* HLUTNM = "lutpair178" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__1
        (.I0(data_b1_in[0]),
-        .I1(r_acc__1[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__1_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12011,7 +7969,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__1[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12019,7 +7977,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12027,7 +7985,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12035,7 +7993,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12043,38 +8001,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -12083,7 +8009,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__1[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12091,7 +8017,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__1[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12099,7 +8025,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__1[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12107,7 +8033,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12115,7 +8041,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12123,7 +8049,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12131,7 +8057,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12139,7 +8065,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12147,7 +8073,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -12163,34 +8089,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_b2_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__2_n_0;
   wire r_acc0_carry__0_i_2__2_n_0;
   wire r_acc0_carry__0_i_3__2_n_0;
@@ -12226,23 +8138,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
   wire r_acc0_carry__2_i_1__2_n_0;
   wire r_acc0_carry__2_i_2__2_n_0;
   wire r_acc0_carry__2_i_3__2_n_0;
-  wire r_acc0_carry__2_i_4__2_n_0;
-  wire r_acc0_carry__2_i_5__2_n_0;
-  wire r_acc0_carry__2_i_6__2_n_0;
-  wire r_acc0_carry__2_i_7__2_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__2_n_0;
-  wire r_acc0_carry__3_i_2__2_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__2_n_0;
   wire r_acc0_carry_i_2__2_n_0;
   wire r_acc0_carry_i_3__2_n_0;
@@ -12259,303 +8157,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__2;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA3/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA3/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_b2_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -12573,72 +8288,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
         .DI({r_acc0_carry__0_i_1__2_n_0,r_acc0_carry__0_i_2__2_n_0,r_acc0_carry__0_i_3__2_n_0,r_acc0_carry__0_i_4__2_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__2_n_0,r_acc0_carry__0_i_6__2_n_0,r_acc0_carry__0_i_7__2_n_0,r_acc0_carry__0_i_8__2_n_0}));
-  (* HLUTNM = "lutpair41" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__0_i_1__2
-       (.I0(Q[2]),
-        .I1(data_b2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
-        .O(r_acc0_carry__0_i_1__2_n_0));
-  (* HLUTNM = "lutpair40" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__0_i_2__2
-       (.I0(Q[1]),
-        .I1(data_b2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
-        .O(r_acc0_carry__0_i_2__2_n_0));
-  (* HLUTNM = "lutpair39" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__0_i_3__2
-       (.I0(Q[0]),
-        .I1(data_b2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
-        .O(r_acc0_carry__0_i_3__2_n_0));
   (* HLUTNM = "lutpair38" *) 
   LUT3 #(
     .INIT(8'h8E)) 
-    r_acc0_carry__0_i_4__2
-       (.I0(r_acc__2[3]),
-        .I1(data_b2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
-        .O(r_acc0_carry__0_i_4__2_n_0));
-  (* HLUTNM = "lutpair42" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__0_i_5__2
-       (.I0(Q[3]),
-        .I1(data_b2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
-        .I3(r_acc0_carry__0_i_1__2_n_0),
-        .O(r_acc0_carry__0_i_5__2_n_0));
-  (* HLUTNM = "lutpair41" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__0_i_6__2
-       (.I0(Q[2]),
+    r_acc0_carry__0_i_1__2
+       (.I0(Q[6]),
         .I1(data_b2_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
-        .I3(r_acc0_carry__0_i_2__2_n_0),
-        .O(r_acc0_carry__0_i_6__2_n_0));
-  (* HLUTNM = "lutpair40" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__0_i_7__2
-       (.I0(Q[1]),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
+        .O(r_acc0_carry__0_i_1__2_n_0));
+  (* HLUTNM = "lutpair37" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
+    r_acc0_carry__0_i_2__2
+       (.I0(Q[5]),
         .I1(data_b2_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
-        .I3(r_acc0_carry__0_i_3__2_n_0),
-        .O(r_acc0_carry__0_i_7__2_n_0));
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
+        .O(r_acc0_carry__0_i_2__2_n_0));
+  (* HLUTNM = "lutpair36" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
+    r_acc0_carry__0_i_3__2
+       (.I0(Q[4]),
+        .I1(data_b2_in[4]),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
+        .O(r_acc0_carry__0_i_3__2_n_0));
+  (* HLUTNM = "lutpair35" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
+    r_acc0_carry__0_i_4__2
+       (.I0(Q[3]),
+        .I1(data_b2_in[3]),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
+        .O(r_acc0_carry__0_i_4__2_n_0));
   (* HLUTNM = "lutpair39" *) 
   LUT4 #(
     .INIT(16'h9669)) 
+    r_acc0_carry__0_i_5__2
+       (.I0(Q[7]),
+        .I1(data_b2_in[7]),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
+        .I3(r_acc0_carry__0_i_1__2_n_0),
+        .O(r_acc0_carry__0_i_5__2_n_0));
+  (* HLUTNM = "lutpair38" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__0_i_6__2
+       (.I0(Q[6]),
+        .I1(data_b2_in[6]),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
+        .I3(r_acc0_carry__0_i_2__2_n_0),
+        .O(r_acc0_carry__0_i_6__2_n_0));
+  (* HLUTNM = "lutpair37" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__0_i_7__2
+       (.I0(Q[5]),
+        .I1(data_b2_in[5]),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
+        .I3(r_acc0_carry__0_i_3__2_n_0),
+        .O(r_acc0_carry__0_i_7__2_n_0));
+  (* HLUTNM = "lutpair36" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__2
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_b2_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__2_n_0),
         .O(r_acc0_carry__0_i_8__2_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -12649,219 +8364,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
         .DI({r_acc0_carry__1_i_1__2_n_0,r_acc0_carry__1_i_2__2_n_0,r_acc0_carry__1_i_3__2_n_0,r_acc0_carry__1_i_4__2_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__2_n_0,r_acc0_carry__1_i_6__2_n_0,r_acc0_carry__1_i_7__2_n_0,r_acc0_carry__1_i_8__2_n_0}));
-  (* HLUTNM = "lutpair45" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__1_i_1__2
-       (.I0(Q[6]),
-        .I1(data_b2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
-        .O(r_acc0_carry__1_i_1__2_n_0));
-  (* HLUTNM = "lutpair44" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__1_i_2__2
-       (.I0(Q[5]),
-        .I1(data_b2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
-        .O(r_acc0_carry__1_i_2__2_n_0));
-  (* HLUTNM = "lutpair43" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__1_i_3__2
-       (.I0(Q[4]),
-        .I1(data_b2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
-        .O(r_acc0_carry__1_i_3__2_n_0));
   (* HLUTNM = "lutpair42" *) 
   LUT3 #(
     .INIT(8'h8E)) 
-    r_acc0_carry__1_i_4__2
-       (.I0(Q[3]),
-        .I1(data_b2_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
-        .O(r_acc0_carry__1_i_4__2_n_0));
-  (* HLUTNM = "lutpair46" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__1_i_5__2
-       (.I0(Q[7]),
-        .I1(data_b2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .I3(r_acc0_carry__1_i_1__2_n_0),
-        .O(r_acc0_carry__1_i_5__2_n_0));
-  (* HLUTNM = "lutpair45" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__1_i_6__2
-       (.I0(Q[6]),
+    r_acc0_carry__1_i_1__2
+       (.I0(Q[10]),
         .I1(data_b2_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
-        .I3(r_acc0_carry__1_i_2__2_n_0),
-        .O(r_acc0_carry__1_i_6__2_n_0));
-  (* HLUTNM = "lutpair44" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__1_i_7__2
-       (.I0(Q[5]),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
+        .O(r_acc0_carry__1_i_1__2_n_0));
+  (* HLUTNM = "lutpair41" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
+    r_acc0_carry__1_i_2__2
+       (.I0(Q[9]),
         .I1(data_b2_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
-        .I3(r_acc0_carry__1_i_3__2_n_0),
-        .O(r_acc0_carry__1_i_7__2_n_0));
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
+        .O(r_acc0_carry__1_i_2__2_n_0));
+  (* HLUTNM = "lutpair40" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
+    r_acc0_carry__1_i_3__2
+       (.I0(Q[8]),
+        .I1(data_b2_in[8]),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
+        .O(r_acc0_carry__1_i_3__2_n_0));
+  (* HLUTNM = "lutpair39" *) 
+  LUT3 #(
+    .INIT(8'h8E)) 
+    r_acc0_carry__1_i_4__2
+       (.I0(Q[7]),
+        .I1(data_b2_in[7]),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
+        .O(r_acc0_carry__1_i_4__2_n_0));
   (* HLUTNM = "lutpair43" *) 
   LUT4 #(
     .INIT(16'h9669)) 
+    r_acc0_carry__1_i_5__2
+       (.I0(Q[11]),
+        .I1(data_b2_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .I3(r_acc0_carry__1_i_1__2_n_0),
+        .O(r_acc0_carry__1_i_5__2_n_0));
+  (* HLUTNM = "lutpair42" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__1_i_6__2
+       (.I0(Q[10]),
+        .I1(data_b2_in[10]),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
+        .I3(r_acc0_carry__1_i_2__2_n_0),
+        .O(r_acc0_carry__1_i_6__2_n_0));
+  (* HLUTNM = "lutpair41" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__1_i_7__2
+       (.I0(Q[9]),
+        .I1(data_b2_in[9]),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
+        .I3(r_acc0_carry__1_i_3__2_n_0),
+        .O(r_acc0_carry__1_i_7__2_n_0));
+  (* HLUTNM = "lutpair40" *) 
+  LUT4 #(
+    .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__2
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_b2_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__2_n_0),
         .O(r_acc0_carry__1_i_8__2_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__2_n_0,r_acc0_carry__2_i_2__2_n_0,r_acc0_carry__2_i_3__2_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__2_n_0,r_acc0_carry__2_i_5__2_n_0,r_acc0_carry__2_i_6__2_n_0,r_acc0_carry__2_i_7__2_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__2_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__2_n_0,r_acc0_carry__2_i_3__2_n_0}));
+  (* HLUTNM = "lutpair43" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__2
-       (.I0(Q[9]),
-        .I1(data_b2_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__2_n_0));
-  (* HLUTNM = "lutpair47" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__2
-       (.I0(Q[8]),
-        .I1(data_b2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__2_n_0));
-  (* HLUTNM = "lutpair46" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__2
-       (.I0(Q[7]),
-        .I1(data_b2_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__2_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__2
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__2_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__2
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_b2_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__2_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__2
-       (.I0(r_acc0_carry__2_i_2__2_n_0),
-        .I1(data_b2_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__2_n_0));
-  (* HLUTNM = "lutpair47" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__2
-       (.I0(Q[8]),
-        .I1(data_b2_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__2_n_0),
-        .O(r_acc0_carry__2_i_7__2_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__2_n_0,r_acc0_carry__3_i_2__2_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__2
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__2_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__2
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__2_n_0));
-  (* HLUTNM = "lutpair37" *) 
+        .I1(data_b2_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__2_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__2
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_b2_in[12]),
+        .I2(Q[12]),
+        .I3(data_b2_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__2_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__2
+       (.I0(r_acc0_carry__2_i_1__2_n_0),
+        .I1(data_b2_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__2_n_0));
+  (* HLUTNM = "lutpair34" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__2
-       (.I0(r_acc__2[2]),
+       (.I0(Q[2]),
         .I1(data_b2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__2_n_0));
-  (* HLUTNM = "lutpair36" *) 
+  (* HLUTNM = "lutpair33" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__2
-       (.I0(r_acc__2[1]),
+       (.I0(Q[1]),
         .I1(data_b2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__2_n_0));
-  (* HLUTNM = "lutpair195" *) 
+  (* HLUTNM = "lutpair179" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__2
        (.I0(data_b2_in[0]),
-        .I1(r_acc__2[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__2_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__2
-       (.I0(r_acc__2[0]),
+       (.I0(Q[0]),
         .I1(data_b2_in[0]),
         .O(r_acc0_carry_i_4__2_n_0));
-  (* HLUTNM = "lutpair38" *) 
+  (* HLUTNM = "lutpair35" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__2
-       (.I0(r_acc__2[3]),
+       (.I0(Q[3]),
         .I1(data_b2_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__2_n_0),
         .O(r_acc0_carry_i_5__2_n_0));
-  (* HLUTNM = "lutpair37" *) 
+  (* HLUTNM = "lutpair34" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__2
-       (.I0(r_acc__2[2]),
+       (.I0(Q[2]),
         .I1(data_b2_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__2_n_0),
         .O(r_acc0_carry_i_6__2_n_0));
-  (* HLUTNM = "lutpair36" *) 
+  (* HLUTNM = "lutpair33" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__2
-       (.I0(r_acc__2[1]),
+       (.I0(Q[1]),
         .I1(data_b2_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__2_n_0),
         .O(r_acc0_carry_i_7__2_n_0));
-  (* HLUTNM = "lutpair195" *) 
+  (* HLUTNM = "lutpair179" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__2
        (.I0(data_b2_in[0]),
-        .I1(r_acc__2[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__2_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12869,7 +8536,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__2[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12877,7 +8544,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12885,7 +8552,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12893,7 +8560,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12901,38 +8568,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -12941,7 +8576,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__2[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12949,7 +8584,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__2[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12957,7 +8592,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__2[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12965,7 +8600,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12973,7 +8608,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12981,7 +8616,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12989,7 +8624,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -12997,7 +8632,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13005,7 +8640,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
@@ -13021,34 +8656,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
   wire [13:0]Q;
   wire clk;
   wire [13:0]data_c1_in;
-  wire \p_moving_average_reg[14][0]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][10]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][11]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][12]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][13]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][1]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][2]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][3]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][4]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][5]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][6]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][7]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][8]_srl15_n_0 ;
-  wire \p_moving_average_reg[14][9]_srl15_n_0 ;
-  wire \p_moving_average_reg_n_0_[15][0] ;
-  wire \p_moving_average_reg_n_0_[15][10] ;
-  wire \p_moving_average_reg_n_0_[15][11] ;
-  wire \p_moving_average_reg_n_0_[15][12] ;
-  wire \p_moving_average_reg_n_0_[15][13] ;
-  wire \p_moving_average_reg_n_0_[15][1] ;
-  wire \p_moving_average_reg_n_0_[15][2] ;
-  wire \p_moving_average_reg_n_0_[15][3] ;
-  wire \p_moving_average_reg_n_0_[15][4] ;
-  wire \p_moving_average_reg_n_0_[15][5] ;
-  wire \p_moving_average_reg_n_0_[15][6] ;
-  wire \p_moving_average_reg_n_0_[15][7] ;
-  wire \p_moving_average_reg_n_0_[15][8] ;
-  wire \p_moving_average_reg_n_0_[15][9] ;
+  wire \p_moving_average_reg_n_0_[0][0] ;
+  wire \p_moving_average_reg_n_0_[0][10] ;
+  wire \p_moving_average_reg_n_0_[0][11] ;
+  wire \p_moving_average_reg_n_0_[0][12] ;
+  wire \p_moving_average_reg_n_0_[0][13] ;
+  wire \p_moving_average_reg_n_0_[0][1] ;
+  wire \p_moving_average_reg_n_0_[0][2] ;
+  wire \p_moving_average_reg_n_0_[0][3] ;
+  wire \p_moving_average_reg_n_0_[0][4] ;
+  wire \p_moving_average_reg_n_0_[0][5] ;
+  wire \p_moving_average_reg_n_0_[0][6] ;
+  wire \p_moving_average_reg_n_0_[0][7] ;
+  wire \p_moving_average_reg_n_0_[0][8] ;
+  wire \p_moving_average_reg_n_0_[0][9] ;
   wire r_acc0_carry__0_i_1__3_n_0;
   wire r_acc0_carry__0_i_2__3_n_0;
   wire r_acc0_carry__0_i_3__3_n_0;
@@ -13084,23 +8705,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
   wire r_acc0_carry__2_i_1__3_n_0;
   wire r_acc0_carry__2_i_2__3_n_0;
   wire r_acc0_carry__2_i_3__3_n_0;
-  wire r_acc0_carry__2_i_4__3_n_0;
-  wire r_acc0_carry__2_i_5__3_n_0;
-  wire r_acc0_carry__2_i_6__3_n_0;
-  wire r_acc0_carry__2_i_7__3_n_0;
-  wire r_acc0_carry__2_n_0;
-  wire r_acc0_carry__2_n_1;
-  wire r_acc0_carry__2_n_2;
   wire r_acc0_carry__2_n_3;
-  wire r_acc0_carry__2_n_4;
-  wire r_acc0_carry__2_n_5;
   wire r_acc0_carry__2_n_6;
   wire r_acc0_carry__2_n_7;
-  wire r_acc0_carry__3_i_1__3_n_0;
-  wire r_acc0_carry__3_i_2__3_n_0;
-  wire r_acc0_carry__3_n_3;
-  wire r_acc0_carry__3_n_6;
-  wire r_acc0_carry__3_n_7;
   wire r_acc0_carry_i_1__3_n_0;
   wire r_acc0_carry_i_2__3_n_0;
   wire r_acc0_carry_i_3__3_n_0;
@@ -13117,303 +8724,120 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
   wire r_acc0_carry_n_5;
   wire r_acc0_carry_n_6;
   wire r_acc0_carry_n_7;
-  wire [3:0]r_acc__3;
-  wire [3:1]NLW_r_acc0_carry__3_CO_UNCONNECTED;
-  wire [3:2]NLW_r_acc0_carry__3_O_UNCONNECTED;
+  wire [3:1]NLW_r_acc0_carry__2_CO_UNCONNECTED;
+  wire [3:2]NLW_r_acc0_carry__2_O_UNCONNECTED;
 
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][0]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][0]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][0] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[0]),
-        .Q(\p_moving_average_reg[14][0]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][10]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][10]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][0] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][10] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[10]),
-        .Q(\p_moving_average_reg[14][10]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][11]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][11]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][10] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][11] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[11]),
-        .Q(\p_moving_average_reg[14][11]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][12]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][12]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][11] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][12] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[12]),
-        .Q(\p_moving_average_reg[14][12]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][13]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][13]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][12] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][13] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[13]),
-        .Q(\p_moving_average_reg[14][13]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][1]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][1]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][13] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][1] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[1]),
-        .Q(\p_moving_average_reg[14][1]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][2]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][2]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][1] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][2] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[2]),
-        .Q(\p_moving_average_reg[14][2]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][3]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][3]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][2] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][3] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[3]),
-        .Q(\p_moving_average_reg[14][3]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][4]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][4]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][3] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][4] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[4]),
-        .Q(\p_moving_average_reg[14][4]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][5]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][5]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][4] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][5] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[5]),
-        .Q(\p_moving_average_reg[14][5]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][6]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][6]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][5] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][6] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[6]),
-        .Q(\p_moving_average_reg[14][6]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][7]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][7]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][6] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][7] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[7]),
-        .Q(\p_moving_average_reg[14][7]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][8]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][8]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][7] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][8] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[8]),
-        .Q(\p_moving_average_reg[14][8]_srl15_n_0 ));
-  (* srl_bus_name = "\U0/MA4/p_moving_average_reg[14] " *) 
-  (* srl_name = "\U0/MA4/p_moving_average_reg[14][9]_srl15 " *) 
-  SRL16E #(
-    .INIT(16'h0000)) 
-    \p_moving_average_reg[14][9]_srl15 
-       (.A0(1'b0),
-        .A1(1'b1),
-        .A2(1'b1),
-        .A3(1'b1),
+        .Q(\p_moving_average_reg_n_0_[0][8] ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \p_moving_average_reg[0][9] 
+       (.C(clk),
         .CE(1'b1),
-        .CLK(clk),
         .D(data_c1_in[9]),
-        .Q(\p_moving_average_reg[14][9]_srl15_n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][0] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][0]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][0] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][10] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][10]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][10] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][11] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][11]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][11] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][12] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][12]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][12] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][13] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][13]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][13] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][1] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][1]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][1] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][2] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][2]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][2] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][3] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][3]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][3] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][4] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][4]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][4] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][5] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][5]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][5] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][6] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][6]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][6] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][7] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][7]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][7] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][8] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][8]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][8] ),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \p_moving_average_reg[15][9] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(\p_moving_average_reg[14][9]_srl15_n_0 ),
-        .Q(\p_moving_average_reg_n_0_[15][9] ),
+        .Q(\p_moving_average_reg_n_0_[0][9] ),
         .R(1'b0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry
@@ -13431,72 +8855,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
         .DI({r_acc0_carry__0_i_1__3_n_0,r_acc0_carry__0_i_2__3_n_0,r_acc0_carry__0_i_3__3_n_0,r_acc0_carry__0_i_4__3_n_0}),
         .O({r_acc0_carry__0_n_4,r_acc0_carry__0_n_5,r_acc0_carry__0_n_6,r_acc0_carry__0_n_7}),
         .S({r_acc0_carry__0_i_5__3_n_0,r_acc0_carry__0_i_6__3_n_0,r_acc0_carry__0_i_7__3_n_0,r_acc0_carry__0_i_8__3_n_0}));
-  (* HLUTNM = "lutpair53" *) 
+  (* HLUTNM = "lutpair49" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_1__3
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_c1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .O(r_acc0_carry__0_i_1__3_n_0));
-  (* HLUTNM = "lutpair52" *) 
+  (* HLUTNM = "lutpair48" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_2__3
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_c1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .O(r_acc0_carry__0_i_2__3_n_0));
-  (* HLUTNM = "lutpair51" *) 
+  (* HLUTNM = "lutpair47" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_3__3
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_c1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .O(r_acc0_carry__0_i_3__3_n_0));
-  (* HLUTNM = "lutpair50" *) 
+  (* HLUTNM = "lutpair46" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__0_i_4__3
-       (.I0(r_acc__3[3]),
+       (.I0(Q[3]),
         .I1(data_c1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .O(r_acc0_carry__0_i_4__3_n_0));
-  (* HLUTNM = "lutpair54" *) 
+  (* HLUTNM = "lutpair50" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_5__3
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_c1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .I3(r_acc0_carry__0_i_1__3_n_0),
         .O(r_acc0_carry__0_i_5__3_n_0));
-  (* HLUTNM = "lutpair53" *) 
+  (* HLUTNM = "lutpair49" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_6__3
-       (.I0(Q[2]),
+       (.I0(Q[6]),
         .I1(data_c1_in[6]),
-        .I2(\p_moving_average_reg_n_0_[15][6] ),
+        .I2(\p_moving_average_reg_n_0_[0][6] ),
         .I3(r_acc0_carry__0_i_2__3_n_0),
         .O(r_acc0_carry__0_i_6__3_n_0));
-  (* HLUTNM = "lutpair52" *) 
+  (* HLUTNM = "lutpair48" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_7__3
-       (.I0(Q[1]),
+       (.I0(Q[5]),
         .I1(data_c1_in[5]),
-        .I2(\p_moving_average_reg_n_0_[15][5] ),
+        .I2(\p_moving_average_reg_n_0_[0][5] ),
         .I3(r_acc0_carry__0_i_3__3_n_0),
         .O(r_acc0_carry__0_i_7__3_n_0));
-  (* HLUTNM = "lutpair51" *) 
+  (* HLUTNM = "lutpair47" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__0_i_8__3
-       (.I0(Q[0]),
+       (.I0(Q[4]),
         .I1(data_c1_in[4]),
-        .I2(\p_moving_average_reg_n_0_[15][4] ),
+        .I2(\p_moving_average_reg_n_0_[0][4] ),
         .I3(r_acc0_carry__0_i_4__3_n_0),
         .O(r_acc0_carry__0_i_8__3_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -13507,219 +8931,171 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
         .DI({r_acc0_carry__1_i_1__3_n_0,r_acc0_carry__1_i_2__3_n_0,r_acc0_carry__1_i_3__3_n_0,r_acc0_carry__1_i_4__3_n_0}),
         .O({r_acc0_carry__1_n_4,r_acc0_carry__1_n_5,r_acc0_carry__1_n_6,r_acc0_carry__1_n_7}),
         .S({r_acc0_carry__1_i_5__3_n_0,r_acc0_carry__1_i_6__3_n_0,r_acc0_carry__1_i_7__3_n_0,r_acc0_carry__1_i_8__3_n_0}));
-  (* HLUTNM = "lutpair57" *) 
+  (* HLUTNM = "lutpair53" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_1__3
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_c1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .O(r_acc0_carry__1_i_1__3_n_0));
-  (* HLUTNM = "lutpair56" *) 
+  (* HLUTNM = "lutpair52" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_2__3
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_c1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .O(r_acc0_carry__1_i_2__3_n_0));
-  (* HLUTNM = "lutpair55" *) 
+  (* HLUTNM = "lutpair51" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_3__3
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_c1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .O(r_acc0_carry__1_i_3__3_n_0));
-  (* HLUTNM = "lutpair54" *) 
+  (* HLUTNM = "lutpair50" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__1_i_4__3
-       (.I0(Q[3]),
+       (.I0(Q[7]),
         .I1(data_c1_in[7]),
-        .I2(\p_moving_average_reg_n_0_[15][7] ),
+        .I2(\p_moving_average_reg_n_0_[0][7] ),
         .O(r_acc0_carry__1_i_4__3_n_0));
-  (* HLUTNM = "lutpair58" *) 
+  (* HLUTNM = "lutpair54" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_5__3
-       (.I0(Q[7]),
+       (.I0(Q[11]),
         .I1(data_c1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
         .I3(r_acc0_carry__1_i_1__3_n_0),
         .O(r_acc0_carry__1_i_5__3_n_0));
-  (* HLUTNM = "lutpair57" *) 
+  (* HLUTNM = "lutpair53" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_6__3
-       (.I0(Q[6]),
+       (.I0(Q[10]),
         .I1(data_c1_in[10]),
-        .I2(\p_moving_average_reg_n_0_[15][10] ),
+        .I2(\p_moving_average_reg_n_0_[0][10] ),
         .I3(r_acc0_carry__1_i_2__3_n_0),
         .O(r_acc0_carry__1_i_6__3_n_0));
-  (* HLUTNM = "lutpair56" *) 
+  (* HLUTNM = "lutpair52" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_7__3
-       (.I0(Q[5]),
+       (.I0(Q[9]),
         .I1(data_c1_in[9]),
-        .I2(\p_moving_average_reg_n_0_[15][9] ),
+        .I2(\p_moving_average_reg_n_0_[0][9] ),
         .I3(r_acc0_carry__1_i_3__3_n_0),
         .O(r_acc0_carry__1_i_7__3_n_0));
-  (* HLUTNM = "lutpair55" *) 
+  (* HLUTNM = "lutpair51" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry__1_i_8__3
-       (.I0(Q[4]),
+       (.I0(Q[8]),
         .I1(data_c1_in[8]),
-        .I2(\p_moving_average_reg_n_0_[15][8] ),
+        .I2(\p_moving_average_reg_n_0_[0][8] ),
         .I3(r_acc0_carry__1_i_4__3_n_0),
         .O(r_acc0_carry__1_i_8__3_n_0));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 r_acc0_carry__2
        (.CI(r_acc0_carry__1_n_0),
-        .CO({r_acc0_carry__2_n_0,r_acc0_carry__2_n_1,r_acc0_carry__2_n_2,r_acc0_carry__2_n_3}),
+        .CO({NLW_r_acc0_carry__2_CO_UNCONNECTED[3:1],r_acc0_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({Q[10],r_acc0_carry__2_i_1__3_n_0,r_acc0_carry__2_i_2__3_n_0,r_acc0_carry__2_i_3__3_n_0}),
-        .O({r_acc0_carry__2_n_4,r_acc0_carry__2_n_5,r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
-        .S({r_acc0_carry__2_i_4__3_n_0,r_acc0_carry__2_i_5__3_n_0,r_acc0_carry__2_i_6__3_n_0,r_acc0_carry__2_i_7__3_n_0}));
+        .DI({1'b0,1'b0,1'b0,r_acc0_carry__2_i_1__3_n_0}),
+        .O({NLW_r_acc0_carry__2_O_UNCONNECTED[3:2],r_acc0_carry__2_n_6,r_acc0_carry__2_n_7}),
+        .S({1'b0,1'b0,r_acc0_carry__2_i_2__3_n_0,r_acc0_carry__2_i_3__3_n_0}));
+  (* HLUTNM = "lutpair54" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry__2_i_1__3
-       (.I0(Q[9]),
-        .I1(data_c1_in[13]),
-        .I2(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_1__3_n_0));
-  (* HLUTNM = "lutpair59" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_2__3
-       (.I0(Q[8]),
-        .I1(data_c1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .O(r_acc0_carry__2_i_2__3_n_0));
-  (* HLUTNM = "lutpair58" *) 
-  LUT3 #(
-    .INIT(8'h8E)) 
-    r_acc0_carry__2_i_3__3
-       (.I0(Q[7]),
-        .I1(data_c1_in[11]),
-        .I2(\p_moving_average_reg_n_0_[15][11] ),
-        .O(r_acc0_carry__2_i_3__3_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__2_i_4__3
-       (.I0(Q[10]),
-        .I1(Q[11]),
-        .O(r_acc0_carry__2_i_4__3_n_0));
-  LUT4 #(
-    .INIT(16'hD42B)) 
-    r_acc0_carry__2_i_5__3
-       (.I0(\p_moving_average_reg_n_0_[15][13] ),
-        .I1(data_c1_in[13]),
-        .I2(Q[9]),
-        .I3(Q[10]),
-        .O(r_acc0_carry__2_i_5__3_n_0));
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_6__3
-       (.I0(r_acc0_carry__2_i_2__3_n_0),
-        .I1(data_c1_in[13]),
-        .I2(Q[9]),
-        .I3(\p_moving_average_reg_n_0_[15][13] ),
-        .O(r_acc0_carry__2_i_6__3_n_0));
-  (* HLUTNM = "lutpair59" *) 
-  LUT4 #(
-    .INIT(16'h9669)) 
-    r_acc0_carry__2_i_7__3
-       (.I0(Q[8]),
-        .I1(data_c1_in[12]),
-        .I2(\p_moving_average_reg_n_0_[15][12] ),
-        .I3(r_acc0_carry__2_i_3__3_n_0),
-        .O(r_acc0_carry__2_i_7__3_n_0));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 r_acc0_carry__3
-       (.CI(r_acc0_carry__2_n_0),
-        .CO({NLW_r_acc0_carry__3_CO_UNCONNECTED[3:1],r_acc0_carry__3_n_3}),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,Q[11]}),
-        .O({NLW_r_acc0_carry__3_O_UNCONNECTED[3:2],r_acc0_carry__3_n_6,r_acc0_carry__3_n_7}),
-        .S({1'b0,1'b0,r_acc0_carry__3_i_1__3_n_0,r_acc0_carry__3_i_2__3_n_0}));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_1__3
-       (.I0(Q[12]),
-        .I1(Q[13]),
-        .O(r_acc0_carry__3_i_1__3_n_0));
-  LUT2 #(
-    .INIT(4'h9)) 
-    r_acc0_carry__3_i_2__3
        (.I0(Q[11]),
-        .I1(Q[12]),
-        .O(r_acc0_carry__3_i_2__3_n_0));
-  (* HLUTNM = "lutpair49" *) 
+        .I1(data_c1_in[11]),
+        .I2(\p_moving_average_reg_n_0_[0][11] ),
+        .O(r_acc0_carry__2_i_1__3_n_0));
+  LUT6 #(
+    .INIT(64'hD42B2BD42BD4D42B)) 
+    r_acc0_carry__2_i_2__3
+       (.I0(\p_moving_average_reg_n_0_[0][12] ),
+        .I1(data_c1_in[12]),
+        .I2(Q[12]),
+        .I3(data_c1_in[13]),
+        .I4(Q[13]),
+        .I5(\p_moving_average_reg_n_0_[0][13] ),
+        .O(r_acc0_carry__2_i_2__3_n_0));
+  LUT4 #(
+    .INIT(16'h9669)) 
+    r_acc0_carry__2_i_3__3
+       (.I0(r_acc0_carry__2_i_1__3_n_0),
+        .I1(data_c1_in[12]),
+        .I2(Q[12]),
+        .I3(\p_moving_average_reg_n_0_[0][12] ),
+        .O(r_acc0_carry__2_i_3__3_n_0));
+  (* HLUTNM = "lutpair45" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_1__3
-       (.I0(r_acc__3[2]),
+       (.I0(Q[2]),
         .I1(data_c1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .O(r_acc0_carry_i_1__3_n_0));
-  (* HLUTNM = "lutpair48" *) 
+  (* HLUTNM = "lutpair44" *) 
   LUT3 #(
     .INIT(8'h8E)) 
     r_acc0_carry_i_2__3
-       (.I0(r_acc__3[1]),
+       (.I0(Q[1]),
         .I1(data_c1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .O(r_acc0_carry_i_2__3_n_0));
-  (* HLUTNM = "lutpair196" *) 
+  (* HLUTNM = "lutpair180" *) 
   LUT2 #(
     .INIT(4'hE)) 
     r_acc0_carry_i_3__3
        (.I0(data_c1_in[0]),
-        .I1(r_acc__3[0]),
+        .I1(Q[0]),
         .O(r_acc0_carry_i_3__3_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     r_acc0_carry_i_4__3
-       (.I0(r_acc__3[0]),
+       (.I0(Q[0]),
         .I1(data_c1_in[0]),
         .O(r_acc0_carry_i_4__3_n_0));
-  (* HLUTNM = "lutpair50" *) 
+  (* HLUTNM = "lutpair46" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_5__3
-       (.I0(r_acc__3[3]),
+       (.I0(Q[3]),
         .I1(data_c1_in[3]),
-        .I2(\p_moving_average_reg_n_0_[15][3] ),
+        .I2(\p_moving_average_reg_n_0_[0][3] ),
         .I3(r_acc0_carry_i_1__3_n_0),
         .O(r_acc0_carry_i_5__3_n_0));
-  (* HLUTNM = "lutpair49" *) 
+  (* HLUTNM = "lutpair45" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_6__3
-       (.I0(r_acc__3[2]),
+       (.I0(Q[2]),
         .I1(data_c1_in[2]),
-        .I2(\p_moving_average_reg_n_0_[15][2] ),
+        .I2(\p_moving_average_reg_n_0_[0][2] ),
         .I3(r_acc0_carry_i_2__3_n_0),
         .O(r_acc0_carry_i_6__3_n_0));
-  (* HLUTNM = "lutpair48" *) 
+  (* HLUTNM = "lutpair44" *) 
   LUT4 #(
     .INIT(16'h9669)) 
     r_acc0_carry_i_7__3
-       (.I0(r_acc__3[1]),
+       (.I0(Q[1]),
         .I1(data_c1_in[1]),
-        .I2(\p_moving_average_reg_n_0_[15][1] ),
+        .I2(\p_moving_average_reg_n_0_[0][1] ),
         .I3(r_acc0_carry_i_3__3_n_0),
         .O(r_acc0_carry_i_7__3_n_0));
-  (* HLUTNM = "lutpair196" *) 
+  (* HLUTNM = "lutpair180" *) 
   LUT3 #(
     .INIT(8'h96)) 
     r_acc0_carry_i_8__3
        (.I0(data_c1_in[0]),
-        .I1(r_acc__3[0]),
-        .I2(\p_moving_average_reg_n_0_[15][0] ),
+        .I1(Q[0]),
+        .I2(\p_moving_average_reg_n_0_[0][0] ),
         .O(r_acc0_carry_i_8__3_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13727,7 +9103,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_7),
-        .Q(r_acc__3[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13735,7 +9111,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_5),
-        .Q(Q[6]),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13743,7 +9119,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_4),
-        .Q(Q[7]),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13751,7 +9127,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_7),
-        .Q(Q[8]),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13759,38 +9135,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__2_n_6),
-        .Q(Q[9]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[14] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_5),
-        .Q(Q[10]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[15] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__2_n_4),
-        .Q(Q[11]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[16] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_7),
-        .Q(Q[12]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \r_acc_reg[17] 
-       (.C(clk),
-        .CE(1'b1),
-        .D(r_acc0_carry__3_n_6),
         .Q(Q[13]),
         .R(1'b0));
   FDRE #(
@@ -13799,7 +9143,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_6),
-        .Q(r_acc__3[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13807,7 +9151,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_5),
-        .Q(r_acc__3[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13815,7 +9159,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry_n_4),
-        .Q(r_acc__3[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13823,7 +9167,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_7),
-        .Q(Q[0]),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13831,7 +9175,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_6),
-        .Q(Q[1]),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13839,7 +9183,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_5),
-        .Q(Q[2]),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13847,7 +9191,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__0_n_4),
-        .Q(Q[3]),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13855,7 +9199,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_7),
-        .Q(Q[4]),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -13863,29 +9207,28 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9
        (.C(clk),
         .CE(1'b1),
         .D(r_acc0_carry__1_n_6),
-        .Q(Q[5]),
+        .Q(Q[9]),
         .R(1'b0));
 endmodule
 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_top
    (Q,
-    \r_acc_reg[17] ,
-    \r_acc_reg[17]_0 ,
-    \r_acc_reg[17]_1 ,
-    \r_acc_reg[17]_2 ,
-    \r_acc_reg[17]_3 ,
-    \r_acc_reg[17]_4 ,
-    \r_acc_reg[17]_5 ,
-    \r_acc_reg[17]_6 ,
-    \r_acc_reg[17]_7 ,
-    \r_acc_reg[17]_8 ,
-    \r_acc_reg[17]_9 ,
-    \r_acc_reg[17]_10 ,
-    \r_acc_reg[17]_11 ,
-    \r_acc_reg[17]_12 ,
-    \r_acc_reg[17]_13 ,
+    \r_acc_reg[13] ,
+    \r_acc_reg[13]_0 ,
+    \r_acc_reg[13]_1 ,
+    \r_acc_reg[13]_2 ,
+    \r_acc_reg[13]_3 ,
+    \r_acc_reg[13]_4 ,
+    \r_acc_reg[13]_5 ,
+    \r_acc_reg[13]_6 ,
+    \r_acc_reg[13]_7 ,
+    \r_acc_reg[13]_8 ,
+    \r_acc_reg[13]_9 ,
+    \r_acc_reg[13]_10 ,
+    \r_acc_reg[13]_11 ,
+    \r_acc_reg[13]_12 ,
+    \r_acc_reg[13]_13 ,
     data_a1_in,
-    clk,
     data_a2_in,
     data_b1_in,
     data_b2_in,
@@ -13900,25 +9243,25 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_top
     data_g1_in,
     data_g2_in,
     data_h1_in,
-    data_h2_in);
+    data_h2_in,
+    clk);
   output [13:0]Q;
-  output [13:0]\r_acc_reg[17] ;
-  output [13:0]\r_acc_reg[17]_0 ;
-  output [13:0]\r_acc_reg[17]_1 ;
-  output [13:0]\r_acc_reg[17]_2 ;
-  output [13:0]\r_acc_reg[17]_3 ;
-  output [13:0]\r_acc_reg[17]_4 ;
-  output [13:0]\r_acc_reg[17]_5 ;
-  output [13:0]\r_acc_reg[17]_6 ;
-  output [13:0]\r_acc_reg[17]_7 ;
-  output [13:0]\r_acc_reg[17]_8 ;
-  output [13:0]\r_acc_reg[17]_9 ;
-  output [13:0]\r_acc_reg[17]_10 ;
-  output [13:0]\r_acc_reg[17]_11 ;
-  output [13:0]\r_acc_reg[17]_12 ;
-  output [13:0]\r_acc_reg[17]_13 ;
+  output [13:0]\r_acc_reg[13] ;
+  output [13:0]\r_acc_reg[13]_0 ;
+  output [13:0]\r_acc_reg[13]_1 ;
+  output [13:0]\r_acc_reg[13]_2 ;
+  output [13:0]\r_acc_reg[13]_3 ;
+  output [13:0]\r_acc_reg[13]_4 ;
+  output [13:0]\r_acc_reg[13]_5 ;
+  output [13:0]\r_acc_reg[13]_6 ;
+  output [13:0]\r_acc_reg[13]_7 ;
+  output [13:0]\r_acc_reg[13]_8 ;
+  output [13:0]\r_acc_reg[13]_9 ;
+  output [13:0]\r_acc_reg[13]_10 ;
+  output [13:0]\r_acc_reg[13]_11 ;
+  output [13:0]\r_acc_reg[13]_12 ;
+  output [13:0]\r_acc_reg[13]_13 ;
   input [13:0]data_a1_in;
-  input clk;
   input [13:0]data_a2_in;
   input [13:0]data_b1_in;
   input [13:0]data_b2_in;
@@ -13934,6 +9277,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_top
   input [13:0]data_g2_in;
   input [13:0]data_h1_in;
   input [13:0]data_h2_in;
+  input clk;
 
   wire [13:0]Q;
   wire clk;
@@ -13953,84 +9297,84 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_top
   wire [13:0]data_g2_in;
   wire [13:0]data_h1_in;
   wire [13:0]data_h2_in;
-  wire [13:0]\r_acc_reg[17] ;
-  wire [13:0]\r_acc_reg[17]_0 ;
-  wire [13:0]\r_acc_reg[17]_1 ;
-  wire [13:0]\r_acc_reg[17]_10 ;
-  wire [13:0]\r_acc_reg[17]_11 ;
-  wire [13:0]\r_acc_reg[17]_12 ;
-  wire [13:0]\r_acc_reg[17]_13 ;
-  wire [13:0]\r_acc_reg[17]_2 ;
-  wire [13:0]\r_acc_reg[17]_3 ;
-  wire [13:0]\r_acc_reg[17]_4 ;
-  wire [13:0]\r_acc_reg[17]_5 ;
-  wire [13:0]\r_acc_reg[17]_6 ;
-  wire [13:0]\r_acc_reg[17]_7 ;
-  wire [13:0]\r_acc_reg[17]_8 ;
-  wire [13:0]\r_acc_reg[17]_9 ;
+  wire [13:0]\r_acc_reg[13] ;
+  wire [13:0]\r_acc_reg[13]_0 ;
+  wire [13:0]\r_acc_reg[13]_1 ;
+  wire [13:0]\r_acc_reg[13]_10 ;
+  wire [13:0]\r_acc_reg[13]_11 ;
+  wire [13:0]\r_acc_reg[13]_12 ;
+  wire [13:0]\r_acc_reg[13]_13 ;
+  wire [13:0]\r_acc_reg[13]_2 ;
+  wire [13:0]\r_acc_reg[13]_3 ;
+  wire [13:0]\r_acc_reg[13]_4 ;
+  wire [13:0]\r_acc_reg[13]_5 ;
+  wire [13:0]\r_acc_reg[13]_6 ;
+  wire [13:0]\r_acc_reg[13]_7 ;
+  wire [13:0]\r_acc_reg[13]_8 ;
+  wire [13:0]\r_acc_reg[13]_9 ;
 
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average MA0
        (.Q(Q),
         .clk(clk),
         .data_a1_in(data_a1_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_0 MA1
-       (.Q(\r_acc_reg[17] ),
+       (.Q(\r_acc_reg[13] ),
         .clk(clk),
         .data_a2_in(data_a2_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_1 MA10
-       (.Q(\r_acc_reg[17]_8 ),
+       (.Q(\r_acc_reg[13]_8 ),
         .clk(clk),
         .data_f1_in(data_f1_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_2 MA11
-       (.Q(\r_acc_reg[17]_9 ),
+       (.Q(\r_acc_reg[13]_9 ),
         .clk(clk),
         .data_f2_in(data_f2_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_3 MA12
-       (.Q(\r_acc_reg[17]_10 ),
+       (.Q(\r_acc_reg[13]_10 ),
         .clk(clk),
         .data_g1_in(data_g1_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_4 MA13
-       (.Q(\r_acc_reg[17]_11 ),
+       (.Q(\r_acc_reg[13]_11 ),
         .clk(clk),
         .data_g2_in(data_g2_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_5 MA14
-       (.Q(\r_acc_reg[17]_12 ),
+       (.Q(\r_acc_reg[13]_12 ),
         .clk(clk),
         .data_h1_in(data_h1_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_6 MA15
-       (.Q(\r_acc_reg[17]_13 ),
+       (.Q(\r_acc_reg[13]_13 ),
         .clk(clk),
         .data_h2_in(data_h2_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_7 MA2
-       (.Q(\r_acc_reg[17]_0 ),
+       (.Q(\r_acc_reg[13]_0 ),
         .clk(clk),
         .data_b1_in(data_b1_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_8 MA3
-       (.Q(\r_acc_reg[17]_1 ),
+       (.Q(\r_acc_reg[13]_1 ),
         .clk(clk),
         .data_b2_in(data_b2_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_9 MA4
-       (.Q(\r_acc_reg[17]_2 ),
+       (.Q(\r_acc_reg[13]_2 ),
         .clk(clk),
         .data_c1_in(data_c1_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_10 MA5
-       (.Q(\r_acc_reg[17]_3 ),
+       (.Q(\r_acc_reg[13]_3 ),
         .clk(clk),
         .data_c2_in(data_c2_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_11 MA6
-       (.Q(\r_acc_reg[17]_4 ),
+       (.Q(\r_acc_reg[13]_4 ),
         .clk(clk),
         .data_d1_in(data_d1_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_12 MA7
-       (.Q(\r_acc_reg[17]_5 ),
+       (.Q(\r_acc_reg[13]_5 ),
         .clk(clk),
         .data_d2_in(data_d2_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_13 MA8
-       (.Q(\r_acc_reg[17]_6 ),
+       (.Q(\r_acc_reg[13]_6 ),
         .clk(clk),
         .data_e1_in(data_e1_in));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_moving_average_14 MA9
-       (.Q(\r_acc_reg[17]_7 ),
+       (.Q(\r_acc_reg[13]_7 ),
         .clk(clk),
         .data_e2_in(data_e2_in));
 endmodule

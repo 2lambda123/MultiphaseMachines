@@ -70,9 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_moving_average_top_2_0_synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 1
-set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z045ffg900-2
@@ -100,7 +98,7 @@ read_vhdl -library xil_defaultlib {
   {C:/Users/JonasHP/Desktop/EXJOBB/Moving Average VHDL/MovingAverageFilter.vhd}
   {C:/Users/JonasHP/Desktop/EXJOBB/Moving Average VHDL/moving_average_top.vhd}
 }
-read_ip -quiet c:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_moving_average_top_2_0/design_1_moving_average_top_2_0.xci
+read_ip -quiet C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_moving_average_top_2_0/design_1_moving_average_top_2_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

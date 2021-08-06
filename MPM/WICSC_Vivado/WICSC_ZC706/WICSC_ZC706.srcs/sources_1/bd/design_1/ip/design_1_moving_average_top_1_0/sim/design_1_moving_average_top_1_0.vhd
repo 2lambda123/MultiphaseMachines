@@ -145,7 +145,7 @@ BEGIN
   U0 : moving_average_top
     GENERIC MAP (
       Inputsize => 14,
-      FilterSize_log2 => 4
+      FilterSize_log2 => 0
     )
     PORT MAP (
       data_a1_in => data_a1_in,

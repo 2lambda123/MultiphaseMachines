@@ -140,7 +140,7 @@ ARCHITECTURE design_1_moving_average_top_2_0_arch OF design_1_moving_average_top
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_moving_average_top_2_0_arch : ARCHITECTURE IS "design_1_moving_average_top_2_0,moving_average_top,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_moving_average_top_2_0_arch: ARCHITECTURE IS "design_1_moving_average_top_2_0,moving_average_top,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=moving_average_top,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,Inputsize=14,FilterSize_log2=4}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_moving_average_top_2_0_arch: ARCHITECTURE IS "design_1_moving_average_top_2_0,moving_average_top,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=moving_average_top,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,Inputsize=14,FilterSize_log2=0}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_moving_average_top_2_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -151,7 +151,7 @@ BEGIN
   U0 : moving_average_top
     GENERIC MAP (
       Inputsize => 14,
-      FilterSize_log2 => 4
+      FilterSize_log2 => 0
     )
     PORT MAP (
       data_a1_in => data_a1_in,

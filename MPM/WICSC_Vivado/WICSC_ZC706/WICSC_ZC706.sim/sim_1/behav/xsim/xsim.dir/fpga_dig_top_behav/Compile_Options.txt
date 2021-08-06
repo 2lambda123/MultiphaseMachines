@@ -1,0 +1,1 @@
+-wto "f4df8cb7dbf3406cb04362c7331f8460" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "xilinx_vip" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "fpga_dig_top_behav" "xil_defaultlib.fpga_dig_top" "xil_defaultlib.glbl" -log "elaborate.log" 

@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Fri Jul 23 19:16:15 2021
+--Date        : Fri Aug  6 10:05:07 2021
 --Host        : DESKTOP-R1R40B4 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -3062,6 +3062,14 @@ architecture STRUCTURE of design_1 is
     carrier_zero : out STD_LOGIC
   );
   end component design_1_modulater_14bit_0_0;
+  component design_1_clk_wiz_1_0 is
+  port (
+    reset : in STD_LOGIC;
+    clk_in1 : in STD_LOGIC;
+    clk_12mhz : out STD_LOGIC;
+    locked : out STD_LOGIC
+  );
+  end component design_1_clk_wiz_1_0;
   component design_1_moving_average_top_0_0 is
   port (
     data_a1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );
@@ -3099,14 +3107,6 @@ architecture STRUCTURE of design_1 is
     data_h2_out : out STD_LOGIC_VECTOR ( 13 downto 0 )
   );
   end component design_1_moving_average_top_0_0;
-  component design_1_clk_wiz_1_0 is
-  port (
-    reset : in STD_LOGIC;
-    clk_in1 : in STD_LOGIC;
-    locked : out STD_LOGIC;
-    clk_12mhz : out STD_LOGIC
-  );
-  end component design_1_clk_wiz_1_0;
   component design_1_moving_average_top_1_0 is
   port (
     data_a1_in : in STD_LOGIC_VECTOR ( 13 downto 0 );

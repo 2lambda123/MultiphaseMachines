@@ -1,12 +1,12 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.769465",
-   "Default View_TopLeft":"6329,932",
+   "Default View_ScaleFactor":"0.236831",
+   "Default View_TopLeft":"1148,-718",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 11 -x 10410 -y 2080 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 11 -x 10410 -y 2110 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 12 -x 10450 -y 2080 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 12 -x 10450 -y 2110 -defaultsOSRD
 preplace port AO_in -pg 1 -lvl 0 -x -850 -y 2840 -defaultsOSRD
 preplace port BO_in -pg 1 -lvl 0 -x -850 -y 2870 -defaultsOSRD
 preplace port ZO_in -pg 1 -lvl 0 -x -850 -y 2900 -defaultsOSRD
@@ -104,295 +104,295 @@ preplace port lvds_dco1_n_2 -pg 1 -lvl 0 -x -850 -y 2170 -defaultsOSRD
 preplace port lvds_dco1_p_2 -pg 1 -lvl 0 -x -850 -y 2140 -defaultsOSRD
 preplace port lvds_fco1_n_2 -pg 1 -lvl 0 -x -850 -y 2230 -defaultsOSRD
 preplace port lvds_fco1_p_2 -pg 1 -lvl 0 -x -850 -y 2200 -defaultsOSRD
-preplace port sdio_0 -pg 1 -lvl 11 -x 10410 -y 2270 -defaultsOSRD
-preplace port sclk_0 -pg 1 -lvl 11 -x 10410 -y 2300 -defaultsOSRD
+preplace port sdio_0 -pg 1 -lvl 12 -x 10450 -y 2270 -defaultsOSRD
+preplace port sclk_0 -pg 1 -lvl 12 -x 10450 -y 2300 -defaultsOSRD
 preplace port master_rst_n -pg 1 -lvl 0 -x -850 -y 910 -defaultsOSRD
-preplace port PWM_SIGNAL -pg 1 -lvl 11 -x 10410 -y 1840 -defaultsOSRD
-preplace port csb_0 -pg 1 -lvl 11 -x 10410 -y 2360 -defaultsOSRD
-preplace port csb_1 -pg 1 -lvl 11 -x 10410 -y 2400 -defaultsOSRD
-preplace port csb_2 -pg 1 -lvl 11 -x 10410 -y 2430 -defaultsOSRD
-preplace portBus modulator_out -pg 1 -lvl 11 -x 10410 -y 1720 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 7 -x 9190 -y 2180 -defaultsOSRD
-preplace inst spi3_WICSC_top_0 -pg 1 -lvl 10 -x 10250 -y 2370 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 9 -x 9960 -y 2400 -defaultsOSRD
-preplace inst axi_gpio_1 -pg 1 -lvl 9 -x 9960 -y 2580 -defaultsOSRD
-preplace inst axi_gpio_2 -pg 1 -lvl 9 -x 9960 -y 1930 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 8 -x 9600 -y 1900 -defaultsOSRD
-preplace inst rst_ps7_0_100M -pg 1 -lvl 7 -x 9190 -y 2460 -defaultsOSRD
-preplace inst PS_Interface_TOP_0 -pg 1 -lvl 4 -x 7570 -y 1000 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 5 -x 8030 -y 2610 -defaultsOSRD
-preplace inst axi_gpio_3 -pg 1 -lvl 9 -x 9960 -y 2730 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 2 -x 5380 -y 2850 -defaultsOSRD
-preplace inst MSBs_selector_0 -pg 1 -lvl 2 -x 5380 -y 1000 -defaultsOSRD
-preplace inst MSBs_selector_1 -pg 1 -lvl 2 -x 5380 -y 1400 -defaultsOSRD
-preplace inst MSBs_selector_2 -pg 1 -lvl 2 -x 5380 -y 2080 -defaultsOSRD
-preplace inst axi_gpio_4 -pg 1 -lvl 7 -x 9190 -y 1480 -defaultsOSRD
-preplace inst xlconcat_1 -pg 1 -lvl 6 -x 8760 -y 1570 -defaultsOSRD
-preplace inst axi_gpio_5 -pg 1 -lvl 10 -x 10250 -y 2190 -defaultsOSRD
-preplace inst quadrature_decoder_0 -pg 1 -lvl 1 -x 4710 -y 2870 -defaultsOSRD
-preplace inst axi_gpio_6 -pg 1 -lvl 2 -x 5380 -y 3000 -defaultsOSRD
-preplace inst fpga_dig_top_1 -pg 1 -lvl 1 -x 4710 -y 1110 -defaultsOSRD
-preplace inst fpga_dig_top_1_bank_0 -pg 1 -lvl 1 -x 4710 -y 2070 -defaultsOSRD
-preplace inst fpga_dig_top_0 -pg 1 -lvl 1 -x 4710 -y 190 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 6 -x 8760 -y 1020 -defaultsOSRD
-preplace inst AND_GATE_0 -pg 1 -lvl 5 -x 8030 -y 680 -defaultsOSRD
-preplace inst modulater_14bit_0 -pg 1 -lvl 6 -x 8760 -y 2060 -defaultsOSRD
-preplace inst moving_average_top_0 -pg 1 -lvl 3 -x 6860 -y 300 -defaultsOSRD
-preplace inst clk_wiz_1 -pg 1 -lvl 3 -x 6860 -y 990 -defaultsOSRD
-preplace inst moving_average_top_1 -pg 1 -lvl 3 -x 6860 -y 720 -defaultsOSRD
-preplace inst moving_average_top_2 -pg 1 -lvl 3 -x 6860 -y 1260 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 10 30 -280 5040J 790 5740 1490 7360 450 7710 590 8320 530 8940 2350 9450 1640 9790 2190 10130
-preplace netloc axi_gpio_0_gpio_io_o 1 9 1 10100 2360n
-preplace netloc axi_gpio_0_gpio2_io_o 1 9 1 10110 2380n
-preplace netloc axi_gpio_1_gpio_io_o 1 9 1 10120 2400n
-preplace netloc axi_gpio_1_gpio2_io_o 1 9 1 10130 2420n
-preplace netloc spi3_WICSC_top_0_rx_data 1 9 2 N 1930 10370
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 6 2 8990 2360 9390
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 9 5190 1690 N 1690 N 1690 N 1690 N 1690 8930 1610 9440 1610 9800 2210 N
-preplace netloc PS_Interface_TOP_0_PS_IN 1 4 4 7720 610 8530J 510 NJ 510 9420
-preplace netloc processing_system7_0_GPIO_O 1 3 5 7390 420 7740 560 8540J 520 NJ 520 9410
-preplace netloc clk_wiz_0_clk_130 1 5 1 8130J 2030n
-preplace netloc PS_Interface_TOP_0_toMod1 1 4 2 N 1000 8330
-preplace netloc PS_Interface_TOP_0_toMod2 1 4 2 N 1020 8340
-preplace netloc modulater_14bit_0_carrier_zero 1 0 11 40 1680 N 1680 N 1680 N 1680 N 1680 8530 1680 8970 1590 N 1590 N 1590 N 1590 10390
-preplace netloc axi_gpio_2_ip2intc_irpt 1 6 4 8990 1620 NJ 1620 NJ 1620 10100
-preplace netloc fpga_dig_top_0_captured_data_a1 1 1 1 5200 50n
-preplace netloc fpga_dig_top_0_captured_data_a2 1 1 1 5190 70n
-preplace netloc fpga_dig_top_0_captured_data_b1 1 1 1 5180 90n
-preplace netloc fpga_dig_top_0_captured_data_b2 1 1 1 5170 110n
-preplace netloc fpga_dig_top_0_captured_data_c1 1 1 1 5160 130n
-preplace netloc fpga_dig_top_0_captured_data_c2 1 1 1 5150 150n
-preplace netloc fpga_dig_top_0_captured_data_d1 1 1 1 5140 170n
-preplace netloc fpga_dig_top_0_captured_data_d2 1 1 1 5130 190n
-preplace netloc fpga_dig_top_0_captured_data_e1 1 1 1 5120 210n
-preplace netloc fpga_dig_top_0_captured_data_e2 1 1 1 5110 230n
-preplace netloc fpga_dig_top_0_captured_data_f1 1 1 1 5100 250n
-preplace netloc fpga_dig_top_0_captured_data_f2 1 1 1 5090 270n
-preplace netloc fpga_dig_top_0_captured_data_g1 1 1 1 5080 290n
-preplace netloc fpga_dig_top_0_captured_data_g2 1 1 1 5070 310n
-preplace netloc fpga_dig_top_0_captured_data_h1 1 1 1 5060 330n
-preplace netloc fpga_dig_top_0_captured_data_h2 1 1 1 5050 350n
-preplace netloc MSBs_selector_0_data_out_b1 1 3 3 7210 160 N 160 8500
-preplace netloc MSBs_selector_0_data_out_b2 1 3 3 7140 170 N 170 8490
-preplace netloc MSBs_selector_0_data_out_c1 1 3 3 7350 180 N 180 8480
-preplace netloc MSBs_selector_0_data_out_c2 1 3 3 7250 250 N 250 8420
-preplace netloc MSBs_selector_0_data_out_d1 1 3 3 7260 190 N 190 8470
-preplace netloc MSBs_selector_0_data_out_d2 1 3 3 7330 200 N 200 8450
-preplace netloc MSBs_selector_0_data_out_e1 1 3 3 7150 210 N 210 8430
-preplace netloc MSBs_selector_0_data_out_e2 1 3 3 7160 220 N 220 8410
-preplace netloc MSBs_selector_0_data_out_f1 1 3 3 7370 230 N 230 8380
-preplace netloc MSBs_selector_0_data_out_f2 1 3 3 7050 340 N 340 8260
-preplace netloc MSBs_selector_0_data_out_g1 1 3 3 7190 260 N 260 8350
-preplace netloc MSBs_selector_0_data_out_g2 1 3 3 7270 270 N 270 8310
-preplace netloc MSBs_selector_0_data_out_h1 1 3 3 7200 280 N 280 8290
-preplace netloc MSBs_selector_0_data_out_h2 1 3 3 7340 290 N 290 8270
-preplace netloc quadrature_decoder_0_position 1 1 1 5160 2840n
-preplace netloc quadrature_decoder_0_direction 1 1 1 4890 2840n
-preplace netloc xlconcat_0_dout 1 2 8 N 2850 N 2850 N 2850 NJ 2850 NJ 2850 NJ 2850 NJ 2850 10110
-preplace netloc AO_in_1 1 0 1 -610J 2840n
-preplace netloc BO_in_1 1 0 1 NJ 2870
-preplace netloc ZO_in_1 1 0 1 -610J 2890n
-preplace netloc lvds_dco1_p_1_1 1 0 1 -830J -290n
-preplace netloc lvds_dco1_n_1_1 1 0 1 -630J -260n
-preplace netloc lvds_dco2_p_0_1 1 0 1 -640J -230n
-preplace netloc lvds_dco2_n_0_1 1 0 1 -650J -200n
-preplace netloc lvds_fco1_p_0_1 1 0 1 -660J -170n
-preplace netloc lvds_fco1_n_0_1 1 0 1 -670J -140n
-preplace netloc lvds_fco2_p_0_1 1 0 1 -630J -110n
-preplace netloc lvds_fco2_n_0_1 1 0 1 NJ -80
-preplace netloc lvds_data_a1_p_0_1 1 0 1 -830J -60n
-preplace netloc lvds_data_a1_n_0_1 1 0 1 -830J -40n
-preplace netloc lvds_data_a2_p_0_1 1 0 1 -820J -20n
-preplace netloc lvds_data_a2_n_0_1 1 0 1 -810J 0n
-preplace netloc lvds_data_b1_p_0_1 1 0 1 -800J 20n
-preplace netloc lvds_data_b1_n_0_1 1 0 1 -790J 40n
-preplace netloc lvds_data_b2_p_0_1 1 0 1 -780J 60n
-preplace netloc lvds_data_b2_n_0_1 1 0 1 -770J 80n
-preplace netloc lvds_data_c1_p_0_1 1 0 1 -760J 100n
-preplace netloc lvds_data_c1_n_0_1 1 0 1 -750J 120n
-preplace netloc lvds_data_c2_p_0_1 1 0 1 -740J 140n
-preplace netloc lvds_data_c2_n_0_1 1 0 1 -730J 160n
-preplace netloc lvds_data_d1_p_0_1 1 0 1 -720J 180n
-preplace netloc lvds_data_d1_n_0_1 1 0 1 -710J 200n
-preplace netloc lvds_data_d2_p_0_1 1 0 1 -700J 220n
-preplace netloc lvds_data_d2_n_0_1 1 0 1 -690J 240n
-preplace netloc lvds_data_e1_p_0_1 1 0 1 -670J 260n
-preplace netloc lvds_data_e1_n_0_1 1 0 1 -660J 280n
-preplace netloc lvds_data_e2_p_0_1 1 0 1 -650J 300n
-preplace netloc lvds_data_e2_n_0_1 1 0 1 -640J 320n
-preplace netloc lvds_data_f1_p_0_1 1 0 1 -630J 340n
-preplace netloc lvds_data_f1_n_0_1 1 0 1 -620J 360n
-preplace netloc lvds_data_f2_p_0_1 1 0 1 -610J 380n
-preplace netloc lvds_data_f2_n_0_1 1 0 1 -600J 400n
-preplace netloc lvds_data_g1_p_0_1 1 0 1 -590J 420n
-preplace netloc lvds_data_g1_n_0_1 1 0 1 -580J 440n
-preplace netloc lvds_data_g2_p_0_1 1 0 1 -570J 460n
-preplace netloc lvds_data_g2_n_0_1 1 0 1 -560J 480n
-preplace netloc lvds_data_h1_p_0_1 1 0 1 -550J 500n
-preplace netloc lvds_data_h1_n_0_1 1 0 1 -540J 520n
-preplace netloc lvds_data_h2_p_0_1 1 0 1 -530J 540n
-preplace netloc lvds_data_h2_n_0_1 1 0 1 -520J 560n
-preplace netloc lvds_dco1_p_1_2 1 0 1 -510J 700n
-preplace netloc lvds_dco1_n_1_2 1 0 1 -500J 720n
-preplace netloc lvds_dco2_n_1_1 1 0 1 -480J 760n
-preplace netloc lvds_dco2_p_1_1 1 0 1 -490J 740n
-preplace netloc lvds_fco1_n_1_1 1 0 1 -460J 800n
-preplace netloc lvds_fco1_p_1_1 1 0 1 -470J 780n
-preplace netloc lvds_fco2_n_1_1 1 0 1 -440J 840n
-preplace netloc lvds_fco2_p_1_1 1 0 1 -450J 820n
-preplace netloc lvds_data_a1_p_1_1 1 0 1 -430J 860n
-preplace netloc lvds_data_a1_n_1_1 1 0 1 -420J 880n
-preplace netloc lvds_data_a2_p_1_1 1 0 1 -410J 900n
-preplace netloc lvds_data_a2_n_1_1 1 0 1 -400J 920n
-preplace netloc lvds_data_b1_n_1_1 1 0 1 -380J 960n
-preplace netloc lvds_data_b1_p_1_1 1 0 1 -390J 940n
-preplace netloc lvds_data_b2_n_1_1 1 0 1 -360J 1000n
-preplace netloc lvds_data_b2_p_1_1 1 0 1 -370J 980n
-preplace netloc lvds_data_c1_n_1_1 1 0 1 -340J 1040n
-preplace netloc lvds_data_c1_p_1_1 1 0 1 -350J 1020n
-preplace netloc lvds_data_c2_n_1_1 1 0 1 -320J 1080n
-preplace netloc lvds_data_c2_p_1_1 1 0 1 -330J 1060n
-preplace netloc lvds_data_d1_p_1_1 1 0 1 -310J 1100n
-preplace netloc lvds_data_d1_n_1_1 1 0 1 -300J 1120n
-preplace netloc lvds_data_d2_n_1_1 1 0 1 -280J 1160n
-preplace netloc lvds_data_d2_p_1_1 1 0 1 -290J 1140n
-preplace netloc lvds_data_e1_n_1_1 1 0 1 -260J 1200n
-preplace netloc lvds_data_e1_p_1_1 1 0 1 -270J 1180n
-preplace netloc lvds_data_e2_n_1_1 1 0 1 -240J 1240n
-preplace netloc lvds_data_e2_p_1_1 1 0 1 -250J 1220n
-preplace netloc lvds_data_f1_p_1_1 1 0 1 -230J 1260n
-preplace netloc lvds_data_f1_n_1_1 1 0 1 -220J 1280n
-preplace netloc lvds_data_f2_p_1_1 1 0 1 -210J 1300n
-preplace netloc lvds_data_f2_n_1_1 1 0 1 -200J 1320n
-preplace netloc lvds_data_g1_p_1_1 1 0 1 -190J 1340n
-preplace netloc lvds_data_g1_n_1_1 1 0 1 -180J 1360n
-preplace netloc lvds_data_g2_p_1_1 1 0 1 -170J 1380n
-preplace netloc lvds_data_g2_n_1_1 1 0 1 -160J 1400n
-preplace netloc lvds_data_h1_p_1_1 1 0 1 -150J 1420n
-preplace netloc lvds_data_h1_n_1_1 1 0 1 -140J 1440n
-preplace netloc lvds_data_h2_p_1_1 1 0 1 -130J 1460n
-preplace netloc lvds_data_h2_n_1_1 1 0 1 -120J 1480n
-preplace netloc fpga_dig_top_1_captured_data_a1 1 1 1 5030 970n
-preplace netloc fpga_dig_top_1_captured_data_a2 1 1 1 5020 990n
-preplace netloc fpga_dig_top_1_captured_data_b1 1 1 1 5010 1010n
-preplace netloc fpga_dig_top_1_captured_data_b2 1 1 1 5000 1030n
-preplace netloc fpga_dig_top_1_captured_data_c1 1 1 1 4990 1050n
-preplace netloc fpga_dig_top_1_captured_data_c2 1 1 1 4980 1070n
-preplace netloc fpga_dig_top_1_captured_data_d1 1 1 1 4970 1090n
-preplace netloc fpga_dig_top_1_captured_data_d2 1 1 1 4960 1110n
-preplace netloc fpga_dig_top_1_captured_data_e1 1 1 1 4950 1130n
-preplace netloc fpga_dig_top_1_captured_data_e2 1 1 1 4940 1150n
-preplace netloc fpga_dig_top_1_captured_data_f1 1 1 1 4930 1170n
-preplace netloc fpga_dig_top_1_captured_data_f2 1 1 1 4920 1190n
-preplace netloc fpga_dig_top_1_captured_data_g1 1 1 1 4910 1210n
-preplace netloc fpga_dig_top_1_captured_data_g2 1 1 1 4900 1230n
-preplace netloc fpga_dig_top_1_captured_data_h1 1 1 1 4890 1250n
-preplace netloc fpga_dig_top_1_captured_data_h2 1 1 1 4880 1270n
-preplace netloc MSBs_selector_1_data_out_b1 1 3 3 7240 360 7760 1070 N
-preplace netloc MSBs_selector_1_data_out_b2 1 3 3 7040 80 N 80 8460
-preplace netloc MSBs_selector_1_data_out_c1 1 3 3 7060 90 N 90 8440
-preplace netloc MSBs_selector_1_data_out_c2 1 3 3 7070 120 N 120 8390
-preplace netloc MSBs_selector_1_data_out_d1 1 3 3 7080 130 N 130 8360
-preplace netloc MSBs_selector_1_data_out_d2 1 3 3 7020 100 N 100 8400
-preplace netloc MSBs_selector_1_data_out_e1 1 3 3 7030 110 N 110 8370
-preplace netloc MSBs_selector_1_data_out_e2 1 3 3 7170 310 N 310 8220
-preplace netloc MSBs_selector_1_data_out_f1 1 3 3 7090 240 N 240 8240
-preplace netloc MSBs_selector_1_data_out_f2 1 3 3 7180 370 7810 510 8190
-preplace netloc MSBs_selector_1_data_out_g1 1 3 3 7320 380 7800 520 8180
-preplace netloc MSBs_selector_1_data_out_g2 1 3 3 7100 320 N 320 8210
-preplace netloc MSBs_selector_1_data_out_h1 1 3 3 7310 330 N 330 8200
-preplace netloc MSBs_selector_1_data_out_h2 1 3 3 7230 390 7790 530 8170
-preplace netloc MSBs_selector_2_data_out_b1 1 3 3 7290 440 7720 580 8130
-preplace netloc MSBs_selector_2_data_out_b2 1 3 3 7040 1550 7770 1410 N
-preplace netloc MSBs_selector_2_data_out_c1 1 3 3 7280 410 7750 550 8140
-preplace netloc Net 1 10 1 10380J 2270n
-preplace netloc spi3_WICSC_top_0_sclk 1 10 1 10390J 2300n
-preplace netloc modulater_14bit_0_mod_out 1 5 6 8550 1670 8960 1600 NJ 1600 NJ 1600 NJ 1600 10370J
-preplace netloc xlconcat_1_dout 1 6 2 NJ 1570 9390
-preplace netloc fpga_dig_top_0_sysclk_ready 1 1 5 NJ 30 NJ 30 N 30 N 30 8300
-preplace netloc fpga_dig_top_1_sysclk_ready 1 1 5 5030J 80 NJ 80 7020 70 N 70 8280
-preplace netloc lvds_dco1_p_2_1 1 0 1 -110 1860n
-preplace netloc lvds_dco1_n_2_1 1 0 1 -100 1880n
-preplace netloc lvds_fco1_p_2_1 1 0 1 -90 1900n
-preplace netloc lvds_fco1_n_2_1 1 0 1 -80 1920n
-preplace netloc lvds_data_a1_p_2_1 1 0 1 -70 1940n
-preplace netloc lvds_data_a1_n_2_1 1 0 1 -60 1960n
-preplace netloc lvds_data_b1_p_2_1 1 0 1 -20 1980n
-preplace netloc lvds_data_b1_n_2_1 1 0 1 -50 2000n
-preplace netloc lvds_data_c1_p_2_1 1 0 1 -10 2020n
-preplace netloc lvds_data_c1_n_2_1 1 0 1 0 2040n
-preplace netloc lvds_data_d1_p_2_1 1 0 1 -40 2060n
-preplace netloc lvds_data_d1_n_2_1 1 0 1 -30 2080n
-preplace netloc lvds_data_e1_p_2_1 1 0 1 10 2100n
-preplace netloc lvds_data_e1_n_2_1 1 0 1 20 2120n
-preplace netloc fpga_dig_top_1_bank_0_sysclk_ready 1 1 5 4890J 1660 5900J 1640 N 1640 7770 1590 NJ
-preplace netloc fpga_dig_top_1_bank_0_captured_data_a1 1 1 1 4910 1930n
-preplace netloc fpga_dig_top_1_bank_0_captured_data_b1 1 1 1 4940 1950n
-preplace netloc fpga_dig_top_1_bank_0_captured_data_c1 1 1 1 4970 1970n
-preplace netloc fpga_dig_top_1_bank_0_captured_data_d1 1 1 1 5130 1990n
-preplace netloc fpga_dig_top_1_bank_0_captured_data_e1 1 1 1 5160 2010n
-preplace netloc quadrature_decoder_0_freq_counter 1 1 2 5130J 2780 5570
-preplace netloc quadrature_decoder_0_Th_value 1 1 2 5100J 2770 5810
-preplace netloc master_rst_n_1 1 0 5 -680J -290 NJ -290 N -290 N -290 7780
-preplace netloc AND_GATE_0_Y 1 0 10 50 1650 NJ 1650 NJ 1650 N 1650 N 1650 8120 1650 8950 1640 9430 1630 N 1630 10110
-preplace netloc axi_gpio_4_gpio2_io_o 1 4 4 7820 500 NJ 500 NJ 500 9400
-preplace netloc MSBs_selector_0_data_out_a1 1 3 3 7120 140 N 140 8520
-preplace netloc MSBs_selector_0_data_out_a2 1 3 3 7130 150 N 150 8510
-preplace netloc MSBs_selector_1_data_out_a1 1 3 3 7110 300 N 300 8250
-preplace netloc MSBs_selector_1_data_out_a2 1 3 3 7380 350 N 350 8230
-preplace netloc MSBs_selector_2_data_out_a1 1 3 3 7300 400 7770 540 8160
-preplace netloc MSBs_selector_2_data_out_a2 1 3 3 7220 430 7730 570 8150
-preplace netloc spi3_WICSC_top_0_csb 1 10 1 10390 2360n
-preplace netloc MSBs_selector_0_data_out_a3 1 2 1 5540 140n
-preplace netloc MSBs_selector_0_data_out_a4 1 2 1 5560 160n
-preplace netloc MSBs_selector_0_data_out_b3 1 2 1 5570 180n
-preplace netloc MSBs_selector_0_data_out_b4 1 2 1 5580 200n
-preplace netloc MSBs_selector_0_data_out_c3 1 2 1 5590 220n
-preplace netloc MSBs_selector_0_data_out_c4 1 2 1 5600 240n
-preplace netloc MSBs_selector_0_data_out_d3 1 2 1 5610 260n
-preplace netloc MSBs_selector_0_data_out_d4 1 2 1 5620 280n
-preplace netloc MSBs_selector_0_data_out_e3 1 2 1 5630 300n
-preplace netloc MSBs_selector_0_data_out_e4 1 2 1 5640 320n
-preplace netloc MSBs_selector_0_data_out_f3 1 2 1 5650 340n
-preplace netloc MSBs_selector_0_data_out_f4 1 2 1 5660 360n
-preplace netloc MSBs_selector_0_data_out_g3 1 2 1 5670 380n
-preplace netloc MSBs_selector_0_data_out_g4 1 2 1 5680 400n
-preplace netloc MSBs_selector_0_data_out_h3 1 2 1 5690 420n
-preplace netloc MSBs_selector_0_data_out_h4 1 2 1 5700 440n
-preplace netloc clk_wiz_1_clk_12mhz 1 2 2 5930 1480 7020
-preplace netloc MSBs_selector_1_data_out_a3 1 2 1 5710 560n
-preplace netloc MSBs_selector_1_data_out_a4 1 2 1 5720 580n
-preplace netloc MSBs_selector_1_data_out_b3 1 2 1 5730 600n
-preplace netloc MSBs_selector_1_data_out_b4 1 2 1 5750 620n
-preplace netloc MSBs_selector_1_data_out_c3 1 2 1 5760 640n
-preplace netloc MSBs_selector_1_data_out_c4 1 2 1 5770 660n
-preplace netloc MSBs_selector_1_data_out_d3 1 2 1 5780 680n
-preplace netloc MSBs_selector_1_data_out_d4 1 2 1 5790 700n
-preplace netloc MSBs_selector_1_data_out_e3 1 2 1 5800 720n
-preplace netloc MSBs_selector_1_data_out_e4 1 2 1 5810 740n
-preplace netloc MSBs_selector_1_data_out_f3 1 2 1 5820 760n
-preplace netloc MSBs_selector_1_data_out_f4 1 2 1 5830 780n
-preplace netloc MSBs_selector_1_data_out_g3 1 2 1 5550 800n
-preplace netloc MSBs_selector_1_data_out_g4 1 2 1 5840 820n
-preplace netloc MSBs_selector_1_data_out_h3 1 2 1 5850 840n
-preplace netloc MSBs_selector_1_data_out_h4 1 2 1 5860 860n
-preplace netloc MSBs_selector_2_data_out_a3 1 2 1 5870 1100n
-preplace netloc MSBs_selector_2_data_out_a4 1 2 1 5880 1120n
-preplace netloc MSBs_selector_2_data_out_b3 1 2 1 5890 1140n
-preplace netloc MSBs_selector_2_data_out_b4 1 2 1 5910 1160n
-preplace netloc MSBs_selector_2_data_out_c2 1 2 1 5920 1180n
-preplace netloc ps7_0_axi_periph_M02_AXI 1 8 1 9810 1880n
-preplace netloc ps7_0_axi_periph_M00_AXI 1 8 1 9820 1840n
-preplace netloc processing_system7_0_FIXED_IO 1 7 4 NJ 2150 9810J 2110 NJ 2110 NJ
-preplace netloc processing_system7_0_DDR 1 7 4 9410J 2140 9770J 2080 NJ 2080 NJ
-preplace netloc ps7_0_axi_periph_M04_AXI 1 6 3 8980 1650 NJ 1650 9750
-preplace netloc processing_system7_0_M_AXI_GP0 1 7 1 9460 1720n
-preplace netloc ps7_0_axi_periph_M03_AXI 1 8 1 9760 1900n
-preplace netloc ps7_0_axi_periph_M01_AXI 1 8 1 9780 1860n
-preplace netloc ps7_0_axi_periph_M05_AXI 1 8 2 9770J 2010 10130
-preplace netloc ps7_0_axi_periph_M06_AXI 1 1 8 5170 1670 NJ 1670 N 1670 7770 1660 NJ 1660 NJ 1660 NJ 1660 9740
-levelinfo -pg 1 -850 4710 5380 6860 7570 8030 8760 9190 9600 9960 10250 10410
-pagesize -pg 1 -db -bbox -sgen -1010 -340 10590 3460
+preplace port PWM_SIGNAL -pg 1 -lvl 12 -x 10450 -y 1840 -defaultsOSRD
+preplace port csb_0 -pg 1 -lvl 12 -x 10450 -y 2360 -defaultsOSRD
+preplace port csb_1 -pg 1 -lvl 12 -x 10450 -y 2400 -defaultsOSRD
+preplace port csb_2 -pg 1 -lvl 12 -x 10450 -y 2430 -defaultsOSRD
+preplace portBus modulator_out -pg 1 -lvl 12 -x 10450 -y 1720 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 8 -x 9220 -y 2180 -defaultsOSRD
+preplace inst spi3_WICSC_top_0 -pg 1 -lvl 11 -x 10280 -y 2370 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 10 -x 9990 -y 2400 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 10 -x 9990 -y 2580 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 10 -x 9990 -y 1930 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 9 -x 9630 -y 1900 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 8 -x 9220 -y 2460 -defaultsOSRD
+preplace inst PS_Interface_TOP_0 -pg 1 -lvl 5 -x 7570 -y 1000 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 6 -x 8100 -y 2610 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 10 -x 9990 -y 2730 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -x 5380 -y 2850 -defaultsOSRD
+preplace inst MSBs_selector_0 -pg 1 -lvl 3 -x 5380 -y 1000 -defaultsOSRD
+preplace inst MSBs_selector_1 -pg 1 -lvl 3 -x 5380 -y 1400 -defaultsOSRD
+preplace inst MSBs_selector_2 -pg 1 -lvl 3 -x 5380 -y 2080 -defaultsOSRD
+preplace inst axi_gpio_4 -pg 1 -lvl 8 -x 9220 -y 1480 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 7 -x 8790 -y 1570 -defaultsOSRD
+preplace inst axi_gpio_5 -pg 1 -lvl 11 -x 10280 -y 2190 -defaultsOSRD
+preplace inst quadrature_decoder_0 -pg 1 -lvl 2 -x 4710 -y 2870 -defaultsOSRD
+preplace inst axi_gpio_6 -pg 1 -lvl 3 -x 5380 -y 3000 -defaultsOSRD
+preplace inst fpga_dig_top_1 -pg 1 -lvl 2 -x 4710 -y 1110 -defaultsOSRD
+preplace inst fpga_dig_top_1_bank_0 -pg 1 -lvl 2 -x 4710 -y 2070 -defaultsOSRD
+preplace inst fpga_dig_top_0 -pg 1 -lvl 2 -x 4710 -y 190 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 7 -x 8790 -y 1020 -defaultsOSRD
+preplace inst AND_GATE_0 -pg 1 -lvl 6 -x 8100 -y 680 -defaultsOSRD
+preplace inst modulater_14bit_0 -pg 1 -lvl 7 -x 8790 -y 2060 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 4 -x 6860 -y 990 -defaultsOSRD
+preplace inst moving_average_top_0 -pg 1 -lvl 4 -x 6860 -y 300 -defaultsOSRD
+preplace inst moving_average_top_1 -pg 1 -lvl 4 -x 6860 -y 720 -defaultsOSRD
+preplace inst moving_average_top_2 -pg 1 -lvl 4 -x 6860 -y 1260 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 10 500 -280 5040J 790 5740 1490 7370 450 7710 600 8390 530 8970 2350 9480 1640 9820 2190 10160
+preplace netloc axi_gpio_0_gpio_io_o 1 10 1 10130 2360n
+preplace netloc axi_gpio_0_gpio2_io_o 1 10 1 10140 2380n
+preplace netloc axi_gpio_1_gpio_io_o 1 10 1 10150 2400n
+preplace netloc axi_gpio_1_gpio2_io_o 1 10 1 10160 2420n
+preplace netloc spi3_WICSC_top_0_rx_data 1 10 2 N 1930 10400
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 7 2 9020 2360 9420
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 2 9 5190 1690 N 1690 N 1690 N 1690 N 1690 8960 1610 9470 1610 9830 2210 N
+preplace netloc PS_Interface_TOP_0_PS_IN 1 5 4 7740 610 8610J 510 NJ 510 9450
+preplace netloc processing_system7_0_GPIO_O 1 4 5 7390 440 7730 590 8280J 520 NJ 520 9440
+preplace netloc clk_wiz_0_clk_130 1 6 1 8200J 2030n
+preplace netloc PS_Interface_TOP_0_toMod1 1 5 2 N 1000 8400
+preplace netloc PS_Interface_TOP_0_toMod2 1 5 2 N 1020 8410
+preplace netloc modulater_14bit_0_carrier_zero 1 1 11 510 1680 N 1680 N 1680 N 1680 N 1680 8600 1680 9000 1590 N 1590 N 1590 N 1590 10420
+preplace netloc axi_gpio_2_ip2intc_irpt 1 7 4 9020 1620 NJ 1620 NJ 1620 10130
+preplace netloc fpga_dig_top_0_captured_data_a1 1 2 1 5200 50n
+preplace netloc fpga_dig_top_0_captured_data_a2 1 2 1 5190 70n
+preplace netloc fpga_dig_top_0_captured_data_b1 1 2 1 5180 90n
+preplace netloc fpga_dig_top_0_captured_data_b2 1 2 1 5170 110n
+preplace netloc fpga_dig_top_0_captured_data_c1 1 2 1 5160 130n
+preplace netloc fpga_dig_top_0_captured_data_c2 1 2 1 5150 150n
+preplace netloc fpga_dig_top_0_captured_data_d1 1 2 1 5140 170n
+preplace netloc fpga_dig_top_0_captured_data_d2 1 2 1 5130 190n
+preplace netloc fpga_dig_top_0_captured_data_e1 1 2 1 5120 210n
+preplace netloc fpga_dig_top_0_captured_data_e2 1 2 1 5110 230n
+preplace netloc fpga_dig_top_0_captured_data_f1 1 2 1 5100 250n
+preplace netloc fpga_dig_top_0_captured_data_f2 1 2 1 5090 270n
+preplace netloc fpga_dig_top_0_captured_data_g1 1 2 1 5080 290n
+preplace netloc fpga_dig_top_0_captured_data_g2 1 2 1 5070 310n
+preplace netloc fpga_dig_top_0_captured_data_h1 1 2 1 5060 330n
+preplace netloc fpga_dig_top_0_captured_data_h2 1 2 1 5050 350n
+preplace netloc MSBs_selector_0_data_out_b1 1 4 3 7260 150 N 150 8590
+preplace netloc MSBs_selector_0_data_out_b2 1 4 3 7280 160 N 160 8580
+preplace netloc MSBs_selector_0_data_out_c1 1 4 3 7220 180 8000 330 8570
+preplace netloc MSBs_selector_0_data_out_c2 1 4 3 7300 190 7990 340 8560
+preplace netloc MSBs_selector_0_data_out_d1 1 4 3 7310 200 7980 350 8550
+preplace netloc MSBs_selector_0_data_out_d2 1 4 3 7320 210 7970 360 8530
+preplace netloc MSBs_selector_0_data_out_e1 1 4 3 7080 220 7960 370 8510
+preplace netloc MSBs_selector_0_data_out_e2 1 4 3 7230 230 7950 380 8490
+preplace netloc MSBs_selector_0_data_out_f1 1 4 3 7110 240 7940 390 8470
+preplace netloc MSBs_selector_0_data_out_f2 1 4 3 7330 250 7930 400 8450
+preplace netloc MSBs_selector_0_data_out_g1 1 4 3 7170 260 7920 410 8430
+preplace netloc MSBs_selector_0_data_out_g2 1 4 3 7340 270 7910 420 8420
+preplace netloc MSBs_selector_0_data_out_h1 1 4 3 7020 280 7900 430 8370
+preplace netloc MSBs_selector_0_data_out_h2 1 4 3 7350 290 7890 440 8350
+preplace netloc quadrature_decoder_0_position 1 2 1 5160 2840n
+preplace netloc quadrature_decoder_0_direction 1 2 1 4890 2840n
+preplace netloc xlconcat_0_dout 1 3 8 N 2850 N 2850 N 2850 NJ 2850 NJ 2850 NJ 2850 NJ 2850 10140
+preplace netloc AO_in_1 1 0 2 NJ 2840 -140
+preplace netloc BO_in_1 1 0 2 NJ 2870 N
+preplace netloc ZO_in_1 1 0 2 NJ 2900 -140
+preplace netloc lvds_dco1_p_1_1 1 0 2 -830J -280 -300
+preplace netloc lvds_dco1_n_1_1 1 0 2 NJ -260 -310
+preplace netloc lvds_dco2_p_0_1 1 0 2 NJ -230 -320
+preplace netloc lvds_dco2_n_0_1 1 0 2 NJ -200 -330
+preplace netloc lvds_fco1_p_0_1 1 0 2 NJ -170 -340
+preplace netloc lvds_fco1_n_0_1 1 0 2 NJ -140 -350
+preplace netloc lvds_fco2_p_0_1 1 0 2 NJ -110 -320
+preplace netloc lvds_fco2_n_0_1 1 0 2 NJ -80 N
+preplace netloc lvds_data_a1_p_0_1 1 0 2 NJ -50 -330
+preplace netloc lvds_data_a1_n_0_1 1 0 2 NJ -20 -350
+preplace netloc lvds_data_a2_p_0_1 1 0 2 NJ 10 -340
+preplace netloc lvds_data_a2_n_0_1 1 0 2 NJ 40 -330
+preplace netloc lvds_data_b1_p_0_1 1 0 2 NJ 70 -320
+preplace netloc lvds_data_b1_n_0_1 1 0 2 NJ 100 -310
+preplace netloc lvds_data_b2_p_0_1 1 0 2 NJ 130 -300
+preplace netloc lvds_data_b2_n_0_1 1 0 2 NJ 160 -290
+preplace netloc lvds_data_c1_p_0_1 1 0 2 NJ 190 -280
+preplace netloc lvds_data_c1_n_0_1 1 0 2 NJ 220 -270
+preplace netloc lvds_data_c2_p_0_1 1 0 2 NJ 250 -260
+preplace netloc lvds_data_c2_n_0_1 1 0 2 -800J 400 -230
+preplace netloc lvds_data_d1_p_0_1 1 0 2 NJ 310 -250
+preplace netloc lvds_data_d1_n_0_1 1 0 2 NJ 340 -240
+preplace netloc lvds_data_d2_p_0_1 1 0 2 NJ 370 -220
+preplace netloc lvds_data_d2_n_0_1 1 0 2 -830J 380 -210
+preplace netloc lvds_data_e1_p_0_1 1 0 2 -810J 390 -200
+preplace netloc lvds_data_e1_n_0_1 1 0 2 NJ 460 -190
+preplace netloc lvds_data_e2_p_0_1 1 0 2 NJ 490 -180
+preplace netloc lvds_data_e2_n_0_1 1 0 2 NJ 520 -170
+preplace netloc lvds_data_f1_p_0_1 1 0 2 NJ 550 -160
+preplace netloc lvds_data_f1_n_0_1 1 0 2 NJ 580 -150
+preplace netloc lvds_data_f2_p_0_1 1 0 2 NJ 610 -140
+preplace netloc lvds_data_f2_n_0_1 1 0 2 NJ 640 -130
+preplace netloc lvds_data_g1_p_0_1 1 0 2 NJ 670 -120
+preplace netloc lvds_data_g1_n_0_1 1 0 2 NJ 700 -110
+preplace netloc lvds_data_g2_p_0_1 1 0 2 NJ 730 -100
+preplace netloc lvds_data_g2_n_0_1 1 0 2 NJ 760 -90
+preplace netloc lvds_data_h1_p_0_1 1 0 2 NJ 790 -80
+preplace netloc lvds_data_h1_n_0_1 1 0 2 NJ 820 -70
+preplace netloc lvds_data_h2_p_0_1 1 0 2 NJ 850 -60
+preplace netloc lvds_data_h2_n_0_1 1 0 2 NJ 880 -50
+preplace netloc lvds_dco1_p_1_2 1 0 2 NJ 940 -40
+preplace netloc lvds_dco1_n_1_2 1 0 2 NJ 970 -30
+preplace netloc lvds_dco2_n_1_1 1 0 2 NJ 1030 -10
+preplace netloc lvds_dco2_p_1_1 1 0 2 NJ 1000 -20
+preplace netloc lvds_fco1_n_1_1 1 0 2 NJ 1090 10
+preplace netloc lvds_fco1_p_1_1 1 0 2 NJ 1060 0
+preplace netloc lvds_fco2_n_1_1 1 0 2 NJ 1150 30
+preplace netloc lvds_fco2_p_1_1 1 0 2 NJ 1120 20
+preplace netloc lvds_data_a1_p_1_1 1 0 2 NJ 1180 40
+preplace netloc lvds_data_a1_n_1_1 1 0 2 NJ 1210 50
+preplace netloc lvds_data_a2_p_1_1 1 0 2 NJ 1240 60
+preplace netloc lvds_data_a2_n_1_1 1 0 2 NJ 1270 70
+preplace netloc lvds_data_b1_n_1_1 1 0 2 NJ 1330 90
+preplace netloc lvds_data_b1_p_1_1 1 0 2 NJ 1300 80
+preplace netloc lvds_data_b2_n_1_1 1 0 2 NJ 1390 110
+preplace netloc lvds_data_b2_p_1_1 1 0 2 NJ 1360 100
+preplace netloc lvds_data_c1_n_1_1 1 0 2 NJ 1450 130
+preplace netloc lvds_data_c1_p_1_1 1 0 2 NJ 1420 120
+preplace netloc lvds_data_c2_n_1_1 1 0 2 NJ 1510 150
+preplace netloc lvds_data_c2_p_1_1 1 0 2 NJ 1480 140
+preplace netloc lvds_data_d1_p_1_1 1 0 2 NJ 1540 160
+preplace netloc lvds_data_d1_n_1_1 1 0 2 NJ 1570 170
+preplace netloc lvds_data_d2_n_1_1 1 0 2 NJ 1630 190
+preplace netloc lvds_data_d2_p_1_1 1 0 2 NJ 1600 180
+preplace netloc lvds_data_e1_n_1_1 1 0 2 NJ 1690 210
+preplace netloc lvds_data_e1_p_1_1 1 0 2 NJ 1660 200
+preplace netloc lvds_data_e2_n_1_1 1 0 2 NJ 1750 230
+preplace netloc lvds_data_e2_p_1_1 1 0 2 NJ 1720 220
+preplace netloc lvds_data_f1_p_1_1 1 0 2 NJ 1780 240
+preplace netloc lvds_data_f1_n_1_1 1 0 2 NJ 1810 250
+preplace netloc lvds_data_f2_p_1_1 1 0 2 NJ 1840 260
+preplace netloc lvds_data_f2_n_1_1 1 0 2 NJ 1870 270
+preplace netloc lvds_data_g1_p_1_1 1 0 2 NJ 1900 280
+preplace netloc lvds_data_g1_n_1_1 1 0 2 NJ 1930 290
+preplace netloc lvds_data_g2_p_1_1 1 0 2 NJ 1960 300
+preplace netloc lvds_data_g2_n_1_1 1 0 2 NJ 1990 310
+preplace netloc lvds_data_h1_p_1_1 1 0 2 NJ 2020 320
+preplace netloc lvds_data_h1_n_1_1 1 0 2 NJ 2050 330
+preplace netloc lvds_data_h2_p_1_1 1 0 2 NJ 2080 340
+preplace netloc lvds_data_h2_n_1_1 1 0 2 NJ 2110 350
+preplace netloc fpga_dig_top_1_captured_data_a1 1 2 1 5030 970n
+preplace netloc fpga_dig_top_1_captured_data_a2 1 2 1 5020 990n
+preplace netloc fpga_dig_top_1_captured_data_b1 1 2 1 5010 1010n
+preplace netloc fpga_dig_top_1_captured_data_b2 1 2 1 5000 1030n
+preplace netloc fpga_dig_top_1_captured_data_c1 1 2 1 4990 1050n
+preplace netloc fpga_dig_top_1_captured_data_c2 1 2 1 4980 1070n
+preplace netloc fpga_dig_top_1_captured_data_d1 1 2 1 4970 1090n
+preplace netloc fpga_dig_top_1_captured_data_d2 1 2 1 4960 1110n
+preplace netloc fpga_dig_top_1_captured_data_e1 1 2 1 4950 1130n
+preplace netloc fpga_dig_top_1_captured_data_e2 1 2 1 4940 1150n
+preplace netloc fpga_dig_top_1_captured_data_f1 1 2 1 4930 1170n
+preplace netloc fpga_dig_top_1_captured_data_f2 1 2 1 4920 1190n
+preplace netloc fpga_dig_top_1_captured_data_g1 1 2 1 4910 1210n
+preplace netloc fpga_dig_top_1_captured_data_g2 1 2 1 4900 1230n
+preplace netloc fpga_dig_top_1_captured_data_h1 1 2 1 4890 1250n
+preplace netloc fpga_dig_top_1_captured_data_h2 1 2 1 4880 1270n
+preplace netloc MSBs_selector_1_data_out_b1 1 4 3 7290 430 7720 1070 N
+preplace netloc MSBs_selector_1_data_out_b2 1 4 3 7030 80 N 80 8540
+preplace netloc MSBs_selector_1_data_out_c1 1 4 3 7040 90 N 90 8520
+preplace netloc MSBs_selector_1_data_out_c2 1 4 3 7050 100 N 100 8500
+preplace netloc MSBs_selector_1_data_out_d1 1 4 3 7070 110 N 110 8480
+preplace netloc MSBs_selector_1_data_out_d2 1 4 3 7090 120 N 120 8460
+preplace netloc MSBs_selector_1_data_out_e1 1 4 3 7100 130 N 130 8440
+preplace netloc MSBs_selector_1_data_out_e2 1 4 3 7150 320 7840 470 8310
+preplace netloc MSBs_selector_1_data_out_f1 1 4 3 7250 330 7830 480 8300
+preplace netloc MSBs_selector_1_data_out_f2 1 4 3 7380 370 7790 520 8260
+preplace netloc MSBs_selector_1_data_out_g1 1 4 3 7130 340 7820 490 8290
+preplace netloc MSBs_selector_1_data_out_g2 1 4 3 7140 350 7810 500 8270
+preplace netloc MSBs_selector_1_data_out_h1 1 4 3 7200 360 7800 510 8250
+preplace netloc MSBs_selector_1_data_out_h2 1 4 3 7270 380 7780 530 8240
+preplace netloc MSBs_selector_2_data_out_b1 1 4 3 7360 410 7750 560 8210
+preplace netloc MSBs_selector_2_data_out_b2 1 4 3 7040 1550 7870 1410 N
+preplace netloc MSBs_selector_2_data_out_c1 1 4 3 7060 420 7740 570 8200
+preplace netloc Net 1 11 1 10410J 2270n
+preplace netloc spi3_WICSC_top_0_sclk 1 11 1 10420J 2300n
+preplace netloc modulater_14bit_0_mod_out 1 6 6 8620 1670 8990 1600 NJ 1600 NJ 1600 NJ 1600 10400J
+preplace netloc xlconcat_1_dout 1 7 2 NJ 1570 9420
+preplace netloc fpga_dig_top_0_sysclk_ready 1 2 5 NJ 30 NJ 30 N 30 N 30 8380
+preplace netloc fpga_dig_top_1_sysclk_ready 1 2 5 5030J 80 NJ 80 7020 70 N 70 8360
+preplace netloc lvds_dco1_p_2_1 1 0 2 -830 2120 360
+preplace netloc lvds_dco1_n_2_1 1 0 2 -820 2140 370
+preplace netloc lvds_fco1_p_2_1 1 0 2 -810 2160 380
+preplace netloc lvds_fco1_n_2_1 1 0 2 -800 2180 390
+preplace netloc lvds_data_a1_p_2_1 1 0 2 -790 2200 400
+preplace netloc lvds_data_a1_n_2_1 1 0 2 -780 2220 410
+preplace netloc lvds_data_b1_p_2_1 1 0 2 -750 2240 420
+preplace netloc lvds_data_b1_n_2_1 1 0 2 -770 2260 430
+preplace netloc lvds_data_c1_p_2_1 1 0 2 -740 2280 440
+preplace netloc lvds_data_c1_n_2_1 1 0 2 -720 2300 450
+preplace netloc lvds_data_d1_p_2_1 1 0 2 N 2320 460
+preplace netloc lvds_data_d1_n_2_1 1 0 2 -760 2340 470
+preplace netloc lvds_data_e1_p_2_1 1 0 2 -730 2360 480
+preplace netloc lvds_data_e1_n_2_1 1 0 2 -710 2380 490
+preplace netloc fpga_dig_top_1_bank_0_sysclk_ready 1 2 5 4890J 1660 5900J 1640 N 1640 7860 1590 NJ
+preplace netloc fpga_dig_top_1_bank_0_captured_data_a1 1 2 1 4910 1930n
+preplace netloc fpga_dig_top_1_bank_0_captured_data_b1 1 2 1 4940 1950n
+preplace netloc fpga_dig_top_1_bank_0_captured_data_c1 1 2 1 4970 1970n
+preplace netloc fpga_dig_top_1_bank_0_captured_data_d1 1 2 1 5130 1990n
+preplace netloc fpga_dig_top_1_bank_0_captured_data_e1 1 2 1 5160 2010n
+preplace netloc quadrature_decoder_0_freq_counter 1 2 2 5130J 2780 5570
+preplace netloc quadrature_decoder_0_Th_value 1 2 2 5100J 2770 5810
+preplace netloc master_rst_n_1 1 0 6 -820J -290 N -290 NJ -290 N -290 N -290 7860
+preplace netloc AND_GATE_0_Y 1 1 10 520 1650 NJ 1650 NJ 1650 N 1650 N 1650 8190 1650 8980 1640 9460 1630 N 1630 10140
+preplace netloc axi_gpio_4_gpio2_io_o 1 5 4 8010 320 NJ 320 NJ 320 9430
+preplace netloc MSBs_selector_0_data_out_a1 1 4 3 7240 140 N 140 8600
+preplace netloc MSBs_selector_0_data_out_a2 1 4 3 7120 170 7880 580 8340
+preplace netloc MSBs_selector_1_data_out_a1 1 4 3 7160 300 7870 450 8330
+preplace netloc MSBs_selector_1_data_out_a2 1 4 3 7210 310 7850 460 8320
+preplace netloc MSBs_selector_2_data_out_a1 1 4 3 7180 390 7770 540 8230
+preplace netloc MSBs_selector_2_data_out_a2 1 4 3 7190 400 7760 550 8220
+preplace netloc spi3_WICSC_top_0_csb 1 11 1 10420 2360n
+preplace netloc MSBs_selector_0_data_out_a3 1 3 1 5540 140n
+preplace netloc MSBs_selector_0_data_out_a4 1 3 1 5560 160n
+preplace netloc MSBs_selector_0_data_out_b3 1 3 1 5570 180n
+preplace netloc MSBs_selector_0_data_out_b4 1 3 1 5580 200n
+preplace netloc MSBs_selector_0_data_out_c3 1 3 1 5590 220n
+preplace netloc MSBs_selector_0_data_out_c4 1 3 1 5600 240n
+preplace netloc MSBs_selector_0_data_out_d3 1 3 1 5610 260n
+preplace netloc MSBs_selector_0_data_out_d4 1 3 1 5620 280n
+preplace netloc MSBs_selector_0_data_out_e3 1 3 1 5630 300n
+preplace netloc MSBs_selector_0_data_out_e4 1 3 1 5640 320n
+preplace netloc MSBs_selector_0_data_out_f3 1 3 1 5650 340n
+preplace netloc MSBs_selector_0_data_out_f4 1 3 1 5660 360n
+preplace netloc MSBs_selector_0_data_out_g3 1 3 1 5670 380n
+preplace netloc MSBs_selector_0_data_out_g4 1 3 1 5680 400n
+preplace netloc MSBs_selector_0_data_out_h3 1 3 1 5690 420n
+preplace netloc MSBs_selector_0_data_out_h4 1 3 1 5700 440n
+preplace netloc clk_wiz_1_clk_12mhz 1 3 2 5930 1480 7020
+preplace netloc MSBs_selector_1_data_out_a3 1 3 1 5710 560n
+preplace netloc MSBs_selector_1_data_out_a4 1 3 1 5720 580n
+preplace netloc MSBs_selector_1_data_out_b3 1 3 1 5730 600n
+preplace netloc MSBs_selector_1_data_out_b4 1 3 1 5750 620n
+preplace netloc MSBs_selector_1_data_out_c3 1 3 1 5760 640n
+preplace netloc MSBs_selector_1_data_out_c4 1 3 1 5770 660n
+preplace netloc MSBs_selector_1_data_out_d3 1 3 1 5780 680n
+preplace netloc MSBs_selector_1_data_out_d4 1 3 1 5790 700n
+preplace netloc MSBs_selector_1_data_out_e3 1 3 1 5800 720n
+preplace netloc MSBs_selector_1_data_out_e4 1 3 1 5810 740n
+preplace netloc MSBs_selector_1_data_out_f3 1 3 1 5820 760n
+preplace netloc MSBs_selector_1_data_out_f4 1 3 1 5830 780n
+preplace netloc MSBs_selector_1_data_out_g3 1 3 1 5550 800n
+preplace netloc MSBs_selector_1_data_out_g4 1 3 1 5840 820n
+preplace netloc MSBs_selector_1_data_out_h3 1 3 1 5850 840n
+preplace netloc MSBs_selector_1_data_out_h4 1 3 1 5860 860n
+preplace netloc MSBs_selector_2_data_out_a3 1 3 1 5870 1100n
+preplace netloc MSBs_selector_2_data_out_a4 1 3 1 5880 1120n
+preplace netloc MSBs_selector_2_data_out_b3 1 3 1 5890 1140n
+preplace netloc MSBs_selector_2_data_out_b4 1 3 1 5910 1160n
+preplace netloc MSBs_selector_2_data_out_c2 1 3 1 5920 1180n
+preplace netloc processing_system7_0_DDR 1 8 4 9440J 2140 9800J 2080 NJ 2080 NJ
+preplace netloc ps7_0_axi_periph_M02_AXI 1 9 1 9840 1880n
+preplace netloc processing_system7_0_FIXED_IO 1 8 4 NJ 2150 9840J 2110 NJ 2110 NJ
+preplace netloc ps7_0_axi_periph_M00_AXI 1 9 1 9850 1840n
+preplace netloc processing_system7_0_M_AXI_GP0 1 8 1 9490 1720n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 9 2 9800J 2010 10160
+preplace netloc ps7_0_axi_periph_M04_AXI 1 7 3 9010 1650 NJ 1650 9780
+preplace netloc ps7_0_axi_periph_M06_AXI 1 2 8 5170 1670 NJ 1670 N 1670 7870 1660 NJ 1660 NJ 1660 NJ 1660 9770
+preplace netloc ps7_0_axi_periph_M03_AXI 1 9 1 9790 1900n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 9 1 9810 1860n
+levelinfo -pg 1 -850 -370 4710 5380 6860 7570 8100 8790 9220 9630 9990 10280 10450
+pagesize -pg 1 -db -bbox -sgen -1010 -340 10630 3460
 "
 }
 {

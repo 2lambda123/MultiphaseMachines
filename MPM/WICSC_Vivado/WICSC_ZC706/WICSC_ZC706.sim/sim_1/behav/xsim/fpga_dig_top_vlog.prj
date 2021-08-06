@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/AD9249_deserializer_pureCode" --include "../../../../WICSC_ZC706.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../WICSC_ZC706.srcs/sources_1/bd/design_1/ipshared/6b56/hdl" --include "../../../../WICSC_ZC706.srcs/sources_1/bd/design_1/ipshared/8b3d" --include "C:/Xilinx/Vivado/2020.1/data/xilinx_vip/include" \
+"../../../../WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/AD9249_deserializer_pureCode/data_clk_ctrl.v" \
+"../../../../WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/AD9249_deserializer_pureCode/drp_start_ctrl.v" \
+"../../../../WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/AD9249_deserializer_pureCode/iser_ddr.v" \
+"../../../../WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/AD9249_deserializer_pureCode/iser_deframe_data.v" \
+"../../../../WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/AD9249_deserializer_pureCode/iser_fco_strobe.v" \
+"../../../../WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/AD9249_deserializer_pureCode/iser_top.v" \
+"../../../../WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/AD9249_deserializer_pureCode/mmcm_drp.v" \
+"../../../../WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/AD9249_deserializer_pureCode/mmcm_freq_counter.v" \
+"../../../../WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/AD9249_deserializer_pureCode/mmcm_top.v" \
+"../../../../WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/AD9249_deserializer_pureCode/fpga_dig_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

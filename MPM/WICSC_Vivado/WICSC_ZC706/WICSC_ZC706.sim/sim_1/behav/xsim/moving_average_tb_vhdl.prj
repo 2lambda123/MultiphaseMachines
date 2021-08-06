@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../Moving Average VHDL/MovingAverageFilter.vhd" \
+"../../../../WICSC_ZC706.srcs/sim_1/new/moving_average_tb.vhd" \
+
+# Do not sort compile order
+nosort

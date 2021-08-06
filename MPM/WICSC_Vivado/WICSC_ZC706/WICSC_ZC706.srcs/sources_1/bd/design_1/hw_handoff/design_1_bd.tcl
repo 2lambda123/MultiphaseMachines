@@ -521,7 +521,10 @@ proc create_root_design { parentCell } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
-  
+    set_property -dict [ list \
+   CONFIG.FilterSize_log2 {0} \
+ ] $moving_average_top_0
+
   # Create instance: moving_average_top_1, and set properties
   set block_name moving_average_top
   set block_cell_name moving_average_top_1
@@ -532,7 +535,10 @@ proc create_root_design { parentCell } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
-  
+    set_property -dict [ list \
+   CONFIG.FilterSize_log2 {0} \
+ ] $moving_average_top_1
+
   # Create instance: moving_average_top_2, and set properties
   set block_name moving_average_top
   set block_cell_name moving_average_top_2
@@ -543,7 +549,10 @@ proc create_root_design { parentCell } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
-  
+    set_property -dict [ list \
+   CONFIG.FilterSize_log2 {0} \
+ ] $moving_average_top_2
+
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
   set_property -dict [ list \
