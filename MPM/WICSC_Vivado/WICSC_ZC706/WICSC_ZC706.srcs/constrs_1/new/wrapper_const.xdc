@@ -17,47 +17,6 @@
 #############################################################################################################################################
 # Period Constraints
 #############################################################################################################################################
-#set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets design_1_i/fpga_dig_top_2/U0/data_clock_ctrl1/dco_buf]
-#set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets design_1_i/fpga_dig_top_2/U0/data_clock_ctrl2/dco_buf]
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_2/U0/data_clock_ctrl2/dco_buf]
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_0/U0/iser_top1/iser_fco
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_0/U0/iser_top2/iser_fco
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_1/U0/iser_top1/iser_fco
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_1/U0/iser_top2/iser_fco
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_2/U0/iser_top1/iser_fco
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_2/U0/iser_top2/iser_fco
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_0/U0/data_clock_ctrl1/dco_buf
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_1/U0/data_clock_ctrl1/dco_buf
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_1/U0/data_clock_ctrl2/dco_buf
-## constrain the system input clock to 200MHz: period of 5ns and toggle at 0ns and 2.5ns
-#create_clock -name zynq_sys_clkin -period 5 -waveform {0 2.5} [get_ports zynq_sys_clkin]
-# constrain the system input clock to 100MHz: period of 10ns and toggle at 0ns and 5ns
-#create_clock -name zynq_sys_clkin -period 10 -waveform {0 5} [get_ports zynq_sys_clkin]
-
-## constrain FCO1 to 30MHz: period of 33.333ns and toggle at 0ns and 16.667ns - We can change this later
-#create_clock -name lvds_fco1_p -period 33.333 -waveform {0 16.667} [get_ports lvds_fco1_p]
-
-## constrain FCO1 to 100MHz: period of 33.333ns and toggle at 0ns and 16.667ns - We can change this later
-#create_clock -name lvds_fco2_p -period 33.333 -waveform {0 16.667} [get_ports lvds_fco2_p]
-
-## constrain DCO1 to 7 times faster than FCO1
-#create_generated_clock -source [get_ports lvds_fco1_p] -name lvds_dco1_p -multiply_by 7 [get_ports lvds_dco1_p]
-
-## constrain DCO2 to 7 times faster than FCO2
-#create_generated_clock -source [get_ports lvds_fco2_p] -name lvds_dco2_p -multiply_by 7 [get_ports lvds_dco2_p]
-
-
-### alternative: create DCO as main clock and FCO as virtual clock
-## create DCO as 200MHz clock
-#create_clock -name lvds_dco1_p -period 5 -waveform {0 2.5} [get_ports lvds_dco1_p_0]
-#create_clock -name lvds_dco2_p -period 5 -waveform {0 2.5} [get_ports lvds_dco2_p_0]
-##create_generated_clock -source [get_ports lvds_dco1_p] -name lvds_fco1_p -divide_by 7 [get_ports lvds_fco1_p] # make an fco clock which is 7 times slower
-##create_generated_clock -source [get_ports lvds_dco2_p] -name lvds_fco2_p -divide_by 7 [get_ports lvds_fco2_p] # make an fco clock which is 7 times slower
-## manually create slower fco clocks
-## create FCO as 28.57MHz clock
-#create_clock -name lvds_fco1_p -period 35 -waveform {0 17.5} [get_ports lvds_fco1_p_0]
-#create_clock -name lvds_fco2_p -period 35 -waveform {0 17.5} [get_ports lvds_fco2_p_0]
-
 
 # create DCO as 84MHz clock
 create_clock -period 11.905 -name lvds_dco1_p -waveform {2.976 8.929} [get_ports lvds_dco1_p_0]
@@ -83,45 +42,6 @@ create_clock -period 83.333 -name lvds_fco1_p2 -waveform {0.000 41.667} [get_por
 create_clock -period 83.333 -name lvds_fco2_p2 -waveform {0.000 41.667} [get_ports lvds_fco2_p_2]
 
 
-
-## create DCO as 84MHz clock
-#create_clock -period 23.8095 -name lvds_dco1_p -waveform {2.976 11.90475} [get_ports lvds_dco1_p_0]
-#create_clock -period 23.8095 -name lvds_dco2_p -waveform {2.976 11.90475} [get_ports lvds_dco2_p_0]
-## create FCO as 12MHz clock
-#create_clock -period 166.6666 -name lvds_fco1_p -waveform {0.000 83.3333} [get_ports lvds_fco1_p_0]
-#create_clock -period 166.6666 -name lvds_fco2_p -waveform {0.000 83.3333} [get_ports lvds_fco2_p_0]
-
-
-## create DCO as 84MHz clock
-#create_clock -period 23.8095 -name lvds_dco1_p1 -waveform {2.976 11.90475} [get_ports lvds_dco1_p_1]
-#create_clock -period 23.8095 -name lvds_dco2_p1 -waveform {2.976 11.90475} [get_ports lvds_dco2_p_1]
-## create FCO as 12MHz clock
-#create_clock -period 166.6666 -name lvds_fco1_p1 -waveform {0.000 83.3333} [get_ports lvds_fco1_p_1]
-#create_clock -period 166.6666 -name lvds_fco2_p1 -waveform {0.000 83.3333} [get_ports lvds_fco2_p_1]
-
-
-## create DCO as 84MHz clock
-#create_clock -period 23.8095 -name lvds_dco1_p2 -waveform {2.976 11.90475} [get_ports lvds_dco1_p_2]
-#create_clock -period 23.8095 -name lvds_dco2_p2 -waveform {2.976 11.90475} [get_ports lvds_dco2_p_2]
-## create FCO as 12MHz clock
-#create_clock -period 166.6666 -name lvds_fco1_p2 -waveform {0.000 83.3333} [get_ports lvds_fco1_p_2]
-#create_clock -period 166.6666 -name lvds_fco2_p2 -waveform {0.000 83.3333} [get_ports lvds_fco2_p_2]
-
-
-## create DCO as 70MHz clock
-#create_clock -name lvds_dco1_p -period 14.285714285714285714285714285714 -waveform {0 7.1428571428571428571428571428571} [get_ports lvds_dco1_p_0]
-#create_clock -name lvds_dco2_p -period 14.285714285714285714285714285714 -waveform {0 7.1428571428571428571428571428571} [get_ports lvds_dco2_p_0]
-## create FCO as 10MHz clock
-#create_clock -name lvds_fco1_p -period 100 -waveform {0 50} [get_ports lvds_fco1_p_0]
-#create_clock -name lvds_fco2_p -period 100 -waveform {0 50} [get_ports lvds_fco2_p_0]
-
-
-## create DCO as 70MHz clock with a phase shift of 90degrees
-#create_clock -name lvds_dco1_p -period 14.285714285714285714285714285714 -waveform {3.5714285714285714285714285714286 10.714285714285714285714285714286} [get_ports lvds_dco1_p_0]
-#create_clock -name lvds_dco2_p -period 14.285714285714285714285714285714 -waveform {3.5714285714285714285714285714286 10.714285714285714285714285714286} [get_ports lvds_dco2_p_0]
-## create FCO as 10MHz clock
-#create_clock -name lvds_fco1_p -period 100 -waveform {0 50} [get_ports lvds_fco1_p_0]
-#create_clock -name lvds_fco2_p -period 100 -waveform {0 50} [get_ports lvds_fco2_p_0]
 
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_1_bank_0/U0/iser_top1/iser_fco]
 set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets design_1_i/fpga_dig_top_1/U0/data_clock_ctrl2/dco_buf]
@@ -155,243 +75,9 @@ set_clock_groups -asynchronous -group clk_fpga_0 -group clk_130_design_1_clk_wiz
 # Does the same count for DCO? Not in the original constraint file but I suppose it does (added for now)
 #############################################################################################################################################
 
-# LA_01_CC_P/N (D8 D9)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_a1_p_0]
-#set_property PACKAGE_PIN AJ8        [get_ports lvds_data_a1_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_a1_p_0]
 
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_a1_n_0]
-#set_property PACKAGE_PIN AJ7        [get_ports lvds_data_a1_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_a1_n_0]
 
-## LA_06_P/N (C10 C11)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_a2_p_0]
-#set_property PACKAGE_PIN AG8        [get_ports lvds_data_a2_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_a2_p_0]
 
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_a2_n_0]
-#set_property PACKAGE_PIN AG7        [get_ports lvds_data_a2_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_a2_n_0]
-
-## LA02_P/N (H7 H8)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_b1_p_0]
-#set_property PACKAGE_PIN AE8        [get_ports lvds_data_b1_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_b1_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_b1_n_0]
-#set_property PACKAGE_PIN AE7        [get_ports lvds_data_b1_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_b1_n_0]
-
-## LA04_P/N (G9 G10)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_b2_p_0]
-#set_property PACKAGE_PIN AH6        [get_ports lvds_data_b2_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_b2_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_b2_n_0]
-#set_property PACKAGE_PIN AH5        [get_ports lvds_data_b2_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_b2_n_0]
-
-## LA04_P/N (H10 H11)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_c1_p_0]
-#set_property PACKAGE_PIN AG4        [get_ports lvds_data_c1_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_c1_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_c1_n_0]
-#set_property PACKAGE_PIN AG3        [get_ports lvds_data_c1_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_c1_n_0]
-
-## LA07_P/N (H13 H14)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_c2_p_0]
-#set_property PACKAGE_PIN AK6        [get_ports lvds_data_c2_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_c2_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_c2_n_0]
-#set_property PACKAGE_PIN AK5        [get_ports lvds_data_c2_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_c2_n_0]
-
-## LA12_P/N (G15 G16)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_d1_p_0]
-#set_property PACKAGE_PIN AJ4        [get_ports lvds_data_d1_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_d1_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_d1_n_0]
-#set_property PACKAGE_PIN AJ3        [get_ports lvds_data_d1_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_d1_n_0]
-
-## LA_11_P/N (H16 H17)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_d2_p_0]
-#set_property PACKAGE_PIN AK2        [get_ports lvds_data_d2_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_d2_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_d2_n_0]
-#set_property PACKAGE_PIN AK1        [get_ports lvds_data_d2_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_d2_n_0]
-
-## LA13_P/N (D17 D18)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_e1_p_0]
-#set_property PACKAGE_PIN AH2        [get_ports lvds_data_e1_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_e1_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_e1_n_0]
-#set_property PACKAGE_PIN AH1        [get_ports lvds_data_e1_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_e1_n_0]
-
-## LA19_P/N (H22 H23)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_e2_p_0]
-#set_property PACKAGE_PIN AF2        [get_ports lvds_data_e2_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_e2_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_e2_n_0]
-#set_property PACKAGE_PIN AF1        [get_ports lvds_data_e2_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_e2_n_0]
-
-## LA14_P/N (C18 C19)
-#set_property IOSTANDARD LVDS        [get_ports lvds_data_f1_p_0]
-#set_property PACKAGE_PIN AD6        [get_ports lvds_data_f1_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_f1_p_0]
-
-#set_property IOSTANDARD LVDS        [get_ports lvds_data_f1_n_0]
-#set_property PACKAGE_PIN AD5        [get_ports lvds_data_f1_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_f1_n_0]
-
-## LA18_CC_P/N (C22 C23)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_f2_p_0]
-#set_property PACKAGE_PIN AF6        [get_ports lvds_data_f2_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_f2_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_f2_n_0]
-#set_property PACKAGE_PIN AF5        [get_ports lvds_data_f2_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_f2_n_0]
-
-## LA08_P/N (G12 G13)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_g1_p_0]
-#set_property PACKAGE_PIN AD2        [get_ports lvds_data_g1_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_g1_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_g1_n_0]
-#set_property PACKAGE_PIN AD1        [get_ports lvds_data_g1_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_g1_n_0]
-
-## LA10_P/N (C14 C15)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_g2_p_0]
-#set_property PACKAGE_PIN AE4        [get_ports lvds_data_g2_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_g2_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_g2_n_0]
-#set_property PACKAGE_PIN AE3        [get_ports lvds_data_g2_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_g2_n_0]
-
-## LA09_P/N (D14 D15)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_h1_p_0]
-#set_property PACKAGE_PIN AK10        [get_ports lvds_data_h1_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_h1_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_h1_n_0]
-#set_property PACKAGE_PIN AK9        [get_ports lvds_data_h1_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_h1_n_0]
-
-## LA15_P/N (H19 H20)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_h2_p_0]
-#set_property PACKAGE_PIN AH10        [get_ports lvds_data_h2_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_h2_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_data_h2_n_0]
-#set_property PACKAGE_PIN AH9        [get_ports lvds_data_h2_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_data_h2_n_0]
-
-## LA17_CC_P/N (D20 D21)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_dco1_p_0]
-#set_property PACKAGE_PIN W25        [get_ports lvds_dco1_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_dco1_p_0]
-##set_property CLOCK_DEDICATED_ROUTE FALSE [get_ports lvds_dco1_p}]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_dco1_n_0]
-#set_property PACKAGE_PIN W26        [get_ports lvds_dco1_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_dco1_n_0]
-##set_property CLOCK_DEDICATED_ROUTE FALSE [get_ports lvds_dco1_n}]
-
-## LA00_CC_P/N (G6 G7)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_dco2_p_0]
-#set_property PACKAGE_PIN V23        [get_ports lvds_dco2_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_dco2_p_0]
-##set_property CLOCK_DEDICATED_ROUTE FALSE [get_ports lvds_dco2_p}]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_dco2_n_0]
-#set_property PACKAGE_PIN W24        [get_ports lvds_dco2_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_dco2_n_0]
-##set_property CLOCK_DEDICATED_ROUTE FALSE [get_ports lvds_dco2_n}]
-
-## LA16_P/N (G18 G19)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_fco1_p_0]
-#set_property PACKAGE_PIN U26        [get_ports lvds_fco1_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_fco1_p_0]
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets lvds_fco1_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_fco1_n_0]
-#set_property PACKAGE_PIN U27        [get_ports lvds_fco1_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_fco1_n_0]
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets lvds_fco1_n_0]
-
-## LA05_P/N (D11 D12)
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_fco2_p_0]
-#set_property PACKAGE_PIN W29        [get_ports lvds_fco2_p_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_fco2_p_0]
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets lvds_fco2_p_0]
-
-#set_property IOSTANDARD LVDS_25     [get_ports lvds_fco2_n_0]
-#set_property PACKAGE_PIN W30        [get_ports lvds_fco2_n_0]
-#set_property DIFF_TERM TRUE         [get_ports lvds_fco2_n_0]
-#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets lvds_fco2_n_0]
-
-#############################################################################################################################################
-# Miscellaneous signals
-#############################################################################################################################################
-
-#set_property PACKAGE_PIN W6         [get_ports master_rst_n_0]
-#set_property IOSTANDARD LVCMOS25    [get_ports master_rst_n_0]
-
-#set_property PACKAGE_PIN E15        [get_ports sysclk_ready_0]
-#set_property IOSTANDARD LVCMOS25    [get_ports sysclk_ready_0]
-
-#############################################################################################################################################
-# SPI connections
-#############################################################################################################################################
-
-#set_property PACKAGE_PIN F22         [get_ports sclk_0]
-#set_property IOSTANDARD LVCMOS25     [get_ports sclk_0]
-
-#set_property PACKAGE_PIN G20         [get_ports csb_0]
-#set_property IOSTANDARD LVCMOS25     [get_ports csb_0]
-
-#set_property PACKAGE_PIN G21         [get_ports csb_1]
-#set_property IOSTANDARD LVCMOS25     [get_ports csb_1]
-
-#set_property PACKAGE_PIN F21         [get_ports sdio_0]
-#set_property IOSTANDARD LVCMOS25     [get_ports sdio_0]
-
-# route busy and tsc to LEDs in the meanwhile
-
-#set_property PACKAGE_PIN D15         [get_ports busy_0]
-#set_property IOSTANDARD LVDS         [get_ports busy_0]
-
-#set_property PACKAGE_PIN W17         [get_ports tsc_0]
-#set_property IOSTANDARD LVCMOS25     [get_ports tsc_0]
-
-#############################################################################################################################################
-# Encoder connections
-#############################################################################################################################################
-# the input from the MAX14890E EVALKIT are brought to PMOD2 as single ended signals
-#set_property PACKAGE_PIN V7             [get_ports AO_in]
-#set_property IOSTANDARD LVCMOS25        [get_ports AO_in]
-
-#set_property PACKAGE_PIN W10            [get_ports BO_in]
-#set_property IOSTANDARD LVCMOS25        [get_ports BO_in]
-
-#set_property PACKAGE_PIN P18            [get_ports ZO_in]
-#set_property IOSTANDARD LVCMOS25        [get_ports ZO_in]
-#C22 (LPC)
-set_property PACKAGE_PIN AB17 [get_ports master_rst_n]
-set_property IOSTANDARD LVCMOS25 [get_ports master_rst_n]
 
 set_property PACKAGE_PIN AF15 [get_ports lvds_dco1_p_0]
 #D8
@@ -560,8 +246,9 @@ set_property IOSTANDARD LVDS_25 [get_ports lvds_data_d1_p_2]
 set_property PACKAGE_PIN P21 [get_ports lvds_data_e1_p_2]
 set_property IOSTANDARD LVDS_25 [get_ports lvds_data_e1_p_2]
 
+
 ############################################################
-####
+#### Encoder input
 ############################################################
 set_property PACKAGE_PIN U30 [get_ports AO_in]
 set_property IOSTANDARD LVCMOS25 [get_ports AO_in]
@@ -577,6 +264,22 @@ set_property PACKAGE_PIN AA22 [get_ports sdio_0]
 set_property IOSTANDARD LVCMOS25 [get_ports sdio_0]
 
 
+
+
+#############################################
+###### I2C
+############################################
+
+set_property PACKAGE_PIN AJ21 [get_ports SDA]
+set_property IOSTANDARD LVCMOS25 [get_ports SDA]
+
+set_property PACKAGE_PIN AK21 [get_ports SCL]
+set_property IOSTANDARD LVCMOS25 [get_ports SCL]
+
+#############################################
+###### SPI
+############################################
+
 set_property PACKAGE_PIN AA23 [get_ports sclk_0]
 set_property IOSTANDARD LVCMOS25 [get_ports sclk_0]
 
@@ -589,11 +292,19 @@ set_property IOSTANDARD LVCMOS25 [get_ports {csb_1}]
 set_property PACKAGE_PIN AC24 [get_ports {csb_2}]
 set_property IOSTANDARD LVCMOS25 [get_ports {csb_2}]
 
+
+#############################################
+###### Extra pin on connector board
+############################################
+
 set_property PACKAGE_PIN AD24 [get_ports PWM_SIGNAL]
 set_property IOSTANDARD LVCMOS25 [get_ports PWM_SIGNAL]
 
+set_property PACKAGE_PIN K15 [get_ports master_rst]
+set_property IOSTANDARD LVCMOS15 [get_ports master_rst]
+
 #############################################################
-### From H38 to G18 used to modulator out
+### Modulator
 #############################################################
 set_property PACKAGE_PIN AF18 [get_ports {modulator_out[0]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {modulator_out[0]}]
@@ -725,5 +436,4 @@ set_property PACKAGE_PIN AH27 [get_ports {modulator_out[35]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {modulator_out[35]}]
 
 
-set_property DIFF_TERM TRUE [get_ports lvds_data_c1_n_0]
-set_property DIFF_TERM TRUE [get_ports lvds_data_c1_p_0]
+

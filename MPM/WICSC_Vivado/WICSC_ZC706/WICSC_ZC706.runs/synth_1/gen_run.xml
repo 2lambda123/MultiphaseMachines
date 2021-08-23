@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z045ffg900-2" LaunchTime="1628237136">
+<GenRun Id="synth_1" LaunchPart="xc7z045ffg900-2" LaunchTime="1629707127">
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
@@ -229,6 +229,18 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../Moving Average VHDL/moving_average_top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/I2C_Master_Core.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NOT_Gate.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -482,9 +494,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="design_1_MSBs_selector_2_0"/>
@@ -505,6 +515,11 @@
   <BlockFileSet Type="BlockSrcs" Name="design_1_AND_GATE_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_modulater_14bit_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_7_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_moving_average_top_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_8_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_moving_average_top_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_9_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_i2c_master_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_NOT_Gate_0_0"/>
 </GenRun>
