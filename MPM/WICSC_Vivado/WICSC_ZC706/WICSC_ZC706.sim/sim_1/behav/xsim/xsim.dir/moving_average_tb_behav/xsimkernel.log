@@ -1,4 +1,0 @@
-Running: xsim.dir/moving_average_tb_behav/xsimk.exe -simmode gui -wdb moving_average_tb_behav.wdb -simrunnum 0 -socket 49475
-Design successfully loaded
-Design Loading Memory Usage: 5860 KB (Peak: 5860 KB)
-Design Loading CPU Usage: 46 ms

@@ -97,7 +97,8 @@ ARCHITECTURE design_1_moving_average_top_0_0_arch OF design_1_moving_average_top
   COMPONENT moving_average_top IS
     GENERIC (
       Inputsize : INTEGER;
-      FilterSize_log2 : INTEGER
+      FilterSize_log2 : INTEGER;
+      Activate : INTEGER
     );
     PORT (
       data_a1_in : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
@@ -140,18 +141,19 @@ ARCHITECTURE design_1_moving_average_top_0_0_arch OF design_1_moving_average_top
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_moving_average_top_0_0_arch : ARCHITECTURE IS "design_1_moving_average_top_0_0,moving_average_top,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_moving_average_top_0_0_arch: ARCHITECTURE IS "design_1_moving_average_top_0_0,moving_average_top,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=moving_average_top,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,Inputsize=14,FilterSize_log2=0}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_moving_average_top_0_0_arch: ARCHITECTURE IS "design_1_moving_average_top_0_0,moving_average_top,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=moving_average_top,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,Inputsize=14,FilterSize_log2=0,Activate=0}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_moving_average_top_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 12000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 12000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /DerserializersAndFilter/clk_wiz_1_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : moving_average_top
     GENERIC MAP (
       Inputsize => 14,
-      FilterSize_log2 => 0
+      FilterSize_log2 => 0,
+      Activate => 0
     )
     PORT MAP (
       data_a1_in => data_a1_in,

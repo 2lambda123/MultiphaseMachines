@@ -2,86 +2,86 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed Mar 10 10:03:34 2021
-# Process ID: 16004
-# Current directory: C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.runs/design_1_PS_Interface_TOP_0_0_synth_1
+# Start of session at: Tue Aug 31 22:54:50 2021
+# Process ID: 16068
+# Current directory: C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.runs/design_1_PS_Interface_TOP_0_0_synth_1
 # Command line: vivado.exe -log design_1_PS_Interface_TOP_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_PS_Interface_TOP_0_0.tcl
-# Log file: C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.runs/design_1_PS_Interface_TOP_0_0_synth_1/design_1_PS_Interface_TOP_0_0.vds
-# Journal file: C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.runs/design_1_PS_Interface_TOP_0_0_synth_1\vivado.jou
+# Log file: C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.runs/design_1_PS_Interface_TOP_0_0_synth_1/design_1_PS_Interface_TOP_0_0.vds
+# Journal file: C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.runs/design_1_PS_Interface_TOP_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_PS_Interface_TOP_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1111.762 ; gain = 425.320
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/spi_master_WICSC'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Meklarn/Desktop/EXJOBB/ZC706/quadrature _decoder'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'X:/Xilink/Vivado/2020.1/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1111.762 ; gain = 0.000
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.ipdefs/spi_master_WICSC'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.ipdefs/quadrature_decoder_v1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
 Command: synth_design -top design_1_PS_Interface_TOP_0_0 -part xc7z045ffg900-2 -mode out_of_context
 Starting synth_design
 WARNING: [IP_Flow 19-3571] IP 'design_1_PS_Interface_TOP_0_0' is restricted:
 * Module reference is stale and needs refreshing.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-86] Your Synthesis license expires in 11 day(s)
+INFO: [Common 17-1540] The version limit for your license is '2021.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: [Device 21-403] Loading part xc7z045ffg900-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15756
+INFO: [Synth 8-7075] Helper process launched with PID 16100
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1111.762 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1079.352 ; gain = 21.488
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_PS_Interface_TOP_0_0' [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_PS_Interface_TOP_0_0/synth/design_1_PS_Interface_TOP_0_0.vhd:114]
-INFO: [Synth 8-3491] module 'PS_Interface_TOP' declared at 'C:/Users/Meklarn/Desktop/EXJOBB/ZC706/modulator_EMIO_code/PS_Interface_TOP.vhd:40' bound to instance 'U0' of component 'PS_Interface_TOP' [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_PS_Interface_TOP_0_0/synth/design_1_PS_Interface_TOP_0_0.vhd:187]
-INFO: [Synth 8-638] synthesizing module 'PS_Interface_TOP' [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/modulator_EMIO_code/PS_Interface_TOP.vhd:100]
-INFO: [Synth 8-3491] module 'PS_Interface' declared at 'C:/Users/Meklarn/Desktop/EXJOBB/ZC706/modulator_EMIO_code/PS_Interface.vhd:32' bound to instance 'inst_PS_Interface' of component 'PS_Interface' [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/modulator_EMIO_code/PS_Interface_TOP.vhd:172]
-INFO: [Synth 8-638] synthesizing module 'PS_Interface' [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/modulator_EMIO_code/PS_Interface.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'PS_Interface' (1#1) [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/modulator_EMIO_code/PS_Interface.vhd:88]
-INFO: [Synth 8-3491] module 'ADC_Input' declared at 'C:/Users/Meklarn/Desktop/EXJOBB/ZC706/modulator_EMIO_code/ADC_Input.vhd:41' bound to instance 'inst_ADC_Input' of component 'ADC_Input' [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/modulator_EMIO_code/PS_Interface_TOP.vhd:181]
-INFO: [Synth 8-638] synthesizing module 'ADC_Input' [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/modulator_EMIO_code/ADC_Input.vhd:95]
-INFO: [Synth 8-256] done synthesizing module 'ADC_Input' (2#1) [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/modulator_EMIO_code/ADC_Input.vhd:95]
-INFO: [Synth 8-256] done synthesizing module 'PS_Interface_TOP' (3#1) [C:/Users/Meklarn/Desktop/EXJOBB/ZC706/modulator_EMIO_code/PS_Interface_TOP.vhd:100]
-INFO: [Synth 8-256] done synthesizing module 'design_1_PS_Interface_TOP_0_0' (4#1) [c:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_PS_Interface_TOP_0_0/synth/design_1_PS_Interface_TOP_0_0.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'design_1_PS_Interface_TOP_0_0' [c:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_PS_Interface_TOP_0_0/synth/design_1_PS_Interface_TOP_0_0.vhd:114]
+INFO: [Synth 8-3491] module 'PS_Interface_TOP' declared at 'C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/modulator_EMIO_code/PS_Interface_TOP.vhd:40' bound to instance 'U0' of component 'PS_Interface_TOP' [c:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_PS_Interface_TOP_0_0/synth/design_1_PS_Interface_TOP_0_0.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'PS_Interface_TOP' [C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/modulator_EMIO_code/PS_Interface_TOP.vhd:100]
+INFO: [Synth 8-3491] module 'PS_Interface' declared at 'C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/modulator_EMIO_code/PS_Interface.vhd:32' bound to instance 'inst_PS_Interface' of component 'PS_Interface' [C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/modulator_EMIO_code/PS_Interface_TOP.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'PS_Interface' [C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/modulator_EMIO_code/PS_Interface.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'PS_Interface' (1#1) [C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/modulator_EMIO_code/PS_Interface.vhd:43]
+INFO: [Synth 8-3491] module 'ADC_Input' declared at 'C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/modulator_EMIO_code/ADC_Input.vhd:41' bound to instance 'inst_ADC_Input' of component 'ADC_Input' [C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/modulator_EMIO_code/PS_Interface_TOP.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'ADC_Input' [C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/modulator_EMIO_code/ADC_Input.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'ADC_Input' (2#1) [C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/modulator_EMIO_code/ADC_Input.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'PS_Interface_TOP' (3#1) [C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/imports/WICSC_ZC706/modulator_EMIO_code/PS_Interface_TOP.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'design_1_PS_Interface_TOP_0_0' (4#1) [c:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.srcs/sources_1/bd/design_1/ip/design_1_PS_Interface_TOP_0_0/synth/design_1_PS_Interface_TOP_0_0.vhd:114]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1134.109 ; gain = 22.348
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1135.766 ; gain = 77.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1134.109 ; gain = 22.348
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1135.766 ; gain = 77.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1134.109 ; gain = 22.348
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1135.766 ; gain = 77.902
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1134.109 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1135.766 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1247.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1248.617 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.319 . Memory (MB): peak = 1248.840 ; gain = 0.992
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1248.617 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:48 . Memory (MB): peak = 1248.840 ; gain = 137.078
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1248.617 ; gain = 190.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z045ffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1248.840 ; gain = 137.078
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1248.617 ; gain = 190.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1248.840 ; gain = 137.078
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1248.617 ; gain = 190.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:57 . Memory (MB): peak = 1248.840 ; gain = 137.078
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1248.617 ; gain = 190.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -96,9 +96,7 @@ Detailed RTL Component Info :
 	                6 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   3 Input   60 Bit        Muxes := 1     
-	   2 Input    6 Bit        Muxes := 3     
-	   2 Input    1 Bit        Muxes := 3     
+	   4 Input   60 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -115,25 +113,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:01:08 . Memory (MB): peak = 1248.840 ; gain = 137.078
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1248.617 ; gain = 190.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:01:24 . Memory (MB): peak = 1248.840 ; gain = 137.078
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 1248.617 ; gain = 190.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:25 . Memory (MB): peak = 1248.840 ; gain = 137.078
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 1248.617 ; gain = 190.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:01:25 . Memory (MB): peak = 1253.777 ; gain = 142.016
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 1250.801 ; gain = 192.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -151,37 +149,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:01:33 . Memory (MB): peak = 1258.559 ; gain = 146.797
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1256.609 ; gain = 198.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:01:33 . Memory (MB): peak = 1258.559 ; gain = 146.797
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1256.609 ; gain = 198.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:01:35 . Memory (MB): peak = 1258.559 ; gain = 146.797
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1256.609 ; gain = 198.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:01:35 . Memory (MB): peak = 1258.559 ; gain = 146.797
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1256.609 ; gain = 198.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:01:36 . Memory (MB): peak = 1258.559 ; gain = 146.797
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1256.609 ; gain = 198.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:01:36 . Memory (MB): peak = 1258.559 ; gain = 146.797
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1256.609 ; gain = 198.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -197,34 +195,36 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |LUT3 |     5|
-|2     |LUT4 |     2|
-|3     |LUT5 |    15|
-|4     |LUT6 |   213|
-|5     |FDRE |   797|
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |     5|
+|4     |LUT4 |     3|
+|5     |LUT5 |    14|
+|6     |LUT6 |   210|
+|7     |FDRE |   797|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:01:36 . Memory (MB): peak = 1258.559 ; gain = 146.797
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1256.609 ; gain = 198.746
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:01:25 . Memory (MB): peak = 1258.559 ; gain = 32.066
-Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:01:37 . Memory (MB): peak = 1258.559 ; gain = 146.797
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1256.609 ; gain = 85.895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1256.609 ; gain = 198.746
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1270.617 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1268.645 ; gain = 0.000
 WARNING: [Netlist 29-101] Netlist 'design_1_PS_Interface_TOP_0_0' is not ideal for floorplanning, since the cellview 'PS_Interface' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1281.082 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1286.340 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-27 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:02:03 . Memory (MB): peak = 1281.082 ; gain = 169.320
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.runs/design_1_PS_Interface_TOP_0_0_synth_1/design_1_PS_Interface_TOP_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:17 . Memory (MB): peak = 1286.340 ; gain = 228.477
+INFO: [Common 17-1381] The checkpoint 'C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.runs/design_1_PS_Interface_TOP_0_0_synth_1/design_1_PS_Interface_TOP_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Meklarn/Desktop/EXJOBB/ZC706/WICSC_ZC706/WICSC_ZC706.runs/design_1_PS_Interface_TOP_0_0_synth_1/design_1_PS_Interface_TOP_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/JonasHP/Desktop/EXJOBB/WICSC_New/WICSC_ZC706/WICSC_ZC706.runs/design_1_PS_Interface_TOP_0_0_synth_1/design_1_PS_Interface_TOP_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_PS_Interface_TOP_0_0_utilization_synth.rpt -pb design_1_PS_Interface_TOP_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 10 10:06:26 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 31 22:56:24 2021...

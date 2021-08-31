@@ -1,8 +1,8 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Wed Mar 10 10:06:23 2021
--- Host        : 350D running 64-bit major release  (build 9200)
+-- Date        : Tue Aug 31 22:56:22 2021
+-- Host        : DESKTOP-R1R40B4 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_PS_Interface_TOP_0_0_sim_netlist.vhdl
 -- Design      : design_1_PS_Interface_TOP_0_0
@@ -24,7 +24,6 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PS_Interface is
     prev_value_nextSample_reg_0 : in STD_LOGIC;
     clk : in STD_LOGIC;
     prev_value_nextValue_reg_0 : in STD_LOGIC;
-    PS_OUT : in STD_LOGIC_VECTOR ( 63 downto 0 );
     adc_47 : in STD_LOGIC_VECTOR ( 13 downto 0 );
     adc_46 : in STD_LOGIC_VECTOR ( 13 downto 0 );
     adc_45 : in STD_LOGIC_VECTOR ( 13 downto 0 );
@@ -72,7 +71,8 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PS_Interface is
     adc_3 : in STD_LOGIC_VECTOR ( 13 downto 0 );
     adc_2 : in STD_LOGIC_VECTOR ( 13 downto 0 );
     adc_1 : in STD_LOGIC_VECTOR ( 13 downto 0 );
-    adc_0 : in STD_LOGIC_VECTOR ( 13 downto 0 )
+    adc_0 : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    PS_OUT : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PS_Interface;
 
@@ -290,15 +290,9 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PS_Interface
   signal \PS_IN[9]_i_4_n_0\ : STD_LOGIC;
   signal counter : STD_LOGIC;
   signal \counter[2]_i_1_n_0\ : STD_LOGIC;
-  signal \counter[3]_i_1_n_0\ : STD_LOGIC;
-  signal \counter[4]_i_1_n_0\ : STD_LOGIC;
-  signal \counter[5]_i_1_n_0\ : STD_LOGIC;
   signal \counter[5]_i_3_n_0\ : STD_LOGIC;
-  signal \counter[5]_i_4_n_0\ : STD_LOGIC;
-  signal \counter_reg_n_0_[2]\ : STD_LOGIC;
-  signal \counter_reg_n_0_[3]\ : STD_LOGIC;
-  signal \counter_reg_n_0_[4]\ : STD_LOGIC;
-  signal \counter_reg_n_0_[5]\ : STD_LOGIC;
+  signal counter_reg : STD_LOGIC_VECTOR ( 5 downto 2 );
+  signal plusOp : STD_LOGIC_VECTOR ( 5 downto 3 );
   signal \^prev_value_nextsample\ : STD_LOGIC;
   signal \^prev_value_nextvalue\ : STD_LOGIC;
   signal \sampleADC[47][13]_i_1_n_0\ : STD_LOGIC;
@@ -352,8 +346,10 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PS_Interface
   signal \sampleADC_reg[8]_39\ : STD_LOGIC_VECTOR ( 13 downto 0 );
   signal \sampleADC_reg[9]_38\ : STD_LOGIC_VECTOR ( 13 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \counter[2]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \counter[5]_i_4\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \counter[2]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \counter[3]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \counter[4]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \counter[5]_i_2\ : label is "soft_lutpair0";
 begin
   prev_value_nextSample <= \^prev_value_nextsample\;
   prev_value_nextValue <= \^prev_value_nextvalue\;
@@ -364,9 +360,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(0),
       I1 => \PS_IN[0]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[0]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[0]_i_4_n_0\,
       O => \sampleADC[47]_48\(0)
     );
@@ -377,9 +373,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(0),
       I1 => \sampleADC_reg[43]_4\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(0),
       O => \PS_IN[0]_i_2_n_0\
     );
@@ -390,9 +386,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(0),
       I1 => \sampleADC_reg[27]_20\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(0),
       O => \PS_IN[0]_i_3_n_0\
     );
@@ -403,9 +399,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(0),
       I1 => \sampleADC_reg[11]_36\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(0),
       O => \PS_IN[0]_i_4_n_0\
     );
@@ -416,9 +412,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(10),
       I1 => \PS_IN[10]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[10]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[10]_i_4_n_0\,
       O => \sampleADC[47]_48\(10)
     );
@@ -429,9 +425,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(10),
       I1 => \sampleADC_reg[43]_4\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(10),
       O => \PS_IN[10]_i_2_n_0\
     );
@@ -442,9 +438,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(10),
       I1 => \sampleADC_reg[27]_20\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(10),
       O => \PS_IN[10]_i_3_n_0\
     );
@@ -455,9 +451,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(10),
       I1 => \sampleADC_reg[11]_36\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(10),
       O => \PS_IN[10]_i_4_n_0\
     );
@@ -468,9 +464,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(11),
       I1 => \PS_IN[11]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[11]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[11]_i_4_n_0\,
       O => \sampleADC[47]_48\(11)
     );
@@ -481,9 +477,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(11),
       I1 => \sampleADC_reg[43]_4\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(11),
       O => \PS_IN[11]_i_2_n_0\
     );
@@ -494,9 +490,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(11),
       I1 => \sampleADC_reg[27]_20\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(11),
       O => \PS_IN[11]_i_3_n_0\
     );
@@ -507,9 +503,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(11),
       I1 => \sampleADC_reg[11]_36\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(11),
       O => \PS_IN[11]_i_4_n_0\
     );
@@ -520,9 +516,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(12),
       I1 => \PS_IN[12]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[12]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[12]_i_4_n_0\,
       O => \sampleADC[47]_48\(12)
     );
@@ -533,9 +529,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(12),
       I1 => \sampleADC_reg[43]_4\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(12),
       O => \PS_IN[12]_i_2_n_0\
     );
@@ -546,9 +542,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(12),
       I1 => \sampleADC_reg[27]_20\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(12),
       O => \PS_IN[12]_i_3_n_0\
     );
@@ -559,9 +555,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(12),
       I1 => \sampleADC_reg[11]_36\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(12),
       O => \PS_IN[12]_i_4_n_0\
     );
@@ -572,9 +568,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(13),
       I1 => \PS_IN[13]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[13]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[13]_i_4_n_0\,
       O => \sampleADC[47]_48\(13)
     );
@@ -585,9 +581,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(13),
       I1 => \sampleADC_reg[43]_4\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(13),
       O => \PS_IN[13]_i_2_n_0\
     );
@@ -598,9 +594,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(13),
       I1 => \sampleADC_reg[27]_20\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(13),
       O => \PS_IN[13]_i_3_n_0\
     );
@@ -611,9 +607,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(13),
       I1 => \sampleADC_reg[11]_36\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(13),
       O => \PS_IN[13]_i_4_n_0\
     );
@@ -624,9 +620,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(0),
       I1 => \PS_IN[14]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[14]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[14]_i_4_n_0\,
       O => \PS_IN[14]_i_1_n_0\
     );
@@ -637,9 +633,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(0),
       I1 => \sampleADC_reg[42]_5\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(0),
       O => \PS_IN[14]_i_2_n_0\
     );
@@ -650,9 +646,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(0),
       I1 => \sampleADC_reg[26]_21\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(0),
       O => \PS_IN[14]_i_3_n_0\
     );
@@ -663,9 +659,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(0),
       I1 => \sampleADC_reg[10]_37\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(0),
       O => \PS_IN[14]_i_4_n_0\
     );
@@ -676,9 +672,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(1),
       I1 => \PS_IN[15]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[15]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[15]_i_4_n_0\,
       O => \PS_IN[15]_i_1_n_0\
     );
@@ -689,9 +685,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(1),
       I1 => \sampleADC_reg[42]_5\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(1),
       O => \PS_IN[15]_i_2_n_0\
     );
@@ -702,9 +698,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(1),
       I1 => \sampleADC_reg[26]_21\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(1),
       O => \PS_IN[15]_i_3_n_0\
     );
@@ -715,9 +711,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(1),
       I1 => \sampleADC_reg[10]_37\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(1),
       O => \PS_IN[15]_i_4_n_0\
     );
@@ -728,9 +724,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(2),
       I1 => \PS_IN[16]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[16]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[16]_i_4_n_0\,
       O => \PS_IN[16]_i_1_n_0\
     );
@@ -741,9 +737,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(2),
       I1 => \sampleADC_reg[42]_5\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(2),
       O => \PS_IN[16]_i_2_n_0\
     );
@@ -754,9 +750,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(2),
       I1 => \sampleADC_reg[26]_21\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(2),
       O => \PS_IN[16]_i_3_n_0\
     );
@@ -767,9 +763,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(2),
       I1 => \sampleADC_reg[10]_37\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(2),
       O => \PS_IN[16]_i_4_n_0\
     );
@@ -780,9 +776,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(3),
       I1 => \PS_IN[17]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[17]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[17]_i_4_n_0\,
       O => \PS_IN[17]_i_1_n_0\
     );
@@ -793,9 +789,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(3),
       I1 => \sampleADC_reg[42]_5\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(3),
       O => \PS_IN[17]_i_2_n_0\
     );
@@ -806,9 +802,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(3),
       I1 => \sampleADC_reg[26]_21\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(3),
       O => \PS_IN[17]_i_3_n_0\
     );
@@ -819,9 +815,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(3),
       I1 => \sampleADC_reg[10]_37\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(3),
       O => \PS_IN[17]_i_4_n_0\
     );
@@ -832,9 +828,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(4),
       I1 => \PS_IN[18]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[18]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[18]_i_4_n_0\,
       O => \PS_IN[18]_i_1_n_0\
     );
@@ -845,9 +841,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(4),
       I1 => \sampleADC_reg[42]_5\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(4),
       O => \PS_IN[18]_i_2_n_0\
     );
@@ -858,9 +854,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(4),
       I1 => \sampleADC_reg[26]_21\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(4),
       O => \PS_IN[18]_i_3_n_0\
     );
@@ -871,9 +867,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(4),
       I1 => \sampleADC_reg[10]_37\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(4),
       O => \PS_IN[18]_i_4_n_0\
     );
@@ -884,9 +880,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(5),
       I1 => \PS_IN[19]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[19]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[19]_i_4_n_0\,
       O => \PS_IN[19]_i_1_n_0\
     );
@@ -897,9 +893,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(5),
       I1 => \sampleADC_reg[42]_5\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(5),
       O => \PS_IN[19]_i_2_n_0\
     );
@@ -910,9 +906,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(5),
       I1 => \sampleADC_reg[26]_21\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(5),
       O => \PS_IN[19]_i_3_n_0\
     );
@@ -923,9 +919,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(5),
       I1 => \sampleADC_reg[10]_37\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(5),
       O => \PS_IN[19]_i_4_n_0\
     );
@@ -936,9 +932,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(1),
       I1 => \PS_IN[1]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[1]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[1]_i_4_n_0\,
       O => \sampleADC[47]_48\(1)
     );
@@ -949,9 +945,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(1),
       I1 => \sampleADC_reg[43]_4\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(1),
       O => \PS_IN[1]_i_2_n_0\
     );
@@ -962,9 +958,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(1),
       I1 => \sampleADC_reg[27]_20\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(1),
       O => \PS_IN[1]_i_3_n_0\
     );
@@ -975,9 +971,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(1),
       I1 => \sampleADC_reg[11]_36\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(1),
       O => \PS_IN[1]_i_4_n_0\
     );
@@ -988,9 +984,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(6),
       I1 => \PS_IN[20]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[20]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[20]_i_4_n_0\,
       O => \PS_IN[20]_i_1_n_0\
     );
@@ -1001,9 +997,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(6),
       I1 => \sampleADC_reg[42]_5\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(6),
       O => \PS_IN[20]_i_2_n_0\
     );
@@ -1014,9 +1010,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(6),
       I1 => \sampleADC_reg[26]_21\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(6),
       O => \PS_IN[20]_i_3_n_0\
     );
@@ -1027,9 +1023,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(6),
       I1 => \sampleADC_reg[10]_37\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(6),
       O => \PS_IN[20]_i_4_n_0\
     );
@@ -1040,9 +1036,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(7),
       I1 => \PS_IN[21]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[21]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[21]_i_4_n_0\,
       O => \PS_IN[21]_i_1_n_0\
     );
@@ -1053,9 +1049,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(7),
       I1 => \sampleADC_reg[42]_5\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(7),
       O => \PS_IN[21]_i_2_n_0\
     );
@@ -1066,9 +1062,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(7),
       I1 => \sampleADC_reg[26]_21\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(7),
       O => \PS_IN[21]_i_3_n_0\
     );
@@ -1079,9 +1075,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(7),
       I1 => \sampleADC_reg[10]_37\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(7),
       O => \PS_IN[21]_i_4_n_0\
     );
@@ -1092,9 +1088,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(8),
       I1 => \PS_IN[22]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[22]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[22]_i_4_n_0\,
       O => \PS_IN[22]_i_1_n_0\
     );
@@ -1105,9 +1101,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(8),
       I1 => \sampleADC_reg[42]_5\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(8),
       O => \PS_IN[22]_i_2_n_0\
     );
@@ -1118,9 +1114,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(8),
       I1 => \sampleADC_reg[26]_21\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(8),
       O => \PS_IN[22]_i_3_n_0\
     );
@@ -1131,9 +1127,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(8),
       I1 => \sampleADC_reg[10]_37\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(8),
       O => \PS_IN[22]_i_4_n_0\
     );
@@ -1144,9 +1140,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(9),
       I1 => \PS_IN[23]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[23]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[23]_i_4_n_0\,
       O => \PS_IN[23]_i_1_n_0\
     );
@@ -1157,9 +1153,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(9),
       I1 => \sampleADC_reg[42]_5\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(9),
       O => \PS_IN[23]_i_2_n_0\
     );
@@ -1170,9 +1166,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(9),
       I1 => \sampleADC_reg[26]_21\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(9),
       O => \PS_IN[23]_i_3_n_0\
     );
@@ -1183,9 +1179,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(9),
       I1 => \sampleADC_reg[10]_37\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(9),
       O => \PS_IN[23]_i_4_n_0\
     );
@@ -1196,9 +1192,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(10),
       I1 => \PS_IN[24]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[24]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[24]_i_4_n_0\,
       O => \PS_IN[24]_i_1_n_0\
     );
@@ -1209,9 +1205,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(10),
       I1 => \sampleADC_reg[42]_5\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(10),
       O => \PS_IN[24]_i_2_n_0\
     );
@@ -1222,9 +1218,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(10),
       I1 => \sampleADC_reg[26]_21\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(10),
       O => \PS_IN[24]_i_3_n_0\
     );
@@ -1235,9 +1231,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(10),
       I1 => \sampleADC_reg[10]_37\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(10),
       O => \PS_IN[24]_i_4_n_0\
     );
@@ -1248,9 +1244,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(11),
       I1 => \PS_IN[25]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[25]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[25]_i_4_n_0\,
       O => \PS_IN[25]_i_1_n_0\
     );
@@ -1261,9 +1257,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(11),
       I1 => \sampleADC_reg[42]_5\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(11),
       O => \PS_IN[25]_i_2_n_0\
     );
@@ -1274,9 +1270,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(11),
       I1 => \sampleADC_reg[26]_21\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(11),
       O => \PS_IN[25]_i_3_n_0\
     );
@@ -1287,9 +1283,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(11),
       I1 => \sampleADC_reg[10]_37\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(11),
       O => \PS_IN[25]_i_4_n_0\
     );
@@ -1300,9 +1296,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(12),
       I1 => \PS_IN[26]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[26]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[26]_i_4_n_0\,
       O => \PS_IN[26]_i_1_n_0\
     );
@@ -1313,9 +1309,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(12),
       I1 => \sampleADC_reg[42]_5\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(12),
       O => \PS_IN[26]_i_2_n_0\
     );
@@ -1326,9 +1322,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(12),
       I1 => \sampleADC_reg[26]_21\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(12),
       O => \PS_IN[26]_i_3_n_0\
     );
@@ -1339,9 +1335,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(12),
       I1 => \sampleADC_reg[10]_37\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(12),
       O => \PS_IN[26]_i_4_n_0\
     );
@@ -1352,9 +1348,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(13),
       I1 => \PS_IN[27]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[27]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[27]_i_4_n_0\,
       O => \PS_IN[27]_i_1_n_0\
     );
@@ -1365,9 +1361,9 @@ begin
         port map (
       I0 => \sampleADC_reg[46]_1\(13),
       I1 => \sampleADC_reg[42]_5\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[38]_9\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[34]_13\(13),
       O => \PS_IN[27]_i_2_n_0\
     );
@@ -1378,9 +1374,9 @@ begin
         port map (
       I0 => \sampleADC_reg[30]_17\(13),
       I1 => \sampleADC_reg[26]_21\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[22]_25\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[18]_29\(13),
       O => \PS_IN[27]_i_3_n_0\
     );
@@ -1391,9 +1387,9 @@ begin
         port map (
       I0 => \sampleADC_reg[14]_33\(13),
       I1 => \sampleADC_reg[10]_37\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[6]_41\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[2]_45\(13),
       O => \PS_IN[27]_i_4_n_0\
     );
@@ -1404,9 +1400,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(2),
       I1 => \PS_IN[2]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[2]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[2]_i_4_n_0\,
       O => \sampleADC[47]_48\(2)
     );
@@ -1417,9 +1413,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(2),
       I1 => \sampleADC_reg[43]_4\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(2),
       O => \PS_IN[2]_i_2_n_0\
     );
@@ -1430,9 +1426,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(2),
       I1 => \sampleADC_reg[27]_20\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(2),
       O => \PS_IN[2]_i_3_n_0\
     );
@@ -1443,9 +1439,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(2),
       I1 => \sampleADC_reg[11]_36\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(2),
       O => \PS_IN[2]_i_4_n_0\
     );
@@ -1456,9 +1452,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(0),
       I1 => \PS_IN[32]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[32]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[32]_i_4_n_0\,
       O => \PS_IN[32]_i_1_n_0\
     );
@@ -1469,9 +1465,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(0),
       I1 => \sampleADC_reg[41]_6\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(0),
       O => \PS_IN[32]_i_2_n_0\
     );
@@ -1482,9 +1478,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(0),
       I1 => \sampleADC_reg[25]_22\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(0),
       O => \PS_IN[32]_i_3_n_0\
     );
@@ -1495,9 +1491,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(0),
       I1 => \sampleADC_reg[9]_38\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(0),
       O => \PS_IN[32]_i_4_n_0\
     );
@@ -1508,9 +1504,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(1),
       I1 => \PS_IN[33]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[33]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[33]_i_4_n_0\,
       O => \PS_IN[33]_i_1_n_0\
     );
@@ -1521,9 +1517,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(1),
       I1 => \sampleADC_reg[41]_6\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(1),
       O => \PS_IN[33]_i_2_n_0\
     );
@@ -1534,9 +1530,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(1),
       I1 => \sampleADC_reg[25]_22\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(1),
       O => \PS_IN[33]_i_3_n_0\
     );
@@ -1547,9 +1543,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(1),
       I1 => \sampleADC_reg[9]_38\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(1),
       O => \PS_IN[33]_i_4_n_0\
     );
@@ -1560,9 +1556,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(2),
       I1 => \PS_IN[34]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[34]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[34]_i_4_n_0\,
       O => \PS_IN[34]_i_1_n_0\
     );
@@ -1573,9 +1569,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(2),
       I1 => \sampleADC_reg[41]_6\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(2),
       O => \PS_IN[34]_i_2_n_0\
     );
@@ -1586,9 +1582,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(2),
       I1 => \sampleADC_reg[25]_22\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(2),
       O => \PS_IN[34]_i_3_n_0\
     );
@@ -1599,9 +1595,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(2),
       I1 => \sampleADC_reg[9]_38\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(2),
       O => \PS_IN[34]_i_4_n_0\
     );
@@ -1612,9 +1608,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(3),
       I1 => \PS_IN[35]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[35]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[35]_i_4_n_0\,
       O => \PS_IN[35]_i_1_n_0\
     );
@@ -1625,9 +1621,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(3),
       I1 => \sampleADC_reg[41]_6\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(3),
       O => \PS_IN[35]_i_2_n_0\
     );
@@ -1638,9 +1634,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(3),
       I1 => \sampleADC_reg[25]_22\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(3),
       O => \PS_IN[35]_i_3_n_0\
     );
@@ -1651,9 +1647,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(3),
       I1 => \sampleADC_reg[9]_38\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(3),
       O => \PS_IN[35]_i_4_n_0\
     );
@@ -1664,9 +1660,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(4),
       I1 => \PS_IN[36]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[36]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[36]_i_4_n_0\,
       O => \PS_IN[36]_i_1_n_0\
     );
@@ -1677,9 +1673,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(4),
       I1 => \sampleADC_reg[41]_6\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(4),
       O => \PS_IN[36]_i_2_n_0\
     );
@@ -1690,9 +1686,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(4),
       I1 => \sampleADC_reg[25]_22\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(4),
       O => \PS_IN[36]_i_3_n_0\
     );
@@ -1703,9 +1699,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(4),
       I1 => \sampleADC_reg[9]_38\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(4),
       O => \PS_IN[36]_i_4_n_0\
     );
@@ -1716,9 +1712,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(5),
       I1 => \PS_IN[37]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[37]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[37]_i_4_n_0\,
       O => \PS_IN[37]_i_1_n_0\
     );
@@ -1729,9 +1725,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(5),
       I1 => \sampleADC_reg[41]_6\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(5),
       O => \PS_IN[37]_i_2_n_0\
     );
@@ -1742,9 +1738,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(5),
       I1 => \sampleADC_reg[25]_22\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(5),
       O => \PS_IN[37]_i_3_n_0\
     );
@@ -1755,9 +1751,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(5),
       I1 => \sampleADC_reg[9]_38\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(5),
       O => \PS_IN[37]_i_4_n_0\
     );
@@ -1768,9 +1764,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(6),
       I1 => \PS_IN[38]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[38]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[38]_i_4_n_0\,
       O => \PS_IN[38]_i_1_n_0\
     );
@@ -1781,9 +1777,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(6),
       I1 => \sampleADC_reg[41]_6\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(6),
       O => \PS_IN[38]_i_2_n_0\
     );
@@ -1794,9 +1790,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(6),
       I1 => \sampleADC_reg[25]_22\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(6),
       O => \PS_IN[38]_i_3_n_0\
     );
@@ -1807,9 +1803,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(6),
       I1 => \sampleADC_reg[9]_38\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(6),
       O => \PS_IN[38]_i_4_n_0\
     );
@@ -1820,9 +1816,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(7),
       I1 => \PS_IN[39]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[39]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[39]_i_4_n_0\,
       O => \PS_IN[39]_i_1_n_0\
     );
@@ -1833,9 +1829,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(7),
       I1 => \sampleADC_reg[41]_6\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(7),
       O => \PS_IN[39]_i_2_n_0\
     );
@@ -1846,9 +1842,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(7),
       I1 => \sampleADC_reg[25]_22\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(7),
       O => \PS_IN[39]_i_3_n_0\
     );
@@ -1859,9 +1855,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(7),
       I1 => \sampleADC_reg[9]_38\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(7),
       O => \PS_IN[39]_i_4_n_0\
     );
@@ -1872,9 +1868,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(3),
       I1 => \PS_IN[3]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[3]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[3]_i_4_n_0\,
       O => \sampleADC[47]_48\(3)
     );
@@ -1885,9 +1881,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(3),
       I1 => \sampleADC_reg[43]_4\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(3),
       O => \PS_IN[3]_i_2_n_0\
     );
@@ -1898,9 +1894,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(3),
       I1 => \sampleADC_reg[27]_20\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(3),
       O => \PS_IN[3]_i_3_n_0\
     );
@@ -1911,9 +1907,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(3),
       I1 => \sampleADC_reg[11]_36\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(3),
       O => \PS_IN[3]_i_4_n_0\
     );
@@ -1924,9 +1920,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(8),
       I1 => \PS_IN[40]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[40]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[40]_i_4_n_0\,
       O => \PS_IN[40]_i_1_n_0\
     );
@@ -1937,9 +1933,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(8),
       I1 => \sampleADC_reg[41]_6\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(8),
       O => \PS_IN[40]_i_2_n_0\
     );
@@ -1950,9 +1946,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(8),
       I1 => \sampleADC_reg[25]_22\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(8),
       O => \PS_IN[40]_i_3_n_0\
     );
@@ -1963,9 +1959,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(8),
       I1 => \sampleADC_reg[9]_38\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(8),
       O => \PS_IN[40]_i_4_n_0\
     );
@@ -1976,9 +1972,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(9),
       I1 => \PS_IN[41]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[41]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[41]_i_4_n_0\,
       O => \PS_IN[41]_i_1_n_0\
     );
@@ -1989,9 +1985,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(9),
       I1 => \sampleADC_reg[41]_6\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(9),
       O => \PS_IN[41]_i_2_n_0\
     );
@@ -2002,9 +1998,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(9),
       I1 => \sampleADC_reg[25]_22\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(9),
       O => \PS_IN[41]_i_3_n_0\
     );
@@ -2015,9 +2011,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(9),
       I1 => \sampleADC_reg[9]_38\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(9),
       O => \PS_IN[41]_i_4_n_0\
     );
@@ -2028,9 +2024,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(10),
       I1 => \PS_IN[42]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[42]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[42]_i_4_n_0\,
       O => \PS_IN[42]_i_1_n_0\
     );
@@ -2041,9 +2037,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(10),
       I1 => \sampleADC_reg[41]_6\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(10),
       O => \PS_IN[42]_i_2_n_0\
     );
@@ -2054,9 +2050,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(10),
       I1 => \sampleADC_reg[25]_22\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(10),
       O => \PS_IN[42]_i_3_n_0\
     );
@@ -2067,9 +2063,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(10),
       I1 => \sampleADC_reg[9]_38\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(10),
       O => \PS_IN[42]_i_4_n_0\
     );
@@ -2080,9 +2076,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(11),
       I1 => \PS_IN[43]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[43]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[43]_i_4_n_0\,
       O => \PS_IN[43]_i_1_n_0\
     );
@@ -2093,9 +2089,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(11),
       I1 => \sampleADC_reg[41]_6\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(11),
       O => \PS_IN[43]_i_2_n_0\
     );
@@ -2106,9 +2102,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(11),
       I1 => \sampleADC_reg[25]_22\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(11),
       O => \PS_IN[43]_i_3_n_0\
     );
@@ -2119,9 +2115,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(11),
       I1 => \sampleADC_reg[9]_38\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(11),
       O => \PS_IN[43]_i_4_n_0\
     );
@@ -2132,9 +2128,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(12),
       I1 => \PS_IN[44]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[44]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[44]_i_4_n_0\,
       O => \PS_IN[44]_i_1_n_0\
     );
@@ -2145,9 +2141,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(12),
       I1 => \sampleADC_reg[41]_6\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(12),
       O => \PS_IN[44]_i_2_n_0\
     );
@@ -2158,9 +2154,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(12),
       I1 => \sampleADC_reg[25]_22\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(12),
       O => \PS_IN[44]_i_3_n_0\
     );
@@ -2171,9 +2167,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(12),
       I1 => \sampleADC_reg[9]_38\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(12),
       O => \PS_IN[44]_i_4_n_0\
     );
@@ -2184,9 +2180,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(13),
       I1 => \PS_IN[45]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[45]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[45]_i_4_n_0\,
       O => \PS_IN[45]_i_1_n_0\
     );
@@ -2197,9 +2193,9 @@ begin
         port map (
       I0 => \sampleADC_reg[45]_2\(13),
       I1 => \sampleADC_reg[41]_6\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[37]_10\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[33]_14\(13),
       O => \PS_IN[45]_i_2_n_0\
     );
@@ -2210,9 +2206,9 @@ begin
         port map (
       I0 => \sampleADC_reg[29]_18\(13),
       I1 => \sampleADC_reg[25]_22\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[21]_26\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[17]_30\(13),
       O => \PS_IN[45]_i_3_n_0\
     );
@@ -2223,9 +2219,9 @@ begin
         port map (
       I0 => \sampleADC_reg[13]_34\(13),
       I1 => \sampleADC_reg[9]_38\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[5]_42\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[1]_46\(13),
       O => \PS_IN[45]_i_4_n_0\
     );
@@ -2235,9 +2231,9 @@ begin
     )
         port map (
       I0 => \PS_IN[46]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[46]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[46]_i_4_n_0\,
       O => \PS_IN[46]_i_1_n_0\
     );
@@ -2248,9 +2244,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(0),
       I1 => \sampleADC_reg[40]_7\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(0),
       O => \PS_IN[46]_i_2_n_0\
     );
@@ -2261,9 +2257,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(0),
       I1 => \sampleADC_reg[24]_23\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(0),
       O => \PS_IN[46]_i_3_n_0\
     );
@@ -2274,9 +2270,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(0),
       I1 => \sampleADC_reg[8]_39\(0),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(0),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(0),
       O => \PS_IN[46]_i_4_n_0\
     );
@@ -2286,9 +2282,9 @@ begin
     )
         port map (
       I0 => \PS_IN[47]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[47]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[47]_i_4_n_0\,
       O => \PS_IN[47]_i_1_n_0\
     );
@@ -2299,9 +2295,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(1),
       I1 => \sampleADC_reg[40]_7\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(1),
       O => \PS_IN[47]_i_2_n_0\
     );
@@ -2312,9 +2308,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(1),
       I1 => \sampleADC_reg[24]_23\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(1),
       O => \PS_IN[47]_i_3_n_0\
     );
@@ -2325,9 +2321,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(1),
       I1 => \sampleADC_reg[8]_39\(1),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(1),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(1),
       O => \PS_IN[47]_i_4_n_0\
     );
@@ -2337,9 +2333,9 @@ begin
     )
         port map (
       I0 => \PS_IN[48]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[48]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[48]_i_4_n_0\,
       O => \PS_IN[48]_i_1_n_0\
     );
@@ -2350,9 +2346,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(2),
       I1 => \sampleADC_reg[40]_7\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(2),
       O => \PS_IN[48]_i_2_n_0\
     );
@@ -2363,9 +2359,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(2),
       I1 => \sampleADC_reg[24]_23\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(2),
       O => \PS_IN[48]_i_3_n_0\
     );
@@ -2376,9 +2372,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(2),
       I1 => \sampleADC_reg[8]_39\(2),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(2),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(2),
       O => \PS_IN[48]_i_4_n_0\
     );
@@ -2388,9 +2384,9 @@ begin
     )
         port map (
       I0 => \PS_IN[49]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[49]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[49]_i_4_n_0\,
       O => \PS_IN[49]_i_1_n_0\
     );
@@ -2401,9 +2397,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(3),
       I1 => \sampleADC_reg[40]_7\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(3),
       O => \PS_IN[49]_i_2_n_0\
     );
@@ -2414,9 +2410,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(3),
       I1 => \sampleADC_reg[24]_23\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(3),
       O => \PS_IN[49]_i_3_n_0\
     );
@@ -2427,9 +2423,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(3),
       I1 => \sampleADC_reg[8]_39\(3),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(3),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(3),
       O => \PS_IN[49]_i_4_n_0\
     );
@@ -2440,9 +2436,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(4),
       I1 => \PS_IN[4]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[4]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[4]_i_4_n_0\,
       O => \sampleADC[47]_48\(4)
     );
@@ -2453,9 +2449,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(4),
       I1 => \sampleADC_reg[43]_4\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(4),
       O => \PS_IN[4]_i_2_n_0\
     );
@@ -2466,9 +2462,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(4),
       I1 => \sampleADC_reg[27]_20\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(4),
       O => \PS_IN[4]_i_3_n_0\
     );
@@ -2479,9 +2475,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(4),
       I1 => \sampleADC_reg[11]_36\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(4),
       O => \PS_IN[4]_i_4_n_0\
     );
@@ -2491,9 +2487,9 @@ begin
     )
         port map (
       I0 => \PS_IN[50]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[50]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[50]_i_4_n_0\,
       O => \PS_IN[50]_i_1_n_0\
     );
@@ -2504,9 +2500,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(4),
       I1 => \sampleADC_reg[40]_7\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(4),
       O => \PS_IN[50]_i_2_n_0\
     );
@@ -2517,9 +2513,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(4),
       I1 => \sampleADC_reg[24]_23\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(4),
       O => \PS_IN[50]_i_3_n_0\
     );
@@ -2530,9 +2526,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(4),
       I1 => \sampleADC_reg[8]_39\(4),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(4),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(4),
       O => \PS_IN[50]_i_4_n_0\
     );
@@ -2542,9 +2538,9 @@ begin
     )
         port map (
       I0 => \PS_IN[51]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[51]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[51]_i_4_n_0\,
       O => \PS_IN[51]_i_1_n_0\
     );
@@ -2555,9 +2551,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(5),
       I1 => \sampleADC_reg[40]_7\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(5),
       O => \PS_IN[51]_i_2_n_0\
     );
@@ -2568,9 +2564,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(5),
       I1 => \sampleADC_reg[24]_23\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(5),
       O => \PS_IN[51]_i_3_n_0\
     );
@@ -2581,9 +2577,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(5),
       I1 => \sampleADC_reg[8]_39\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(5),
       O => \PS_IN[51]_i_4_n_0\
     );
@@ -2593,9 +2589,9 @@ begin
     )
         port map (
       I0 => \PS_IN[52]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[52]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[52]_i_4_n_0\,
       O => \PS_IN[52]_i_1_n_0\
     );
@@ -2606,9 +2602,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(6),
       I1 => \sampleADC_reg[40]_7\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(6),
       O => \PS_IN[52]_i_2_n_0\
     );
@@ -2619,9 +2615,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(6),
       I1 => \sampleADC_reg[24]_23\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(6),
       O => \PS_IN[52]_i_3_n_0\
     );
@@ -2632,9 +2628,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(6),
       I1 => \sampleADC_reg[8]_39\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(6),
       O => \PS_IN[52]_i_4_n_0\
     );
@@ -2644,9 +2640,9 @@ begin
     )
         port map (
       I0 => \PS_IN[53]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[53]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[53]_i_4_n_0\,
       O => \PS_IN[53]_i_1_n_0\
     );
@@ -2657,9 +2653,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(7),
       I1 => \sampleADC_reg[40]_7\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(7),
       O => \PS_IN[53]_i_2_n_0\
     );
@@ -2670,9 +2666,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(7),
       I1 => \sampleADC_reg[24]_23\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(7),
       O => \PS_IN[53]_i_3_n_0\
     );
@@ -2683,9 +2679,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(7),
       I1 => \sampleADC_reg[8]_39\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(7),
       O => \PS_IN[53]_i_4_n_0\
     );
@@ -2695,9 +2691,9 @@ begin
     )
         port map (
       I0 => \PS_IN[54]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[54]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[54]_i_4_n_0\,
       O => \PS_IN[54]_i_1_n_0\
     );
@@ -2708,9 +2704,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(8),
       I1 => \sampleADC_reg[40]_7\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(8),
       O => \PS_IN[54]_i_2_n_0\
     );
@@ -2721,9 +2717,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(8),
       I1 => \sampleADC_reg[24]_23\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(8),
       O => \PS_IN[54]_i_3_n_0\
     );
@@ -2734,9 +2730,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(8),
       I1 => \sampleADC_reg[8]_39\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(8),
       O => \PS_IN[54]_i_4_n_0\
     );
@@ -2746,9 +2742,9 @@ begin
     )
         port map (
       I0 => \PS_IN[55]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[55]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[55]_i_4_n_0\,
       O => \PS_IN[55]_i_1_n_0\
     );
@@ -2759,9 +2755,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(9),
       I1 => \sampleADC_reg[40]_7\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(9),
       O => \PS_IN[55]_i_2_n_0\
     );
@@ -2772,9 +2768,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(9),
       I1 => \sampleADC_reg[24]_23\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(9),
       O => \PS_IN[55]_i_3_n_0\
     );
@@ -2785,9 +2781,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(9),
       I1 => \sampleADC_reg[8]_39\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(9),
       O => \PS_IN[55]_i_4_n_0\
     );
@@ -2797,9 +2793,9 @@ begin
     )
         port map (
       I0 => \PS_IN[56]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[56]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[56]_i_4_n_0\,
       O => \PS_IN[56]_i_1_n_0\
     );
@@ -2810,9 +2806,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(10),
       I1 => \sampleADC_reg[40]_7\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(10),
       O => \PS_IN[56]_i_2_n_0\
     );
@@ -2823,9 +2819,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(10),
       I1 => \sampleADC_reg[24]_23\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(10),
       O => \PS_IN[56]_i_3_n_0\
     );
@@ -2836,9 +2832,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(10),
       I1 => \sampleADC_reg[8]_39\(10),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(10),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(10),
       O => \PS_IN[56]_i_4_n_0\
     );
@@ -2848,9 +2844,9 @@ begin
     )
         port map (
       I0 => \PS_IN[57]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[57]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[57]_i_4_n_0\,
       O => \PS_IN[57]_i_1_n_0\
     );
@@ -2861,9 +2857,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(11),
       I1 => \sampleADC_reg[40]_7\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(11),
       O => \PS_IN[57]_i_2_n_0\
     );
@@ -2874,9 +2870,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(11),
       I1 => \sampleADC_reg[24]_23\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(11),
       O => \PS_IN[57]_i_3_n_0\
     );
@@ -2887,9 +2883,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(11),
       I1 => \sampleADC_reg[8]_39\(11),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(11),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(11),
       O => \PS_IN[57]_i_4_n_0\
     );
@@ -2899,9 +2895,9 @@ begin
     )
         port map (
       I0 => \PS_IN[58]_i_2_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[58]_i_3_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[58]_i_4_n_0\,
       O => \PS_IN[58]_i_1_n_0\
     );
@@ -2912,9 +2908,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(12),
       I1 => \sampleADC_reg[40]_7\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(12),
       O => \PS_IN[58]_i_2_n_0\
     );
@@ -2925,9 +2921,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(12),
       I1 => \sampleADC_reg[24]_23\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(12),
       O => \PS_IN[58]_i_3_n_0\
     );
@@ -2938,20 +2934,20 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(12),
       I1 => \sampleADC_reg[8]_39\(12),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(12),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(12),
       O => \PS_IN[58]_i_4_n_0\
     );
 \PS_IN[59]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"41"
+      INIT => X"09"
     )
         port map (
-      I0 => PS_OUT(31),
+      I0 => PS_OUT(29),
       I1 => \^prev_value_nextsample\,
-      I2 => PS_OUT(29),
+      I2 => PS_OUT(31),
       O => \PS_IN[59]_i_1_n_0\
     );
 \PS_IN[59]_i_2\: unisim.vcomponents.LUT5
@@ -2960,9 +2956,9 @@ begin
     )
         port map (
       I0 => \PS_IN[59]_i_3_n_0\,
-      I1 => \counter_reg_n_0_[5]\,
+      I1 => counter_reg(5),
       I2 => \PS_IN[59]_i_4_n_0\,
-      I3 => \counter_reg_n_0_[4]\,
+      I3 => counter_reg(4),
       I4 => \PS_IN[59]_i_5_n_0\,
       O => \PS_IN[59]_i_2_n_0\
     );
@@ -2973,9 +2969,9 @@ begin
         port map (
       I0 => \sampleADC_reg[44]_3\(13),
       I1 => \sampleADC_reg[40]_7\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[36]_11\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[32]_15\(13),
       O => \PS_IN[59]_i_3_n_0\
     );
@@ -2986,9 +2982,9 @@ begin
         port map (
       I0 => \sampleADC_reg[28]_19\(13),
       I1 => \sampleADC_reg[24]_23\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[20]_27\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[16]_31\(13),
       O => \PS_IN[59]_i_4_n_0\
     );
@@ -2999,9 +2995,9 @@ begin
         port map (
       I0 => \sampleADC_reg[12]_35\(13),
       I1 => \sampleADC_reg[8]_39\(13),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[4]_43\(13),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[0]_47\(13),
       O => \PS_IN[59]_i_5_n_0\
     );
@@ -3012,9 +3008,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(5),
       I1 => \PS_IN[5]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[5]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[5]_i_4_n_0\,
       O => \sampleADC[47]_48\(5)
     );
@@ -3025,9 +3021,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(5),
       I1 => \sampleADC_reg[43]_4\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(5),
       O => \PS_IN[5]_i_2_n_0\
     );
@@ -3038,9 +3034,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(5),
       I1 => \sampleADC_reg[27]_20\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(5),
       O => \PS_IN[5]_i_3_n_0\
     );
@@ -3051,9 +3047,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(5),
       I1 => \sampleADC_reg[11]_36\(5),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(5),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(5),
       O => \PS_IN[5]_i_4_n_0\
     );
@@ -3064,9 +3060,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(6),
       I1 => \PS_IN[6]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[6]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[6]_i_4_n_0\,
       O => \sampleADC[47]_48\(6)
     );
@@ -3077,9 +3073,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(6),
       I1 => \sampleADC_reg[43]_4\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(6),
       O => \PS_IN[6]_i_2_n_0\
     );
@@ -3090,9 +3086,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(6),
       I1 => \sampleADC_reg[27]_20\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(6),
       O => \PS_IN[6]_i_3_n_0\
     );
@@ -3103,9 +3099,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(6),
       I1 => \sampleADC_reg[11]_36\(6),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(6),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(6),
       O => \PS_IN[6]_i_4_n_0\
     );
@@ -3116,9 +3112,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(7),
       I1 => \PS_IN[7]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[7]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[7]_i_4_n_0\,
       O => \sampleADC[47]_48\(7)
     );
@@ -3129,9 +3125,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(7),
       I1 => \sampleADC_reg[43]_4\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(7),
       O => \PS_IN[7]_i_2_n_0\
     );
@@ -3142,9 +3138,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(7),
       I1 => \sampleADC_reg[27]_20\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(7),
       O => \PS_IN[7]_i_3_n_0\
     );
@@ -3155,9 +3151,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(7),
       I1 => \sampleADC_reg[11]_36\(7),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(7),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(7),
       O => \PS_IN[7]_i_4_n_0\
     );
@@ -3168,9 +3164,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(8),
       I1 => \PS_IN[8]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[8]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[8]_i_4_n_0\,
       O => \sampleADC[47]_48\(8)
     );
@@ -3181,9 +3177,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(8),
       I1 => \sampleADC_reg[43]_4\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(8),
       O => \PS_IN[8]_i_2_n_0\
     );
@@ -3194,9 +3190,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(8),
       I1 => \sampleADC_reg[27]_20\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(8),
       O => \PS_IN[8]_i_3_n_0\
     );
@@ -3207,9 +3203,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(8),
       I1 => \sampleADC_reg[11]_36\(8),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(8),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(8),
       O => \PS_IN[8]_i_4_n_0\
     );
@@ -3220,9 +3216,9 @@ begin
         port map (
       I0 => \sampleADC_reg[0]_47\(9),
       I1 => \PS_IN[9]_i_2_n_0\,
-      I2 => \counter_reg_n_0_[5]\,
+      I2 => counter_reg(5),
       I3 => \PS_IN[9]_i_3_n_0\,
-      I4 => \counter_reg_n_0_[4]\,
+      I4 => counter_reg(4),
       I5 => \PS_IN[9]_i_4_n_0\,
       O => \sampleADC[47]_48\(9)
     );
@@ -3233,9 +3229,9 @@ begin
         port map (
       I0 => \sampleADC_reg[47]_0\(9),
       I1 => \sampleADC_reg[43]_4\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[39]_8\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[35]_12\(9),
       O => \PS_IN[9]_i_2_n_0\
     );
@@ -3246,9 +3242,9 @@ begin
         port map (
       I0 => \sampleADC_reg[31]_16\(9),
       I1 => \sampleADC_reg[27]_20\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[23]_24\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[19]_28\(9),
       O => \PS_IN[9]_i_3_n_0\
     );
@@ -3259,9 +3255,9 @@ begin
         port map (
       I0 => \sampleADC_reg[15]_32\(9),
       I1 => \sampleADC_reg[11]_36\(9),
-      I2 => \counter_reg_n_0_[3]\,
+      I2 => counter_reg(3),
       I3 => \sampleADC_reg[7]_40\(9),
-      I4 => \counter_reg_n_0_[2]\,
+      I4 => counter_reg(2),
       I5 => \sampleADC_reg[3]_44\(9),
       O => \PS_IN[9]_i_4_n_0\
     );
@@ -3713,88 +3709,65 @@ begin
       Q => PS_IN(9),
       R => '0'
     );
-\counter[2]_i_1\: unisim.vcomponents.LUT5
+\counter[2]_i_1\: unisim.vcomponents.LUT1
     generic map(
-      INIT => X"00000770"
+      INIT => X"1"
     )
         port map (
-      I0 => \counter_reg_n_0_[4]\,
-      I1 => \counter_reg_n_0_[5]\,
-      I2 => \^prev_value_nextvalue\,
-      I3 => PS_OUT(30),
-      I4 => \counter_reg_n_0_[2]\,
+      I0 => counter_reg(2),
       O => \counter[2]_i_1_n_0\
     );
-\counter[3]_i_1\: unisim.vcomponents.LUT6
+\counter[3]_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"0000066606660000"
+      INIT => X"6"
     )
         port map (
-      I0 => \^prev_value_nextvalue\,
-      I1 => PS_OUT(30),
-      I2 => \counter_reg_n_0_[5]\,
-      I3 => \counter_reg_n_0_[4]\,
-      I4 => \counter_reg_n_0_[3]\,
-      I5 => \counter_reg_n_0_[2]\,
-      O => \counter[3]_i_1_n_0\
+      I0 => counter_reg(3),
+      I1 => counter_reg(2),
+      O => plusOp(3)
     );
-\counter[4]_i_1\: unisim.vcomponents.LUT6
+\counter[4]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"0066060006000600"
+      INIT => X"6A"
     )
         port map (
-      I0 => \^prev_value_nextvalue\,
-      I1 => PS_OUT(30),
-      I2 => \counter_reg_n_0_[5]\,
-      I3 => \counter_reg_n_0_[4]\,
-      I4 => \counter_reg_n_0_[2]\,
-      I5 => \counter_reg_n_0_[3]\,
-      O => \counter[4]_i_1_n_0\
+      I0 => counter_reg(4),
+      I1 => counter_reg(3),
+      I2 => counter_reg(2),
+      O => plusOp(4)
     );
-\counter[5]_i_1\: unisim.vcomponents.LUT3
+\counter[5]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"14"
-    )
-        port map (
-      I0 => PS_OUT(31),
-      I1 => \^prev_value_nextsample\,
-      I2 => PS_OUT(29),
-      O => \counter[5]_i_1_n_0\
-    );
-\counter[5]_i_2\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"00F6"
+      INIT => X"0084"
     )
         port map (
       I0 => PS_OUT(29),
-      I1 => \^prev_value_nextsample\,
-      I2 => \counter[5]_i_4_n_0\,
+      I1 => \counter[5]_i_3_n_0\,
+      I2 => \^prev_value_nextsample\,
       I3 => PS_OUT(31),
       O => counter
     );
-\counter[5]_i_3\: unisim.vcomponents.LUT6
+\counter[5]_i_2\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0600000060606060"
+      INIT => X"6AAA"
     )
         port map (
-      I0 => \^prev_value_nextvalue\,
-      I1 => PS_OUT(30),
-      I2 => \counter_reg_n_0_[5]\,
-      I3 => \counter_reg_n_0_[3]\,
-      I4 => \counter_reg_n_0_[2]\,
-      I5 => \counter_reg_n_0_[4]\,
-      O => \counter[5]_i_3_n_0\
+      I0 => counter_reg(5),
+      I1 => counter_reg(3),
+      I2 => counter_reg(2),
+      I3 => counter_reg(4),
+      O => plusOp(5)
     );
-\counter[5]_i_4\: unisim.vcomponents.LUT4
+\counter[5]_i_3\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0770"
+      INIT => X"152A"
     )
         port map (
-      I0 => \counter_reg_n_0_[4]\,
-      I1 => \counter_reg_n_0_[5]\,
-      I2 => PS_OUT(30),
+      I0 => PS_OUT(30),
+      I1 => counter_reg(5),
+      I2 => counter_reg(4),
       I3 => \^prev_value_nextvalue\,
-      O => \counter[5]_i_4_n_0\
+      O => \counter[5]_i_3_n_0\
     );
 \counter_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -3804,8 +3777,8 @@ begin
       C => clk,
       CE => counter,
       D => \counter[2]_i_1_n_0\,
-      Q => \counter_reg_n_0_[2]\,
-      R => \counter[5]_i_1_n_0\
+      Q => counter_reg(2),
+      R => \sampleADC[47][13]_i_1_n_0\
     );
 \counter_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -3814,9 +3787,9 @@ begin
         port map (
       C => clk,
       CE => counter,
-      D => \counter[3]_i_1_n_0\,
-      Q => \counter_reg_n_0_[3]\,
-      R => \counter[5]_i_1_n_0\
+      D => plusOp(3),
+      Q => counter_reg(3),
+      R => \sampleADC[47][13]_i_1_n_0\
     );
 \counter_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -3825,9 +3798,9 @@ begin
         port map (
       C => clk,
       CE => counter,
-      D => \counter[4]_i_1_n_0\,
-      Q => \counter_reg_n_0_[4]\,
-      R => \counter[5]_i_1_n_0\
+      D => plusOp(4),
+      Q => counter_reg(4),
+      R => \sampleADC[47][13]_i_1_n_0\
     );
 \counter_reg[5]\: unisim.vcomponents.FDRE
     generic map(
@@ -3836,9 +3809,9 @@ begin
         port map (
       C => clk,
       CE => counter,
-      D => \counter[5]_i_3_n_0\,
-      Q => \counter_reg_n_0_[5]\,
-      R => \counter[5]_i_1_n_0\
+      D => plusOp(5),
+      Q => counter_reg(5),
+      R => \sampleADC[47][13]_i_1_n_0\
     );
 prev_value_nextSample_reg: unisim.vcomponents.FDRE
      port map (
@@ -3861,8 +3834,8 @@ prev_value_nextValue_reg: unisim.vcomponents.FDRE
       INIT => X"06"
     )
         port map (
-      I0 => \^prev_value_nextsample\,
-      I1 => PS_OUT(29),
+      I0 => PS_OUT(29),
+      I1 => \^prev_value_nextsample\,
       I2 => PS_OUT(31),
       O => \sampleADC[47][13]_i_1_n_0\
     );
@@ -9756,9 +9729,8 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PS_Interface_TOP is
     PS_IN : out STD_LOGIC_VECTOR ( 55 downto 0 );
     toMod1 : out STD_LOGIC_VECTOR ( 30 downto 0 );
     toMod2 : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    PS_OUT : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    clk : in STD_LOGIC;
     adc_47 : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    clk : in STD_LOGIC;
     adc_46 : in STD_LOGIC_VECTOR ( 13 downto 0 );
     adc_45 : in STD_LOGIC_VECTOR ( 13 downto 0 );
     adc_44 : in STD_LOGIC_VECTOR ( 13 downto 0 );
@@ -9805,7 +9777,8 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PS_Interface_TOP is
     adc_3 : in STD_LOGIC_VECTOR ( 13 downto 0 );
     adc_2 : in STD_LOGIC_VECTOR ( 13 downto 0 );
     adc_1 : in STD_LOGIC_VECTOR ( 13 downto 0 );
-    adc_0 : in STD_LOGIC_VECTOR ( 13 downto 0 )
+    adc_0 : in STD_LOGIC_VECTOR ( 13 downto 0 );
+    PS_OUT : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PS_Interface_TOP;
 
@@ -9815,8 +9788,8 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PS_Interface
   signal prev_value_nextValue : STD_LOGIC;
   signal prev_value_nextValue_i_1_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of prev_value_nextSample_i_1 : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of prev_value_nextValue_i_1 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of prev_value_nextSample_i_1 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of prev_value_nextValue_i_1 : label is "soft_lutpair2";
 begin
 inst_PS_Interface: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_PS_Interface
      port map (

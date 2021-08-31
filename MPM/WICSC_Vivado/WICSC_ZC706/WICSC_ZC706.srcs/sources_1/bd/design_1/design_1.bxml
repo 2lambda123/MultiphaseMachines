@@ -2,13 +2,13 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1629705550"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1629705550"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1629705550"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1629705550"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1630443233"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1630443233"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1630443233"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1630443233"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\design_1_processing_system7_0_0\design_1_processing_system7_0_0.xci" Type="IP">
-        <Instance HierarchyPath="processing_system7_0"/>
+        <Instance HierarchyPath="PSandAXI/processing_system7_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -16,7 +16,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_fpga_dig_top_0_0\design_1_fpga_dig_top_0_0.xci" Type="IP">
-        <Instance HierarchyPath="fpga_dig_top_0"/>
+        <Instance HierarchyPath="DerserializersAndFilter/fpga_dig_top_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -32,7 +32,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_spi3_WICSC_top_0_0\design_1_spi3_WICSC_top_0_0.xci" Type="IP">
-        <Instance HierarchyPath="spi3_WICSC_top_0"/>
+        <Instance HierarchyPath="SPI/spi3_WICSC_top_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -40,7 +40,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_axi_gpio_0_0\design_1_axi_gpio_0_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_gpio_0"/>
+        <Instance HierarchyPath="SPI/axi_gpio_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -48,7 +48,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_axi_gpio_1_0\design_1_axi_gpio_1_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_gpio_1"/>
+        <Instance HierarchyPath="SPI/axi_gpio_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -56,7 +56,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_axi_gpio_2_0\design_1_axi_gpio_2_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_gpio_2"/>
+        <Instance HierarchyPath="SPI/axi_gpio_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -64,7 +64,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_xbar_0\design_1_xbar_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/xbar"/>
+        <Instance HierarchyPath="PSandAXI/ps7_0_axi_periph/xbar"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -72,7 +72,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_ps7_0_axi_periph_0\design_1_ps7_0_axi_periph_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph"/>
+        <Instance HierarchyPath="PSandAXI/ps7_0_axi_periph"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -80,7 +80,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_rst_ps7_0_100M_0\design_1_rst_ps7_0_100M_0.xci" Type="IP">
-        <Instance HierarchyPath="rst_ps7_0_100M"/>
+        <Instance HierarchyPath="PSandAXI/rst_ps7_0_100M"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -88,7 +88,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_modulater_14bit_0_0\design_1_modulater_14bit_0_0.xci" Type="IP">
-        <Instance HierarchyPath="modulater_14bit_0"/>
+        <Instance HierarchyPath="Modulater/modulater_14bit_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -96,7 +96,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_clk_wiz_0_0\design_1_clk_wiz_0_0.xci" Type="IP">
-        <Instance HierarchyPath="clk_wiz_0"/>
+        <Instance HierarchyPath="Modulater/clk_wiz_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -104,7 +104,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_MSBs_selector_0_2\design_1_MSBs_selector_0_2.xci" Type="IP">
-        <Instance HierarchyPath="MSBs_selector_0"/>
+        <Instance HierarchyPath="DerserializersAndFilter/MSBs_selector_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -112,7 +112,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_quadrature_decoder_0_0\design_1_quadrature_decoder_0_0.xci" Type="IP">
-        <Instance HierarchyPath="quadrature_decoder_0"/>
+        <Instance HierarchyPath="Encoder/quadrature_decoder_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -120,7 +120,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_axi_gpio_3_0\design_1_axi_gpio_3_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_gpio_3"/>
+        <Instance HierarchyPath="Encoder/axi_gpio_3"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -128,7 +128,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_xlconcat_0_0\design_1_xlconcat_0_0.xci" Type="IP">
-        <Instance HierarchyPath="xlconcat_0"/>
+        <Instance HierarchyPath="Encoder/xlconcat_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -136,7 +136,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_fpga_dig_top_1_0\design_1_fpga_dig_top_1_0.xci" Type="IP">
-        <Instance HierarchyPath="fpga_dig_top_1"/>
+        <Instance HierarchyPath="DerserializersAndFilter/fpga_dig_top_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -144,7 +144,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_MSBs_selector_1_0\design_1_MSBs_selector_1_0.xci" Type="IP">
-        <Instance HierarchyPath="MSBs_selector_1"/>
+        <Instance HierarchyPath="DerserializersAndFilter/MSBs_selector_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -152,7 +152,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_MSBs_selector_2_0\design_1_MSBs_selector_2_0.xci" Type="IP">
-        <Instance HierarchyPath="MSBs_selector_2"/>
+        <Instance HierarchyPath="DerserializersAndFilter/MSBs_selector_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -160,7 +160,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_axi_gpio_4_0\design_1_axi_gpio_4_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_gpio_4"/>
+        <Instance HierarchyPath="MMCMandReset/axi_gpio_4"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -168,7 +168,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_xlconcat_1_0\design_1_xlconcat_1_0.xci" Type="IP">
-        <Instance HierarchyPath="xlconcat_1"/>
+        <Instance HierarchyPath="DerserializersAndFilter/xlconcat_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -176,15 +176,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_fpga_dig_top_1_bank_0_0\design_1_fpga_dig_top_1_bank_0_0.xci" Type="IP">
-        <Instance HierarchyPath="fpga_dig_top_1_bank_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\design_1_axi_gpio_5_0\design_1_axi_gpio_5_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_gpio_5"/>
+        <Instance HierarchyPath="DerserializersAndFilter/fpga_dig_top_1_bank_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -192,7 +184,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_axi_gpio_6_0\design_1_axi_gpio_6_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_gpio_6"/>
+        <Instance HierarchyPath="Encoder/axi_gpio_6"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -208,7 +200,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_AND_GATE_0_0\design_1_AND_GATE_0_0.xci" Type="IP">
-        <Instance HierarchyPath="AND_GATE_0"/>
+        <Instance HierarchyPath="MMCMandReset/AND_GATE_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -216,7 +208,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_moving_average_top_0_0\design_1_moving_average_top_0_0.xci" Type="IP">
-        <Instance HierarchyPath="moving_average_top_0"/>
+        <Instance HierarchyPath="DerserializersAndFilter/moving_average_top_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -224,7 +216,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_clk_wiz_1_0\design_1_clk_wiz_1_0.xci" Type="IP">
-        <Instance HierarchyPath="clk_wiz_1"/>
+        <Instance HierarchyPath="DerserializersAndFilter/clk_wiz_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -232,7 +224,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_moving_average_top_1_0\design_1_moving_average_top_1_0.xci" Type="IP">
-        <Instance HierarchyPath="moving_average_top_1"/>
+        <Instance HierarchyPath="DerserializersAndFilter/moving_average_top_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -240,47 +232,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_moving_average_top_2_0\design_1_moving_average_top_2_0.xci" Type="IP">
-        <Instance HierarchyPath="moving_average_top_2"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\design_1_i2c_master_0_0\design_1_i2c_master_0_0.xci" Type="IP">
-        <Instance HierarchyPath="i2c_master_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\design_1_axi_gpio_7_0\design_1_axi_gpio_7_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_gpio_7"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\design_1_axi_gpio_8_0\design_1_axi_gpio_8_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_gpio_8"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\design_1_axi_gpio_9_0\design_1_axi_gpio_9_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_gpio_9"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\design_1_xlconcat_2_0\design_1_xlconcat_2_0.xci" Type="IP">
-        <Instance HierarchyPath="xlconcat_2"/>
+        <Instance HierarchyPath="DerserializersAndFilter/moving_average_top_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -288,7 +240,23 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_NOT_Gate_0_0\design_1_NOT_Gate_0_0.xci" Type="IP">
-        <Instance HierarchyPath="NOT_Gate_0"/>
+        <Instance HierarchyPath="MMCMandReset/NOT_Gate_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_1_axi_iic_0_0\design_1_axi_iic_0_0.xci" Type="IP">
+        <Instance HierarchyPath="I2C/axi_iic_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_1_auto_pc_0\design_1_auto_pc_0.xci" Type="IP">
+        <Instance HierarchyPath="PSandAXI/ps7_0_axi_periph/s00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -303,14 +271,6 @@
       <File Name="sim\design_1.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\design_1_auto_pc_0\design_1_auto_pc_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/s00_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="design_1_ooc.xdc" Type="XDC">

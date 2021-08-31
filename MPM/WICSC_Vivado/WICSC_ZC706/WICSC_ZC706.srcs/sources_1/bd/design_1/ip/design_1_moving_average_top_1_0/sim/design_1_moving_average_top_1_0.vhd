@@ -97,7 +97,8 @@ ARCHITECTURE design_1_moving_average_top_1_0_arch OF design_1_moving_average_top
   COMPONENT moving_average_top IS
     GENERIC (
       Inputsize : INTEGER;
-      FilterSize_log2 : INTEGER
+      FilterSize_log2 : INTEGER;
+      Activate : INTEGER
     );
     PORT (
       data_a1_in : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
@@ -139,13 +140,14 @@ ARCHITECTURE design_1_moving_average_top_1_0_arch OF design_1_moving_average_top
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_moving_average_top_1_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 12000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 12000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /DerserializersAndFilter/clk_wiz_1_clk_out1, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : moving_average_top
     GENERIC MAP (
       Inputsize => 14,
-      FilterSize_log2 => 0
+      FilterSize_log2 => 0,
+      Activate => 0
     )
     PORT MAP (
       data_a1_in => data_a1_in,

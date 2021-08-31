@@ -70,7 +70,13 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_xbar_0_synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 1
+set_param synth.incrementalSynthesisCache C:/Users/JonasHP/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7108-DESKTOP-R1R40B4/incrSyn
+set_param xicom.use_bs_reader 1
+set_msg_config -id {HDL-1065} -limit 10000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }

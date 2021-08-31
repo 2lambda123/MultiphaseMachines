@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Mon Aug 23 09:59:08 2021
+--Date        : Tue Aug 31 22:53:50 2021
 --Host        : DESKTOP-R1R40B4 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -36,14 +36,13 @@ entity design_1_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    IIC_scl_io : inout STD_LOGIC;
+    IIC_sda_io : inout STD_LOGIC;
     PWM_SIGNAL : out STD_LOGIC;
-    SCL : inout STD_LOGIC;
-    SDA : inout STD_LOGIC;
     ZO_in : in STD_LOGIC;
     csb_0 : out STD_LOGIC;
     csb_1 : out STD_LOGIC;
     csb_2 : out STD_LOGIC;
-    dip_switches_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     lvds_data_a1_n_0 : in STD_LOGIC;
     lvds_data_a1_n_1 : in STD_LOGIC;
     lvds_data_a1_n_2 : in STD_LOGIC;
@@ -252,15 +251,7 @@ architecture STRUCTURE of design_1_wrapper is
     csb_0 : out STD_LOGIC;
     csb_1 : out STD_LOGIC;
     csb_2 : out STD_LOGIC;
-    SDA : inout STD_LOGIC;
-    SCL : inout STD_LOGIC;
     master_rst : in STD_LOGIC;
-    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    FIXED_IO_ddr_vrn : inout STD_LOGIC;
-    FIXED_IO_ddr_vrp : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC;
-    FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -276,10 +267,49 @@ architecture STRUCTURE of design_1_wrapper is
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    dip_switches_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
+    IIC_scl_i : in STD_LOGIC;
+    IIC_scl_o : out STD_LOGIC;
+    IIC_scl_t : out STD_LOGIC;
+    IIC_sda_i : in STD_LOGIC;
+    IIC_sda_o : out STD_LOGIC;
+    IIC_sda_t : out STD_LOGIC;
+    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    FIXED_IO_ddr_vrn : inout STD_LOGIC;
+    FIXED_IO_ddr_vrp : inout STD_LOGIC;
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    FIXED_IO_ps_clk : inout STD_LOGIC;
+    FIXED_IO_ps_porb : inout STD_LOGIC
   );
   end component design_1;
+  component IOBUF is
+  port (
+    I : in STD_LOGIC;
+    O : out STD_LOGIC;
+    T : in STD_LOGIC;
+    IO : inout STD_LOGIC
+  );
+  end component IOBUF;
+  signal IIC_scl_i : STD_LOGIC;
+  signal IIC_scl_o : STD_LOGIC;
+  signal IIC_scl_t : STD_LOGIC;
+  signal IIC_sda_i : STD_LOGIC;
+  signal IIC_sda_o : STD_LOGIC;
+  signal IIC_sda_t : STD_LOGIC;
 begin
+IIC_scl_iobuf: component IOBUF
+     port map (
+      I => IIC_scl_o,
+      IO => IIC_scl_io,
+      O => IIC_scl_i,
+      T => IIC_scl_t
+    );
+IIC_sda_iobuf: component IOBUF
+     port map (
+      I => IIC_sda_o,
+      IO => IIC_sda_io,
+      O => IIC_sda_i,
+      T => IIC_sda_t
+    );
 design_1_i: component design_1
      port map (
       AO_in => AO_in,
@@ -305,14 +335,17 @@ design_1_i: component design_1
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      IIC_scl_i => IIC_scl_i,
+      IIC_scl_o => IIC_scl_o,
+      IIC_scl_t => IIC_scl_t,
+      IIC_sda_i => IIC_sda_i,
+      IIC_sda_o => IIC_sda_o,
+      IIC_sda_t => IIC_sda_t,
       PWM_SIGNAL => PWM_SIGNAL,
-      SCL => SCL,
-      SDA => SDA,
       ZO_in => ZO_in,
       csb_0 => csb_0,
       csb_1 => csb_1,
       csb_2 => csb_2,
-      dip_switches_4bits_tri_i(3 downto 0) => dip_switches_4bits_tri_i(3 downto 0),
       lvds_data_a1_n_0 => lvds_data_a1_n_0,
       lvds_data_a1_n_1 => lvds_data_a1_n_1,
       lvds_data_a1_n_2 => lvds_data_a1_n_2,

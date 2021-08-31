@@ -43,10 +43,9 @@ create_clock -period 83.333 -name lvds_fco2_p2 -waveform {0.000 41.667} [get_por
 
 
 
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_1_bank_0/U0/iser_top1/iser_fco]
-set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets design_1_i/fpga_dig_top_1/U0/data_clock_ctrl2/dco_buf]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/fpga_dig_top_1_bank_0/U0/data_clock_ctrl1/dco_buf]
-
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/DerserializersAndFilter/fpga_dig_top_1_bank_0/U0/iser_top1/iser_fco]
+set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets design_1_i/DerserializersAndFilter/fpga_dig_top_1/U0/data_clock_ctrl2/dco_buf]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets design_1_i/DerserializersAndFilter/fpga_dig_top_1_bank_0/U0/data_clock_ctrl1/dco_buf]
 #############################################################################################################################################
 # Clock Group Constraint
 #############################################################################################################################################
@@ -270,11 +269,11 @@ set_property IOSTANDARD LVCMOS25 [get_ports sdio_0]
 ###### I2C
 ############################################
 
-set_property PACKAGE_PIN AJ21 [get_ports SDA]
-set_property IOSTANDARD LVCMOS25 [get_ports SDA]
+set_property PACKAGE_PIN AJ21 [get_ports IIC_sda_io]
+set_property IOSTANDARD LVCMOS25 [get_ports IIC_sda_io]
 
-set_property PACKAGE_PIN AK21 [get_ports SCL]
-set_property IOSTANDARD LVCMOS25 [get_ports SCL]
+set_property PACKAGE_PIN AK21 [get_ports IIC_scl_io]
+set_property IOSTANDARD LVCMOS25 [get_ports IIC_scl_io]
 
 #############################################
 ###### SPI

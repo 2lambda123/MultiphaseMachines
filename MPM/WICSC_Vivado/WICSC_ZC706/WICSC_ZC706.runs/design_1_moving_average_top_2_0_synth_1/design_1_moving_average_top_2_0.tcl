@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "design_1_moving_average_top_2_0_synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 1
+set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z045ffg900-2

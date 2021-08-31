@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Mon Aug 23 10:35:41 2021
+| Date             : Tue Aug 31 23:06:28 2021
 | Host             : DESKTOP-R1R40B4 running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.096        |
+| Total On-Chip Power (W)  | 2.967        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.865        |
-| Device Static (W)        | 0.231        |
+| Dynamic (W)              | 2.737        |
+| Device Static (W)        | 0.230        |
 | Effective TJA (C/W)      | 1.8          |
-| Max Ambient (C)          | 79.5         |
-| Junction Temperature (C) | 30.5         |
+| Max Ambient (C)          | 79.8         |
+| Junction Temperature (C) | 30.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.128 |       30 |       --- |             --- |
-| Slice Logic              |     0.020 |    28273 |       --- |             --- |
-|   LUT as Logic           |     0.013 |     6522 |    218600 |            2.98 |
-|   LUT as Shift Register  |     0.004 |     1009 |     70400 |            1.43 |
-|   Register               |     0.002 |    15723 |    437200 |            3.60 |
-|   CARRY4                 |    <0.001 |      549 |     54650 |            1.00 |
-|   F7/F8 Muxes            |    <0.001 |      379 |    218600 |            0.17 |
+| Clocks                   |     0.146 |       27 |       --- |             --- |
+| Slice Logic              |     0.013 |    26116 |       --- |             --- |
+|   LUT as Logic           |     0.011 |     6011 |    218600 |            2.75 |
+|   Register               |     0.001 |    14685 |    437200 |            3.36 |
+|   LUT as Shift Register  |    <0.001 |     1019 |     70400 |            1.45 |
+|   CARRY4                 |    <0.001 |      414 |     54650 |            0.76 |
+|   F7/F8 Muxes            |    <0.001 |      385 |    218600 |            0.18 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     70400 |            0.03 |
-|   Others                 |     0.000 |     1376 |       --- |             --- |
-| Signals                  |     0.037 |    21197 |       --- |             --- |
-| Block RAM                |     0.017 |     21.5 |       545 |            3.94 |
-| MMCM                     |     0.732 |        7 |         8 |           87.50 |
-| I/O                      |     0.364 |      146 |       362 |           40.33 |
+|   Others                 |     0.000 |     1292 |       --- |             --- |
+| Signals                  |     0.026 |    19620 |       --- |             --- |
+| Block RAM                |     0.015 |     21.5 |       545 |            3.94 |
+| MMCM                     |     0.611 |        6 |         8 |           75.00 |
+| I/O                      |     0.358 |      142 |       362 |           39.23 |
 | PS7                      |     1.568 |        1 |       --- |             --- |
-| Static Power             |     0.231 |          |           |                 |
-| Total                    |     3.096 |          |           |                 |
+| Static Power             |     0.230 |          |           |                 |
+| Total                    |     2.967 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,10 +77,10 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.300 |       0.236 |      0.064 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.523 |       0.482 |      0.041 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.299 |       0.236 |      0.063 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.456 |       0.414 |      0.041 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco25    |       2.500 |     0.078 |       0.077 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.076 |       0.075 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -137,37 +137,35 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
-| Clock                                                                                      | Domain                                                                   | Constraint (ns) |
-+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
-| clk1_bufin                                                                                 | design_1_i/fpga_dig_top_0/U0/data_clock_ctrl1/mmcm_top/clk1_bufin        |             2.4 |
-| clk1_bufin_1                                                                               | design_1_i/fpga_dig_top_0/U0/data_clock_ctrl2/mmcm_top/clk1_bufin        |             2.4 |
-| clk1_bufin_2                                                                               | design_1_i/fpga_dig_top_1/U0/data_clock_ctrl1/mmcm_top/clk1_bufin        |             2.4 |
-| clk1_bufin_3                                                                               | design_1_i/fpga_dig_top_1/U0/data_clock_ctrl2/mmcm_top/clk1_bufin        |             2.4 |
-| clk1_bufin_4                                                                               | design_1_i/fpga_dig_top_1_bank_0/U0/data_clock_ctrl1/mmcm_top/clk1_bufin |             2.4 |
-| clk_12mhz_design_1_clk_wiz_1_0_1                                                           | design_1_i/clk_wiz_1/inst/clk_12mhz_design_1_clk_wiz_1_0                 |            83.3 |
-| clk_130_design_1_clk_wiz_0_0                                                               | design_1_i/clk_wiz_0/inst/clk_130_design_1_clk_wiz_0_0                   |             7.7 |
-| clk_fpga_0                                                                                 | design_1_i/processing_system7_0/inst/FCLK_CLK0                           |            10.0 |
-| clk_fpga_0                                                                                 | design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]              |            10.0 |
-| clkfb_o                                                                                    | design_1_i/fpga_dig_top_0/U0/data_clock_ctrl1/mmcm_top/clkfb_o           |            59.5 |
-| clkfb_o_1                                                                                  | design_1_i/fpga_dig_top_0/U0/data_clock_ctrl2/mmcm_top/clkfb_o           |            59.5 |
-| clkfb_o_2                                                                                  | design_1_i/fpga_dig_top_1/U0/data_clock_ctrl1/mmcm_top/clkfb_o           |            59.5 |
-| clkfb_o_3                                                                                  | design_1_i/fpga_dig_top_1/U0/data_clock_ctrl2/mmcm_top/clkfb_o           |            59.5 |
-| clkfb_o_4                                                                                  | design_1_i/fpga_dig_top_1_bank_0/U0/data_clock_ctrl1/mmcm_top/clkfb_o    |            59.5 |
-| clkfbout_design_1_clk_wiz_0_0                                                              | design_1_i/clk_wiz_0/inst/clkfbout_design_1_clk_wiz_0_0                  |            50.0 |
-| clkfbout_design_1_clk_wiz_1_0_1                                                            | design_1_i/clk_wiz_1/inst/clkfbout_design_1_clk_wiz_1_0                  |            50.0 |
-| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/tck_bs     |            33.0 |
-| lvds_dco1_p                                                                                | lvds_dco1_p_0                                                            |            11.9 |
-| lvds_dco1_p1                                                                               | lvds_dco1_p_1                                                            |            11.9 |
-| lvds_dco1_p2                                                                               | lvds_dco1_p_2                                                            |            11.9 |
-| lvds_dco2_p                                                                                | lvds_dco2_p_0                                                            |            11.9 |
-| lvds_dco2_p1                                                                               | lvds_dco2_p_1                                                            |            11.9 |
-| lvds_fco1_p                                                                                | lvds_fco1_p_0                                                            |            83.3 |
-| lvds_fco1_p1                                                                               | lvds_fco1_p_1                                                            |            83.3 |
-| lvds_fco1_p2                                                                               | lvds_fco1_p_2                                                            |            83.3 |
-| lvds_fco2_p                                                                                | lvds_fco2_p_0                                                            |            83.3 |
-| lvds_fco2_p1                                                                               | lvds_fco2_p_1                                                            |            83.3 |
-+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                      | Domain                                                                                           | Constraint (ns) |
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-----------------+
+| clk1_bufin                                                                                 | design_1_i/DerserializersAndFilter/fpga_dig_top_0/U0/data_clock_ctrl1/mmcm_top/clk1_bufin        |             2.4 |
+| clk1_bufin_1                                                                               | design_1_i/DerserializersAndFilter/fpga_dig_top_0/U0/data_clock_ctrl2/mmcm_top/clk1_bufin        |             2.4 |
+| clk1_bufin_2                                                                               | design_1_i/DerserializersAndFilter/fpga_dig_top_1/U0/data_clock_ctrl1/mmcm_top/clk1_bufin        |             2.4 |
+| clk1_bufin_3                                                                               | design_1_i/DerserializersAndFilter/fpga_dig_top_1/U0/data_clock_ctrl2/mmcm_top/clk1_bufin        |             2.4 |
+| clk1_bufin_4                                                                               | design_1_i/DerserializersAndFilter/fpga_dig_top_1_bank_0/U0/data_clock_ctrl1/mmcm_top/clk1_bufin |             2.4 |
+| clk_130_design_1_clk_wiz_0_0                                                               | design_1_i/Modulater/clk_wiz_0/inst/clk_130_design_1_clk_wiz_0_0                                 |             7.7 |
+| clk_fpga_0                                                                                 | design_1_i/PSandAXI/processing_system7_0/inst/FCLK_CLK0                                          |            10.0 |
+| clk_fpga_0                                                                                 | design_1_i/PSandAXI/processing_system7_0/inst/FCLK_CLK_unbuffered[0]                             |            10.0 |
+| clkfb_o                                                                                    | design_1_i/DerserializersAndFilter/fpga_dig_top_0/U0/data_clock_ctrl1/mmcm_top/clkfb_o           |            59.5 |
+| clkfb_o_1                                                                                  | design_1_i/DerserializersAndFilter/fpga_dig_top_0/U0/data_clock_ctrl2/mmcm_top/clkfb_o           |            59.5 |
+| clkfb_o_2                                                                                  | design_1_i/DerserializersAndFilter/fpga_dig_top_1/U0/data_clock_ctrl1/mmcm_top/clkfb_o           |            59.5 |
+| clkfb_o_3                                                                                  | design_1_i/DerserializersAndFilter/fpga_dig_top_1/U0/data_clock_ctrl2/mmcm_top/clkfb_o           |            59.5 |
+| clkfb_o_4                                                                                  | design_1_i/DerserializersAndFilter/fpga_dig_top_1_bank_0/U0/data_clock_ctrl1/mmcm_top/clkfb_o    |            59.5 |
+| clkfbout_design_1_clk_wiz_0_0                                                              | design_1_i/Modulater/clk_wiz_0/inst/clkfbout_design_1_clk_wiz_0_0                                |            50.0 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/tck_bs                             |            33.0 |
+| lvds_dco1_p                                                                                | lvds_dco1_p_0                                                                                    |            11.9 |
+| lvds_dco1_p1                                                                               | lvds_dco1_p_1                                                                                    |            11.9 |
+| lvds_dco1_p2                                                                               | lvds_dco1_p_2                                                                                    |            11.9 |
+| lvds_dco2_p                                                                                | lvds_dco2_p_0                                                                                    |            11.9 |
+| lvds_dco2_p1                                                                               | lvds_dco2_p_1                                                                                    |            11.9 |
+| lvds_fco1_p                                                                                | lvds_fco1_p_0                                                                                    |            83.3 |
+| lvds_fco1_p1                                                                               | lvds_fco1_p_1                                                                                    |            83.3 |
+| lvds_fco1_p2                                                                               | lvds_fco1_p_2                                                                                    |            83.3 |
+| lvds_fco2_p                                                                                | lvds_fco2_p_0                                                                                    |            83.3 |
+| lvds_fco2_p1                                                                               | lvds_fco2_p_1                                                                                    |            83.3 |
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -176,43 +174,35 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------------------+-----------+
-| Name                      | Power (W) |
-+---------------------------+-----------+
-| design_1_wrapper          |     2.865 |
-|   dbg_hub                 |     0.003 |
-|     inst                  |     0.003 |
-|       BSCANID.u_xsdbm_id  |     0.003 |
-|   design_1_i              |     2.809 |
-|     PS_Interface_TOP_0    |     0.005 |
-|       U0                  |     0.005 |
-|     axi_gpio_6            |     0.002 |
-|       U0                  |     0.002 |
-|     clk_wiz_0             |     0.122 |
-|       inst                |     0.122 |
-|     clk_wiz_1             |     0.121 |
-|       inst                |     0.121 |
-|     fpga_dig_top_0        |     0.371 |
-|       U0                  |     0.371 |
-|     fpga_dig_top_1        |     0.365 |
-|       U0                  |     0.365 |
-|     fpga_dig_top_1_bank_0 |     0.158 |
-|       U0                  |     0.158 |
-|     ila_0                 |     0.056 |
-|       U0                  |     0.056 |
-|     modulater_14bit_0     |     0.014 |
-|       U0                  |     0.014 |
-|     moving_average_top_0  |     0.003 |
-|       U0                  |     0.003 |
-|     moving_average_top_1  |     0.003 |
-|       U0                  |     0.003 |
-|     processing_system7_0  |     1.575 |
-|       inst                |     1.575 |
-|     ps7_0_axi_periph      |     0.005 |
-|       s00_couplers        |     0.004 |
-|       xbar                |     0.001 |
-|     spi3_WICSC_top_0      |     0.001 |
-|       U0                  |     0.001 |
-+---------------------------+-----------+
++-----------------------------+-----------+
+| Name                        | Power (W) |
++-----------------------------+-----------+
+| design_1_wrapper            |     2.737 |
+|   dbg_hub                   |     0.003 |
+|     inst                    |     0.003 |
+|       BSCANID.u_xsdbm_id    |     0.003 |
+|   design_1_i                |     2.687 |
+|     DerserializersAndFilter |     0.908 |
+|       fpga_dig_top_0        |     0.374 |
+|       fpga_dig_top_1        |     0.374 |
+|       fpga_dig_top_1_bank_0 |     0.160 |
+|     Encoder                 |     0.004 |
+|       axi_gpio_6            |     0.002 |
+|       quadrature_decoder_0  |     0.001 |
+|     I2C                     |     0.002 |
+|       axi_iic_0             |     0.002 |
+|     Modulater               |     0.135 |
+|       clk_wiz_0             |     0.123 |
+|       modulater_14bit_0     |     0.013 |
+|     PS_Interface_TOP_0      |     0.005 |
+|       U0                    |     0.005 |
+|     PSandAXI                |     1.580 |
+|       processing_system7_0  |     1.575 |
+|       ps7_0_axi_periph      |     0.005 |
+|     SPI                     |     0.003 |
+|       spi3_WICSC_top_0      |     0.001 |
+|     ila_0                   |     0.049 |
+|       U0                    |     0.049 |
++-----------------------------+-----------+
 
 
