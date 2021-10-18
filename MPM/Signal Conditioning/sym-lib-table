@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "Pg6-Power-supply-1-SchDoc-rescue")(type "Legacy")(uri "${KIPRJMOD}/Pg6-Power supply 1-SchDoc-rescue.lib")(options "")(descr ""))
+  (lib (name "Pg7-Power-supply-2-SchDoc-rescue")(type "Legacy")(uri "${KIPRJMOD}/Pg7-Power supply 2-SchDoc-rescue.lib")(options "")(descr ""))
+  (lib (name "Pg5-Power-supply-1-SchDoc-rescue")(type "Legacy")(uri "${KIPRJMOD}/Pg5-Power supply 1-SchDoc-rescue.lib")(options "")(descr ""))
+  (lib (name "Pg6-Power-supply-2-SchDoc-rescue")(type "Legacy")(uri "${KIPRJMOD}/Pg6-Power supply 2-SchDoc-rescue.lib")(options "")(descr ""))
+)
